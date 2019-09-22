@@ -1,0 +1,19 @@
+{
+  "appName": "Golf Channel",
+  "english": "English",
+  "vietnamese": "Vietnamese",
+  "language": "Language",
+  "username": "Username",
+  "password": "Password",
+  "login": "Login",
+  "changingLanguageTo": "Changing language to",
+  "appWillRestart!": "App will restart!",
+  "ok": "OK",
+  "cancel": "Cancel",
+  "loginViaSocialNerwork" : "LOGIN VIA SOCIAL NETWORKS",
+  "signup":"SIGN UP !",
+  "signup2":"SIGN UP",
+  "forgotPassword":"Forgot Password ?",
+  "enterYourEmail": "Your e-mail goes here",
+  "fullname_signup":"FULL NAME"
+}

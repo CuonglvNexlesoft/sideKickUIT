@@ -1,0 +1,18 @@
+export const APP = {
+    SETTING_DATA: 'SETTING_DATA',
+    SHOW_LOADING: 'SHOW_LOADING',
+    HIDE_LOADING: 'HIDE_LOADING',
+    SET_HEADER_TEXT: 'SET_HEADER_TEXT',
+}
+
+export const SETTING = {
+    SETTING_DATA: "SETTING_DATA",
+}
+
+export const USER = {
+    USER_DATA: 'USER_DATA',
+}
+
+export const PRODUCT = {
+    PRODUCT_DATA: 'PRODUCT_DATA',
+}

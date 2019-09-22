@@ -1,0 +1,19 @@
+{
+  "appName": "Golf Channel",
+  "english": "English",
+  "vietnamese": "Tiếng Việt",
+  "language": "Ngôn ngữ",
+  "username": "Tên đăng nhập",
+  "password": "Mật khẩu",
+  "login": "Đăng nhập",
+  "changingLanguageTo": "Đang thay đổi ngôn ngữ thành",
+  "appWillRestart!": "Ứng dụng sẽ khởi động lại!",
+  "ok": "OK",
+  "cancel": "Huỷ",
+  "loginViaSocialNerwork": "ĐĂNG NHẬP BẰNG TÀI KHOẢN",
+  "signup":"ĐĂNG KÍ !",
+  "signup2":"ĐĂNG KÍ",
+  "forgotPassword":"Quên mật khẩu ?",
+  "enterYourEmail":"Điền e-mail của bạn ở đây",
+  "fullname_signup":"HỌ TÊN"
+}
