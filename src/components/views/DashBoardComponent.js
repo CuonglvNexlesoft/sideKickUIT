@@ -47,6 +47,7 @@ export default class DashboardComponent extends Component {
     render() {
         const tabLabels = ['HOME', 'NEWS', 'WATCH', 'SCORES', 'MENU']; // [Strings.checklist, Strings.notifications, Strings.favorite, Strings.admin]
         const initialTab = 0;
+        const {activeTab} = this.state;
         return (
             <Container title={'DASHBOARD TITLE'} style={styles.container}
                 titleTextStyle={{ color: Themes.Colors.background }}
@@ -62,10 +63,10 @@ export default class DashboardComponent extends Component {
                 //     this.renderSearchButton()
                 // }
                 // headerContent={
-                //     // <Image
-                //     //     style={styles.headerImg}
-                //     //     source={require('../../assets/images/header_logo.png')}
-                //     // />
+                //     <Image
+                //         style={styles.headerImg}
+                //         source={require('../../assets/images/logo-uit.png')}
+                //     />
                 // }
             >
                 <ScrollableTabView style={{ borderBottomColor: 'transparent' }}

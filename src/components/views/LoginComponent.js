@@ -284,17 +284,18 @@ export default class LoginComponent extends Component {
     }
 
     onSubmit() {
-        const user = this.getUser();
-        if (user) {
-            this.props.appActions.showLoading();
-            console.log(this.props.userActions)
-            this.props.userActions.setUser(user).then(result => {
-                this.props.appActions.hideLoading();
-                Actions[ScreenName.DRAWER]({ type: ActionConst.RESET });
-            }, error => {
-                this.showError(error);
-            });
-        }
+        Actions[ScreenName.DRAWER]({ type: ActionConst.RESET });
+        // const user = this.getUser();
+        // if (user) {
+        //     this.props.appActions.showLoading();
+        //     console.log(this.props.userActions)
+        //     this.props.userActions.setUser(user).then(result => {
+        //         this.props.appActions.hideLoading();
+        //         Actions[ScreenName.DRAWER]({ type: ActionConst.RESET });
+        //     }, error => {
+        //         this.showError(error);
+        //     });
+        // }
     }
 
 

@@ -57,8 +57,8 @@ export default class LeftMenuComponent extends Component {
     }
 
     componentDidMount() {
-        console.log('======LOCALE TEST:', this.state.settings)
-        this.changeLanguageSetting(this.state.settings.locale)
+        // console.log('======LOCALE TEST:', this.state.settings)
+        // this.changeLanguageSetting(this.state.settings.locale)
     }
 
     componentWillReceiveProps(nextProps) {

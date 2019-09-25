@@ -245,31 +245,31 @@ export default class SignUpComponent extends Component {
     }
 
     onSubmit() {
-        // const user = this.getUser();
-        // if (user) {
-        //     this.props.appActions.showLoading();
-        //     console.log(this.props.userActions)
-        //     this.props.userActions.setUser(user).then(result => {
-        //         this.props.appActions.hideLoading();
-        //         Actions[ScreenName.DRAWER]({ type: ActionConst.RESET });
-        //     }, error => {
-        //         this.showError(error);
-        //     });
-        // }
+        const user = this.getUser();
+        if (user) {
+            this.props.appActions.showLoading();
+            console.log(this.props.userActions)
+            this.props.userActions.setUser(user).then(result => {
+                this.props.appActions.hideLoading();
+                Actions[ScreenName.DRAWER]({ type: ActionConst.RESET });
+            }, error => {
+                this.showError(error);
+            });
+        }
     }
 
 
     getUser() {
-        // const { username, password } = this.state;
-        // if (CommonUtils.isEmpty(username)) {
-        //     this.showError('Username Empty!');
-        //     return false;
-        // }
-        // if (CommonUtils.isEmpty(password)) {
-        //     this.showError('Password Empty!');
-        //     return false;
-        // }
-        // return { username, password };
+        const { fullname, password } = this.state;
+        if (CommonUtils.isEmpty(fullname)) {
+            this.showError('Username Empty!');
+            return false;
+        }
+        if (CommonUtils.isEmpty(password)) {
+            this.showError('Password Empty!');
+            return false;
+        }
+        return { fullname, password };
     }
 
     showError(message, timeout = 4000) {

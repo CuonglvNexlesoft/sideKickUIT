@@ -78,6 +78,12 @@ ios/Pods/Pods.xcodeproj/project.pbxproj
 ios/RedHotPieMessenger.xcodeproj/project.pbxproj
 android/java_pid22742.hprof
 ios/RedHotPieMessenger.xcodeproj/project.pbxproj
-ios/build
+ios/build/
 ios/build/sidekickUIT/
 ios/Pods/
+ios/build/sidekickUIT/Build/Intermediates.noindex/XCBuildData/build.db
+ios/build/sidekickUIT/Build/Intermediates.noindex/XCBuildData/BuildDescriptionCacheIndex-3425aa32f9809bacc49933b924bd4a47
+ios/build/sidekickUIT/info.plist
+*.db
+ios/build/sidekickUIT/Build/Intermediates.noindex/XCBuildData/BuildDescriptionCacheIndex-3425aa32f9809bacc49933b924bd4a47
+ios/build/sidekickUIT/Build/Products/Debug-iphonesimulator/sidekickUIT.app/_CodeSignature/CodeResources
