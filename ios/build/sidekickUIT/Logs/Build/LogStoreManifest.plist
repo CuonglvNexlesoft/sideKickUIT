@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>081C0D51-A6FD-4EBA-944D-6F550DF71AF6</key>
+		<key>C51BC478-0B94-46FA-BD77-3BCD3A894F93</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,11 +15,11 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>081C0D51-A6FD-4EBA-944D-6F550DF71AF6.xcactivitylog</string>
+			<string>C51BC478-0B94-46FA-BD77-3BCD3A894F93.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>W</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>sidekickUIT project</string>
@@ -30,13 +30,13 @@
 			<key>signature</key>
 			<string>Building workspace sidekickUIT with scheme sidekickUIT and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>590816352.02565396</real>
+			<real>591089172.40868199</real>
 			<key>timeStoppedRecording</key>
-			<real>590816352.94463003</real>
+			<real>591089177.16861904</real>
 			<key>title</key>
 			<string>Building workspace sidekickUIT with scheme sidekickUIT and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>081C0D51-A6FD-4EBA-944D-6F550DF71AF6</string>
+			<string>C51BC478-0B94-46FA-BD77-3BCD3A894F93</string>
 		</dict>
 	</dict>
 </dict>

@@ -109,7 +109,7 @@ export default class SignUpComponent extends Component {
 
     renderLogo() {
         return (
-            <View style={{ width: '35%', marginVertical: 30 }}>
+            <View style={{ width: '60%', marginVertical: 40 }}>
                 <Image
                     style={{ width: '100%' }}
                     source={Themes.Images.signup_logo_icon}
@@ -133,7 +133,7 @@ export default class SignUpComponent extends Component {
                                 underlineColorAndroid={'transparent'}
                                 value={this.state.fullname}
                                 // placeholder={Strings.username}
-                                placeholder={'khanh pencil'}
+                                placeholder={'Username'}
                                 returnKeyType={'next'}
                                 onSubmitEditing={() => this.txtPassword.focus()}
                                 onChangeText={fullname => this.setState({ fullname })}
@@ -142,7 +142,7 @@ export default class SignUpComponent extends Component {
                         </View>
                         <View style={{ height: 70 }}>
                             <View style={{ height: 20, justifyContent: 'center' }}>
-                                <Text style={{ fontSize: 12.5, fontFamily: Themes.Fonts.type.light }}>{Strings.password.toUpperCase()}</Text>
+                                <Text style={{ fontSize: 12.5 }}>{Strings.password.toUpperCase()}</Text>
                             </View>
                             <TextInput ref={ref => { this.txtPassword = ref }} style={[styles.input, { borderBottomWidth: this.state.focusPass ? 3 : 2, borderColor: this.state.focusPass ? '#070707' : Themes.Colors.grey }]}
                                 autoCapitalize={'none'}
@@ -164,13 +164,13 @@ export default class SignUpComponent extends Component {
                         </View>
                         <View style={{ height: 70, justifyContent: 'center' }}>
                             <View style={{ height: 20 }}>
-                                <Text style={{ fontSize: 12.5, fontFamily: Themes.Fonts.type.light }}>E-MAIL</Text>
+                                <Text style={{ fontSize: 12.5 }}>E-MAIL</Text>
                             </View>
                             <TextInput ref={ref => { this.txtEmail = ref }} style={[styles.input, { borderBottomWidth: this.state.focusEmail ? 3 : 2, borderColor: this.state.focusEmail ? '#070707' : Themes.Colors.grey }]}
                                 autoCapitalize={'none'}
                                 underlineColorAndroid={'transparent'}
                                 value={this.state.email}
-                                placeholder={Strings.enterYourEmail}
+                                placeholder={'mssv@gm.uit.com'}
                                 returnKeyType={'done'}
                                 onSubmitEditing={() => this.onSubmit()}
                                 onChangeText={email => this.setState({ email })}
@@ -184,7 +184,8 @@ export default class SignUpComponent extends Component {
     }
     agreeTernsOfService() {
         return (
-            <View><Text>Term</Text></View>
+            // <View><Text>Term</Text></View>
+            null
         )
     }
     renderButtonAction() {
@@ -232,7 +233,7 @@ export default class SignUpComponent extends Component {
                                     resizeMode={'contain'}
                                 />
                                 <Text style={{ fontSize: 12, fontFamily: Themes.Fonts.type.thin }}>
-                                    <Text>I'm already </Text>
+                                    <Text>I've already </Text>
                                     <Text style={{ fontWeight: '400' }}>member</Text>
                                 </Text>
                             </TouchableOpacity>

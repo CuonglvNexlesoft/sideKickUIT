@@ -112,9 +112,9 @@ export default class LoginComponent extends Component {
                 <View style={{
                     width: '100%'
                 }}>
-                    <Text style={{ fontSize: 12.5, fontFamily: Themes.Fonts.type.light }}>{Strings.loginViaSocialNerwork}</Text>
+                    <Text style={{ fontSize: 15.5}}>{'Access your side-kick'}</Text>
                 </View>
-                <View style={styles.loginSocial}>
+                {/* <View style={styles.loginSocial}>
                     <TouchableOpacity
                         style={{}}
                         onPress={() => { }}>
@@ -137,13 +137,13 @@ export default class LoginComponent extends Component {
                             resizeMode={'contain'}
                         />
                     </TouchableOpacity>
-                </View>
+                </View> */}
             </View>
         )
     }
     renderLogo() {
         return (
-            <View style={{ width: '35%', marginVertical: 30 }}>
+            <View style={{ width: '60%', marginVertical: 40 }}>
                 <Image
                     style={{ width: '100%' }}
                     source={Themes.Images.logo_icon}
@@ -163,7 +163,7 @@ export default class LoginComponent extends Component {
                             underlineColorAndroid={'transparent'}
                             value={this.state.username}
                             // placeholder={Strings.username}
-                            placeholder={'hi.khanhpencil@gmail.com'}
+                            placeholder={'mssv@gm.uit.com'}
                             returnKeyType={'next'}
                             onSubmitEditing={() => this.txtPassword.focus()}
                             onChangeText={username => this.setState({ username })}
@@ -261,7 +261,7 @@ export default class LoginComponent extends Component {
                                     fontSize: 12, color: Themes.Colors.grey, fontFamily: Themes.Fonts.type.base
                                 }}>
                                     <Text >Are you a </Text>
-                                    <Text style={{ fontWeight: '300', color: 'black' }}>Trader </Text>
+                                    <Text style={{ fontWeight: '300', color: 'black' }}>Newer </Text>
                                     <Text>?</Text>
                                 </Text>
                             </View>

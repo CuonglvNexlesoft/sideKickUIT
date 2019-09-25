@@ -41,7 +41,7 @@ export default class AppContainer extends Component {
             isConnectNetWork: '',
         };
         this.handleAppStateChange = this.handleAppStateChange.bind(this);
-        this.isAppBackground = false
+        this.isAppBackground = false;
     }
 
     handleAppStateChange(appState) {
@@ -57,13 +57,13 @@ export default class AppContainer extends Component {
     }
 
     componentDidMount() {
-        AppState.addEventListener('change', this.handleAppStateChange);
-        NetInfo.addEventListener('connectionChange', (conn) => this.handleConnectionInfoChange(conn))
+        // AppState.addEventListener('change', this.handleAppStateChange);
+        // NetInfo.addEventListener('connectionChange', (conn) => this.handleConnectionInfoChange(conn));
     }
 
     componentWillUnmount() {
-        AppState.removeEventListener('change', this.handleAppStateChange);
-        NetInfo.removeEventListener('connectionChange', (conn) => this.handleConnectionInfoChange(conn));
+        // AppState.removeEventListener('change', this.handleAppStateChange);
+        // NetInfo.removeEventListener('connectionChange', (conn) => this.handleConnectionInfoChange(conn));
     }
 
     handleConnectionInfoChange = (conn) => {

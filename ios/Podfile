@@ -28,7 +28,6 @@ target 'sidekickUIT' do
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
 
-  pod 'RNI18n', :path => '../node_modules/react-native-i18n'
 
   target 'sidekickUITTests' do
     inherit! :search_paths

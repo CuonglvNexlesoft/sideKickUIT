@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F4F02553D4D7A6BA5ABB93759AECE27D"
+               BlueprintIdentifier = "82B71AEA9AC1252EAF73FE57A1982040"
                BuildableName = "libreact-native-image-resizer.a"
                BlueprintName = "react-native-image-resizer"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3A6E6BFFCB01C3897C7FE2C536D05280"
+               BlueprintIdentifier = "B2F5C90A2505756EADBC428F417BD72D"
                BuildableName = "libreact-native-orientation.a"
                BlueprintName = "react-native-orientation"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C7650D78EAD49B2A2B5E92AB3720FB62"
+               BlueprintIdentifier = "E8727DED46C97E3A8C7EE8BB4311737D"
                BuildableName = "libPods-sidekickUIT.a"
                BlueprintName = "Pods-sidekickUIT"
                ReferencedContainer = "container:Pods.xcodeproj">

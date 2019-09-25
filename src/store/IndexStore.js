@@ -17,13 +17,12 @@ if (__DEV__) {
     middleware.push(loggerMiddleware);
 }
 
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
 export default function getStore() {
     const store = createStore(
         combineReducer,
-        (window.__REDUX_DEVTOOLS_EXTENSION__ &&
-            window.__REDUX_DEVTOOLS_EXTENSION__()) ||
-        compose,
-        applyMiddleware(...middleware)
+        composeEnhancer(applyMiddleware(...middleware))
     );
     // begin periodically persisting the store
     persistStore(store, persistConfig);

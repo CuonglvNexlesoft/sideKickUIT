@@ -3,16 +3,6 @@ PODS:
   - BVLinearGradient (2.5.6):
     - React
   - DoubleConversion (1.1.6)
-  - FBSDKCoreKit (5.2.3):
-    - FBSDKCoreKit/Basics (= 5.2.3)
-    - FBSDKCoreKit/Core (= 5.2.3)
-  - FBSDKCoreKit/Basics (5.2.3)
-  - FBSDKCoreKit/Core (5.2.3):
-    - FBSDKCoreKit/Basics
-  - FBSDKLoginKit (5.2.3):
-    - FBSDKCoreKit (~> 5.0)
-  - FBSDKShareKit (5.2.3):
-    - FBSDKCoreKit (~> 5.0)
   - FLAnimatedImage (1.0.12)
   - Folly (2018.10.22.00):
     - boost-for-react-native
@@ -74,20 +64,6 @@ PODS:
     - React
     - SDWebImage/Core
     - SDWebImage/GIF
-  - react-native-fbsdk (0.7.0):
-    - React
-    - react-native-fbsdk/Core (= 0.7.0)
-    - react-native-fbsdk/Login (= 0.7.0)
-    - react-native-fbsdk/Share (= 0.7.0)
-  - react-native-fbsdk/Core (0.7.0):
-    - FBSDKCoreKit
-    - React
-  - react-native-fbsdk/Login (0.7.0):
-    - FBSDKLoginKit
-    - React
-  - react-native-fbsdk/Share (0.7.0):
-    - FBSDKShareKit
-    - React
   - react-native-image-picker (0.14.3):
     - React
   - react-native-image-resizer (1.0.1):
@@ -121,8 +97,6 @@ PODS:
     - React-Core (= 0.60.5)
   - RNDeviceInfo (0.21.5):
     - React
-  - RNFS (2.14.1):
-    - React
   - RNI18n (2.0.15):
     - React
   - RNVectorIcons (4.6.0):
@@ -146,7 +120,6 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - react-native-fast-image (from `../node_modules/react-native-fast-image`)
-  - react-native-fbsdk (from `../node_modules/react-native-fbsdk/ios`)
   - react-native-image-picker (from `../node_modules/react-native-image-picker`)
   - react-native-image-resizer (from `../node_modules/react-native-image-resizer`)
   - react-native-orientation (from `../node_modules/react-native-orientation`)
@@ -162,7 +135,6 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-RCTWebSocket (from `../node_modules/react-native/Libraries/WebSocket`)
   - RNDeviceInfo (from `../node_modules/react-native-device-info`)
-  - RNFS (from `../node_modules/react-native-fs`)
   - RNI18n (from `../node_modules/react-native-i18n`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -170,9 +142,6 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - boost-for-react-native
-    - FBSDKCoreKit
-    - FBSDKLoginKit
-    - FBSDKShareKit
     - FLAnimatedImage
     - SDWebImage
 
@@ -201,8 +170,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   react-native-fast-image:
     :path: "../node_modules/react-native-fast-image"
-  react-native-fbsdk:
-    :path: "../node_modules/react-native-fbsdk/ios"
   react-native-image-picker:
     :path: "../node_modules/react-native-image-picker"
   react-native-image-resizer:
@@ -233,8 +200,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/WebSocket"
   RNDeviceInfo:
     :path: "../node_modules/react-native-device-info"
-  RNFS:
-    :path: "../node_modules/react-native-fs"
   RNI18n:
     :path: "../node_modules/react-native-i18n"
   RNVectorIcons:
@@ -246,9 +211,6 @@ SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: b0b70acf63ee888829b7c2ebbf6b50e227396e55
   DoubleConversion: 1f9e358142d21eaa409e08e6d28aeb643f1a7967
-  FBSDKCoreKit: 5154c35d9058fd7dfa0445ba19e194c4b172fc32
-  FBSDKLoginKit: dc98b6bf12334f1a42f28d0457fffc9aa3d1eca5
-  FBSDKShareKit: 6f9c622f9a5d051f43f2dab6f753d5198422b89c
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   Folly: 9853091dfeabe297dc32d8f899adfd78136f664b
   glog: 07f3e064a66424626a605a3656200e29cb276d81
@@ -260,7 +222,6 @@ SPEC CHECKSUMS:
   React-jsiexecutor: e4b4717060a0cd8d0270323b5655a68c95432efd
   React-jsinspector: 044105eea064aec81adc5e4d777a8f6589e7d094
   react-native-fast-image: cba3d9bf9c2cf8ddb643d887a686c53a5dd90a2c
-  react-native-fbsdk: 8a738a123494ae9ba69482a5a8e88aa2108b8245
   react-native-image-picker: b303e31c3c4ada1d7cb1342423d328d2efb07fb3
   react-native-image-resizer: 04a3409e7d4ad646c4468671c69dec490def139c
   react-native-orientation: 3d9a0a8273d18260f7528414093a6a36491382b6
@@ -276,12 +237,11 @@ SPEC CHECKSUMS:
   React-RCTVibration: dabb8d59bb47e1d9124b3f77bfdc1b33d42b0a74
   React-RCTWebSocket: 2e7f6e98fd6d2bf447d145e499c3a235cc13e350
   RNDeviceInfo: 568c5641057313b4912d08a7742ff0b2f753ed5c
-  RNFS: 6a2bfb5d0b14cf0ad72667f76202358abba4aacf
   RNI18n: 46b8694063fbd699f2c06a4dc8e835b3176763b1
   RNVectorIcons: c0dbfbf6068fefa240c37b0f71bd03b45dddac44
   SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
   yoga: 88c514f310aff89b94a14c5fbf44b95735af0cb7
 
-PODFILE CHECKSUM: cff7b4c0b9ad7c9e7afc450f707328b1b2a5956a
+PODFILE CHECKSUM: 6d94365b15e77c9f84eea824e77914db21481f5f
 
 COCOAPODS: 1.6.0.beta.1

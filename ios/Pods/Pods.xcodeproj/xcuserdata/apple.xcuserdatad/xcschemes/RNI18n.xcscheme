@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "72CA84C5D2A9E56B835A0BF579D1220C"
+               BlueprintIdentifier = "AB22D5ECC3BAB824780FEA271118247B"
                BuildableName = "libRNI18n.a"
                BlueprintName = "RNI18n"
                ReferencedContainer = "container:Pods.xcodeproj">
