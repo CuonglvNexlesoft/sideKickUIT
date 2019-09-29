@@ -60,7 +60,7 @@ const styles = EStyleSheet.create(shorthand({
         height: Themes.Metrics.headerHeight,
         width: '100%',
         '@media ios': {
-            marginTop: 20,
+            marginTop: 32,
         },
     },
     headerBg: {

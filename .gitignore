@@ -92,3 +92,4 @@ ios/build/sidekickUIT/Build/Products/Debug-iphonesimulator/sidekickUIT.app/sidek
 ios/build/sidekickUIT/Build/Intermediates.noindex/XCBuildData/BuildDescriptionCacheIndex-3425aa32f9809bacc49933b924bd4a47
 *.modulevalidation
 *.plist
+yarn.lock

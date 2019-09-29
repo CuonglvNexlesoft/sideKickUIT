@@ -227,7 +227,8 @@ LeftMenuComponent.defaultProps = {
 
 const styles = EStyleSheet.create(shorthand({
     container: {
-        maxWidth: Themes.Metrics.leftMenuWidth
+        maxWidth: Themes.Metrics.leftMenuWidth,
+        marginTop: 32
     },
     contents: {
         flex: 1

@@ -91,7 +91,9 @@ export default class AppContainer extends Component {
                         <Scene key={ScreenName.SPLASH} component={SpashContainer} hideNavBar initial={true} />
                         <Scene key={ScreenName.LOGIN} component={LoginContainer} hideNavBar />
 
-                        <Scene key={ScreenName.DRAWER} drawer overlay
+                        <Scene key={ScreenName.DRAWER} 
+                            drawer 
+                            overlay
                             hideNavBar hideTabBar passProps
                             type={ActionConst.RESET}
                             contentComponent={LeftMenuContainer}
