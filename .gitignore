@@ -93,3 +93,4 @@ ios/build/sidekickUIT/Build/Intermediates.noindex/XCBuildData/BuildDescriptionCa
 *.modulevalidation
 *.plist
 yarn.lock
+yarn.lock
