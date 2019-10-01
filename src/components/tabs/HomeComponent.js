@@ -61,7 +61,7 @@ export default class HomeComponent extends Component {
   }
 
   componentDidMount() {
-    this.socket = io("http://172.16.5.12:3000");
+    this.socket = io("https://sidekickuit.herokuapp.com/");
     this.socket.on("chat message", msg => {
       this.setState({ chatMessages: [...this.state.chatMessages, msg] });
     });
@@ -74,7 +74,7 @@ export default class HomeComponent extends Component {
 
   render() {
     const chatMessages = this.state.chatMessages.map(chatMessage => (
-      <Text key={chatMessage}>{chatMessage}</Text>
+      <Text style={{backgroundColor: "red", width: "100%", height: "100%"}} key={chatMessage}>{chatMessage}</Text>
     ));
 
     return (
@@ -86,6 +86,7 @@ export default class HomeComponent extends Component {
           onSubmitEditing={() => this.submitChatMessage()}
           onChangeText={chatMessage => {
             this.setState({ chatMessage });
+            this.submitChatMessage()
           }}
         />
         {chatMessages}
