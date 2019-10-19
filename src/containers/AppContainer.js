@@ -31,7 +31,7 @@ import EStyleSheet from 'react-native-extended-stylesheet';
 
 
 EStyleSheet.build();
-// console.disableYellowBox = true;
+console.disableYellowBox = true;
 
 export default class AppContainer extends Component {
 

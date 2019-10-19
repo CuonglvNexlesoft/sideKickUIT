@@ -69,7 +69,7 @@ export default class DashboardComponent extends Component {
                 //     />
                 // }
             >
-                <ScrollableTabView style={{ borderBottomColor: 'transparent' }}
+                {/* <ScrollableTabView style={{ borderBottomColor: 'transparent' }}
                     initialPage={initialTab} tabBarPosition={'bottom'}
                     renderTabBar={(props) =>
                         <CustomTab {...props} initialPage={initialTab} activeColor={Themes.Colors.activeTab}
@@ -95,7 +95,7 @@ export default class DashboardComponent extends Component {
 
                     <Menu tabLabel={{ label: tabLabels[4], icon: 'menu', iconComponent: EIcon }} />
 
-                </ScrollableTabView>
+                </ScrollableTabView> */}
             </Container>
         );
     }
@@ -116,6 +116,7 @@ export default class DashboardComponent extends Component {
     }
 
     onMenuPress() {
+        console.log("sadasds")
         Actions.drawerOpen();
     }
 
