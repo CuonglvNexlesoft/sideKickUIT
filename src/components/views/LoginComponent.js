@@ -284,7 +284,7 @@ export default class LoginComponent extends Component {
     }
 
     onSubmit() {
-        Actions[ScreenName.DRAWER]({ type: ActionConst.RESET });
+        Actions[ScreenName.DASHBOARD]();
         // const user = this.getUser();
         // if (user) {
         //     this.props.appActions.showLoading();

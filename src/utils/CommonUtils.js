@@ -199,32 +199,33 @@ export function upperCaseFirstLetter(str) {
 
 export function log(...arg) {
     if (__DEV__) {
-        return console.log(...arg);
+        return null //console.log(...arg);
     }
 }
 
 export function overrideLog() {
 
-    var console = (function (oldCons) {
-        return {
-            ...oldCons,
-            log: function (...args) {
-                if (__DEV__) {
-                    return oldCons.log(...args);
-                }
-            },
-            info: function (...arg) {
-                return oldCons.info(...arg);
-            },
-            warn: function (...arg) {
-                return oldCons.warn(...arg);
-            },
-            error: function (...arg) {
-                return oldCons.error(...arg);
-            }
-        };
-    }(window.console));
+    // var console = (function (oldCons) {
+    //     return {
+    //         ...oldCons,
+    //         log: function (...args) {
+    //             if (__DEV__) {
+    //                 return oldCons.log(...args);
+    //             }
+    //         },
+    //         info: function (...arg) {
+    //             return oldCons.info(...arg);
+    //         },
+    //         warn: function (...arg) {
+    //             return oldCons.warn(...arg);
+    //         },
+    //         error: function (...arg) {
+    //             return oldCons.error(...arg);
+    //         }
+    //     };
+    // }(window.console));
 
-    window.console = console;
+    // window.console = console;
+    null
 
 }

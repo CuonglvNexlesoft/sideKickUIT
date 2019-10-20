@@ -16,6 +16,7 @@ import SplashScreen from 'react-native-splash-screen';
 
 import LeftMenuContainer from './pages/LeftMenuContainer';
 import DashBoardContainer from './pages/DashBoardContainer';
+import ClassDetailContainer from './pages/ClassDetailContainer';
 import SpashContainer from './pages/SpashContainer';
 import LoginContainer from './pages/LoginContainer';
 import SignUpContainer from './pages/SignUpContainer'
@@ -91,7 +92,7 @@ export default class AppContainer extends Component {
                         <Scene key={ScreenName.SPLASH} component={SpashContainer} hideNavBar initial={true} />
                         <Scene key={ScreenName.LOGIN} component={LoginContainer} hideNavBar />
 
-                        <Scene key={ScreenName.DRAWER} 
+                        {/* <Scene key={ScreenName.DRAWER} 
                             drawer 
                             overlay
                             hideNavBar hideTabBar passProps
@@ -99,13 +100,11 @@ export default class AppContainer extends Component {
                             contentComponent={LeftMenuContainer}
                             drawerWidth={Themes.Metrics.leftMenuWidth}
                         >
-                            <Scene key='Main' panHandlers={null} tabs hideNavBar hideTabBar passProps
-                                checkConnectNetWork={this.checkConnectNetWork.bind(this)}
-                            >
-                                <Scene key={ScreenName.DASHBOARD} component={DashBoardContainer} hideNavBar />
-                            </Scene>
-                        </Scene>
-
+                            <Scene key={ScreenName.DASHBOARD} component={DashBoardContainer} hideNavBar />
+                           
+                        </Scene> */}
+                        <Scene key={ScreenName.DASHBOARD} component={DashBoardContainer} hideNavBar />
+                        <Scene key={ScreenName.DETAIL} component={ClassDetailContainer} hideNavBar />
                         <Scene key={ScreenName.IMAGE_VIEWER}
                             hideNavBar={true} direction="vertical"
                             component={ImageViewerContainer} >

@@ -1,70 +1,53 @@
-// import React, { Component, PropTypes } from 'react';
-// import {
-//     View,
-//     Text,
-//     TouchableOpacity,
-//     StyleSheet,
-// } from 'react-native';
-// import { Actions, ActionConst } from 'react-native-router-flux';
-// import ScreenName from '../../constants/ScreenName';
-// import EStyleSheet from 'react-native-extended-stylesheet';
-// import shorthand from 'react-native-styles-shorthand';
-
-// import * as CommonUtils from '../../utils/CommonUtils';
-// import Locale from '../../utils/Locale';
-// import GlobalKeys from '../../constants/GlobalKeys';
-// import { Metrics, Colors } from '../../themes';
-
-// export default class HomeComponent extends Component {
-
-//     constructor(props) {
-//         super(props);
-//         this.state = {
-            
-//         };
-//     }
-
-//     render() {
-//         return (
-//             <View style={[styles.container, {  }]}>
-//                 <Text>HOME TAB</Text>
-//             </View>
-//         )
-//     }
-
-//     componentDidMount() {
-//     }
-
-// }
-
-// HomeComponent.defaultProps = {
-    
-// };
-
-// const styles = EStyleSheet.create(shorthand({
-//     container: {
-//         flex: 1,
-//     }
-// }));
-
 import React, { Component } from "react";
-import { TextInput, StyleSheet, Text, View } from "react-native";
+import { TextInput, StyleSheet, Text, View, FlatList, TouchableOpacity } from "react-native";
 import io from "socket.io-client";
-
+import ModalInput from "../commons/ModalInput";
+import { Actions, ActionConst } from "react-native-router-flux";
+import ScreenName from '../../constants/ScreenName';
 export default class HomeComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
       chatMessage: "",
-      chatMessages: []
+      chatMessages: [],
+      users: [
+        {
+          "name": "Proxima Midnight",
+          "email": "proxima@appdividend.com"
+        },
+        {
+          "name": "Ebony Maw",
+          "email": "ebony@appdividend.com"
+        },
+        {
+          "name": "Black Dwarf",
+          "email": "dwarf@appdividend.com"
+        },
+        {
+          "name": "Mad Titan",
+          "email": "thanos@appdividend.com"
+        },
+      ]
     };
   }
 
   componentDidMount() {
-    this.socket = io("https://sidekickuit.herokuapp.com/");
-    this.socket.on("chat message", msg => {
-      this.setState({ chatMessages: [...this.state.chatMessages, msg] });
-    });
+    
+  }
+
+  onOpendCreateForm(){
+    this.refs.modalInput.openModal();
+  }
+
+  createClass(_class) {
+    console.log('adasda', _class)
+    if (_class) {
+      let newArrClass = this.state.users;
+      newArrClass.unshift(_class)
+      this.setState({
+        users: newArrClass
+      });
+    }
   }
 
   submitChatMessage() {
@@ -72,24 +55,51 @@ export default class HomeComponent extends Component {
     this.setState({ chatMessage: "" });
   }
 
-  render() {
-    const chatMessages = this.state.chatMessages.map(chatMessage => (
-      <Text style={{backgroundColor: "red", width: "100%", height: "100%"}} key={chatMessage}>{chatMessage}</Text>
-    ));
+  onPressNext(item) {
+    Actions[ScreenName.DETAIL]({class: item})
+  }
 
+  renderRow(item){
+    return(
+      <TouchableOpacity 
+          onPress={this.onPressNext.bind(this, item)}
+          style={{borderWidth: 1, padding: 10, marginBottom: 20, borderRadius: 10}}>
+            <View style={{flexDirection:'row', justifyContent: 'center'}}>
+            <Text style={styles.name}>{item.name}</Text>
+            </View>
+            <View style={{flexDirection:'row', justifyContent: 'space-between'}}>
+            <Text style={styles.name}>Class:</Text>
+            <Text style={styles.name}>{item.name}</Text>
+            </View>
+            <View style={{flexDirection:'row', justifyContent: 'space-between'}}>
+            <Text style={styles.name}>GVHD:</Text>
+            <Text style={styles.email}>{item.email}</Text>
+            </View>
+          </TouchableOpacity>
+    );
+  }
+
+  render() {
     return (
       <View style={styles.container}>
-        <TextInput
-          style={{ height: 40, borderWidth: 2 }}
-          autoCorrect={false}
-          value={this.state.chatMessage}
-          onSubmitEditing={() => this.submitChatMessage()}
-          onChangeText={chatMessage => {
-            this.setState({ chatMessage });
-            this.submitChatMessage()
-          }}
+          <TouchableOpacity style={{paddingBottom: 15}} onPress={()=> this.onOpendCreateForm()}>
+          <View style={{flexDirection:'row', justifyContent: 'center'}}>
+            <Text style={styles.name}>Create class</Text>
+            </View>
+          </TouchableOpacity>
+          <FlatList
+          data={this.state.users}
+          extraData={this.state}
+          showsVerticalScrollIndicator={false}
+          renderItem={({item}) =>
+          this.renderRow(item)
+          }
+          keyExtractor={item => item.email}
         />
-        {chatMessages}
+        <ModalInput
+        ref={'modalInput'}
+        styleModalPopupCustom={{width: '95%', paddingLeft: 10, paddingRight: 10}}
+        onSubmmit={(value)=>this.createClass(value)}/> 
       </View>
     );
   }
@@ -98,6 +108,7 @@ export default class HomeComponent extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#F5FCFF"
+    backgroundColor: "white",
+    padding: 10
   }
 });

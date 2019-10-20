@@ -53,49 +53,8 @@ export default class DashboardComponent extends Component {
                 titleTextStyle={{ color: Themes.Colors.background }}
 
                 statusBarColor={Themes.Colors.background}
-                statusBarProps={{ barStyle: "dark-content" }}
-                headerLeft={
-                    <Button width={Themes.Metrics.headerButtonWidth} color={'transparent'} onPress={() => this.onMenuPress()}>
-                        <Icon name='ios-menu' style={{ color: Themes.Colors.background, fontSize: 26 }} />
-                    </Button>
-                }
-                // headerRight={(activeTab == 1 || activeTab == 0) &&
-                //     this.renderSearchButton()
-                // }
-                // headerContent={
-                //     <Image
-                //         style={styles.headerImg}
-                //         source={require('../../assets/images/logo-uit.png')}
-                //     />
-                // }
-            >
-                {/* <ScrollableTabView style={{ borderBottomColor: 'transparent' }}
-                    initialPage={initialTab} tabBarPosition={'bottom'}
-                    renderTabBar={(props) =>
-                        <CustomTab {...props} initialPage={initialTab} activeColor={Themes.Colors.activeTab}
-                            hideLabelInactive={false}
-                            inActiveColor={Themes.Colors.grey}
-                            style={{
-                                ...props.style,
-                                height: Themes.Metrics.tabHeight,
-                                borderTopColor: Themes.Colors.grey,
-                                borderTopWidth: Themes.Metrics.borderWidth,
-                                backgroundColor: Themes.Colors.background,
-                                paddingHorizontal: CommonUtils.isTablet() ? '20%' : 0,
-                            }}
-                            iconStyle={{}}
-                            labelStyle={{ fontFamily: Themes.Fonts.type.regular, fontWeight: 'normal', fontSize: 12 }}
-                        />}
-                    ref={(tabView) => { this.tabView = tabView; }}
-                    onChangeTab={({ i, ref }) => this.onChangeTab(i, ref)}
-                >
-                    <Home tabLabel={{ label: tabLabels[0], icon: 'home', iconComponent: EIcon }} />
-
-                    <News tabLabel={{ label: tabLabels[1], icon: 'newspaper-o', iconComponent: FAIcon }} />
-
-                    <Menu tabLabel={{ label: tabLabels[4], icon: 'menu', iconComponent: EIcon }} />
-
-                </ScrollableTabView> */}
+                statusBarProps={{ barStyle: "dark-content" }}>
+                <Home tabLabel={{ label: 'HOME', icon: 'home', iconComponent: EIcon }} />
             </Container>
         );
     }
@@ -116,7 +75,6 @@ export default class DashboardComponent extends Component {
     }
 
     onMenuPress() {
-        console.log("sadasds")
         Actions.drawerOpen();
     }
 

@@ -6,6 +6,7 @@ import {
     Image, ListView,
     Modal, StyleSheet,
     Keyboard, LayoutAnimation,
+    KeyboardAvoidingView
 } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import shorthand from 'react-native-styles-shorthand';
@@ -65,7 +66,7 @@ export default class Container extends React.Component {
         const title = this.props.title || "";
         console.log(this.props)
         return (
-            <View {...this.props} style={[styles.container, (this.props.style || null), {marginBottom: Platform.OS == 'ios' ? keyboardHeight : null}]}>
+            <KeyboardAvoidingView {...this.props} style={[styles.container, (this.props.style || null), {marginBottom: Platform.OS == 'ios' ? keyboardHeight : null}]}>
                 {this.props.hadStatusBar &&
                     <StatusBar backgroundColor={statusBarColor} barStyle="light-content"
                         style={[styles.statusBar, (this.props.statusBarStyle || null)]} {...this.props.statusBarProps} />
@@ -84,7 +85,7 @@ export default class Container extends React.Component {
                 <View style={[styles.content, this.props.contentStyle]}>
                     {this.props.children}
                 </View>
-            </View>
+            </KeyboardAvoidingView>
         )
 
     }
