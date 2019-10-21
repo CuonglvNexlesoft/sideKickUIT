@@ -45,20 +45,15 @@ import LinearGradient from 'react-native-linear-gradient';
 import * as Themes from '../../themes';
 import Strings from '../../constants/Strings';
 import * as CommonUtils from '../../utils/CommonUtils';
+import io from "socket.io-client";
 
 export default class ClassDetailComponent extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      fullname: null,
-      email: null,
-      password: null,
-      // keyboard: false,
-      focusEmail: false,
-      focusFullname: false,
-      focusPass: false,
-      borderTextinputColor: '#070707'
+      chatMessages: [],
+      text: ''
     };
   }
 
@@ -68,7 +63,12 @@ export default class ClassDetailComponent extends Component {
         title={this.props.class.name}
         headerLeft={
           <Button width={Themes.Metrics.headerButtonWidth} color={'transparent'} onPress={() => Actions.pop()}>
-              <Icon name='ios-menu' style={{ color: Themes.Colors.background, fontSize: 26 }} />
+              <Icon name='ios-arrow-back' style={{ color: Themes.Colors.background, fontSize: 26 }} />
+          </Button>
+        }
+        headerRight={
+          <Button width={Themes.Metrics.headerButtonWidth} color={'transparent'} onPress={() => Actions.pop()}>
+              <Icon name='md-more' style={{ color: Themes.Colors.background, fontSize: 26 }} />
           </Button>
         }
         titleTextStyle={{ color: Themes.Colors.background }}
@@ -76,13 +76,21 @@ export default class ClassDetailComponent extends Component {
         statusBarProps={{ barStyle: "dark-content" }}>
         <View style={{ flex: 1, paddingHorizontal: 10, paddingBottom: 15 }}>
           <FlatList
-            data={[1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9,]}
+          ref={'flatList'}
+            data={this.state.chatMessages}
             //style={{backgroundColor: 'red',}}
             extraData={this.state}
             showsVerticalScrollIndicator={false}
             renderItem={({ item }) =>
               <View style={{ flexDirection: 'row', justifyContent: "flex-start", paddingBottom: 10, paddingLeft: 15 }}>
-                <Text style={styles.name}>item.name</Text>
+                <View style={{flexDirection: 'row', justifyContent: 'flex-end', alignItems: "center"}}>
+                  <View style={{paddingRight: 15}}>
+                  <Text style={styles.name}>userName: </Text>
+                  </View>
+                  <View style={{borderRadius: 25, borderWidth: 1, padding: 10}}>
+                  <Text numberOfLines={5} style={styles.name}>{item}</Text>
+                  </View>
+                </View>
               </View>
             }
           />
@@ -100,10 +108,11 @@ export default class ClassDetailComponent extends Component {
                 paddingLeft: 10,
                 width: '80%'
               }}
-            // onChangeText={text => this.onChangeClassName(text)}
-            // value={className}
+            onChangeText={text => this.onChangeText(text)}
+            value={this.state.text}
             />
             <TouchableOpacity
+              onPress={()=>this.sendMessage()}
               style={{
                 width: '20%',
                 justifyContent: 'center',
@@ -121,11 +130,27 @@ export default class ClassDetailComponent extends Component {
   componentDidMount() {
     // this.keyboardWillShowListener = Keyboard.addListener('keyboardWillShow', this._keyboardWillShow.bind(this));
     // this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this._keyboardDidHide.bind(this));
-
+    this.socket = io("http://localhost:3000");
+    this.socket.on("chat message", msg => {
+      this.setState({ chatMessages: [...this.state.chatMessages, msg] });
+    });
+    
   }
   componentWillUnmount() {
     // this.keyboardWillShowListener.remove();
     // this.keyboardDidHideListener.remove();
+  }
+
+  onChangeText(_text){
+    this.setState({
+      text: _text
+    })
+  }
+
+  sendMessage(){
+    this.refs.flatList.scrollToEnd();
+    this.socket.emit("chat message", this.state.text);
+    this.setState({ text: "" });
   }
 
 }

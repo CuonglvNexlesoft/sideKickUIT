@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icBlock</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Call-incoming---start" transform="translate(-68.000000, -519.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-28" transform="translate(30.000000, 431.000000)">
+                <g id="Group-27" transform="translate(25.000000, 68.000000)">
+                    <g id="Group-19" transform="translate(0.000000, 7.000000)">
+                        <g id="Group-16-Copy">
+                            <g id="Group-2">
+                                <g id="icBlockUser">
+                                    <path d="M33.4515625,16.5484375 C35.715625,18.8124531 37,21.8077656 37,25 C37,31.6286406 31.5768438,37 25,37 C18.3941406,37 13,31.6074062 13,25 C13,18.3960625 18.4067031,13 25,13 C28.1922344,13 31.1875,14.2844219 33.4515625,16.5484375 Z M25.0615739,34.0909091 C27.0329249,34.0909091 28.9055698,33.4713564 30.4545455,32.3166885 L17.6691838,19.5454545 C16.5286436,21.0943363 15.9090909,22.9670751 15.9090909,24.9384261 C15.9090909,30.0081976 20.0025507,34.0909091 25.0615739,34.0909091 Z M32.3167355,30.4545455 C33.4713564,28.9056537 34.0909091,27.0329028 34.0909091,25.061633 C34.0909091,19.9918287 29.9975901,15.9090909 24.9384261,15.9090909 C22.9670751,15.9090909 21.0944302,16.5286476 19.5454545,17.6691952 L32.3167355,30.4545455 Z" id="icBlock" transform="translate(25.000000, 25.000000) scale(-1, 1) translate(-25.000000, -25.000000) "></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

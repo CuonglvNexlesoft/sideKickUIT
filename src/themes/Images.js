@@ -17,6 +17,7 @@ const images = {
     background_button_signup: require('./../assets/images/background_button_signup.png'),
     background_button_login: require('./../assets/images/background_button_login.png'),
     user_icon_signup_screen: require('./../assets/images/user_icon_signup_screen.png'),
+    icBack: require('./../assets/images/video/icBack.png'),
 };
 
 export default images

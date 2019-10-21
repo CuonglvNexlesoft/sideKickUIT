@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icVideoCallGreen</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Call-incoming---start" transform="translate(-192.000000, -502.000000)">
+            <g id="Group-28" transform="translate(30.000000, 431.000000)">
+                <g id="Group-27" transform="translate(25.000000, 67.000000)">
+                    <g id="icVideoCallGreen" transform="translate(137.000000, 4.000000)">
+                        <circle id="Oval" stroke="#FFFFFF" stroke-width="2" fill="#7BCB45" cx="35" cy="35" r="34"></circle>
+                        <path d="M51,28.8271335 L51,42.1597374 C51,43.190372 49.9555601,43.833698 49.1200082,43.321663 L43.9223838,40.1181619 L43.9223838,41.0306346 C43.9223838,43.7746171 41.8396478,46 39.2715544,46 L25.6508294,46 C23.082736,46 21,43.7746171 21,41.0306346 L21,29.9693654 C21,27.2253829 23.082736,25 25.6508294,25 L39.2776981,25 C41.8457915,25 43.9285275,27.2253829 43.9285275,29.9693654 L43.9285275,30.8818381 L49.126152,27.678337 C49.9555601,27.1531729 51,27.8030635 51,28.8271335 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

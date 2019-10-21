@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="20px" viewBox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icLeftArrowCallAvatarBubble</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4.07972519,10.1552336 L11.291365,2.95059406 C11.4899382,2.75269194 11.599177,2.48809178 11.599177,2.20595599 C11.599177,1.92366364 11.4899382,1.65922005 11.291365,1.46100479 L10.6594414,0.830035184 C10.4611816,0.631506783 10.1961561,0.522222222 9.91373395,0.522222222 C9.63131176,0.522222222 9.36659972,0.631506783 9.16818324,0.830035184 L0.581576801,9.40777727 C0.382376684,9.6066188 0.273294638,9.87231493 0.274078273,10.1547639 C0.273294638,10.4384653 0.382219957,10.7038483 0.581576801,10.9028464 L9.16019016,19.4722904 C9.35860664,19.6708188 9.62331868,19.7801034 9.9058976,19.7801034 C10.1883198,19.7801034 10.4530318,19.6708188 10.651605,19.4722904 L11.2833719,18.8413208 C11.694467,18.4306426 11.694467,17.7620966 11.2833719,17.351575 L4.07972519,10.1552336 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Outside-Incoming-call---Cancel" transform="translate(-1035.000000, -1034.000000)">
+            <g id="Group" transform="translate(1010.000000, 946.000000)">
+                <g id="Group-13" transform="translate(25.000000, 41.000000)">
+                    <g id="icLeftArrowCallAvatarBubble" transform="translate(0.000000, 47.197674)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="colour/white" mask="url(#mask-2)" fill="#FFFFFF">
+                            <g transform="translate(-20.111111, -15.337209)" id="colour/light-grey">
+                                <polygon points="0 0 51 0 51 51 0 51"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

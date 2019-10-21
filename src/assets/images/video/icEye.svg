@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="21px" viewBox="0 0 29 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icEye</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M14.4998392,15.3109333 C17.0260207,15.3109333 19.0738954,13.2733394 19.0738954,10.75984 C19.0738954,8.24634056 17.0260207,6.20874667 14.4998392,6.20874667 C11.9736577,6.20874667 9.92578299,8.24634056 9.92578299,10.75984 C9.92578299,13.2733394 11.9736577,15.3109333 14.4998392,15.3109333 Z M28.1947242,10.5859733 C26.2499744,4.56485333 20.7462376,0.51984 14.4998392,0.51984 C8.25344076,0.51984 2.7497576,4.56485333 0.805007813,10.5859733 C0.768718967,10.6987733 0.768718967,10.82096 0.805007813,10.93376 C2.7497576,16.95488 8.25349436,20.9998933 14.4998928,20.9998933 C20.7462912,20.9998933 26.2499744,16.95488 28.1947778,10.93376 C28.231013,10.82096 28.231013,10.6987733 28.1947242,10.5859733 Z M14.4998392,18.72432 C10.0860007,18.72432 6.49522743,15.15152 6.49522743,10.7598933 C6.49522743,6.36826667 10.0860543,2.79546667 14.4998392,2.79546667 C18.9136241,2.79546667 22.504451,6.36826667 22.504451,10.7598933 C22.504451,15.15152 18.9136777,18.72432 14.4998392,18.72432 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Call-incoming---start" transform="translate(-282.000000, -521.000000)">
+            <g id="Group-28" transform="translate(30.000000, 431.000000)">
+                <g id="Group-27" transform="translate(25.000000, 68.000000)">
+                    <g id="Group-16" transform="translate(216.000000, 7.000000)">
+                        <g id="Group-2">
+                            <g id="icEye" transform="translate(11.000000, 15.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Shape" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                                <g id="colour/white" mask="url(#mask-2)" fill="#FFFFFF">
+                                    <g transform="translate(-18.000000, -23.000000)" id="colour/light-grey">
+                                        <rect x="0" y="0" width="65" height="66"></rect>
+                                    </g>
+                                </g>
+                                <g id="view" mask="url(#mask-2)">
+                                    <g transform="translate(0.777778, 0.466667)"></g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

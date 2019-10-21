@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icVideoCallCam</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-24.0%" y="-24.0%" width="148.0%" height="148.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="buttons-states" transform="translate(-123.000000, -260.000000)">
+            <g id="Group-13" transform="translate(57.000000, 261.000000)">
+                <g id="Group-12">
+                    <g id="Group-7">
+                        <g id="Group-6">
+                            <g id="Group-9" filter="url(#filter-1)" transform="translate(70.000000, 1.000000)">
+                                <g id="icVideoCallCam">
+                                    <circle id="Oval" stroke="#FFFFFF" stroke-width="2" fill="#646464" cx="25" cy="25" r="24"></circle>
+                                    <path d="M38,20.0981557 L38,30.891216 C38,31.7255392 37.1644481,32.246327 36.4960066,31.8318224 L32.337907,29.238512 L32.337907,29.9771804 C32.337907,32.1984995 30.6717182,34 28.6172435,34 L17.7206635,34 C15.6661888,34 14,32.1984995 14,29.9771804 L14,21.0228196 C14,18.8015005 15.6661888,17 17.7206635,17 L28.6221585,17 C30.6766332,17 32.342822,18.8015005 32.342822,21.0228196 L32.342822,21.761488 L36.5009216,19.1681776 C37.1644481,18.7430447 38,19.2691466 38,20.0981557 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

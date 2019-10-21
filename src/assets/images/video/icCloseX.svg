@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>icCloseX</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M14.1437193,11.5000522 L22.0746813,3.5690809 C22.8047359,2.83902547 22.8047359,1.65537479 22.0746813,0.925423797 C21.3446267,0.195368362 20.1610819,0.195368362 19.4310273,0.925423797 L11.4999608,8.85649956 L3.56889438,0.925319354 C2.8388398,0.195263919 1.65529496,0.195263919 0.925240379,0.925319354 C0.195290244,1.65537479 0.195290244,2.83902547 0.925240379,3.56897646 L8.85630683,11.4999478 L0.925240379,19.4310235 C0.195290244,20.161079 0.195290244,21.3447297 0.925240379,22.0746806 C1.65529496,22.8047361 2.8388398,22.8047361 3.56889438,22.0746806 L11.4999608,14.1436049 L19.4310273,22.0746806 C20.1609774,22.8047361 21.3446267,22.8047361 22.0746813,22.0746806 C22.8047359,21.3446252 22.8047359,20.161079 22.0746813,19.4310235 L14.1437193,11.5000522 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop--Watcher" transform="translate(-787.000000, -568.000000)">
+            <g id="Group-14" transform="translate(16.000000, 193.000000)">
+                <g id="Group-8" transform="translate(638.000000, 350.000000)">
+                    <g id="Group-10" transform="translate(109.000000, 0.000000)">
+                        <g id="UI/icon/close-x" transform="translate(24.000000, 25.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="icCloseX" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

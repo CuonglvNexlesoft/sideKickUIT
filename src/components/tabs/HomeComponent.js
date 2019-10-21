@@ -32,7 +32,7 @@ export default class HomeComponent extends Component {
   }
 
   componentDidMount() {
-    
+   
   }
 
   onOpendCreateForm(){
@@ -40,7 +40,6 @@ export default class HomeComponent extends Component {
   }
 
   createClass(_class) {
-    console.log('adasda', _class)
     if (_class) {
       let newArrClass = this.state.users;
       newArrClass.unshift(_class)

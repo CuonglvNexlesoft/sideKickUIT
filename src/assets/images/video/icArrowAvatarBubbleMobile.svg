@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="14px" viewBox="0 0 8 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icLeftArrowCallAvatarBubbleMobile</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M3.18959489,7.00255537 L7.71783382,2.47993496 C7.84251932,2.35570443 7.91111111,2.18960506 7.91111111,2.01249792 C7.91111111,1.8352925 7.84251932,1.66929142 7.71783382,1.54486432 L7.3210446,1.14878121 C7.19655591,1.02415754 7.03014456,0.955555556 6.85280969,0.955555556 C6.67547483,0.955555556 6.50926029,1.02415754 6.3846732,1.14878121 L0.993083107,6.53334923 C0.868003964,6.65816947 0.799510586,6.82495682 0.800002637,7.00226052 C0.799510586,7.1803505 0.867905554,7.34694128 0.993083107,7.4718598 L6.37965429,12.8512188 C6.50424138,12.9758425 6.67045591,13.0444444 6.84788919,13.0444444 C7.02522406,13.0444444 7.19143859,12.9758425 7.31612409,12.8512188 L7.71281491,12.4551357 C7.97094441,12.1973377 7.97094441,11.7776665 7.71281491,11.5199668 L3.18959489,7.00255537 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Call-incoming---incoming-call-popup-from-edge" transform="translate(-278.000000, -499.000000)">
+            <g id="Group-13" transform="translate(278.000000, 470.000000)">
+                <g id="Group-10">
+                    <g id="icLeftArrowCallAvatarBubbleMobile" transform="translate(0.000000, 29.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="colour/mid-grey" mask="url(#mask-2)" fill="#A5A5A5">
+                            <g transform="translate(-12.000000, -9.000000)">
+                                <polygon points="0 0 32 0 32 32 0 32"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
