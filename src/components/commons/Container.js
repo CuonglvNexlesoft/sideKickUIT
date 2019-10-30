@@ -64,7 +64,6 @@ export default class Container extends React.Component {
         const { visibleHeight, keyboardHeight } = this.state;
         const { statusBarColor } = this.props;
         const title = this.props.title || "";
-        console.log(this.props)
         return (
             <KeyboardAvoidingView {...this.props} style={[styles.container, (this.props.style || null), {marginBottom: Platform.OS == 'ios' ? keyboardHeight : null}]}>
                 {this.props.hadStatusBar &&
