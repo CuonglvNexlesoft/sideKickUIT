@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="82px" height="82px" viewBox="0 0 82 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icCheckMode</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SafeMode-PopUp" transform="translate(-152.000000, -363.000000)">
+            <g id="Icons/Radio---selected" transform="translate(151.000000, 362.000000)">
+                <g id="Page-1" transform="translate(1.680000, 1.680000)">
+                    <path d="M80.64,40.3210752 C80.64,18.1133022 62.5288482,0 40.3210752,0 C18.1133022,0 0,18.1133022 0,40.3210752 C0,62.5288482 18.1133022,80.64 40.3210752,80.64 C62.5288482,80.64 80.64,62.5288482 80.64,40.3210752 Z" id="Fill-3" fill="#7EC34D"></path>
+                    <polygon id="Fill-5" fill="#FFFFFF" points="54.3192525 23.52 34.1592525 43.327728 26.3188916 35.6268 20.16 41.681568 34.1592525 55.44 60.48 29.574768"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

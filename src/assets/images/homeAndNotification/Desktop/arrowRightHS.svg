@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="11px" viewBox="0 0 6 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>arrowRightHS</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M14.6035242,18 C14.4977974,18 14.4052863,17.959707 14.3259912,17.8791209 L9,12.4798535 L14.2863436,7.12087912 C14.4449339,6.95970696 14.6960352,6.95970696 14.8414097,7.12087912 C15,7.28205128 15,7.53724054 14.8414097,7.68498168 L10.123348,12.4798535 L14.8810573,17.3150183 C15.0396476,17.4761905 15.0396476,17.7313797 14.8810573,17.8791209 C14.8017621,17.959707 14.7092511,18 14.6035242,18 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-header4--Prospects-Empty-state" transform="translate(-1528.000000, -746.000000)">
+            <g id="Hot-RHP-Members-v2" transform="translate(1266.000000, 725.000000)">
+                <g id="Group-44" transform="translate(227.000000, 14.000000)">
+                    <g id="Group-27" transform="translate(38.000000, 12.000000) scale(-1, 1) translate(-38.000000, -12.000000) translate(26.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="arrowRightHS" fill="#010101" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

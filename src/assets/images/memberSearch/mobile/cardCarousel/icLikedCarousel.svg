@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="22px" viewBox="0 0 25 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icLikedCarousel</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2.0151185,1.92303424 C3.1940685,0.703732235 4.7441685,0.0932548235 6.2963685,0.0932548235 C7.8485685,0.0932548235 9.4064685,0.703734706 10.5854435,1.92303424 L11.9994935,3.389946 L13.4135685,1.93075482 C15.7714935,-0.507896118 19.625969,-0.507841765 21.983869,1.93075482 C24.341794,4.36935388 24.341794,8.28590082 21.983869,10.7245024 C18.775044,14.0431447 15.5676685,17.3654929 12.3588685,20.6840612 C12.2644193,20.7827354 12.133036,20.8386414 11.9955935,20.8386414 C11.858151,20.8386414 11.7267677,20.7827354 11.6323185,20.6840612 L2.0151185,10.7167694 C-0.340106427,8.27628035 -0.342806427,4.36159376 2.0151185,1.92303424 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Heart-Match-Green" transform="translate(0.000000, -2.000000)">
+            <g id="colour/light-green" transform="translate(0.500000, 2.500000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#7EC34D" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

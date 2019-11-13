@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="59px" height="59px" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icLikedProfile</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M24.6153846,0 C11.077147,0 0,11.077147 0,24.6153846 C0,38.1536222 11.077147,49.2307692 24.6153846,49.2307692 C38.1536222,49.2307692 49.2307692,38.1536222 49.2307692,24.6153846 C49.2307692,11.077147 38.1536222,0 24.6153846,0 Z" id="path-1"></path>
+        <filter x="-16.2%" y="-14.2%" width="132.5%" height="132.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.147107111 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icLikedProfile" transform="translate(5.000000, 4.000000)">
+            <g id="Stroke-1">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#7BCB45" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <path d="M12.5827317,16.002368 C9.74122651,18.9410449 9.74448024,23.6585836 12.5827317,26.5995858 L24.1722964,38.6110416 C24.2861159,38.7299526 24.4444442,38.7973242 24.6100745,38.7973242 C24.7757047,38.7973242 24.934033,38.7299526 25.0478525,38.6110416 C28.9147363,34.6118775 32.7799035,30.6081581 36.6468175,26.6089046 C39.4883228,23.6701771 39.4883228,18.9503965 36.6468175,16.011672 C33.8053424,13.0729504 29.1603633,13.0728849 26.318858,16.011672 L24.6147743,17.7701246 L22.9107207,16.002368 C21.489953,14.5330057 19.6125477,13.7973242 17.7420113,13.7973242 C15.8714749,13.7973242 14.0034692,14.5330027 12.5827317,16.002368 Z" id="Path" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

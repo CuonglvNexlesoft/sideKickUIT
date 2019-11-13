@@ -286,12 +286,12 @@ class Avatar extends Component {
               onPress={() => this.onPress()}
               style={[styleSize, styles.bgAvatar, styleBorder]}
             >
-              {!this.isEmptyString(this.state.avatarUrl) ?
+              {this.isEmptyString(this.state.avatarUrl) ?
                 <View>
                   <FastImage
                     style={[styleSize, { opacity: opacity }, styles.bgAvatar, styleBorder]}
-                    source={{ uri: this.state.avatarUrl, priority: FastImage.priority.normal }}
-                    // source ={{uri :"https://pbs.twimg.com/profile_images/763061332702736385/KoK6gHzp.jpg"}}
+                    //source={{ uri: this.state.avatarUrl, priority: FastImage.priority.normal }}
+                    source ={{uri :"https://pbs.twimg.com/profile_images/763061332702736385/KoK6gHzp.jpg"}}
                     onLoad={this.onLoad}
                     onError={this.onError}
                   />

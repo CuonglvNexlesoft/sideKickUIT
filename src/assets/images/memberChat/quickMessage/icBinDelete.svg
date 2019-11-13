@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="17px" viewBox="0 0 13 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>icBinDelete</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1.508,14.4731167 L1.508,3.19761905 L11.4226667,3.19761905 L11.4226667,14.4731167 C11.4226667,15.5114314 10.6832107,16.352381 9.77024804,16.352381 L3.16045735,16.352381 C2.24745598,16.352381 1.508,15.5114314 1.508,14.4731167 Z M9.05668553,0.917446615 L12.324,0.917446615 L12.324,2.67142857 L0.606666667,2.67142857 L0.606666667,0.917446615 L3.87398114,0.917446615 L4.67876999,0.0404761905 L8.25189668,0.0404761905 L9.05668553,0.917446615 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="popup---quick-msg---select-template" transform="translate(-872.000000, -350.000000)">
+            <g id="QUICK-MESSAGE" transform="translate(317.000000, 216.000000)">
+                <g id="popup">
+                    <g id="Group" transform="translate(0.000000, 84.000000)">
+                        <g id="icBinDelete" transform="translate(555.000000, 50.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Combined-Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                            <g id="colour/primary-green" mask="url(#mask-2)" fill="#8B8B8B">
+                                <g transform="translate(-3.900000, -3.642857)" id="colour/mid-grey">
+                                    <polygon points="0 0 20.28 0 20.28 23.6785714 0 23.6785714"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

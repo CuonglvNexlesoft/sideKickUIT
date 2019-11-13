@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="66px" viewBox="0 0 68 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>icStarFavorite</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M300.741305,319.182204 C301.882942,318.069602 302.285941,316.436702 301.793515,314.918778 C301.299929,313.400854 300.014281,312.317286 298.434804,312.087333 L284.391396,310.046788 C283.793286,309.959685 283.276472,309.584559 283.009354,309.042195 L276.730933,296.318115 C276.025976,294.888456 274.595156,294 273.000581,294 C271.407167,294 269.976347,294.888456 269.271389,296.318115 L262.991807,309.043356 C262.72469,309.585721 262.206714,309.960846 261.608604,310.04795 L247.565196,312.088495 C245.98688,312.317286 244.700071,313.402015 244.206485,314.919939 C243.714059,316.437863 244.117058,318.070763 245.258695,319.183365 L255.419609,329.087615 C255.852804,329.510357 256.0514,330.11892 255.949199,330.713547 L253.55211,344.698886 C253.339578,345.929948 253.662441,347.127331 254.459148,348.071533 C255.697179,349.543002 257.858507,349.991294 259.586641,349.083095 L272.145805,342.479488 C272.670749,342.204241 273.331574,342.206564 273.855356,342.479488 L286.415682,349.083095 C287.026568,349.404798 287.678102,349.567391 288.350541,349.567391 C289.57812,349.567391 290.741823,349.021542 291.542013,348.071533 C292.339882,347.127331 292.661584,345.927626 292.449051,344.698886 L290.050801,330.713547 C289.9486,330.117759 290.147196,329.510357 290.580391,329.087615 L300.741305,319.182204 Z" id="path-1"></path>
+        <filter x="-12.1%" y="-12.6%" width="124.1%" height="125.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-12.1%" y="-12.6%" width="124.1%" height="125.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Congratulaion-Favourite" transform="translate(-239.000000, -289.000000)">
+            <g id="icStarFavorite">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#10C2E1" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use stroke="#FFFFFF" stroke-width="2" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

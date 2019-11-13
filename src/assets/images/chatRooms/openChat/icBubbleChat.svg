@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icBubbleChat</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M161.913295,68.5 C161.864184,68.5 161.814491,68.4879361 161.769709,68.463891 C161.671488,68.4115041 161.610307,68.3092918 161.610307,68.199147 L161.610307,63.9131694 C158.957503,62.543838 157.5,60.1463512 157.5,57.1424485 C157.5,52.5002564 161.798759,49 167.5,49 C173.201241,49 177.5,52.5002564 177.5,57.1424485 C177.5,61.7839797 173.201241,65.284236 167.5,65.284236 C167.312714,65.284236 167.12909,65.2740726 166.944884,65.264405 L166.932731,65.2638266 L162.079938,68.4500093 C162.029662,68.4831436 161.971478,68.5 161.913295,68.5 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Chatrooms_OpenChat" transform="translate(-157.000000, -49.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="icBubbleChat" fill="#7EC34D" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

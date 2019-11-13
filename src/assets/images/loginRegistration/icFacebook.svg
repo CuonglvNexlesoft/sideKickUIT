@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="20px" viewBox="0 0 11 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>icFacebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Splash-screen" transform="translate(-89.000000, -483.000000)" fill="#FFFFFF">
+            <g id="connect-with-facebook" transform="translate(20.000000, 473.000000)">
+                <g id="Group">
+                    <g id="Group-2" transform="translate(69.898810, 10.000000)">
+                        <g id="Group-5" transform="translate(-0.000000, 0.000000)">
+                            <g id="Group-11">
+                                <g id="Group-4">
+                                    <path d="M0,7.51140785 L2.87340547,7.51140785 L2.87340547,6.78610884 C2.87340547,5.84994476 2.78720331,4.67985974 2.90357623,3.74417599 C3.02042805,1.52120659 4.08885599,0.117200634 7.12173547,-5.68434189e-14 L10.0569192,0.117200634 L10.0569192,3.39305442 C9.09911734,3.39305442 6.70461277,2.92521255 6.70461277,4.56313944 L6.70461277,7.51140785 L10.0492567,7.51140785 L9.70013798,10.8737211 L6.70461277,10.8737211 L6.70461277,20 L2.87340547,20 L2.87340547,10.9981267 L0,10.8809261 L0,7.51140785 Z" id="icFacebook"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

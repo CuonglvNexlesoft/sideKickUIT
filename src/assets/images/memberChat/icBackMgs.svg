@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="21px" viewBox="0 0 12 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-back--mgs</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M32.2400881,58 C32.0374449,58 31.8601322,57.9249084 31.7081498,57.7747253 L21.5,47.7124542 L31.6321586,37.7252747 C31.9361233,37.4249084 32.4174009,37.4249084 32.6960352,37.7252747 C33,38.025641 33,38.501221 32.6960352,38.7765568 L23.6530837,47.7124542 L32.7720264,56.7234432 C33.0759912,57.0238095 33.0759912,57.4993895 32.7720264,57.7747253 C32.6200441,57.9249084 32.4427313,58 32.2400881,58 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Filter-Msg" transform="translate(-21.000000, -37.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="ic-back--mgs" fill="#A5A5A5" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

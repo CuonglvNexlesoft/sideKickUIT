@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>icTickCircle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="messenger-add-private-album-one-album-empty" transform="translate(-789.000000, -355.000000)">
+            <g id="Group-2" transform="translate(368.000000, 213.000000)">
+                <g id="Group">
+                    <g id="icTickCircle" transform="translate(421.500000, 142.500000)">
+                        <path d="M24,12.00032 C24,5.39086376 18.6097763,0 12.00032,0 C5.39086376,0 0,5.39086376 0,12.00032 C0,18.6097763 5.39086376,24 12.00032,24 C18.6097763,24 24,18.6097763 24,12.00032 Z" id="Fill-3" fill="#7EC34D"></path>
+                        <polygon id="Fill-5" fill="#FFFFFF" points="16.1664442 7 10.1664442 12.8951571 7.83300345 10.6032143 6 12.4052286 10.1664442 16.5 18 8.80201429"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

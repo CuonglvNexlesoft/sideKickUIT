@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="6px" viewBox="0 0 28 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icOptionsEditProfile</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2.75,5.5 C1.36928813,5.5 0.25,4.38071187 0.25,3 C0.25,1.61928813 1.36928813,0.5 2.75,0.5 C4.13071187,0.5 5.25,1.61928813 5.25,3 C5.25,4.38071187 4.13071187,5.5 2.75,5.5 Z M14,5.5 C12.6192881,5.5 11.5,4.38071187 11.5,3 C11.5,1.61928813 12.6192881,0.5 14,0.5 C15.3807119,0.5 16.5,1.61928813 16.5,3 C16.5,4.38071187 15.3807119,5.5 14,5.5 Z M25.25,5.5 C23.8692881,5.5 22.75,4.38071187 22.75,3 C22.75,1.61928813 23.8692881,0.5 25.25,0.5 C26.6307119,0.5 27.75,1.61928813 27.75,3 C27.75,4.38071187 26.6307119,5.5 25.25,5.5 Z" id="path-1"></path>
+    </defs>
+    <g id="Edit-Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="icOptionsEditProfile" fill="#FFFFFF" xlink:href="#path-1"></use>
+    </g>
+</svg>

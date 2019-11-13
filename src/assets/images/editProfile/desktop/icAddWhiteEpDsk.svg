@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icAddWhiteEpDsk</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1289.73602,775.191019 L1294.371,770.556035 C1294.79765,770.12938 1294.79765,769.437636 1294.371,769.011041 C1293.94434,768.584385 1293.25266,768.584385 1292.826,769.011041 L1288.19097,773.646085 L1283.55593,769.01098 C1283.12927,768.584324 1282.43759,768.584324 1282.01093,769.01098 C1281.58434,769.437636 1281.58434,770.12938 1282.01093,770.555974 L1286.64597,775.190958 L1282.01093,779.826002 C1281.58434,780.252658 1281.58434,780.944402 1282.01093,781.370996 C1282.43759,781.797652 1283.12927,781.797652 1283.55593,781.370996 L1288.19097,776.735952 L1292.826,781.370996 C1293.2526,781.797652 1293.94434,781.797652 1294.371,781.370996 C1294.79765,780.944341 1294.79765,780.252658 1294.371,779.826002 L1289.73602,775.191019 Z" id="path-1"></path>
+    </defs>
+    <g id="Desktop-Manage-Photos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Manage-photos-private1" transform="translate(-1279.000000, -766.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="icAddWhiteEpDsk" fill="#FFFFFF" fill-rule="nonzero" transform="translate(1288.190988, 775.190988) rotate(-44.000000) translate(-1288.190988, -775.190988) " xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

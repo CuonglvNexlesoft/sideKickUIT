@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="99px" viewBox="0 0 80 99" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>icNotificationEmpty</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Notifications-empty-state" transform="translate(-1278.000000, -136.000000)" fill="#CCCCCC">
+            <g id="Group-13" transform="translate(1078.000000, 66.000000)">
+                <g id="Notifications" transform="translate(14.000000, 30.000000)">
+                    <g id="Group-27" transform="translate(119.000000, 40.000000)">
+                        <g id="Group-16">
+                            <g id="UI/home/notification">
+                                <g id="Group-2" transform="translate(67.000000, 0.000000)">
+                                    <path d="M5.39614561,83.1656082 C-1.7987152,83.1656082 -1.7987152,71.8580036 5.39614561,71.8580036 C11.2205567,71.8580036 11.5631692,49.9723172 11.5631692,42.312327 C11.5631692,24.074255 21.8415418,13.4961733 33.490364,10.9428432 C31.4346895,5.83618303 34.8608137,0 40,0 C45.1391863,0 48.5653105,5.83618303 46.509636,10.9428432 C58.1584582,13.4961733 68.4368308,24.074255 68.4368308,42.312327 C68.4368308,49.9723172 68.7794433,71.8580036 74.6038544,71.8580036 C81.7987152,71.8580036 81.7987152,83.1656082 74.6038544,83.1656082 L5.39614561,83.1656082 Z M47.5194375,86.9565217 C50.8614097,92.0631819 46.6839444,98.6288878 40,98.6288878 C33.3160556,98.6288878 29.1385903,92.0631819 32.4805625,86.9565217 L47.5194375,86.9565217 Z" id="icNotificationEmpty"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

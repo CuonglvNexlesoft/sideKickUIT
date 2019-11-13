@@ -215,7 +215,7 @@ export default class ModalMenu extends ModalDropDown {
 }
 
 ModalMenu.propTypes = {
-    onDeleteConversation: PropTypes.func.isRequired,
+    onDeleteConversation: PropTypes.func,
     selectedPeerVcard: PropTypes.object,
 };
 

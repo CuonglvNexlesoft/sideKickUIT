@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>icBlock</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Messenger-Inbox---profile-popup-1" transform="translate(-19.000000, -512.000000)" stroke="#666666">
+            <g id="Group-4" transform="translate(10.000000, 254.000000)">
+                <g id="Group-6">
+                    <g id="Group-5">
+                        <g id="Group-3" transform="translate(10.000000, 259.000000)">
+                            <g id="icBlock">
+                                <circle id="Oval" cx="10" cy="10" r="10"></circle>
+                                <path d="M16.6640625,2 L3.56933594,17.2304688" id="Path-16"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

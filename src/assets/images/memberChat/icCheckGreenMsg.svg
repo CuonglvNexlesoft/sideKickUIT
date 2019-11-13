@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-check-green--msg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M335.184615,10.6 C335.061538,10.48 335,10.3 335,10.18 C335,10.06 335.061538,9.88 335.184615,9.76 L336.046154,8.92 C336.292308,8.68 336.661538,8.68 336.907692,8.92 L336.969231,8.98 L340.353846,12.52 C340.476923,12.64 340.661538,12.64 340.784615,12.52 L349.030769,4.18 L349.092308,4.18 C349.338462,3.94 349.707692,3.94 349.953846,4.18 L350.815385,5.02 C351.061538,5.26 351.061538,5.62 350.815385,5.86 L340.969231,15.82 C340.846154,15.94 340.723077,16 340.538462,16 C340.353846,16 340.230769,15.94 340.107692,15.82 L335.307692,10.78 L335.184615,10.6 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Filter-Msg" transform="translate(-335.000000, -404.000000)">
+            <g id="UI/Boxes/general-Option-Filter" transform="translate(0.000000, 400.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="ic-check-green--msg" fill="#7BCB45" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

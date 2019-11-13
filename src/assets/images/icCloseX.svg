@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>icCloseX</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M37.4033812,35.0000475 L44.6133466,27.7900735 C45.2770326,27.1263868 45.2770326,26.0503407 44.6133466,25.3867489 C43.9496606,24.7230621 42.8737108,24.7230621 42.2100248,25.3867489 L34.9999644,32.5968178 L27.789904,25.386654 C27.126218,24.7229672 26.0502681,24.7229672 25.3865822,25.386654 C24.7229911,26.0503407 24.7229911,27.1263868 25.3865822,27.7899786 L32.5966426,34.9999525 L25.3865822,42.2100214 C24.7229911,42.8737082 24.7229911,43.9497542 25.3865822,44.613346 C26.0502681,45.2770328 27.126218,45.2770328 27.789904,44.613346 L34.9999644,37.4032772 L42.2100248,44.613346 C42.8736158,45.2770328 43.9496606,45.2770328 44.6133466,44.613346 C45.2770326,43.9496593 45.2770326,42.8737082 44.6133466,42.2100214 L37.4033812,35.0000475 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="popup---add-private-album---view-shared-images" transform="translate(-1385.000000, -30.000000)">
+            <g id="UI/icon/close-x" transform="translate(1361.000000, 6.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Shape" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <g id="colour/white" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="evenodd">
+                    <rect id="colour/light-grey" x="0" y="0" width="70" height="70"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="11px" viewBox="0 0 11 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icIgnoreGrid</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10.6541512,9.5000228 L14.1165192,6.0376507 C14.4352343,5.71893519 14.4352343,5.20219659 14.1165192,4.88352667 C13.7978041,4.56481116 13.2811117,4.56481116 12.9623965,4.88352667 L9.4999829,8.34594436 L6.03756928,4.88348108 C5.71885414,4.56476557 5.20216173,4.56476557 4.8834466,4.88348108 C4.56477706,5.20219659 4.56477706,5.71893519 4.8834466,6.03760511 L8.34586022,9.4999772 L4.8834466,12.9623949 C4.56477706,13.2811104 4.56477706,13.797849 4.8834466,14.1165189 C5.20216173,14.4352344 5.71885414,14.4352344 6.03756928,14.1165189 L9.4999829,10.6541012 L12.9623965,14.1165189 C13.2810661,14.4352344 13.7978041,14.4352344 14.1165192,14.1165189 C14.4352343,13.7978034 14.4352343,13.2811104 14.1165192,12.9623949 L10.6541512,9.5000228 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI/icon/close-x-Profile" transform="translate(-4.000000, -4.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Shape" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <g id="colour/white" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="evenodd">
+                <rect id="colour/light-grey" x="0" y="0" width="19" height="19"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="25px" viewBox="0 0 29 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icMember</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-1.7%" y="-3.0%" width="103.5%" height="105.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M9.64893965,10.2084199 C9.05237069,10.7870329 8.57060331,11.4935531 8.24916072,12.2971595 C8.11852948,12.6237377 8.05141358,12.9722425 8.05141358,13.3239779 C8.05141358,14.6599418 8.99896454,15.7745932 10.2586648,16.0325306 C10.1683557,16.0433394 10.0772725,16.0487961 9.98588674,16.0487961 L3.17251291,16.0487961 C1.85720292,16.0487961 0.790933504,14.9825267 0.790933504,13.6672167 C0.790933504,13.3642336 0.848746818,13.0640332 0.961271944,12.7827203 C1.75031086,10.8101231 3.66082125,9.51664455 5.78537355,9.51664455 L6.93754933,9.51664455 C7.90453045,9.51664455 8.8330191,9.76296167 9.64893965,10.2084199 Z M14.3550439,8.50554818 L15.6926132,8.50554818 C18.2451988,8.50554818 20.5667362,9.98404947 21.6461875,12.2971595 C22.2685447,13.630782 21.6919502,15.2164168 20.3583278,15.8387739 C20.0054786,16.0034369 19.62083,16.0887709 19.2314505,16.0887709 L11.3217548,16.0887709 C9.79480175,16.0887709 8.55696176,14.8509309 8.55696176,13.3239779 C8.55696176,12.9722425 8.62407766,12.6237377 8.7547089,12.2971595 C9.67070997,10.0071569 11.8886355,8.50554818 14.3550439,8.50554818 Z M15,7 C13.0670034,7 11.5,5.43299662 11.5,3.5 C11.5,1.56700338 13.0670034,0 15,0 C16.9329966,0 18.5,1.56700338 18.5,3.5 C18.5,5.43299662 16.9329966,7 15,7 Z M6.5,8 C5.11928813,8 4,6.88071187 4,5.5 C4,4.11928813 5.11928813,3 6.5,3 C7.88071187,3 9,4.11928813 9,5.5 C9,6.88071187 7.88071187,8 6.5,8 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Chatrooms_Home--Copy" transform="translate(-25.000000, -262.000000)">
+            <g id="Cards-/-List-1-up-/-Outlined-/-Avatar-/-Resting-Copy-17" filter="url(#filter-1)" transform="translate(16.000000, 103.000000)">
+                <g id="Icons/Friends-desktop-Filled" transform="translate(11.000000, 159.000000)">
+                    <g id="colour/mid-grey" transform="translate(1.000000, 4.500000)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="Mask" fill="#666666" xlink:href="#path-2"></use>
+                        <g id="colour/black" mask="url(#mask-3)" fill="#333333">
+                            <g transform="translate(-1.000000, -4.500000)">
+                                <polygon points="0 0 25 0 25 25 0 25"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

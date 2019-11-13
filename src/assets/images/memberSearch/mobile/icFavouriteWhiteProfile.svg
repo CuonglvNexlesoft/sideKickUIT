@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="35px" viewBox="0 0 36 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>icFavouriteWhiteProfile</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-47.9%" y="-50.0%" width="195.8%" height="200.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.351262019 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M23.4791607,10.423212 C23.9515621,9.96269281 24.1183202,9.28681603 23.9145581,8.65852945 C23.7103154,8.03024286 23.1783232,7.58174142 22.5247466,7.48656105 L16.7136813,6.64195544 C16.4661872,6.60590227 16.2523331,6.45063328 16.1418017,6.22614221 L13.5438345,0.959495047 C13.2521279,0.36774234 12.6600644,0 12.0002403,0 C11.3408968,0 10.7488332,0.36774234 10.4571266,0.959495047 L7.85867886,6.22662292 C7.74814752,6.45111399 7.53381283,6.60638298 7.28631873,6.64243615 L1.47525343,7.48704176 C0.82215736,7.58174142 0.289684622,8.03072357 0.0854419205,8.65901016 C-0.11832021,9.28729674 0.0484379486,9.96317352 0.520839304,10.4236927 L4.72535553,14.5231785 C4.90460854,14.6981566 4.98678619,14.9500481 4.94449594,15.196171 L3.95259726,20.9848681 C3.86465276,21.4944196 3.99825152,21.9900305 4.32792326,22.3808469 C4.84021202,22.9899051 5.73455477,23.1754588 6.44964451,22.7995444 L11.64654,20.0662333 C11.8637581,19.9523053 12.137203,19.9532667 12.3539406,20.0662333 L17.5513166,22.7995444 C17.804097,22.9327007 18.0736974,23 18.351948,23 C18.8599116,23 19.3414438,22.7740668 19.6725573,22.3808469 C20.0027096,21.9900305 20.1358278,21.4934582 20.0478833,20.9848681 L19.0555041,15.196171 C19.0132138,14.9495674 19.0953915,14.6981566 19.2746445,14.5231785 L23.4791607,10.423212 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="New-Members-Grid-OFF-Copy-2" transform="translate(-21.000000, -578.000000)">
+            <g id="Group" filter="url(#filter-1)" transform="translate(27.000000, 584.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="icFavouriteWhiteProfile" stroke="#FFFFFF" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>

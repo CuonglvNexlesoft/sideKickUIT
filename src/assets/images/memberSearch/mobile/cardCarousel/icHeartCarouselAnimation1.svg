@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icHeartCarouselAnimation1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1.35351078,1.45532889 C-0.452203951,3.39485564 -0.450136273,6.50843121 1.35351078,8.44949263 L8.71842707,16.3770535 C8.79075691,16.4555347 8.89137108,16.5 8.99662551,16.5 C9.10187993,16.5 9.20249411,16.4555347 9.27482394,16.3770535 C11.7321445,13.7376051 14.1883742,11.0951504 16.6457139,8.45564308 C18.4514287,6.51608292 18.4514287,3.40102771 16.6457139,1.46146951 C14.8400183,-0.478086715 11.8882351,-0.478129945 10.0825203,1.46146951 L8.99961215,2.62204825 L7.91672317,1.45532889 C7.01385621,0.485549789 5.82080593,2.23394753e-14 4.63212076,2.23394753e-14 C3.44343558,0 2.2563586,0.485547824 1.35351078,1.45532889 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="icHeartCarouselAnimation1" fill="#7EC34D" xlink:href="#path-1"></use>
+    </g>
+</svg>

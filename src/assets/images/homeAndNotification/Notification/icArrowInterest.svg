@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="16px" viewBox="0 0 19 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icArrowInterest</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M18.1621005,7.32198052 C18.1781049,7.57124352 18.0908571,7.82589615 17.9003571,8.0163961 L11.5363961,14.3803571 C11.1849242,14.731829 10.6150758,14.731829 10.2636039,14.3803571 C9.91213203,14.0288853 9.91213203,13.4590368 10.2636039,13.1075649 L16.0491883,7.32198052 L10.2636039,1.5363961 C9.91213203,1.18492424 9.91213203,0.61507576 10.2636039,0.263603897 C10.6150758,-0.0878679656 11.1849242,-0.0878679656 11.5363961,0.263603897 L17.9003571,6.62756493 C18.0908571,6.81806488 18.1781049,7.07271751 18.1621005,7.32198052 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="NOTIFICATIONS" transform="translate(-311.000000, -1575.000000)">
+            <g id="DateFinder-Interests" transform="translate(-335.000000, 1434.000000)">
+                <g id="Group-6" transform="translate(346.000000, 0.000000)">
+                    <g id="Group-29" transform="translate(6.000000, 39.000000)">
+                        <g id="Interests" transform="translate(188.000000, 67.000000)">
+                            <g id="colour/mid-grey" transform="translate(114.820000, 43.300000) scale(-1, 1) translate(-114.820000, -43.300000) translate(105.320000, 35.800000)">
+                                <g id="icArrowInterest">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <use id="Mask" fill="#333333" fill-rule="nonzero" transform="translate(14.081981, 7.321981) scale(-1, 1) translate(-14.081981, -7.321981) " xlink:href="#path-1"></use>
+                                    <path d="M8.16210049,7.32198052 C8.17810487,7.57124352 8.09085709,7.82589615 7.90035713,8.0163961 L1.5363961,14.3803571 C1.18492424,14.731829 0.61507576,14.731829 0.263603897,14.3803571 C-0.0878679656,14.0288853 -0.0878679656,13.4590368 0.263603897,13.1075649 L6.04918831,7.32198052 L0.263603897,1.5363961 C-0.0878679656,1.18492424 -0.0878679656,0.61507576 0.263603897,0.263603897 C0.61507576,-0.0878679656 1.18492424,-0.0878679656 1.5363961,0.263603897 L7.90035713,6.62756493 C8.09085709,6.81806488 8.17810487,7.07271751 8.16210049,7.32198052 Z" id="Mask" fill="#333333" fill-rule="nonzero" transform="translate(4.081981, 7.321981) scale(-1, 1) translate(-4.081981, -7.321981) "></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

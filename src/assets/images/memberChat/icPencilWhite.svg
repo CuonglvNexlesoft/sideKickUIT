@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>icPencilWhite</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.0574838,3.37409353 L14.4930658,6.82646863 L5.79665898,15.5654646 L2.3630248,12.1130895 L11.0574838,3.37409353 Z M17.1000081,2.54145981 L15.5678707,1.00181905 C14.9757525,0.406801056 14.0142749,0.406801056 13.420145,1.00181905 L11.9525106,2.47664094 L15.3880926,5.92904813 L17.1000081,4.20874883 C17.5592566,3.7472192 17.5592566,3.00295735 17.1000081,2.54145981 Z M0.56511597,16.9656806 C0.502592783,17.2484449 0.756645118,17.5018161 1.03806332,17.4330503 L4.86644297,16.5002682 L1.43280879,13.0478931 L0.56511597,16.9656806 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="popup---quick-msg---select-template" transform="translate(-345.000000, -236.000000)">
+            <g id="QUICK-MESSAGE" transform="translate(317.000000, 216.000000)">
+                <g id="UI/buttons/pill" transform="translate(17.000000, 14.000000)">
+                    <g id="icPencilWhite" transform="translate(11.000000, 6.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Shape" fill="#8B8B8B" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="colour/white" mask="url(#mask-2)" fill="#FFFFFF">
+                            <g transform="translate(-11.000000, -11.000000)" id="colour/light-grey">
+                                <polygon points="0 0 40 0 40 40 0 40"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

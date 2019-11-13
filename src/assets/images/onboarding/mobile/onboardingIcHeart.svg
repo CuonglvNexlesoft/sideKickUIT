@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="11px" viewBox="0 0 13 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>onboardingIcHeart</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M39.3078616,547.039978 C39.9209156,546.405941 40.7269676,546.088493 41.5341116,546.088493 C42.3412556,546.088493 43.1513636,546.405942 43.7644306,547.039978 L44.4997366,547.802772 L45.2350556,547.043993 C46.4611766,545.775894 48.4655039,545.775922 49.6916119,547.043993 C50.9177329,548.312064 50.9177329,550.348668 49.6916119,551.616741 C48.0230229,553.342435 46.3551876,555.070056 44.6866116,556.795712 C44.637498,556.847022 44.5691787,556.876094 44.4977086,556.876094 C44.4262385,556.876094 44.3579192,556.847022 44.3088056,556.795712 L39.3078616,551.61272 C38.0831447,550.343666 38.0817407,548.308029 39.3078616,547.039978 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Discover-Copy-3" transform="translate(-38.000000, -546.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="onboardingIcHeart" fill="#7EC34D" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

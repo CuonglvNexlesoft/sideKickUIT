@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="7px" viewBox="0 0 10 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>icArrowDownHeader</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-header4-Final-Home-with-submenu" transform="translate(-1543.000000, -36.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Home-Header">
+                <g id="Top-Header">
+                    <g id="Group-51" transform="translate(1184.000000, 16.000000)">
+                        <g id="Group-85" transform="translate(168.200000, 4.000000)">
+                            <g id="Group-83" transform="translate(41.800000, 0.000000)">
+                                <path d="M151.382424,24.3511732 C151.637373,24.6178625 151.970546,24.7512071 152.303718,24.7512071 C152.63689,24.7512071 152.971511,24.6178473 153.225012,24.3511732 L156.617576,20.802402 C156.862385,20.5463045 157,20.1993053 157,19.8386686 C157,19.4765318 156.862385,19.1295175 156.617576,18.8749504 L153.297441,15.3988975 C152.788991,14.8670342 151.963303,14.8670342 151.453404,15.3988975 C150.944954,15.9307609 150.944954,16.7944706 151.453404,17.3278493 L153.852245,19.8371533 L151.382424,22.4222063 C150.872525,22.9556001 150.872525,23.8178097 151.382424,24.3511732 Z" id="icArrowDownHeader" transform="translate(154.000000, 19.875604) scale(1, -1) rotate(-90.000000) translate(-154.000000, -19.875604) "></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

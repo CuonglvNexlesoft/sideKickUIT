@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>icNotificationWrong</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="11" cy="11" r="11"></circle>
+    </defs>
+    <g id="RHP-Search--Desktop-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Notification" transform="translate(-500.000000, -829.000000)">
+            <g id="Failed-message" transform="translate(485.000000, 810.000000)">
+                <g id="icNotificationWrong" transform="translate(15.000000, 19.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#F94A4A" xlink:href="#path-1"></use>
+                    <path d="M12.7396687,11 L15.6360772,13.8964085 C16.118152,14.3784833 16.122862,15.155371 15.6391165,15.6391165 C15.1587203,16.1195128 14.3824206,16.1220893 13.8964085,15.6360772 L11,12.7396687 L8.10359147,15.6360772 C7.62151667,16.118152 6.84462897,16.122862 6.36088349,15.6391165 C5.88048724,15.1587203 5.87791072,14.3824206 6.36392278,13.8964085 L9.26033131,11 L6.36392278,8.10359147 C5.88184798,7.62151667 5.87713801,6.84462897 6.36088349,6.36088349 C6.84127973,5.88048724 7.61757942,5.87791072 8.10359147,6.36392278 L11,9.26033131 L13.8964085,6.36392278 C14.3784833,5.88184798 15.155371,5.87713801 15.6391165,6.36088349 C16.1195128,6.84127973 16.1220893,7.61757942 15.6360772,8.10359147 L12.7396687,11 Z" id="Combined-Shape-Copy-4" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

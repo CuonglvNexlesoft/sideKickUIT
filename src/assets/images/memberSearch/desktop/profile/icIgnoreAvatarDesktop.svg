@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icIgnoreAvatarDesktop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M25,0 C11.2502274,0 0,11.2502274 0,25 C0,38.7497726 11.2502274,50 25,50 C38.7497726,50 50,38.7497726 50,25 C50,11.2502274 38.7497726,0 25,0 Z" id="path-1"></path>
+        <filter x="-13.0%" y="-11.0%" width="126.0%" height="126.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M26.499171,25.3061413 L32.5480508,19.3832729 C33.1048575,18.8380657 33.1048575,17.9541125 32.5480508,17.4089834 C31.9912442,16.8637762 31.0885642,16.8637762 30.5317575,17.4089834 L24.482798,23.3319298 L18.4338385,17.4089054 C17.8770319,16.8636982 16.9743519,16.8636982 16.4175452,17.4089054 C15.8608183,17.9541125 15.8608183,18.8380657 16.4175452,19.3831949 L22.4665048,25.3060633 L16.4175452,31.2290098 C15.8608183,31.774217 15.8608183,32.6581701 16.4175452,33.2032993 C16.9743519,33.7485064 17.8770319,33.7485064 18.4338385,33.2032993 L24.482798,27.2803528 L30.5317575,33.2032993 C31.0884845,33.7485064 31.9912442,33.7485064 32.5480508,33.2032993 C33.1048575,32.6580921 33.1048575,31.774217 32.5480508,31.2290098 L26.499171,25.3061413 Z" id="path-3"></path>
+    </defs>
+    <g id="RHP-Search--Desktop-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icIgnoreAvatarDesktop" transform="translate(4.000000, 3.000000)">
+            <g id="Stroke-1">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <mask id="mask-4" fill="white">
+                <use xlink:href="#path-3"></use>
+            </mask>
+            <use id="Shape" fill="#7BCB45" fill-rule="nonzero" xlink:href="#path-3"></use>
+        </g>
+    </g>
+</svg>

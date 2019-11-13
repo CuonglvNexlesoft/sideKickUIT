@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="12px" viewBox="0 0 8 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>icAccessArrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MessengerInboxChatScreen-with-images" transform="translate(-306.000000, -1376.000000)" stroke-width="2" stroke="#535353">
+            <g id="Group" transform="translate(48.000000, 1367.000000)">
+                <g id="Page-1">
+                    <g id="Group-7">
+                        <g id="Group-5" transform="translate(31.000000, 7.000000)">
+                            <g id="access--arrow" transform="translate(230.109489, 8.000000) scale(-1, 1) translate(-230.109489, -8.000000) translate(227.000000, 3.000000)">
+                                <polyline id="Path-11" transform="translate(2.683233, 5.000000) scale(-1, -1) translate(-2.683233, -5.000000) " points="0.225136719 0 5.20646559 4.96201867 0.16 10"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

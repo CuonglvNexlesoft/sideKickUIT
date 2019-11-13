@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="15px" viewBox="0 0 19 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icDiamond</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="New-Members-Grid-OFF-Copy-7" transform="translate(-109.000000, -502.000000)">
+            <g id="icDiamond" transform="translate(109.000000, 502.000000)">
+                <g id="Icons/Diamond-Copy-2">
+                    <polygon id="Shape" fill-opacity="0.5" fill="#C8C8C8" fill-rule="nonzero" points="15.0077714 0.709121212 17.9360762 4.823 15.0073524 4.823 12.0794667 4.823"></polygon>
+                    <polygon id="Shape" fill-opacity="0.5" fill="#C8C8C8" fill-rule="nonzero" points="6.22327619 4.823 9.1599619 14.6696667 0.366666667 4.823"></polygon>
+                    <polygon id="Shape" fill-opacity="0.5" fill="#C8C8C8" fill-rule="nonzero" points="9.1511619 0.709121212 6.22327619 4.823 3.29497143 0.709121212"></polygon>
+                    <polygon id="Shape" fill-opacity="0.3" fill="#D3D3D3" fill-rule="nonzero" points="3.29497143 0.709121212 6.22327619 4.823 0.366666667 4.823"></polygon>
+                    <polygon id="Shape" fill="#FFFFFF" fill-rule="nonzero" points="17.9457143 4.83148485 9.1599619 14.6696667 12.0794667 4.823 15.0073524 4.823 17.9360762 4.823"></polygon>
+                    <polygon id="Shape" fill="#FFFFFF" fill-rule="nonzero" points="15.0077714 0.709121212 12.0794667 4.823 9.1511619 0.709121212"></polygon>
+                    <polygon id="Shape" fill-opacity="0.3" fill="#D3D3D3" fill-rule="nonzero" points="9.1511619 0.709121212 12.0794667 4.823 6.22327619 4.823"></polygon>
+                    <polygon id="Shape" fill-opacity="0.3" fill="#D3D3D3" fill-rule="nonzero" points="12.0794667 4.823 9.1599619 14.6696667 6.22327619 4.823"></polygon>
+                    <g id="Group" transform="translate(0.366667, 0.700000)" stroke="#000000" stroke-linejoin="round" stroke-width="0.5">
+                        <polyline id="Shape" points="17.5865905 4.123 17.5790476 4.13148485 8.79329524 13.9696667 0 4.123"></polyline>
+                        <polygon id="Shape" points="0 4.123 2.92830476 0.00912121212 5.85660952 4.123"></polygon>
+                        <polygon id="Shape" points="5.85660952 4.123 8.78449524 0.00912121212 11.7128 4.123"></polygon>
+                        <polygon id="Shape" points="11.7128 4.123 14.6411048 0.00912121212 17.5694095 4.123 14.6406857 4.123"></polygon>
+                        <polyline id="Shape" points="2.92830476 0.00912121212 8.78449524 0.00912121212 14.6411048 0.00912121212"></polyline>
+                        <polyline id="Shape" points="5.85660952 4.123 8.79329524 13.9696667 11.7128 4.123"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

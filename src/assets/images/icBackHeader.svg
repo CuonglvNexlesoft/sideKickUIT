@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="15px" viewBox="0 0 9 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icBackHeader</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M31.1286505,48.6152038 C31.1437657,48.8506189 31.061365,49.0911241 30.8814484,49.2710408 L24.8710408,55.2814484 C24.5390951,55.6133941 24.0009049,55.6133941 23.6689592,55.2814484 C23.3370136,54.9495028 23.3370136,54.4113125 23.6689592,54.0793669 L29.1331223,48.6152038 L23.6689592,43.1510408 C23.3370136,42.8190951 23.3370136,42.2809049 23.6689592,41.9489592 C24.0009049,41.6170136 24.5390951,41.6170136 24.8710408,41.9489592 L30.8814484,47.9593669 C31.061365,48.1392835 31.1437657,48.3797888 31.1286505,48.6152038 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Messenger-settings" transform="translate(-23.000000, -41.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="icBackHeader" fill="#333333" fill-rule="nonzero" transform="translate(27.275204, 48.615204) scale(-1, 1) translate(-27.275204, -48.615204) " xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

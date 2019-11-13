@@ -1,0 +1,30 @@
+
+<svg width="59px" height="59px" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-12.7%" y="-10.8%" width="125.5%" height="125.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M2.14106341,2.0338081 C3.39369778,0.744269806 5.04067903,0.0986266452 6.68989153,0.0986266452 C8.33910403,0.0986266452 9.99437278,0.744272419 11.2470337,2.0338081 L12.7494618,3.58521939 L14.2519165,2.04197342 C16.7572118,-0.537152806 20.8525921,-0.537095323 23.3578608,2.04197342 C25.8631561,4.62104477 25.8631561,8.76319926 23.3578608,11.3422732 C19.9484842,14.8520816 16.5406478,18.3658094 13.1312978,21.8755394 C13.0309455,21.9798976 12.8913508,22.0390239 12.7453181,22.0390239 C12.5992854,22.0390239 12.4596907,21.9798976 12.3593384,21.8755394 L2.14106341,11.3340948 C-0.361363079,8.75302461 -0.364231829,4.61283765 2.14106341,2.0338081 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icLikedAvatarDesktop" filter="url(#filter-1)" transform="translate(4.000000, 3.000000)">
+            <g id="Page-1" fill="#FFFFFF">
+                <path d="M25.5,0 C11.475232,0 0,11.475232 0,25.5 C0,39.524768 11.475232,51 25.5,51 C39.524768,51 51,39.524768 51,25.5 C51,11.475232 39.524768,0 25.5,0 Z" id="Stroke-1"></path>
+            </g>
+            <g id="colour/light-green" transform="translate(13.260000, 15.300000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="#7EC34D" fill-rule="nonzero" xlink:href="#path-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>

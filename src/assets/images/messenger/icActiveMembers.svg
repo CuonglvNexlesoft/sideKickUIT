@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="23px" viewBox="0 0 19 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>icActiveMembers</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M5.7487422,10.2 C4.08309911,10.2 2.72025403,8.97437345 2.72,7.47620775 L2.72,6.1235638 C2.72,4.62562655 4.08309911,3.4 5.7487422,3.4 L6.4912578,3.4 C8.15715492,3.4 9.52,4.62562655 9.52,6.1235638 L9.52,7.47620775 C9.52,8.97437345 8.15690089,10.2 6.4912578,10.2 L5.7487422,10.2 Z M9.41465162,12.24 C10.9726431,12.24 12.24,13.6822915 12.24,15.455063 L12.24,20.09832 C12.24,20.6405349 11.8538373,21.08 11.3773873,21.08 L0.86261269,21.08 C0.386162709,21.08 -1.09245946e-13,20.6405349 -1.09245946e-13,20.09832 L-1.09245946e-13,15.455063 C-1.09245946e-13,13.6822915 1.26735695,12.24 2.82487193,12.24 L9.41465162,12.24 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Friends-&amp;-Favourites" transform="translate(-25.000000, -560.000000)">
+            <g id="icActiveMembers" transform="translate(26.200000, 560.800000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" stroke="#333333" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <circle id="Oval" fill="#7CBC47" cx="14.28" cy="2.72" r="2.72"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

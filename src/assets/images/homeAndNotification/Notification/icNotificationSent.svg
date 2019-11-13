@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>icNotificationSent</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M5.88553846,11.608 C5.80184615,11.5264 5.76,11.404 5.76,11.3224 C5.76,11.2408 5.80184615,11.1184 5.88553846,11.0368 L6.47138462,10.4656 C6.63876923,10.3024 6.88984615,10.3024 7.05723077,10.4656 L7.09907692,10.5064 L9.40061538,12.9136 C9.48430769,12.9952 9.60984615,12.9952 9.69353846,12.9136 L15.3009231,7.2424 L15.3427692,7.2424 L15.3427692,7.2424 C15.5101538,7.0792 15.7612308,7.0792 15.9286154,7.2424 L16.5144615,7.8136 C16.6818462,7.9768 16.6818462,8.2216 16.5144615,8.3848 L16.5144615,8.3848 L9.81907692,15.1576 C9.73538462,15.2392 9.65169231,15.28 9.52615385,15.28 C9.40061538,15.28 9.31692308,15.2392 9.23323077,15.1576 L5.96923077,11.7304 L5.88553846,11.608 Z" id="path-1"></path>
+    </defs>
+    <g id="RHP-Search--Desktop-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Notification" transform="translate(-502.000000, -682.000000)">
+            <g id="Validation-sent" transform="translate(485.000000, 664.000000)">
+                <g id="icNotificationSent" transform="translate(17.800000, 18.800000)">
+                    <path d="M11.2,-1.70530257e-13 C5.02449231,-1.70530257e-13 0,5.02406154 0,11.2 C0,17.3759385 5.02449231,22.4 11.2,22.4 C17.3755077,22.4 22.4,17.3759385 22.4,11.2 C22.4,5.02406154 17.3755077,-1.70530257e-13 11.2,-1.70530257e-13 Z" id="Shape" fill="#7BCB45" fill-rule="nonzero"></path>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Shape" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

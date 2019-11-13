@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="10px" viewBox="0 0 17 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icArrDownEvt</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M13.0690005,5.13553391 C13.0867832,5.4124928 12.9898412,5.69544016 12.7781746,5.90710678 L5.70710678,12.9781746 C5.31658249,13.3686989 4.68341751,13.3686989 4.29289322,12.9781746 C3.90236893,12.5876503 3.90236893,11.9544853 4.29289322,11.563961 L10.7213203,5.13553391 L4.29289322,-1.29289322 C3.90236893,-1.68341751 3.90236893,-2.31658249 4.29289322,-2.70710678 C4.68341751,-3.09763107 5.31658249,-3.09763107 5.70710678,-2.70710678 L12.7781746,4.36396103 C12.9898412,4.57562765 13.0867832,4.85857502 13.0690005,5.13553391 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="icArrDownEvt" fill="#A5A5A5" fill-rule="nonzero" transform="translate(8.535534, 5.135534) rotate(90.000000) translate(-8.535534, -5.135534) " xlink:href="#path-1"></use>
+    </g>
+</svg>

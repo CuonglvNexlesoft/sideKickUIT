@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="91px" height="90px" viewBox="0 0 91 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>discountTicker</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-16.0%" y="-16.2%" width="132.1%" height="132.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Web-upgrade" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="discountTicker" filter="url(#filter-1)" transform="translate(5.000000, 3.000000)" fill="#F44336" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="1.5">
+            <path d="M77.2786271,40.0027694 L80.8323965,30.8484033 C81.2221974,29.8384732 80.9184564,28.6935525 80.0629193,28.0085999 L72.3580234,21.8390271 L70.7988198,12.1546977 C70.6266999,11.0847718 69.7762252,10.2498296 68.6928824,10.0798413 L58.8871115,8.53994797 L52.6452346,0.925475201 C51.9567551,0.0805337058 50.7721653,-0.219445523 49.7748824,0.165527821 L40.5006582,3.68028446 L31.2314963,0.170527475 C30.2038394,-0.219445523 29.054686,0.0905330134 28.3611442,0.930474855 L22.1142049,8.54494762 L12.308434,10.084841 C11.2301535,10.2548292 10.3796788,11.0947711 10.2075589,12.1596973 L8.64835531,21.8440268 L0.938397063,28.0135996 C0.0879223515,28.6935525 -0.220880966,29.8384732 0.168919943,30.8484033 L3.72268927,40.0027694 L0.168919943,49.1571356 C-0.225943316,50.1670657 0.0879223515,51.3119864 0.938397063,51.9919393 L8.64835531,58.1565125 L10.2075589,67.8408419 C10.3796788,68.9107678 11.2250912,69.7507097 12.308434,69.9206979 L22.1142049,71.4605913 L28.3611442,79.0700644 C29.054686,79.9200055 30.2139641,80.2199848 31.2365587,79.8300118 L40.5006582,76.3252544 L49.7698201,79.8350114 C50.0634364,79.9450038 50.3671773,80 50.6759806,80 C51.420146,80 52.1541867,79.6750225 52.6452346,79.0700644 L58.8871115,71.4605913 L68.6928824,69.9206979 C69.7762252,69.7507097 70.6266999,68.9107678 70.7988198,67.8408419 L72.3580234,58.1565125 L80.0629193,51.9919393 C80.9184564,51.3069867 81.2221974,50.1670657 80.8323965,49.1571356 L77.2786271,40.0027694 Z" id="Path-Copy"></path>
+        </g>
+    </g>
+</svg>

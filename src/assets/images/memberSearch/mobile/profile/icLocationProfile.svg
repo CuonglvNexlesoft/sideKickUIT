@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="13px" viewBox="0 0 9 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icLocationProfile</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M76.34,8 C78.7159619,8 80.68,9.75796988 80.68,12.2809654 C80.68,13.1946341 80.4209229,14.1719924 80.001875,14.9070181 L76.6212963,20.8379447 C76.5646633,20.9388674 76.4569425,21.0014999 76.34,21.0014999 C76.2230575,21.0014999 76.1153367,20.9388674 76.0587037,20.8379447 L72.678125,14.9070181 C72.2590932,14.1720241 72,13.1946341 72,12.2809654 C72,9.75796988 73.9640381,8 76.34,8 Z M76.34,10.219759 C75.1897328,10.219759 74.2503704,11.1463657 74.2503704,12.2809654 C74.2503704,13.4155794 75.189736,14.3421687 76.34,14.3421687 C77.490264,14.3421687 78.4296296,13.4155794 78.4296296,12.2809654 C78.4296296,11.1463657 77.4902672,10.219759 76.34,10.219759 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="New-Members-Grid-OFF-Copy-7" transform="translate(-89.000000, -2911.000000)">
+            <g id="Group-6" transform="translate(17.000000, 2903.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="icLocationProfile" fill="#333333" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

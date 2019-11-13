@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icCloseWhiteChat</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M348.114,35.9004563 C347.843717,35.6295641 347.476769,35.4773271 347.0941,35.4773271 C346.711431,35.4773271 346.344483,35.6295641 346.0742,35.9004563 L339,42.9601896 L331.9258,35.8859896 C331.655517,35.6150974 331.288569,35.4628604 330.9059,35.4628604 C330.523231,35.4628604 330.156283,35.6150974 329.886,35.8859896 C329.3218,36.4501896 329.3218,37.3615896 329.886,37.9257896 L336.9602,44.9999896 L329.886,52.0741896 C329.3218,52.6383896 329.3218,53.5497896 329.886,54.1139896 C330.4502,54.6781896 331.3616,54.6781896 331.9258,54.1139896 L339,47.0397896 L346.0742,54.1139896 C346.6384,54.6781896 347.5498,54.6781896 348.114,54.1139896 C348.6782,53.5497896 348.6782,52.6383896 348.114,52.0741896 L341.0398,44.9999896 L348.114,37.9257896 C348.663733,37.3760563 348.663733,36.4501896 348.114,35.9004563 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Chatrooms_VideoChatOnly" transform="translate(-329.000000, -35.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="icCloseWhiteChat" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

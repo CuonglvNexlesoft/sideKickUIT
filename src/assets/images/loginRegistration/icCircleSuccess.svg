@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>icCicleSuccess</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="24.4315039 8.34474803 13.5471732 19.2297874 7.75386614 13.4376614 6.8337874 14.3577402 13.5471732 21.0697087 25.3452047 9.26482677"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Request-password-reset---popup" transform="translate(-172.000000, -166.000000)">
+            <g id="Group-2" transform="translate(10.000000, 146.000000)">
+                <g id="Page-1" transform="translate(163.000000, 21.000000)">
+                    <g id="Group-4">
+                        <g id="icCicleSuccess">
+                            <path d="M14.9554252,29.91 C23.1926693,29.91 29.9100709,23.1925984 29.9100709,14.9553543 C29.9100709,6.71811024 23.1926693,0 14.9554252,0 C6.7181811,0 7.08661417e-05,6.71811024 7.08661417e-05,14.9553543 C7.08661417e-05,23.1925984 6.7181811,29.91 14.9554252,29.91 Z" id="Stroke-1" stroke="#7EC34D" stroke-width="2"></path>
+                            <g id="Fill-3">
+                                <use stroke="#7EC34D" stroke-width="0.4" fill="#7EC34D" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                <use xlink:href="#path-1"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

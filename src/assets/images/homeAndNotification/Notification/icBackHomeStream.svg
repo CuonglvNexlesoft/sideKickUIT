@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="21px" viewBox="0 0 12 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icBackHomeStream</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M27.2400881,62 C27.0374449,62 26.8601322,61.9249084 26.7081498,61.7747253 L16.5,51.7124542 L26.6321586,41.7252747 C26.9361233,41.4249084 27.4174009,41.4249084 27.6960352,41.7252747 C28,42.025641 28,42.501221 27.6960352,42.7765568 L18.6530837,51.7124542 L27.7720264,60.7234432 C28.0759912,61.0238095 28.0759912,61.4993895 27.7720264,61.7747253 C27.6200441,61.9249084 27.4427313,62 27.2400881,62 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="USER_NAME_HOMEPAGE" transform="translate(-16.000000, -41.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="icBackHomeStream" fill="#333333" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

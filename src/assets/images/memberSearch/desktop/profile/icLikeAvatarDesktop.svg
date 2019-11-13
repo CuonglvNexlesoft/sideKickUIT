@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icLikeAvatarDesktop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="25" cy="25" r="25"></circle>
+        <filter x="-13.0%" y="-11.0%" width="126.0%" height="126.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M12.2618669,15.3416567 C9.24431695,18.4623987 9.24777227,23.4722114 12.2618669,26.5954226 L24.5694604,39.3510454 C24.6903315,39.4773235 24.858469,39.5488691 25.0343608,39.5488691 C25.2102527,39.5488691 25.3783902,39.4773235 25.4992613,39.3510454 C29.6057171,35.104114 33.7103498,30.8523451 37.8168375,26.6053189 C40.8343875,23.4845232 40.8343875,18.4723297 37.8168375,15.3515371 C34.7993194,12.2307478 29.8665617,12.2306782 26.8490117,15.3515371 L25.0393519,17.2189343 L23.2297241,15.3416567 C21.720933,13.7812605 19.7272135,13 17.7407885,13 C15.7543635,13 13.7706259,13.7812573 12.2618669,15.3416567 Z M18.0758301,14.4626175 C19.62827,14.4626175 21.2476159,15.5132233 22.4498102,16.7565388 L24.6046326,18.9887479 C24.718891,19.1081262 24.8778352,19.1757632 25.0441105,19.1757632 C25.2103858,19.1757632 25.36933,19.1081262 25.4835884,18.9887479 L27.8255762,16.2889163 C30.917142,13.4380114 34.6438969,14.2699108 37.0482553,16.7565388 C39.4525834,19.2431638 38.643127,23.2734628 36.2387989,25.7600908 C32.5047412,29.621921 28.7734048,33.4890113 25.0393775,37.3507818 L13.8399869,25.7507659 C11.437413,23.261209 10.8377544,18.7754875 13.2421127,16.2889163 C14.4442767,15.0456038 16.5233903,14.4626175 18.0758301,14.4626175 Z" id="path-4"></path>
+    </defs>
+    <g id="RHP-Search--Desktop-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icLikeAvatarDesktop" transform="translate(4.000000, 3.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <mask id="mask-5" fill="white">
+                <use xlink:href="#path-4"></use>
+            </mask>
+            <use id="Mask" fill="#7BCB45" fill-rule="nonzero" xlink:href="#path-4"></use>
+        </g>
+    </g>
+</svg>

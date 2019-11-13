@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="13px" viewBox="0 0 12 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>icFilterBlack</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="RHP-Mobile-Discover" transform="translate(-64.000000, -111.000000)" fill="#333333" fill-rule="nonzero">
+            <g id="Group-5" transform="translate(10.000000, 102.000000)">
+                <g id="Group-8" transform="translate(54.000000, 6.000000)">
+                    <g id="filter-filled-tool-symbol" transform="translate(0.000000, 3.000000)">
+                        <path d="M4.55754642,5.7223733 C4.68462721,5.8606671 4.75439706,6.04132117 4.75439706,6.22820469 L4.75439706,11.735039 C4.75439706,12.0664582 5.15432779,12.2346534 5.39104691,12.0016595 L6.92722942,10.2412167 C7.13280129,9.9945305 7.24617729,9.87242081 7.24617729,9.62823881 L7.24617729,6.22945058 C7.24617729,6.04256706 7.31719303,5.86191299 7.44302793,5.72360673 L11.8509747,0.940647037 C12.1811356,0.581830684 11.9269865,0 11.4385851,0 L0.561964363,0 C0.0735754378,0 -0.181832036,0.580584794 0.149574735,0.940647037 L4.55754642,5.7223733 Z" id="icFilterBlack"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

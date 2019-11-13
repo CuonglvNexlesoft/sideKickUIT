@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="20px" viewBox="0 0 13 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icLocation</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6.2,0.8 C9.59423133,0.8 12.4,3.31138554 12.4,6.91566492 C12.4,8.22090588 12.0298899,9.61713205 11.43125,10.6671687 L6.60185185,19.139921 C6.52094753,19.2840962 6.36706069,19.3735712 6.2,19.3735712 C6.03293931,19.3735712 5.87905247,19.2840962 5.79814815,19.139921 L0.96875,10.6671687 C0.370133111,9.61717735 0,8.22090588 0,6.91566492 C0,3.31138554 2.80576867,0.8 6.2,0.8 Z M6.2,3.97108434 C4.55676119,3.97108434 3.21481481,5.29480819 3.21481481,6.91566492 C3.21481481,8.53654202 4.55676578,9.86024096 6.2,9.86024096 C7.84323422,9.86024096 9.18518519,8.53654202 9.18518519,6.91566492 C9.18518519,5.29480819 7.84323881,3.97108434 6.2,3.97108434 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="icLocation" fill="#A5A5A5" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>

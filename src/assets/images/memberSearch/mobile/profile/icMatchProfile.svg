@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icMatchProfile</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="25" cy="25" r="25"></circle>
+        <filter x="-16.0%" y="-14.0%" width="132.0%" height="132.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.147107111 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M10.8219328,20.72466 C8.11336074,23.6339501 8.11646226,28.3043135 10.8219328,31.2159056 L21.8693073,43.1072469 C21.977802,43.2249688 22.1287233,43.2916667 22.2866049,43.2916667 C22.4444866,43.2916667 22.5954078,43.2249688 22.7039026,43.1072469 C26.3898834,39.1480744 30.0742279,35.1843922 33.7602375,31.2251313 C36.4688097,28.3157911 36.4688097,23.6432082 33.7602375,20.7338709 C31.0516941,17.8245366 26.6240193,17.8244717 23.9154471,20.7338709 L22.2910849,22.474739 L20.6667515,20.72466 C19.3124509,19.2699914 17.5228756,18.5416667 15.7398478,18.5416667 C13.95682,18.5416667 12.1762046,19.2699884 10.8219328,20.72466 Z" id="path-3"></path>
+        <path d="M31.5004035,9.78393636 C30.2213555,11.106341 30.2228201,13.2292334 31.5004035,14.5526844 L36.7172192,19.9578395 C36.7684528,20.0113495 36.8397212,20.0416667 36.9142764,20.0416667 C36.9888316,20.0416667 37.0601,20.0113495 37.1113336,19.9578395 C38.8519357,18.1582156 40.5917651,16.3565419 42.3323807,14.5568779 C43.6114286,13.2344505 43.6114286,11.1105492 42.3323807,9.78812315 C41.0533463,8.46569845 38.9624998,8.46566898 37.6834519,9.78812315 L36.9163919,10.5794268 L36.1493456,9.78393636 C35.5098148,9.12272334 34.6647375,8.79166667 33.8227522,8.79166667 C32.9807669,8.79166667 32.1399207,9.122722 31.5004035,9.78393636 Z" id="path-5"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icMatchProfile" transform="translate(5.000000, 4.000000)">
+            <g id="Oval-4-Copy-2" fill-rule="nonzero">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#7BCB45" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <mask id="mask-4" fill="white">
+                <use xlink:href="#path-3"></use>
+            </mask>
+            <use id="path-1" fill="#FFFFFF" xlink:href="#path-3"></use>
+            <mask id="mask-6" fill="white">
+                <use xlink:href="#path-5"></use>
+            </mask>
+            <use id="path-3" fill="#FFFFFF" xlink:href="#path-5"></use>
+        </g>
+    </g>
+</svg>

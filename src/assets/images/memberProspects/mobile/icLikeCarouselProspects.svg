@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>icLikeCarouselProspects</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2.60415314,2.48515193 C4.12771929,0.909438581 6.13092545,0.120513926 8.13684545,0.120513926 C10.1427654,0.120513926 12.1560516,0.909441774 13.6796501,2.48515193 L15.5070378,4.38085329 L17.3344578,2.49512931 C20.3816224,-0.65635806 25.3627907,-0.656287819 28.409923,2.49512931 C31.4570876,5.64654963 31.4570876,10.7079334 28.409923,13.8593569 C24.2631338,18.1480639 20.1182178,22.4415601 15.9714608,26.7301714 C15.8494034,26.8576888 15.6796158,26.9299365 15.5019978,26.9299365 C15.3243797,26.9299365 15.1545921,26.8576888 15.0325347,26.7301714 L2.60415314,13.8493635 C-0.439522152,10.6955008 -0.443011383,5.63652117 2.60415314,2.48515193 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Prospects-Views-Swipe-Copy-2" transform="translate(-253.000000, -468.000000)">
+            <g id="UI/Flirt" transform="translate(18.000000, 118.000000)">
+                <g id="Group" transform="translate(45.000000, 350.000000)">
+                    <g id="icLikeCarouselProspects" transform="translate(190.000000, 0.000000)">
+                        <path d="M29.5384615,0.5 C13.5687188,0.5 0.5,13.5687188 0.5,29.5384615 C0.5,45.5082043 13.5687188,58.5769231 29.5384615,58.5769231 C45.5082043,58.5769231 58.5769231,45.5082043 58.5769231,29.5384615 C58.5769231,13.5687188 45.5082043,0.5 29.5384615,0.5 Z" id="Stroke-1" stroke="#FFFFFF"></path>
+                        <g id="colour/light-green" transform="translate(14.492308, 17.076923)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icCheckedHomeStream</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10.6215385,20.72 C10.4738462,20.576 10.4,20.36 10.4,20.216 C10.4,20.072 10.4738462,19.856 10.6215385,19.712 L11.6553846,18.704 C11.9507692,18.416 12.3938462,18.416 12.6892308,18.704 L12.7630769,18.776 L16.8246154,23.024 C16.9723077,23.168 17.1938462,23.168 17.3415385,23.024 L27.2369231,13.016 L27.3107692,13.016 L27.3107692,13.016 C27.6061538,12.728 28.0492308,12.728 28.3446154,13.016 L29.3784615,14.024 C29.6738462,14.312 29.6738462,14.744 29.3784615,15.032 L29.3784615,15.032 L17.5630769,26.984 C17.4153846,27.128 17.2676923,27.2 17.0461538,27.2 C16.8246154,27.2 16.6769231,27.128 16.5292308,26.984 L10.7692308,20.936 L10.6215385,20.72 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Friends-request-Accepted" transform="translate(-327.000000, -255.000000)">
+            <g id="UI/User-FriendRequest-Fullpage-Copy" transform="translate(0.000000, 223.000000)">
+                <g id="Group">
+                    <g id="Group-2" transform="translate(317.000000, 20.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="icCheckedHomeStream" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

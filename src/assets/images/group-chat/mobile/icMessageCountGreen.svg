@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icMessageCountGreen</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4.41329482,19.5 C4.36418422,19.5 4.31449096,19.4879361 4.26970875,19.463891 C4.17148755,19.4115041 4.1103074,19.3092918 4.1103074,19.199147 L4.1103074,14.9131694 C1.45750268,13.543838 0,11.1463512 0,8.14244854 C0,3.50025636 4.29875892,0 10,0 C15.7012411,0 20,3.50025636 20,8.14244854 C20,12.7839797 15.7012411,16.284236 10,16.284236 C9.81271382,16.284236 9.62909012,16.2740726 9.44488376,16.264405 L9.43273097,16.2638266 L4.5799379,19.4500093 C4.52966197,19.4831436 4.4714784,19.5 4.41329482,19.5 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI/HeaderLive" transform="translate(-140.000000, -24.000000)">
+            <g id="Header">
+                <g id="NumberOfPrivateMessages" transform="translate(140.000000, 24.000000)">
+                    <g id="icMessageCountGreen" transform="translate(0.500000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                        <g id="colour/primary-green" mask="url(#mask-2)" fill="#7BCB45">
+                            <g transform="translate(-3.000000, -3.500000)">
+                                <polygon points="0 0 26 0 26 26 0 26"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

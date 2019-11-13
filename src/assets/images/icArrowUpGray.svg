@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="10px" viewBox="0 0 26 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Chevron_Right</title>
+    <desc>Created with Sketch.</desc>
+    <g id="DESKTOP-CHAT" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="chat-group-expanded-video-copy-3" transform="translate(-620.000000, -269.000000)" fill="#535353" fill-rule="nonzero">
+            <g id="Group-27" transform="translate(-21.000000, -16.000000)">
+                <g id="Group-26" transform="translate(0.000000, 46.000000)">
+                    <g id="Group-16" transform="translate(0.000000, 232.000000)">
+                        <path d="M649.169654,12.8195674 L657.218989,24.0535144 C657.572188,24.5453712 658.144428,24.5453712 658.498519,24.0535144 C658.851719,23.5616576 658.851719,22.7627535 658.498519,22.2708967 L651.087649,11.9283105 L658.497627,1.58572424 C658.850827,1.09386744 658.850827,0.294963333 658.497627,-0.19813867 C658.144428,-0.689995466 657.571296,-0.689995466 657.218097,-0.19813867 L649.168762,11.0357045 C648.820988,11.5224767 648.820988,12.3339367 649.169654,12.8195674 Z" id="Chevron_Right" transform="translate(653.835731, 11.927688) scale(1, -1) rotate(-90.000000) translate(-653.835731, -11.927688) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

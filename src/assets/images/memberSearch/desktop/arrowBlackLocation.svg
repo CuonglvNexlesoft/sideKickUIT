@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="16px" viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>arrowBlackLocation</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8.29825459,7.70107684 C8.3133838,7.94756491 8.23175545,8.19883617 8.05336956,8.39370959 L2.24279644,14.7413318 C1.9490383,15.0622409 1.45075205,15.0842511 1.12984295,14.790493 C1.1127404,14.7748374 1.09633739,14.7584344 1.08068182,14.7413318 C0.751802808,14.3820558 0.751802808,13.8310834 1.08068182,13.4718074 L6.36317193,7.70107684 L1.08068182,1.93034631 C0.751802808,1.57107026 0.751802808,1.0200979 1.08068182,0.660821859 C1.37443997,0.339912767 1.87272621,0.317902577 2.19363531,0.611660723 C2.21073786,0.62731629 2.22714087,0.643719307 2.24279644,0.660821859 L8.05336956,7.00844409 C8.23175545,7.20331752 8.3133838,7.45458878 8.29825459,7.70107684 Z" id="path-1"></path>
+    </defs>
+    <g id="RHP-Search--Desktop-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Members-Swipe-Skeleton" transform="translate(-407.000000, -524.000000)">
+            <g id="colour/mid-grey" transform="translate(411.700000, 531.940000) scale(-1, 1) translate(-411.700000, -531.940000) translate(407.200000, 524.440000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="arrowBlackLocation" fill="#333333" fill-rule="nonzero" transform="translate(4.567026, 7.701077) scale(-1, 1) translate(-4.567026, -7.701077) " xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>icClearLocation</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Location-selected" transform="translate(-334.000000, -83.000000)" fill-rule="nonzero">
+            <g id="close-sml" transform="translate(335.000000, 84.000000)">
+                <path d="M10,0 C4.52513966,0 0,4.52513966 0,10 C0,15.4748603 4.52513966,20 10,20 C15.4748603,20 20,15.5307263 20,10 C20,4.52513966 15.5307263,0 10,0 Z" id="Shape" stroke="#FFFFFF" stroke-width="1.5" fill="#CCCCCC"></path>
+                <polygon id="Shape" fill="#FFFFFF" points="13.75 6.71875 13.3398438 6.25 10 9.58984375 6.71875 6.25 6.25 6.71875 9.58984375 10 6.25 13.3398438 6.71875 13.75 10 10.46875 13.3398438 13.75 13.75 13.3398438 10.46875 10"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

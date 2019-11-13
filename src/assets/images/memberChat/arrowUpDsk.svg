@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="7px" viewBox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>arrowUpDsk</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M5.01622069,3.16218148 L8.83692227,-0.698673175 C8.94212566,-0.804725854 9,-0.946520997 9,-1.09771319 C9,-1.24898931 8.94212566,-1.39070053 8.83692227,-1.496921 L8.50213139,-1.83504785 C8.39709405,-1.9414361 8.25668449,-2 8.10705816,-2 C7.95743188,-2 7.81718837,-1.9414361 7.71206803,-1.83504785 L3.16291391,2.76163123 C3.05737836,2.86818732 2.99958707,3.01056974 3,3.16192977 C2.99958707,3.313961 3.05729531,3.45617564 3.16291391,3.56281559 L7.7078333,8.15504785 C7.81295369,8.2614361 7.9531972,8.32 8.10290653,8.32 C8.25253281,8.32 8.39277632,8.2614361 8.49797971,8.15504785 L8.83268759,7.816921 C9.05048433,7.59684489 9.05048433,7.23858149 8.83268759,7.01858931 L5.01622069,3.16218148 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="arrowUpDsk" fill="#A5A5A5" fill-rule="nonzero" transform="translate(6.000000, 3.160000) scale(-1, 1) rotate(-90.000000) translate(-6.000000, -3.160000) " xlink:href="#path-1"></use>
+    </g>
+</svg>

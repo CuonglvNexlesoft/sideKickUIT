@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="67px" viewBox="0 0 76 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icNoLikeYet</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M5.65578029,5.85529412 C9.42842029,1.95352772 14.3887403,0 19.3557803,8.98794764e-14 C24.3228203,8.98794764e-14 29.3081003,1.95353562 33.0808203,5.85529412 L37.6057803,10.5494118 L42.1308203,5.88 C49.6761803,-1.92368301 62.0105019,-1.92350908 69.5557819,5.88 C77.1011419,13.683517 77.1011419,26.2164672 69.5557819,34.0199921 C59.2875419,44.6396476 49.0239403,55.271162 38.7557803,65.8905803 C38.4535428,66.2063378 38.0331164,66.385237 37.5933003,66.385237 C37.1534841,66.385237 36.7330577,66.2063378 36.4308203,65.8905803 L5.65578029,33.9952467 C-1.88093948,26.1856817 -1.88957948,13.6586846 5.65578029,5.85529412 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="icNoLikeYet" fill="#ACACAC" fill-rule="nonzero" opacity="0.5" xlink:href="#path-1"></use>
+    </g>
+</svg>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icFavouritedUser</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="14" cy="14" r="14"></circle>
+        <filter x="-5.4%" y="-5.4%" width="110.7%" height="110.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icFavouritedUser" transform="translate(1.000000, 1.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask-Copy-2">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <path d="M21.9133553,13.0624629 C22.2335324,12.7504286 22.3465553,12.2924743 22.2084524,11.8667657 C22.0700238,11.4410571 21.7094581,11.1371657 21.2664867,11.0726743 L17.3279496,10.5003943 C17.1602067,10.4759657 17.0152638,10.37076 16.9403496,10.2186514 L15.1795381,6.65012571 C14.9818296,6.24917143 14.5805496,6 14.1333438,6 C13.6864638,6 13.2851838,6.24917143 13.0874753,6.65012571 L11.3263381,10.2189771 C11.2514238,10.3710857 11.1061553,10.4762914 10.9384124,10.50072 L6.99987526,11.073 C6.55722955,11.1371657 6.19633812,11.4413829 6.05790955,11.8670914 C5.91980669,12.2928 6.03282955,12.7507543 6.35300669,13.0627886 L9.20268098,15.84048 C9.32417241,15.95904 9.37986955,16.1297143 9.35120669,16.29648 L8.67893241,20.2187314 C8.61932669,20.5639886 8.70987526,20.8998 8.93331526,21.1646057 C9.28052669,21.5772857 9.88668098,21.7030114 10.3713438,21.4483029 L13.8936181,19.5962914 C14.040841,19.5190971 14.2261724,19.5197486 14.3730696,19.5962914 L17.8956696,21.4483029 C18.0669953,21.5385257 18.249721,21.5841257 18.4383096,21.5841257 C18.7825896,21.5841257 19.1089553,21.43104 19.3333724,21.1646057 C19.5571381,20.8998 19.647361,20.5633371 19.5877553,20.2187314 L18.9151553,16.29648 C18.8864924,16.1293886 18.9421896,15.95904 19.063681,15.84048 L21.9133553,13.0624629 Z" id="Mask" fill="#10C2E1" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

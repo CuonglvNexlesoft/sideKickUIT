@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icFavouriteProspectDesktop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M24.6570377,17.8049 C24.9519377,17.5175 25.0560377,17.0957 24.9288377,16.7036 C24.8013377,16.3115 24.4692377,16.0316 24.0612377,15.9722 L20.4336377,15.4451 C20.2791377,15.4226 20.1456377,15.3257 20.0766377,15.1856 L18.4548377,11.8988 C18.2727377,11.5295 17.9031377,11.3 17.4912377,11.3 C17.0796377,11.3 16.7100377,11.5295 16.5279377,11.8988 L14.9058377,15.1859 C14.8368377,15.326 14.7030377,15.4229 14.5485377,15.4454 L10.9209377,15.9725 C10.5132377,16.0316 10.1808377,16.3118 10.0533377,16.7039 C9.92613774,17.096 10.0302377,17.5178 10.3251377,17.8052 L12.9498377,20.3636 C13.0617377,20.4728 13.1130377,20.63 13.0866377,20.7836 L12.4674377,24.3962 C12.4125377,24.7142 12.4959377,25.0235 12.7017377,25.2674 C13.0215377,25.6475 13.5798377,25.7633 14.0262377,25.5287 L17.2704377,23.8229 C17.4060377,23.7518 17.5767377,23.7524 17.7120377,23.8229 L20.9565377,25.5287 C21.1143377,25.6118 21.2826377,25.6538 21.4563377,25.6538 C21.7734377,25.6538 22.0740377,25.5128 22.2807377,25.2674 C22.4868377,25.0235 22.5699377,24.7136 22.5150377,24.3962 L21.8955377,20.7836 C21.8691377,20.6297 21.9204377,20.4728 22.0323377,20.3636 L24.6570377,17.8049 Z" id="path-1"></path>
+        <filter x="-30.0%" y="-31.4%" width="160.1%" height="162.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.426545516 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="GRID-MODE_Prospect--I-have-liked" transform="translate(-698.000000, -330.000000)">
+            <g id="UI/UserProfileThumb-Desktop" transform="translate(691.000000, 322.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="icFavouriteProspectDesktop">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

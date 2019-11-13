@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="21px" viewBox="0 0 12 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-right--mgs</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10.7400881,20.5 C10.5374449,20.5 10.3601322,20.4249084 10.2081498,20.2747253 L0,10.2124542 L10.1321586,0.225274725 C10.4361233,-0.0750915751 10.9174009,-0.0750915751 11.1960352,0.225274725 C11.5,0.525641026 11.5,1.001221 11.1960352,1.27655678 L2.1530837,10.2124542 L11.2720264,19.2234432 C11.5759912,19.5238095 11.5759912,19.9993895 11.2720264,20.2747253 C11.1200441,20.4249084 10.9427313,20.5 10.7400881,20.5 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Messenger-settings" transform="translate(-338.000000, -98.000000)">
+            <g id="Accept-private-message" transform="translate(0.000000, 98.000000)">
+                <g id="ic-right--mgs" transform="translate(343.750000, 10.750000) scale(-1, 1) rotate(-360.000000) translate(-343.750000, -10.750000) translate(338.000000, 0.500000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#010101" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="colour/mid-grey" mask="url(#mask-2)" fill="#A5A5A5">
+                        <g transform="translate(-6.500000, -4.000000)">
+                            <rect x="0" y="0" width="27" height="28"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

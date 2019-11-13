@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="27px" viewBox="0 0 17 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Icrightarrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-1.3%" y="-5.3%" width="102.7%" height="113.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M10.7400881,20.5 C10.5374449,20.5 10.3601322,20.4249084 10.2081498,20.2747253 L0,10.2124542 L10.1321586,0.225274725 C10.4361233,-0.0750915751 10.9174009,-0.0750915751 11.1960352,0.225274725 C11.5,0.525641026 11.5,1.001221 11.1960352,1.27655678 L2.1530837,10.2124542 L11.2720264,19.2234432 C11.5759912,19.5238095 11.5759912,19.9993895 11.2720264,20.2747253 C11.1200441,20.4249084 10.9427313,20.5 10.7400881,20.5 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Messenger-settings" transform="translate(-19.000000, -35.000000)">
+            <g id="Group-3" transform="translate(0.000000, -1.000000)">
+                <g id="UI/nav-with-currency">
+                    <g id="header-nav-copy-2" filter="url(#filter-1)">
+                        <g id="Icons/right-arrow" transform="translate(28.500000, 48.500000) scale(-1, 1) translate(-28.500000, -48.500000) translate(16.000000, 36.000000)">
+                            <g id="colour/mid-grey" transform="translate(13.750000, 12.750000) scale(-1, 1) translate(-13.750000, -12.750000) translate(8.000000, 2.500000)">
+                                <mask id="mask-3" fill="white">
+                                    <use xlink:href="#path-2"></use>
+                                </mask>
+                                <use id="Mask" fill="#010101" fill-rule="nonzero" xlink:href="#path-2"></use>
+                                <g mask="url(#mask-3)" fill="#A5A5A5">
+                                    <g transform="translate(-6.500000, -4.000000)">
+                                        <rect x="0" y="0" width="27" height="28"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

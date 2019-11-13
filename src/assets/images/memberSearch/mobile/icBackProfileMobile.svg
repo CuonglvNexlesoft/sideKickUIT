@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="17px" viewBox="0 0 11 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icBackProfileMobile</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.45127753,16.4 C9.27295154,16.4 9.1169163,16.3399267 8.98317181,16.2197802 L0,8.16996337 L8.91629956,0.18021978 C9.18378855,-0.0600732601 9.60731278,-0.0600732601 9.85251101,0.18021978 C10.12,0.420512821 10.12,0.800976801 9.85251101,1.02124542 L1.89471366,8.16996337 L9.91938326,15.3787546 C10.1868722,15.6190476 10.1868722,15.9995116 9.91938326,16.2197802 C9.78563877,16.3399267 9.62960352,16.4 9.45127753,16.4 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="icBackProfileMobile" fill="#A5A5A5" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>

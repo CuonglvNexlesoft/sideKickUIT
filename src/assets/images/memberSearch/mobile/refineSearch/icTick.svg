@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="8px" viewBox="0 0 10 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icTick</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0.773333333,4.63555556 C0.702222222,4.56622222 0.666666667,4.46222222 0.666666667,4.39288889 C0.666666667,4.32355556 0.702222222,4.21955556 0.773333333,4.15022222 L1.27111111,3.66488889 C1.41333333,3.52622222 1.62666667,3.52622222 1.76888889,3.66488889 L1.80444444,3.69955556 L3.76,5.74488889 C3.83111111,5.81422222 3.93777778,5.81422222 4.00888889,5.74488889 L8.77333333,0.926222222 L8.80888889,0.926222222 C8.95111111,0.787555556 9.16444444,0.787555556 9.30666667,0.926222222 L9.80444444,1.41155556 C9.94666667,1.55022222 9.94666667,1.75822222 9.80444444,1.89688889 L4.11555556,7.65155556 C4.04444444,7.72088889 3.97333333,7.75555556 3.86666667,7.75555556 C3.76,7.75555556 3.68888889,7.72088889 3.61777778,7.65155556 L0.844444444,4.73955556 L0.773333333,4.63555556 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Filter" transform="translate(-103.000000, -519.000000)">
+            <g id="Date-joined" transform="translate(12.000000, 510.000000)">
+                <g id="icTick" transform="translate(91.000000, 9.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="colour/black" mask="url(#mask-2)" fill="#333333">
+                        <g transform="translate(-8.000000, -9.000000)">
+                            <rect x="0" y="0" width="26" height="26"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

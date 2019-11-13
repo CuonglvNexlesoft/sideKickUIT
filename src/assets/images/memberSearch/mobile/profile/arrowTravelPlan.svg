@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="16px" viewBox="0 0 23 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>arrowTravelPlan</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M197.320259,2729.5 L178.75,2729.5 C178.335786,2729.5 178,2729.16421 178,2728.75 C178,2728.33579 178.335786,2728 178.75,2728 L197.629301,2728 L192.218062,2722.28434 C191.927313,2722.00733 191.927313,2721.52885 192.218062,2721.22665 C192.484581,2720.92445 192.944934,2720.92445 193.235683,2721.22665 L200.218062,2728.75549 L193.235683,2736.28434 C193.090308,2736.43544 192.920705,2736.51099 192.726872,2736.51099 C192.53304,2736.51099 192.363436,2736.43544 192.218062,2736.28434 C191.927313,2736.00733 191.927313,2735.52885 192.218062,2735.22665 L197.320259,2729.5 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="New-Members-Grid-OFF-Copy-7" transform="translate(-178.000000, -2721.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="arrowTravelPlan" fill="#333333" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

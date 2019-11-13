@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="104px" height="96px" viewBox="0 0 104 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-14.6%" y="-33.8%" width="129.2%" height="167.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="14" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.482352941   0 0 0 0 0.796078431   0 0 0 0 0.270588235  0 0 0 0.69752038 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-10.9%" y="-12.5%" width="121.7%" height="125.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M3.45897199,3.52807003 C5.76624976,1.17708563 8.79989094,0 11.8376419,5.41563037e-14 C14.8753929,5.41563037e-14 17.9242992,1.1770904 20.2316259,3.52807003 L22.9990088,6.3564806 L25.7664407,3.5429564 C30.3810452,-1.1591029 37.9244911,-1.1589981 42.5390467,3.5429564 C47.1536511,8.24491566 47.1536511,15.7965647 42.5390467,20.4985287 C36.2591785,26.8973342 29.9821471,33.3032852 23.7023278,39.7019478 C23.5174849,39.8922054 23.2603598,40 22.9913763,40 C22.7223928,40 22.4652676,39.8922054 22.2804247,39.7019478 L3.45897199,20.4836185 C-1.15034825,15.778015 -1.15563232,8.22995307 3.45897199,3.52807003 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Congratulaion" transform="translate(-136.000000, -301.000000)">
+            <g id="Pics" filter="url(#filter-1)" transform="translate(44.000000, 284.000000)">
+                <g id="HEART" filter="url(#filter-2)" transform="translate(121.000000, 46.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="Mask" stroke="#FFFFFF" stroke-width="3" fill="#7BCB45" fill-rule="nonzero" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="19px" viewBox="0 0 30 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>icMailHeader</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,18 L0,0.5 L9,9 L0,18 Z M30,18 L21,9.5 L30,0.5 L30,18 Z M1,8.52651283e-14 L29,8.52651283e-14 L16,12.5 C15.4246575,12.9259259 14.6849315,12.9259259 14.109589,12.5 L1,8.52651283e-14 Z M20,10 L29,19 L0.5,19 L9.5,10 L13.3561644,14.0537037 C13.8082192,14.3518519 14.3013699,14.5222222 14.7945205,14.5222222 C15.2876712,14.5222222 15.7808219,14.3518519 16.2328767,14.0111111 L20,10 Z" id="icMailHeader" fill="#FFFFFF" fill-rule="nonzero"></path>
+    </g>
+</svg>

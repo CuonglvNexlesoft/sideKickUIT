@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icPendingReviewL</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop-Manage-Photos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icPendingReviewL">
+            <circle id="Oval" fill="#FC8106" cx="25" cy="25" r="25"></circle>
+            <path d="M24.8593259,10.8305463 C26.3586468,10.8305463 27.6272761,11.625896 27.6272761,13.0356255 C27.6272761,17.3372675 27.0890732,23.5188767 27.0890732,27.8205188 C27.0890732,28.9411991 25.7819759,29.4109996 24.8593259,29.4109996 C23.6292807,29.4109996 22.5912267,28.9410898 22.5912267,27.8205188 C22.5912267,23.5188767 22.0531401,17.3372675 22.0531401,13.0356255 C22.0531401,11.625896 23.2831852,10.8305463 24.8593259,10.8305463 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <path d="M24.8584357,36.843181 C23.2555041,36.843181 22.0531401,35.5401419 22.0531401,34.056113 C22.0531401,32.5358642 23.2553939,31.269045 24.8584357,31.269045 C26.3521117,31.269045 27.6272761,32.5358642 27.6272761,34.056113 C27.6272761,35.5401419 26.3521117,36.843181 24.8584357,36.843181 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

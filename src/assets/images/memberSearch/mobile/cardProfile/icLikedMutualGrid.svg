@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icLikedMutualGrid</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="18" cy="18" r="18"></circle>
+        <filter x="-9.7%" y="-6.9%" width="119.4%" height="119.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M7.79179164,14.9217552 C5.84161973,17.0164441 5.84385283,20.3791057 7.79179164,22.4754521 L15.7459013,31.0372178 C15.8240174,31.1219775 15.9326808,31.17 16.0463555,31.17 C16.1600303,31.17 16.2686936,31.1219775 16.3468099,31.0372178 C19.0007161,28.1866136 21.6534441,25.3327624 24.307371,22.4820945 C26.257543,20.3873696 26.257543,17.0231099 24.307371,14.9283871 C22.3572197,12.8336663 19.1692939,12.8336197 17.2191219,14.9283871 L16.0495811,16.1818121 L14.8800611,14.9217552 C13.9049647,13.8743938 12.6164704,13.35 11.3326904,13.35 C10.0489104,13.35 8.76686729,13.8743916 7.79179164,14.9217552 Z" id="path-3"></path>
+        <path d="M22.6802905,7.04443418 C21.759376,7.9965655 21.7604305,9.52504805 22.6802905,10.4779327 L26.4363978,14.3696444 C26.473286,14.4081716 26.5245993,14.43 26.578279,14.43 C26.6319588,14.43 26.683272,14.4081716 26.7201602,14.3696444 C27.9733937,13.0739152 29.2260708,11.7767102 30.4793141,10.4809521 C31.4002286,9.52880435 31.4002286,7.99959542 30.4793141,7.04744867 C29.5584093,6.09530289 28.0529999,6.09528166 27.1320853,7.04744867 L26.5798022,7.61718732 L26.0275288,7.04443418 C25.5670667,6.56836081 24.958611,6.33 24.3523816,6.33 C23.7461522,6.33 23.1407429,6.56835984 22.6802905,7.04443418 Z" id="path-5"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icLikedMutualGrid" transform="translate(2.000000, 1.000000)">
+            <g id="Oval-4" fill-rule="nonzero">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#7BCB45" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <mask id="mask-4" fill="white">
+                <use xlink:href="#path-3"></use>
+            </mask>
+            <use id="path-1" fill="#FFFFFF" xlink:href="#path-3"></use>
+            <mask id="mask-6" fill="white">
+                <use xlink:href="#path-5"></use>
+            </mask>
+            <use id="path-3" fill="#FFFFFF" xlink:href="#path-5"></use>
+        </g>
+    </g>
+</svg>

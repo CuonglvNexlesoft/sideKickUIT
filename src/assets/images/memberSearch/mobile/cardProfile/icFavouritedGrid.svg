@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icFavouritedGrid</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="18" cy="18" r="18"></circle>
+        <filter x="-9.7%" y="-6.9%" width="119.4%" height="119.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icFavouritedGrid" transform="translate(2.000000, 1.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <path d="M27.0960263,17.4749554 C27.4802389,17.1005143 27.6158663,16.5509691 27.4501429,16.0401189 C27.2840286,15.5292686 26.8513497,15.1645989 26.319784,15.0872091 L21.5935395,14.4004731 C21.392248,14.3711589 21.2183166,14.244912 21.1284195,14.0623817 L19.0154457,9.78015086 C18.7781955,9.29900571 18.2966595,9 17.7600126,9 C17.2237566,9 16.7422206,9.29900571 16.5049703,9.78015086 L14.3916057,14.0627726 C14.3017086,14.2453029 14.1273863,14.3715497 13.9260949,14.400864 L9.19985032,15.0876 C8.66867546,15.1645989 8.23560575,15.5296594 8.06949146,16.0405097 C7.90376803,16.55136 8.03939546,17.1009051 8.42360803,17.4753463 L11.8432172,20.808576 C11.9890069,20.950848 12.0558435,21.1556571 12.021448,21.355776 L11.2147189,26.0624777 C11.143192,26.4767863 11.2518503,26.87976 11.5199783,27.1975269 C11.936632,27.6927429 12.6640172,27.8436137 13.2456126,27.5379634 L17.4723417,25.3155497 C17.6490092,25.2229166 17.8714069,25.2236983 18.0476835,25.3155497 L22.2748035,27.5379634 C22.4803943,27.6462309 22.6996652,27.7009509 22.9259715,27.7009509 C23.3391075,27.7009509 23.7307463,27.517248 24.0000469,27.1975269 C24.2685657,26.87976 24.3768332,26.4760046 24.3053063,26.0624777 L23.4981863,21.355776 C23.4637909,21.1552663 23.5306275,20.950848 23.6764172,20.808576 L27.0960263,17.4749554 Z" id="Mask" fill="#10C2E1" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

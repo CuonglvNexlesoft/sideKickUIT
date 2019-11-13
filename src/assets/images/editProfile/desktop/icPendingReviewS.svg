@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icPendingReviewS</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop-Manage-Photos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icPendingReviewS">
+            <circle id="Oval" fill="#FC8106" cx="8.5" cy="8.5" r="8.5"></circle>
+            <path d="M9.00685945,4 C9.5448158,4 10,4.25683433 10,4.71206418 C10,6.10115043 9.80689281,8.09731567 9.80689281,9.48640192 C9.80689281,9.84829201 9.3379063,10 9.00685945,10 C8.56551925,10 8.19306549,9.84825672 8.19306549,9.48640192 C8.19306549,8.09731567 8,6.10115043 8,4.71206418 C8,4.25683433 8.4413402,4 9.00685945,4 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <path d="M9.00654008,13 C8.43140819,13 8,12.5324696 8,12 C8,11.4545347 8.43136867,11 9.00654008,11 C9.542471,11 10,11.4545347 10,12 C10,12.5324696 9.542471,13 9.00654008,13 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

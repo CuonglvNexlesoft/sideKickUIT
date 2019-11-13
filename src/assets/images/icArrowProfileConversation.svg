@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="5px" viewBox="0 0 6 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>icArrowProfileConversation</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="chat---top" transform="translate(-112.000000, -15.000000)" stroke-width="0.9" stroke="#666666">
+            <g id="Group">
+                <polyline id="icArrowProfileConversation" points="112 16.0069467 114.996523 19 118 16"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

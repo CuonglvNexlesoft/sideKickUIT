@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="12px" viewBox="0 0 17 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>icAlbumWeb</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icAlbumWeb">
+            <rect id="Rectangle-5" stroke="#535453" stroke-width="0.7" x="0.35" y="0.35" width="16.3" height="11.262963" rx="1"></rect>
+            <g id="Group-2-Copy" transform="translate(8.814815, 5.666667)">
+                <g id="Group" transform="translate(0.000000, 0.629630)" fill="#FFFFFF">
+                    <polygon id="Rectangle-6" points="3.20190658 0 6.78248535 2.84406252 2.96610391 2.84406252 0.20672464 2.84406252"></polygon>
+                </g>
+                <g id="mountain" stroke="#535453" stroke-linecap="square" stroke-width="0.7">
+                    <path d="M0.216435185,2.97325103 L3.24652778,0.174897119" id="Line-2"></path>
+                    <path d="M3.24652778,0.174897119 L6.70949074,2.97325103" id="Line-3"></path>
+                </g>
+            </g>
+            <g id="Group-2" transform="translate(1.259259, 3.777778)">
+                <g id="Group" transform="translate(0.000000, 0.692593)" fill="#FFFFFF">
+                    <polygon id="Rectangle-6" points="4.94840108 0 10.4820228 5.63124379 4.58397878 5.63124379 0.319483534 5.63124379"></polygon>
+                </g>
+                <g id="mountain" stroke="#535453" stroke-linecap="square" stroke-width="0.7">
+                    <path d="M0.334490741,5.88703704 L5.01736111,0.346296296" id="Line-2"></path>
+                    <path d="M5.01736111,0.346296296 L10.369213,5.88703704" id="Line-3"></path>
+                </g>
+            </g>
+            <circle id="Oval-5" stroke="#535453" stroke-width="0.7" fill="#FFFFFF" cx="10.3888889" cy="2.83333333" r="1"></circle>
+        </g>
+    </g>
+</svg>

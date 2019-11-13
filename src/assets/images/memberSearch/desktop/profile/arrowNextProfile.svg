@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="16px" viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>arrowNextProfile</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7.73286344,14.76 C7.58696035,14.76 7.45929515,14.7059341 7.34986784,14.5978022 L0,7.35296703 L7.29515419,0.162197802 C7.51400881,-0.0540659341 7.86052863,-0.0540659341 8.06114537,0.162197802 C8.28,0.378461538 8.28,0.720879121 8.06114537,0.919120879 L1.55022026,7.35296703 L8.11585903,13.8408791 C8.33471366,14.0571429 8.33471366,14.3995604 8.11585903,14.5978022 C8.00643172,14.7059341 7.87876652,14.76 7.73286344,14.76 Z" id="path-1"></path>
+    </defs>
+    <g id="RHP-Search--Desktop-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile-Empty-state" transform="translate(-1310.000000, -168.000000)">
+            <g id="arrowNextProfile" transform="translate(1310.000000, 168.000000)">
+                <g id="colour/mid-grey" transform="translate(4.540000, 8.300000) scale(-1, 1) translate(-4.540000, -8.300000) translate(0.040000, 0.800000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#010101" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g mask="url(#mask-2)" fill="#646464" id="colour/dark-grey">
+                        <g transform="translate(-4.680000, -2.880000)">
+                            <rect x="0" y="0" width="19.7142857" height="19.9459459"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

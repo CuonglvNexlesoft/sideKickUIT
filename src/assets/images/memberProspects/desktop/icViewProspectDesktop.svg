@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="15px" viewBox="0 0 21 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icViewProspectDesktop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-43.3%" y="-65.0%" width="186.7%" height="230.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.426545516 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M14.6643519,3.52972707 C14.8808113,3.74779554 14.9999998,4.03911264 14.9999998,4.34981362 C15.0001809,4.66070097 14.8809924,4.95201808 14.6645331,5.17027293 C13.6112183,6.23153948 10.8046733,8.7 7.5,8.7 C4.1951456,8.7 1.38878172,6.23172587 0.335648066,5.17045932 C0.119007569,4.95220446 -0.000180931379,4.66088736 2.06160075e-07,4.35 C2.06160075e-07,4.03911264 0.119188707,3.74798192 0.335648066,3.52991345 C1.38878172,2.4686469 4.19532674,8.8817842e-15 7.5,8.8817842e-15 C10.8044921,8.8817842e-15 13.6110371,2.46846052 14.6643519,3.52972707 Z M7.5,1.74268392 C6.10270503,1.74268392 4.96606697,2.91223917 4.96606697,4.35 C4.96606697,5.78776083 6.10270503,6.95731608 7.5,6.95731608 C8.89729497,6.95731608 10.033933,5.78776083 10.033933,4.35 C10.033933,2.91223917 8.89711384,1.74268392 7.5,1.74268392 Z M7.5,6.14338018 C6.53906536,6.14338018 5.7570946,5.33876344 5.7570946,4.35 C5.7570946,3.36123656 6.53888422,2.55661982 7.5,2.55661982 C8.46111578,2.55661982 9.2429054,3.36105017 9.2429054,4.35 C9.2429054,5.33894983 8.46093464,6.14338018 7.5,6.14338018 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="GRID-MODE_Prospect-Viewed-me" transform="translate(-698.000000, -333.000000)">
+            <g id="UI/UserProfileThumb-Desktop-Copy-26" transform="translate(691.000000, 322.000000)">
+                <g id="UI/UserProfileThumb-Desktop">
+                    <g id="Icons/Close-Icon" filter="url(#filter-1)" transform="translate(10.000000, 14.000000)">
+                        <g id="colour/mid-grey" transform="translate(0.000000, 0.300000)">
+                            <mask id="mask-3" fill="white">
+                                <use xlink:href="#path-2"></use>
+                            </mask>
+                            <use id="icViewProspectDesktop" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-2"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>icCloseSetting@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M779.716701,186.000034 L784.866676,180.850053 C785.340738,180.375991 785.340738,179.607386 784.866676,179.133392 C784.392615,178.65933 783.624079,178.65933 783.150018,179.133392 L777.999975,184.283441 L772.849931,179.133324 C772.37587,178.659262 771.607334,178.659262 771.133273,179.133324 C770.659279,179.607386 770.659279,180.375991 771.133273,180.849985 L776.283316,185.999966 L771.133273,191.150015 C770.659279,191.624077 770.659279,192.392682 771.133273,192.866676 C771.607334,193.340738 772.37587,193.340738 772.849931,192.866676 L777.999975,187.716627 L783.150018,192.866676 C783.624011,193.340738 784.392615,193.340738 784.866676,192.866676 C785.340738,192.392614 785.340738,191.624077 784.866676,191.150015 L779.716701,186.000034 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop---Settings" transform="translate(-770.000000, -178.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="icCloseSetting" fill="#646464" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

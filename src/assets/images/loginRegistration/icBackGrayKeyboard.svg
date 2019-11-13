@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="22px" viewBox="0 0 13 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>icBackGrayKeyboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Overrides/Keyboard/Light/Suggestion-Bar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-19.000000, -11.000000)">
+        <polygon id="icBackGrayKeyboard" fill="#D3D3D3" transform="translate(25.750000, 22.000000) scale(1, -1) translate(-25.750000, -22.000000) " points="19.5 22 30 11.5 32 13.5 23.5 22 32 30.5 30 32.5"></polygon>
+    </g>
+</svg>

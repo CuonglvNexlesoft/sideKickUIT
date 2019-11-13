@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-clear--msg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M260,110.4 C254.696,110.4 250.4,114.696 250.4,120 C250.4,125.304 254.696,129.6 260,129.6 C265.304,129.6 269.6,125.304 269.6,120 C269.6,114.696 265.304,110.4 260,110.4 Z M264.728,123.36 L263.36,124.728 L260,121.368 L256.64,124.728 L255.272,123.36 L258.632,120 L255.272,116.64 L256.64,115.272 L260,118.632 L263.36,115.272 L264.728,116.64 L261.368,120 L264.728,123.36 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Results-search-messenger" transform="translate(-250.000000, -110.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="ic-clear--msg" fill="#646464" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

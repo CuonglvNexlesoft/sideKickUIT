@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="14px" viewBox="0 0 10 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Location Filled</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4.34,0 C6.71596193,0 8.68,1.75796988 8.68,4.28096544 C8.68,5.19463412 8.4209229,6.17199243 8.001875,6.90701807 L4.6212963,12.8379447 C4.56466327,12.9388674 4.45694248,13.0014999 4.34,13.0014999 C4.22305752,13.0014999 4.11533673,12.9388674 4.0587037,12.8379447 L0.678125,6.90701807 C0.259093178,6.17202414 0,5.19463412 0,4.28096544 C0,1.75796988 1.96403807,0 4.34,0 Z M4.34,2.21975904 C3.18973283,2.21975904 2.25037037,3.14636573 2.25037037,4.28096544 C2.25037037,5.41557942 3.18973604,6.34216867 4.34,6.34216867 C5.49026396,6.34216867 6.42962963,5.41557942 6.42962963,4.28096544 C6.42962963,3.14636573 5.49026717,2.21975904 4.34,2.21975904 Z" id="path-1"></path>
+    </defs>
+    <g id="RHP-Search--Desktop-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile-5-Friend-Request" transform="translate(-1051.000000, -1001.000000)">
+            <g id="Datefinder" transform="translate(1019.000000, 932.000000)">
+                <g id="Group-16" transform="translate(30.000000, 67.000000)">
+                    <g id="Icons/Location-Filled" transform="translate(0.000000, 2.000000)">
+                        <g id="colour/mid-grey" transform="translate(2.800000, 0.560000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                            <g id="colour/black" mask="url(#mask-2)" fill="#333333">
+                                <g transform="translate(-2.800000, -0.560000)">
+                                    <rect x="0" y="0" width="14" height="14"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

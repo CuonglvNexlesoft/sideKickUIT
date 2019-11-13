@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icAddPhotoEditProfile</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.6,2.13162821e-14 C4.296,2.13162821e-14 -9.23705556e-14,4.296 -9.23705556e-14,9.6 C-9.23705556e-14,14.904 4.296,19.2 9.6,19.2 C14.904,19.2 19.2,14.904 19.2,9.6 C19.2,4.296 14.904,2.13162821e-14 9.6,2.13162821e-14 Z" id="path-1"></path>
+        <path d="M10.5983276,9.60001972 L13.5932363,6.60510747 C13.8689212,6.3294222 13.8689212,5.88244922 13.5932363,5.60680339 C13.3175513,5.33111812 12.8706183,5.33111812 12.5949334,5.60680339 L9.59998521,8.60175508 L6.60503704,5.60676395 C6.32935209,5.33107868 5.88241907,5.33107868 5.60673413,5.60676395 C5.33108862,5.88244922 5.33108862,6.3294222 5.60673413,6.60506803 L8.6016823,9.59998028 L5.60673413,12.594932 C5.33108862,12.8706172 5.33108862,13.3175902 5.60673413,13.593236 C5.88241907,13.8689213 6.32935209,13.8689213 6.60503704,13.593236 L9.59998521,10.5982844 L12.5949334,13.593236 C12.8705789,13.8689213 13.3175513,13.8689213 13.5932363,13.593236 C13.8689212,13.3175508 13.8689212,12.8706172 13.5932363,12.594932 L10.5983276,9.60001972 Z" id="path-3"></path>
+    </defs>
+    <g id="Edit-Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icAddPhotoEditProfile" transform="translate(0.400000, 0.400000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+            <mask id="mask-4" fill="white">
+                <use xlink:href="#path-3"></use>
+            </mask>
+            <use id="Shape" fill="#7BCB45" fill-rule="nonzero" transform="translate(9.600000, 9.600000) rotate(-44.000000) translate(-9.600000, -9.600000) " xlink:href="#path-3"></use>
+        </g>
+    </g>
+</svg>

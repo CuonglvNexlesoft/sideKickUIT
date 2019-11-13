@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>icDatefinderHS</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-header4-Final" transform="translate(-704.000000, -823.000000)" fill-rule="nonzero">
+            <g id="Activity" transform="translate(670.000000, 173.000000)">
+                <g id="Date-Finder" transform="translate(27.000000, 641.000000)">
+                    <g id="icDatefinderHS" transform="translate(8.000000, 9.000000)">
+                        <rect id="Rectangle" stroke="#333333" x="0.5" y="2.0671508" width="18.5701357" height="17.1383194" rx="2"></rect>
+                        <path d="M0.362409921,5.44149583 L19.2077258,5.44149583" id="Line" stroke="#333333" stroke-linecap="square"></path>
+                        <rect id="Rectangle" stroke="#333333" x="3.39927937" y="0.5" width="1.17445953" height="2.62766388" rx="0.587229764"></rect>
+                        <rect id="Rectangle-Copy" stroke="#333333" x="9.19783811" y="0.5" width="1.17445953" height="2.62766388" rx="0.587229764"></rect>
+                        <rect id="Rectangle-Copy-2" stroke="#333333" x="14.9963968" y="0.5" width="1.17445953" height="2.62766388" rx="0.587229764"></rect>
+                        <path d="M13.2381657,8.717395 C12.6687912,8.14890907 11.9117439,7.83575399 11.1063881,7.83575399 C10.4919625,7.83575399 9.90542571,8.01811051 9.40907032,8.35704456 C8.91263548,8.01803119 8.32617811,7.83575399 7.71175259,7.83575399 C6.90647616,7.83575399 6.14934945,8.14890907 5.57997491,8.71731568 C5.01044147,9.28572228 4.69683258,10.0414826 4.69683258,10.8455487 C4.69683258,11.6494562 5.01044147,12.4053751 5.57997491,12.973861 L8.97461038,16.3624877 C9.09458743,16.4822608 9.25190833,16.5421473 9.40914978,16.5421473 C9.56639122,16.5421473 9.72371213,16.4822608 9.84376863,16.3624084 L13.2381657,12.9737024 C14.4133052,11.8000847 14.4132257,9.89069538 13.2381657,8.717395 Z" id="Shape" fill="#333333"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

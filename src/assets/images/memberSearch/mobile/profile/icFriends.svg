@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icFriends</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M3.2,6.4 C4.96484848,6.4 6.4,4.96484848 6.4,3.2 C6.4,1.43515152 4.96484848,0 3.2,0 C1.43515152,0 0,1.43515152 0,3.2 C0,4.96484848 1.43515152,6.4 3.2,6.4 Z" id="path-1"></path>
+        <path d="M3.6,7.6 C5.59384615,7.6 7.2,5.90461538 7.2,3.8 C7.2,1.69538462 5.59384615,0 3.6,0 C1.60615385,0 0,1.71487179 0,3.8 C0,5.90461538 1.62461538,7.6 3.6,7.6 Z" id="path-3"></path>
+        <path d="M13.7031111,0.296 L9.86177778,0.296 C8.77244444,0.296 7.75955556,0.689112583 6.976,1.35740397 C6.91866667,1.33774834 6.84222222,1.31809272 6.76577778,1.31809272 L3.84177778,1.31809272 C1.77777778,1.31809272 0.096,3.04778808 0.096,5.17059603 L0.096,5.64233113 C0.096,5.97647682 0.344444444,6.232 0.669333333,6.232 L7.56844444,6.232 L17.7546667,6.232 C18.0795556,6.232 18.328,5.97647682 18.328,5.64233113 L18.328,5.03300662 C18.3088889,2.41880795 16.2448889,0.296 13.7031111,0.296 Z" id="path-5"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="New-Members-Grid-OFF-Copy-7" transform="translate(-17.000000, -2347.000000)">
+            <g id="icFriends" transform="translate(17.000000, 2347.000000)">
+                <g id="colour/mid-grey-copy-2" transform="translate(2.000000, 2.800000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g mask="url(#mask-2)" fill="#646464" id="colour/dark-grey">
+                        <g transform="translate(-2.986667, -5.973333)">
+                            <rect x="0" y="0" width="21.3333333" height="21.3333333"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="colour/mid-grey-copy" transform="translate(9.200000, 0.400000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-3"></use>
+                    <g mask="url(#mask-4)" fill="#646464" id="colour/dark-grey">
+                        <g transform="translate(-10.164706, -3.377778)">
+                            <rect x="0" y="0" width="21.1764706" height="21.1111111"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="colour/mid-grey" transform="translate(0.800000, 9.200000)">
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-5"></use>
+                    <g mask="url(#mask-6)" fill="#646464" id="colour/dark-grey">
+                        <g transform="translate(-1.600000, -12.000000)">
+                            <rect x="0" y="0" width="21.2" height="21.2"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

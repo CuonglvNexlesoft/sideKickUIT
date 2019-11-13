@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="9px" viewBox="0 0 27 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>dot-card-prospect</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M636.875,343.416667 C635.816454,343.416667 634.958333,342.558546 634.958333,341.5 C634.958333,340.441454 635.816454,339.583333 636.875,339.583333 C637.933546,339.583333 638.791667,340.441454 638.791667,341.5 C638.791667,342.558546 637.933546,343.416667 636.875,343.416667 Z M645.5,343.416667 C644.441454,343.416667 643.583333,342.558546 643.583333,341.5 C643.583333,340.441454 644.441454,339.583333 645.5,339.583333 C646.558546,339.583333 647.416667,340.441454 647.416667,341.5 C647.416667,342.558546 646.558546,343.416667 645.5,343.416667 Z M654.125,343.416667 C653.066454,343.416667 652.208333,342.558546 652.208333,341.5 C652.208333,340.441454 653.066454,339.583333 654.125,339.583333 C655.183546,339.583333 656.041667,340.441454 656.041667,341.5 C656.041667,342.558546 655.183546,343.416667 654.125,343.416667 Z" id="path-1"></path>
+        <filter x="-21.3%" y="-117.4%" width="142.7%" height="334.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.426545516 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="GRID-MODE_Prospect-Viewed-me" transform="translate(-632.000000, -337.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="dot-card-prospect">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

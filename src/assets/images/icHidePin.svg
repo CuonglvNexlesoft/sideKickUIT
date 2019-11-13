@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="13px" viewBox="0 0 18 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>icHidePin</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-1.3%" y="-12.9%" width="102.7%" height="125.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M14.2402452,15.0023957 L18.4854692,10.762439 C18.6023619,10.6459729 18.6666667,10.4902547 18.6666667,10.3242168 C18.6666667,10.1580867 18.6023619,10.0024607 18.4854692,9.8858103 L18.1134793,9.51448238 C17.9967712,9.3976477 17.8407605,9.33333333 17.6745091,9.33333333 C17.5082576,9.33333333 17.3524315,9.3976477 17.2356311,9.51448238 L12.1810154,14.5625149 C12.0637537,14.6795339 11.9995412,14.835897 12.0000025,15.0021192 C11.9995412,15.1690786 12.0636615,15.3252575 12.1810154,15.4423686 L17.2309259,20.4855176 C17.3477263,20.6023523 17.5035524,20.6666667 17.6698961,20.6666667 C17.8361476,20.6666667 17.9919737,20.6023523 18.1088663,20.4855176 L18.480764,20.1141897 C18.7227604,19.8725041 18.7227604,19.4790623 18.480764,19.2374688 L14.2402452,15.0023957 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Messenger-Inbox---un-pin" transform="translate(-323.000000, -568.000000)">
+            <g id="Group-8-Copy" transform="translate(19.000000, 555.000000)">
+                <g id="Group-12">
+                    <g id="Group-4" filter="url(#filter-1)">
+                        <g id="Group-9">
+                            <g id="UI/icon/arrow-left" transform="translate(313.000000, 19.000000) rotate(90.000000) translate(-313.000000, -19.000000) translate(298.000000, 4.000000)">
+                                <mask id="mask-3" fill="white">
+                                    <use xlink:href="#path-2"></use>
+                                </mask>
+                                <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-2"></use>
+                                <g id="colour/dark-grey" mask="url(#mask-3)" fill="#646464" fill-rule="evenodd">
+                                    <rect x="0" y="0" width="30" height="30"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

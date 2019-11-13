@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icSelectedGrid</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="18" cy="18" r="18"></circle>
+        <filter x="-9.7%" y="-6.9%" width="119.4%" height="119.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M13.0139161,10.0891832 C14.1699883,10.0891832 15.3758842,10.8715493 16.2711353,11.7974225 L17.8757902,13.4597059 C17.9608763,13.5486046 18.079239,13.5989726 18.203061,13.5989726 C18.326883,13.5989726 18.4452457,13.5486046 18.5303318,13.4597059 L20.2743653,11.449193 C22.5765951,9.32617867 25.3518381,9.94567827 27.1423178,11.7974225 C28.9327749,13.6491645 28.3299882,16.650451 26.5395311,18.5021952 C23.7588498,21.3780262 20.9801951,24.2577744 18.1995364,27.1335609 L9.85956471,18.4952512 C8.07041392,16.6413258 7.62385968,13.3008949 9.41433924,11.449193 C10.3095678,10.523322 11.8578438,10.0891832 13.0139161,10.0891832 Z" id="path-4"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icSelectedGrid" transform="translate(2.000000, 1.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask-Copy-5">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use fill="#7BCB45" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <mask id="mask-5" fill="white">
+                <use xlink:href="#path-4"></use>
+            </mask>
+            <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-4"></use>
+        </g>
+    </g>
+</svg>

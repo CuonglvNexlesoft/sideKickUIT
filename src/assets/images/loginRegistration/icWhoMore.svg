@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="8px" viewBox="0 0 40 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>icWhoMore</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Looking-for---stage-1" transform="translate(-278.000000, -397.000000)" fill="#FFFFFF">
+            <g id="icWhoMore" transform="translate(278.000000, 397.000000)">
+                <path d="M4,0 C6.2092,0 8,1.7908 8,4 C8,6.2084 6.2092,8 4,8 C1.7908,8 0,6.2084 0,4 C0,1.7908 1.7908,0 4,0" id="Fill-1"></path>
+                <path d="M20,0 C22.2092,0 24,1.7908 24,4 C24,6.2084 22.2092,8 20,8 C17.7912,8 16,6.2084 16,4 C16,1.7908 17.7912,0 20,0" id="Fill-3"></path>
+                <path d="M36,0 C38.2092,0 40,1.7908 40,4 C40,6.2084 38.2092,8 36,8 C33.7912,8 32,6.2084 32,4 C32,1.7908 33.7912,0 36,0" id="Fill-5"></path>
+            </g>
+        </g>
+    </g>
+</svg>

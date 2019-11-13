@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="23px" viewBox="0 0 31 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>icBreakerActive</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Quick-reply" transform="translate(-9.000000, -375.000000)">
+            <g id="icBreakerActive" transform="translate(9.000000, 376.000000)">
+                <g id="Quick-msg---selected">
+                    <g id="Group-7">
+                        <path d="M7,11 C7.43361966,13.5563751 9.038818,14.8133827 11.6320963,16.0604821 L11.6320963,20.67619 C11.6320963,20.7947562 11.7028104,20.904827 11.8163623,20.9612167 C11.868279,20.9871953 11.9255664,21 11.9824702,21 C12.0496039,21 12.1168654,20.9819011 12.175048,20.946319 L17.7844828,17.5150414 C18.0114586,17.5259992 18.2238568,17.5370801 18.4402191,17.5370801 C25.0307008,17.5370801 30,13.7674642 30,8.76884787 C30,3.76961592 25.0307008,0 18.4402191,0 C15.14517,0 12.2553526,0.942373199 10.1891697,2.50971195 L15.203864,2.50971195 L10.5,11 L7,11 Z" id="Stroke-3" stroke="#FFFFFF" fill="#7EC34D"></path>
+                        <path d="M3,5 L12,5" id="Stroke-5" stroke="#7EC34D"></path>
+                        <path d="M0,7 L9,7" id="Stroke-7" stroke="#7EC34D"></path>
+                        <path d="M3,9 L8,9" id="Stroke-9" stroke="#7EC34D"></path>
+                        <circle id="Oval-10" stroke="#FFFFFF" fill="#FFFFFF" cx="16" cy="9" r="1"></circle>
+                        <circle id="Oval-10" stroke="#FFFFFF" fill="#FFFFFF" cx="20" cy="9" r="1"></circle>
+                        <circle id="Oval-10" stroke="#FFFFFF" fill="#FFFFFF" cx="24" cy="9" r="1"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

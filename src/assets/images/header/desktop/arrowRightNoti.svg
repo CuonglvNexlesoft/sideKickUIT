@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="16px" viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>arrowRightNoti</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8.16210049,7.32198052 C8.17810487,7.57124352 8.09085709,7.82589615 7.90035713,8.0163961 L1.5363961,14.3803571 C1.18492424,14.731829 0.61507576,14.731829 0.263603897,14.3803571 C-0.0878679656,14.0288853 -0.0878679656,13.4590368 0.263603897,13.1075649 L6.04918831,7.32198052 L0.263603897,1.5363961 C-0.0878679656,1.18492424 -0.0878679656,0.61507576 0.263603897,0.263603897 C0.61507576,-0.0878679656 1.18492424,-0.0878679656 1.5363961,0.263603897 L7.90035713,6.62756493 C8.09085709,6.81806488 8.17810487,7.07271751 8.16210049,7.32198052 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Notifications-sub-menu-final" transform="translate(-1554.000000, -788.000000)">
+            <g id="Icons/PictureArrow" transform="translate(1558.000000, 796.000000) scale(1, -1) translate(-1558.000000, -796.000000) translate(1553.000000, 788.000000)">
+                <g id="colour/mid-grey" transform="translate(4.820000, 8.300000) scale(-1, 1) translate(-4.820000, -8.300000) translate(0.320000, 0.800000)">
+                    <g>
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="arrowRightNoti" fill="#FFFFFF" fill-rule="nonzero" transform="translate(4.081981, 7.321981) scale(-1, 1) translate(-4.081981, -7.321981) " xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

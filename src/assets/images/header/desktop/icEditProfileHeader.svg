@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="34px" viewBox="0 0 36 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>icEditProfileHeader</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-header4-Final-Home-with-submenu" transform="translate(-1187.000000, -108.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-19" transform="translate(1079.000000, 64.000000)">
+                <g id="Top" transform="translate(16.000000, 27.000000)">
+                    <g id="Group-6">
+                        <g id="Group-7" transform="translate(67.000000, 9.000000)">
+                            <g id="AccountProfile" transform="translate(25.000000, 8.000000)">
+                                <path d="M14.9465185,32.9614791 C14.9465185,32.9614791 6.95692498,33.9460208 0,25.9602934 C0,25.9602934 7.44608377,21.4751588 10.4353875,21.4751588 L8.42440134,16.4430566 C8.42440134,16.4430566 5.43509764,12.4501929 7.44608377,10.4264127 C7.44608377,10.4264127 6.46776619,5.39431046 7.44608377,3.42522698 C7.44608377,3.42522698 13.4246912,-3.57595871 21.3599337,2.44068524 C21.3599337,2.44068524 23.3709199,4.46446548 22.3382513,9.44187093 C22.3382513,9.44187093 24.3492374,13.4347346 21.3599337,15.4585149 L19.3489476,21.4751588 L22.3382513,23.4989391 L15.3813263,29.515583 L14.9465185,32.9614791 Z M18,30.8999796 L32.8713405,16.4144297 C32.8713405,16.4144297 36.8190054,14.3289614 35.8456086,19.5144501 L20.9742681,34 L18,34 L18,30.8999796 Z" id="icEditProfileHeader"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

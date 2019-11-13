@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="6px" viewBox="0 0 11 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>icArrowDown</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M5.58484581,10.66 C5.47947137,10.66 5.38726872,10.6209524 5.30823789,10.5428571 L0,5.31047619 L5.26872247,0.117142857 C5.42678414,-0.039047619 5.67704846,-0.039047619 5.82193833,0.117142857 C5.98,0.273333333 5.98,0.520634921 5.82193833,0.663809524 L1.11960352,5.31047619 L5.86145374,9.99619048 C6.01951542,10.152381 6.01951542,10.3996825 5.86145374,10.5428571 C5.78242291,10.6209524 5.69022026,10.66 5.58484581,10.66 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Prospects-Views-Swipe-Copy" transform="translate(-96.000000, -81.000000)">
+            <g id="View" transform="translate(22.000000, 76.000000)">
+                <g id="UP_views" transform="translate(72.500000, 7.500000) rotate(-90.000000) translate(-72.500000, -7.500000) translate(69.000000, -5.000000)">
+                    <g id="icArrowDown" transform="translate(3.140000, 19.313866) scale(-1, 1) rotate(180.000000) translate(-3.140000, -19.313866) translate(0.140000, 13.813866)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#7BCB45" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

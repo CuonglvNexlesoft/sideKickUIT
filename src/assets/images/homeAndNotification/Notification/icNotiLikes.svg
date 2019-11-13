@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icNotiLikes</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7.05273061,9.02175015 C7.75494558,8.34089103 8.67822768,8 9.60276059,8 C10.5272935,8 11.4552215,8.34089241 12.1574514,9.02175015 L12.9996983,9.84087475 L13.8419602,9.02606133 C15.2464051,7.66431688 17.5422364,7.66434723 18.9466664,9.02606133 C20.3511112,10.3877768 20.3511112,12.5747795 18.9466664,13.9364963 C17.0354021,15.7896286 15.1250013,17.6448303 13.213752,19.4979212 C13.1574954,19.553021 13.0792399,19.5842389 12.9973754,19.5842389 C12.9155108,19.5842389 12.8372554,19.553021 12.7809988,19.4979212 L7.05273061,13.9321783 C5.64989401,12.5694074 5.64828582,10.3834436 7.05273061,9.02175015 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icNotiLikes">
+            <circle id="Oval-5" stroke="#FFFFFF" fill="#7BCB45" cx="13" cy="13" r="12.5"></circle>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

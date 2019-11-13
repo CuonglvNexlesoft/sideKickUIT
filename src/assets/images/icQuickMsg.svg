@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="16px" viewBox="0 0 21 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>icQuickMsg</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="1---USER-STARTS-CALL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icQuickMsg" transform="translate(0.000000, 1.000000)" stroke="#666666">
+            <g id="Page-1" stroke-width="0.8">
+                <path d="M4.66666667,7.33333333 C4.95574644,9.03758338 6.02587867,9.87558849 7.75473086,10.706988 L7.75473086,13.7841267 C7.75473086,13.8631708 7.80187363,13.9365513 7.87757485,13.9741445 C7.91218599,13.9914636 7.9503776,14 7.98831346,14 C8.03306925,14 8.07791028,13.9879341 8.11669864,13.9642126 L11.8563219,11.6766942 C12.0076391,11.6839995 12.1492379,11.6913868 12.2934794,11.6913868 C16.6871339,11.6913868 20,9.17830948 20,5.84589858 C20,2.51307728 16.6871339,0 12.2934794,0 C10.09678,0 8.17023508,0.6282488 6.79277977,1.6731413 L10.1359093,1.6731413 L7,7.33333333 L4.66666667,7.33333333 Z" id="Stroke-3" fill="#FFFFFF"></path>
+                <path d="M2,3.33333333 L8,3.33333333" id="Stroke-5"></path>
+                <path d="M0,4.66666667 L6,4.66666667" id="Stroke-7"></path>
+                <path d="M2,6 L5.33333333,6" id="Stroke-9"></path>
+            </g>
+            <circle id="Oval-10" stroke-width="0.6" fill="#FFFFFF" cx="10.6666667" cy="6" r="1"></circle>
+            <circle id="Oval-10" stroke-width="0.6" fill="#FFFFFF" cx="13.3333333" cy="6" r="1"></circle>
+            <circle id="Oval-10" stroke-width="0.6" fill="#FFFFFF" cx="16" cy="6" r="1"></circle>
+        </g>
+    </g>
+</svg>

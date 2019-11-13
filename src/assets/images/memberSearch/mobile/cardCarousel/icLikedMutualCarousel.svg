@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icLikedMutualCarousel</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1.35351078,1.45532889 C-0.452203951,3.39485564 -0.450136273,6.50843121 1.35351078,8.44949263 L8.71842707,16.3770535 C8.79075691,16.4555347 8.89137108,16.5 8.99662551,16.5 C9.10187993,16.5 9.20249411,16.4555347 9.27482394,16.3770535 C11.7321445,13.7376051 14.1883742,11.0951504 16.6457139,8.45564308 C18.4514287,6.51608292 18.4514287,3.40102771 16.6457139,1.46146951 C14.8400183,-0.478086715 11.8882351,-0.478129945 10.0825203,1.46146951 L8.99961215,2.62204825 L7.91672317,1.45532889 C7.01385621,0.485549789 5.82080593,2.23394753e-14 4.63212076,2.23394753e-14 C3.44343558,0 2.2563586,0.485547824 1.35351078,1.45532889 Z" id="path-1"></path>
+        <path d="M0.639157869,0.66151313 C-0.213540755,1.5431162 -0.212564351,2.95837782 0.639157869,3.84067847 L4.11703501,7.44411521 C4.15119076,7.47978852 4.19870301,7.5 4.24840649,7.5 C4.29810997,7.5 4.34562222,7.47978852 4.37977797,7.44411521 C5.54017935,6.24436597 6.70006559,5.04325016 7.86047601,3.84347413 C8.71317466,2.96185587 8.71317466,1.54592169 7.86047601,0.664304325 C7.0077864,-0.217312143 5.61388878,-0.217331793 4.76119013,0.664304325 L4.24981685,1.19184011 L3.73845261,0.66151313 C3.31209877,0.220704449 2.74871391,1.0154307e-14 2.18739036,1.0154307e-14 C1.6260668,0 1.06550267,0.220703556 0.639157869,0.66151313 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/MutualMatch_New" transform="translate(-1.000000, -1.000000)">
+            <g id="colour/mid-grey" transform="translate(1.000000, 7.500000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#A5A5A5" xlink:href="#path-1"></use>
+                <g id="colour/primary-green" mask="url(#mask-2)" fill="#7BCB45">
+                    <g transform="translate(-1.500000, -0.500000)">
+                        <rect x="0" y="0" width="21" height="18"></rect>
+                    </g>
+                </g>
+            </g>
+            <g id="colour/mid-grey" transform="translate(15.500000, 1.000000)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" xlink:href="#path-3"></use>
+                <g id="colour/primary-green" mask="url(#mask-4)" fill="#7BCB45">
+                    <g transform="translate(-5.500000, -5.000000)">
+                        <rect x="0" y="0" width="16" height="16"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="17px" viewBox="0 0 10 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>arrowRightMsgSetting</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M347.797933,155.135534 C347.815715,155.412493 347.718773,155.69544 347.507107,155.907107 L340.436039,162.978175 C340.045515,163.368699 339.41235,163.368699 339.021825,162.978175 C338.631301,162.58765 338.631301,161.954485 339.021825,161.563961 L345.450253,155.135534 L339.021825,148.707107 C338.631301,148.316582 338.631301,147.683418 339.021825,147.292893 C339.41235,146.902369 340.045515,146.902369 340.436039,147.292893 L347.507107,154.363961 C347.718773,154.575628 347.815715,154.858575 347.797933,155.135534 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Messenger-settings" transform="translate(-338.000000, -147.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="arrowRightMsgSetting" fill="#A5A5A5" fill-rule="nonzero" transform="translate(343.264466, 155.135534) rotate(-360.000000) translate(-343.264466, -155.135534) " xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

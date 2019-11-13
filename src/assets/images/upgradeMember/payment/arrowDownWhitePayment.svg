@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="8px" viewBox="0 0 15 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>arrowDownWhitePayment</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.1087924,3.94867422 C11.1232012,4.18342476 11.0454599,4.42273072 10.8755686,4.60832446 L5.34168941,10.653679 C5.06191975,10.9593067 4.58736141,10.9802688 4.28173371,10.7004991 C4.26544556,10.685589 4.24982364,10.6699671 4.23491358,10.653679 C3.92169547,10.3115113 3.92169547,9.78677573 4.23491358,9.44460807 L9.26585655,3.94867422 L4.23491358,-1.54725962 C3.92169547,-1.88942728 3.92169547,-2.41416286 4.23491358,-2.75633052 C4.51468324,-3.06195823 4.98924157,-3.08292032 5.29486928,-2.80315065 C5.31115743,-2.78824059 5.32677935,-2.77261867 5.34168941,-2.75633052 L10.8755686,3.28902399 C11.0454599,3.47461772 11.1232012,3.71392368 11.1087924,3.94867422 Z" id="path-1"></path>
+    </defs>
+    <g id="Web-upgrade" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="arrowDownWhitePayment" fill="#FFFFFF" fill-rule="nonzero" transform="translate(7.555241, 3.948674) rotate(90.000000) translate(-7.555241, -3.948674) " xlink:href="#path-1"></use>
+    </g>
+</svg>

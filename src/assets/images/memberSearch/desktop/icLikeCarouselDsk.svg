@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="64px" viewBox="0 0 72 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>icLikeCarouselDsk</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M5.41404312,5.64491204 C9.02543441,1.88333701 13.7737423,-3.41060513e-13 18.528483,-2.54410427e-13 C23.2832237,-2.54410427e-13 28.0554248,1.88334464 31.6668927,5.64491204 L35.9984486,10.170369 L40.3300811,5.66873024 C47.5529403,-1.85456464 59.3600731,-1.85439696 66.5828556,5.66873024 C73.8057148,13.191865 73.8057148,25.2745035 66.5828556,32.7976459 C56.7534968,43.0357347 46.928578,53.2852563 37.0992958,63.5231165 C36.8099764,63.8275287 36.4075197,64 35.986502,64 C35.5654843,64 35.1630276,63.8275287 34.8737083,63.5231165 L5.41404312,32.7737896 C-1.80054509,25.2448241 -1.8088158,13.1679249 5.41404312,5.64491204 Z" id="path-1"></path>
+    </defs>
+    <g id="RHP-Search--Desktop-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="icLikeCarouselDsk" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>

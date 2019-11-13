@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="36px" viewBox="0 0 46 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>diamond</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="RHP-Mobile-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Diamond" transform="translate(-2.000000, -7.000000)">
+            <g id="diamond" transform="translate(3.000000, 8.000000)">
+                <g id="Group" fill-rule="nonzero">
+                    <polygon id="Shape" fill="#CBF9F4" points="36.6027619 0.0228030303 43.9235238 10.3075 36.6017143 10.3075 29.282 10.3075"></polygon>
+                    <polygon id="Shape" fill="#CBF9F4" points="14.6415238 10.3075 21.9832381 34.9241667 0 10.3075"></polygon>
+                    <polygon id="Shape" fill="#CBF9F4" points="21.9612381 0.0228030303 14.6415238 10.3075 7.3207619 0.0228030303"></polygon>
+                    <polygon id="Shape" fill="#ECFFFF" points="7.3207619 0.0228030303 14.6415238 10.3075 0 10.3075"></polygon>
+                    <polygon id="Shape" fill="#FFFFFF" points="43.947619 10.3287121 21.9832381 34.9241667 29.282 10.3075 36.6017143 10.3075 43.9235238 10.3075"></polygon>
+                    <polygon id="Shape" fill="#FFFFFF" points="36.6027619 0.0228030303 29.282 10.3075 21.9612381 0.0228030303"></polygon>
+                    <polygon id="Shape" fill="#ECFFFF" points="21.9612381 0.0228030303 29.282 10.3075 14.6415238 10.3075"></polygon>
+                    <polygon id="Shape" fill="#D8F8F8" points="29.282 10.3075 21.9832381 34.9241667 14.6415238 10.3075"></polygon>
+                </g>
+                <g id="Group" stroke="#000000" stroke-linejoin="round" stroke-width="0.5">
+                    <polyline id="Shape" points="43.9664762 10.3075 43.947619 10.3287121 21.9832381 34.9241667 0 10.3075"></polyline>
+                    <polygon id="Shape" points="0 10.3075 7.3207619 0.0228030303 14.6415238 10.3075"></polygon>
+                    <polygon id="Shape" points="14.6415238 10.3075 21.9612381 0.0228030303 29.282 10.3075"></polygon>
+                    <polygon id="Shape" points="29.282 10.3075 36.6027619 0.0228030303 43.9235238 10.3075 36.6017143 10.3075"></polygon>
+                    <polyline id="Shape" points="7.3207619 0.0228030303 21.9612381 0.0228030303 36.6027619 0.0228030303"></polyline>
+                    <polyline id="Shape" points="14.6415238 10.3075 21.9832381 34.9241667 29.282 10.3075"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

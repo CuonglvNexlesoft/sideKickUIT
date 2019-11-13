@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>icPencilEdit</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="popup---quick-msg---select-template" transform="translate(-837.000000, -348.000000)" fill="#8B8B8B" fill-rule="nonzero">
+            <g id="QUICK-MESSAGE" transform="translate(317.000000, 216.000000)">
+                <g id="popup">
+                    <g id="Group" transform="translate(0.000000, 84.000000)">
+                        <g id="icPencilEdit" transform="translate(520.909091, 48.851852)">
+                            <path d="M11.2776389,3.05341614 L14.9669855,6.79348916 L5.62823039,16.2607348 L1.9409755,12.5206617 L11.2776389,3.05341614 Z M17.766486,2.15139628 L16.1211793,0.483452124 C15.4853251,-0.161150708 14.4528293,-0.161150708 13.8148148,0.483452124 L12.2387755,2.08117583 L15.9281222,5.82128362 L17.766486,3.95762604 C18.2596562,3.45763562 18.2596562,2.65135195 17.766486,2.15139628 Z M0.0102665812,17.7776354 C-0.0568747953,18.0839634 0.215942769,18.3584489 0.518147545,18.2839527 L4.62930524,17.2734387 L0.942050352,13.5333657 L0.0102665812,17.7776354 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

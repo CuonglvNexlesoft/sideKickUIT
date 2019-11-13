@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="18px" viewBox="0 0 12 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>icBackShadow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M18.75,38.381241 C18.5164606,38.1471752 18.1993971,38.015634 17.86875,38.015634 C17.5381029,38.015634 17.2210394,38.1471752 16.9875,38.381241 L11.25,44.118741 C10.7625,44.606241 10.7625,45.393741 11.25,45.881241 L16.9875,51.618741 C17.475,52.106241 18.2625,52.106241 18.75,51.618741 C19.2375,51.131241 19.2375,50.343741 18.75,49.856241 L13.9,44.993741 L18.75,40.143741 C19.2375,39.656241 19.225,38.856241 18.75,38.381241 Z" id="path-1"></path>
+        <filter x="-36.4%" y="-21.5%" width="172.9%" height="143.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Chatrooms_VideoChat_MeBroadcasting" transform="translate(-9.000000, -36.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="icBackShadow">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

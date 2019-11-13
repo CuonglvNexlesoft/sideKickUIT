@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="91px" height="83px" viewBox="0 0 91 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icNoPhoto</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-1.9%" y="-1.1%" width="103.7%" height="102.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M226.801185,100.240027 C233.495941,100.240027 238.921037,105.667093 238.92,112.359645 L238.92,154.779345 C238.92,161.473971 233.494904,166.9 226.800148,166.9 L166.199852,166.9 C159.506134,166.9 154.08,161.472934 154.08,154.779345 L154.08,112.359645 C154.08,105.667093 159.506134,100.240027 166.199852,100.240027 L174.280445,100.240027 C174.280445,94.6615178 178.803087,90.14 184.380667,90.14 L208.621408,90.14 C214.200025,90.14 218.720593,94.6615178 218.720593,100.240027 L226.801185,100.240027 Z M234.880741,154.778308 L234.880741,112.359645 C234.880741,107.897252 231.263664,104.280246 226.801185,104.280246 L214.680296,104.280246 L214.680296,100.240027 L214.415784,100.240027 C213.517479,96.75683 210.364077,94.1802184 206.600741,94.1802184 L186.400296,94.1802184 C182.63696,94.1802184 179.483558,96.75683 178.585253,100.240027 L178.320741,100.240027 L178.320741,104.280246 L166.200889,104.280246 C161.73841,104.280246 158.120296,107.897252 158.120296,112.359645 L158.120296,154.778308 C158.120296,159.2407 161.73841,162.858744 166.200889,162.858744 L226.801185,162.858744 C231.263664,162.858744 234.880741,159.2407 234.880741,154.778308 Z M196.5,148.72 C187.575078,148.72 180.34,141.484922 180.34,132.56 C180.34,123.635078 187.575078,116.4 196.5,116.4 C205.424922,116.4 212.66,123.635078 212.66,132.56 C212.66,141.484922 205.424922,148.72 196.5,148.72 Z M196.5,144.68 C203.193691,144.68 208.62,139.253691 208.62,132.56 C208.62,125.866309 203.193691,120.44 196.5,120.44 C189.806309,120.44 184.38,125.866309 184.38,132.56 C184.38,139.253691 189.806309,144.68 196.5,144.68 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="New-Members-Empty-state" transform="translate(-150.000000, -174.000000)">
+            <g id="brooke-cagle-32432" filter="url(#filter-1)" transform="translate(-1.000000, 88.000000)">
+                <g>
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="icNoPhoto" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

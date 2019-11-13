@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="10px" viewBox="0 0 13 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icCheckDsk</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0.15,5.5 C0.05,5.4 0,5.25 0,5.15 C0,5.05 0.05,4.9 0.15,4.8 L0.85,4.1 C1.05,3.9 1.35,3.9 1.55,4.1 L1.6,4.15 L4.35,7.1 C4.45,7.2 4.6,7.2 4.7,7.1 L11.4,0.15 L11.45,0.15 L11.45,0.15 C11.65,-0.05 11.95,-0.05 12.15,0.15 L12.85,0.85 C13.05,1.05 13.05,1.35 12.85,1.55 L12.85,1.55 L4.85,9.85 C4.75,9.95 4.65,10 4.5,10 C4.35,10 4.25,9.95 4.15,9.85 L0.25,5.65 L0.15,5.5 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="icCheckDsk" fill="#535353" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>

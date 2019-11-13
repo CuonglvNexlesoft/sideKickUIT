@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icClosePhotoGallery</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.626068,9.500042 L18.0041143,3.12198814 C18.5912212,2.53488062 18.5912212,1.58299371 18.0041143,0.995970186 C17.4170075,0.408862669 16.4652057,0.408862669 15.8780989,0.995970186 L9.4999685,7.37410804 L3.12183814,0.995886194 C2.53473131,0.408778676 1.58292951,0.408778676 0.995822683,0.995886194 C0.408799847,1.58299371 0.408799847,2.53488062 0.995822683,3.12190415 L7.37395305,9.499958 L0.995822683,15.8780959 C0.408799847,16.4652034 0.408799847,17.4170903 0.995822683,18.0041138 C1.58292951,18.5912213 2.53473131,18.5912213 3.12183814,18.0041138 L9.4999685,11.625976 L15.8780989,18.0041138 C16.4651217,18.5912213 17.4170075,18.5912213 18.0041143,18.0041138 C18.5912212,17.4170063 18.5912212,16.4652034 18.0041143,15.8780959 L11.626068,9.500042 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="See-more-picture" transform="translate(-19.000000, -94.000000)">
+            <g id="icClosePhotoGallery" transform="translate(19.000000, 94.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Shape" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <g id="colour/white" mask="url(#mask-2)" fill="#FFFFFF">
+                    <g transform="translate(-8.000000, -8.000000)" id="colour/light-grey">
+                        <rect x="0" y="0" width="35" height="35"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

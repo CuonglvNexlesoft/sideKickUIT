@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="19px" viewBox="0 0 11 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icArrowLocation</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.97590059,8.9490873 C9.99546151,9.25374208 9.88882533,9.56498418 9.65599205,9.79781746 L1.87781746,17.5759921 C1.44824074,18.0055688 0.751759262,18.0055688 0.322182541,17.5759921 C-0.10739418,17.1464153 -0.10739418,16.4499339 0.322182541,16.0203571 L7.39345238,8.9490873 L0.322182541,1.87781746 C-0.10739418,1.44824074 -0.10739418,0.751759262 0.322182541,0.322182541 C0.751759262,-0.10739418 1.44824074,-0.10739418 1.87781746,0.322182541 L9.65599205,8.10035713 C9.88882533,8.33319041 9.99546151,8.64443252 9.97590059,8.9490873 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="colour/mid-grey" transform="translate(5.280000, 9.200000) scale(-1, 1) translate(-5.280000, -9.200000) translate(0.280000, 0.200000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="icArrowLocation" fill="#A5A5A5" fill-rule="nonzero" transform="translate(4.989087, 8.949087) scale(-1, 1) translate(-4.989087, -8.949087) " xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

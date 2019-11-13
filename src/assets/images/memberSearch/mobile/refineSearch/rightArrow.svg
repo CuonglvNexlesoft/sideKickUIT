@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="19px" viewBox="0 0 11 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>rightArrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.45127753,18.04 C9.27295154,18.04 9.1169163,17.9739194 8.98317181,17.8417582 L0,8.98695971 L8.91629956,0.198241758 C9.18378855,-0.0660805861 9.60731278,-0.0660805861 9.85251101,0.198241758 C10.12,0.462564103 10.12,0.881074481 9.85251101,1.12336996 L1.89471366,8.98695971 L9.91938326,16.91663 C10.1868722,17.1809524 10.1868722,17.5994628 9.91938326,17.8417582 C9.78563877,17.9739194 9.62960352,18.04 9.45127753,18.04 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI/Boxes/general-Option-Filter" transform="translate(-351.000000, -12.000000)">
+            <g id="rightArrow" transform="translate(351.000000, 12.000000)">
+                <g id="colour/mid-grey" transform="translate(5.100000, 9.220000) scale(-1, 1) translate(-5.100000, -9.220000) translate(0.040000, 0.200000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#010101" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g mask="url(#mask-2)" fill="#A5A5A5">
+                        <g transform="translate(-5.720000, -3.520000)">
+                            <rect x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

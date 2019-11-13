@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="27px" viewBox="0 0 18 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icLocationDateFinder</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M152.28,436.12 C157.031924,436.12 160.96,439.63594 160.96,444.681931 C160.96,446.509268 160.441846,448.463985 159.60375,449.934036 L152.842593,461.795889 C152.729327,461.997735 152.513885,462.123 152.28,462.123 C152.046115,462.123 151.830673,461.997735 151.717407,461.795889 L144.95625,449.934036 C144.118186,448.464048 143.6,446.509268 143.6,444.681931 C143.6,439.63594 147.528076,436.12 152.28,436.12 Z M152.28,440.559518 C149.979466,440.559518 148.100741,442.412731 148.100741,444.681931 C148.100741,446.951159 149.979472,448.804337 152.28,448.804337 C154.580528,448.804337 156.459259,446.951159 156.459259,444.681931 C156.459259,442.412731 154.580534,440.559518 152.28,440.559518 Z" id="path-1"></path>
+    </defs>
+    <g id="RHP-Search--Desktop-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile-See--Datefinder" transform="translate(-513.000000, -573.000000)">
+            <g id="Group-12" transform="translate(370.000000, 137.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="icLocationDateFinder" fill="#333333" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

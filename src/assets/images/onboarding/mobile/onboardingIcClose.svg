@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="11px" viewBox="0 0 12 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>onboardingIcClose</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M76.7178258,572.420026 L80.6112072,568.52664 C80.9695976,568.168249 80.9695976,567.587184 80.6112072,567.228844 C80.2528167,566.870454 79.6718038,566.870454 79.3134134,567.228844 L75.4199808,571.122282 L71.5265482,567.228793 C71.1681577,566.870402 70.5871448,566.870402 70.2287544,567.228793 C69.8704152,567.587184 69.8704152,568.168249 70.2287544,568.526588 L74.122187,572.419974 L70.2287544,576.313412 C69.8704152,576.671802 69.8704152,577.252867 70.2287544,577.611207 C70.5871448,577.969598 71.1681577,577.969598 71.5265482,577.611207 L75.4199808,573.71777 L79.3134134,577.611207 C79.6717526,577.969598 80.2528167,577.969598 80.6112072,577.611207 C80.9695976,577.252816 80.9695976,576.671802 80.6112072,576.313412 L76.7178258,572.420026 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Discover-Copy-3" transform="translate(-69.000000, -567.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="onboardingIcClose" fill="#7BCB45" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

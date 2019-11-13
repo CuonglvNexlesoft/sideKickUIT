@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/MutualMatch_New</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1.08280862,1.16426311 C-0.361763161,2.71588451 -0.360109018,5.20674497 1.08280862,6.7595941 L6.97474166,13.1016428 C7.03260552,13.1644278 7.11309687,13.2 7.19730041,13.2 C7.28150395,13.2 7.36199529,13.1644278 7.41985915,13.1016428 C9.38571561,10.9900841 11.3506994,8.87612029 13.3165711,6.76451446 C14.761143,5.21286634 14.761143,2.72082217 13.3165711,1.16917561 C11.8720146,-0.382469372 9.51058805,-0.382503956 8.06601622,1.16917561 L7.19968972,2.0976386 L6.33337854,1.16426311 C5.61108497,0.388439831 4.65664475,1.78715802e-14 3.70569661,1.78715802e-14 C2.75474847,0 1.80508688,0.388438259 1.08280862,1.16426311 Z" id="path-1"></path>
+        <path d="M0.511326295,0.529210504 C-0.170832604,1.23449296 -0.170051481,2.36670226 0.511326295,3.07254277 L3.29362801,5.95529217 C3.32095261,5.98383082 3.35896241,6 3.39872519,6 C3.43848797,6 3.47649777,5.98383082 3.50382238,5.95529217 C4.43214348,4.99549278 5.36005247,4.03460013 6.28838081,3.0747793 C6.97053973,2.3694847 6.97053973,1.23673735 6.28838081,0.53144346 C5.60622912,-0.173849715 4.49111102,-0.173865435 3.8089521,0.53144346 L3.39985348,0.953472089 L2.99076209,0.529210504 C2.64967901,0.17656356 2.19897113,8.12344556e-15 1.74991229,8.12344556e-15 C1.30085344,0 0.852402138,0.176562845 0.511326295,0.529210504 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Congratulaion-Favourite" transform="translate(-114.000000, -485.000000)">
+            <g id="Group-2" transform="translate(90.000000, 477.000000)">
+                <g id="Icons/MutualMatch_New" transform="translate(24.000000, 8.000000)">
+                    <g id="colour/mid-grey" transform="translate(0.800000, 6.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#A5A5A5" xlink:href="#path-1"></use>
+                        <g id="colour/white" mask="url(#mask-2)" fill="#FFFFFF">
+                            <g transform="translate(-1.200000, -0.400000)" id="colour/light-grey">
+                                <polygon points="0 0 16 0 16 14 0 14"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="colour/mid-grey" transform="translate(12.400000, 0.800000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Mask" fill="#FFFFFF" xlink:href="#path-3"></use>
+                        <g id="colour/white" mask="url(#mask-4)" fill="#FFFFFF">
+                            <g transform="translate(-4.400000, -4.000000)" id="colour/light-grey">
+                                <polygon points="0 0 13 0 13 12 0 12"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

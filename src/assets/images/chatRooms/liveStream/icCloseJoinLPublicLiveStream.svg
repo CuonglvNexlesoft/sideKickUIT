@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icCloseJoinLPublicLiveStream</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M13.2720492,10.8000488 L20.6880137,3.38407565 C21.3706621,2.70142641 21.3706621,1.59463617 20.6880137,0.912084589 C20.0053652,0.229435351 18.898674,0.229435351 18.2160255,0.912084589 L10.7999634,8.32815543 L3.38390124,0.911986928 C2.7012528,0.229337691 1.59456152,0.229337691 0.911913082,0.911986928 C0.229362306,1.59463617 0.229362306,2.70142641 0.911913082,3.38397799 L8.32797522,10.7999512 L0.911913082,18.216022 C0.229362306,18.8986712 0.229362306,20.0054615 0.911913082,20.6880131 C1.59456152,21.3706623 2.7012528,21.3706623 3.38390124,20.6880131 L10.7999634,13.2719422 L18.2160255,20.6880131 C18.8985763,21.3706623 20.0053652,21.3706623 20.6880137,20.6880131 C21.3706621,20.0053638 21.3706621,18.8986712 20.6880137,18.216022 L13.2720492,10.8000488 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Chatrooms_LiveStream-Connecting" transform="translate(-324.000000, -30.000000)">
+            <g id="icCloseJoinLPublicLiveStream" transform="translate(324.000000, 30.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Shape" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <g id="colour/white" mask="url(#mask-2)" fill="#FFFFFF">
+                    <g transform="translate(-30.000000, -30.000000)" id="colour/light-grey">
+                        <polygon points="0 0 82 0 82 82 0 82"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

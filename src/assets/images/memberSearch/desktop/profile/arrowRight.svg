@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="19px" viewBox="0 0 12 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/PictureArrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M3.52838621,9.03381759 L10.214614,2.27732194 C10.3987199,2.09172976 10.5,1.84358825 10.5,1.57900191 C10.5,1.31426871 10.3987199,1.06627407 10.214614,0.880388257 L9.62872994,0.288666261 C9.44491459,0.102486825 9.19919786,0 8.93735178,0 C8.67550579,0 8.43007966,0.102486825 8.24611906,0.288666261 L0.285099336,8.33285465 C0.100412127,8.51932781 -0.000722623276,8.76849704 3.89272345e-06,9.0333771 C-0.000722623276,9.29943176 0.100266786,9.54830736 0.285099336,9.73492728 L8.23870827,17.7713337 C8.42266897,17.9575132 8.6680951,18.06 8.93008643,18.06 C9.19193242,18.06 9.43735856,17.9575132 9.6214645,17.7713337 L10.2072033,17.1796117 C10.5883476,16.7944786 10.5883476,16.1675176 10.2072033,15.7825313 L3.52838621,9.03381759 Z" id="path-1"></path>
+    </defs>
+    <g id="RHP-Search--Desktop-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.300000012">
+        <g id="Profile-Friend-Request" transform="translate(-1300.000000, -1580.000000)">
+            <g id="Icons/PictureArrow" transform="translate(1295.000000, 1579.000000)">
+                <g id="colour/mid-grey" transform="translate(5.880000, 1.680000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" transform="translate(5.250000, 9.030000) scale(-1, 1) translate(-5.250000, -9.030000) " xlink:href="#path-1"></use>
+                    <g mask="url(#mask-2)" fill="#A5A5A5">
+                        <g transform="translate(-4.200000, -0.420000)">
+                            <rect x="0" y="0" width="19" height="19"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

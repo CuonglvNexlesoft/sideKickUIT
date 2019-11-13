@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icFilterMemberApply</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="30" height="30" rx="15"></rect>
+        <filter x="-10.0%" y="-10.0%" width="120.0%" height="120.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.244367074 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M7.0613743,16.2351403 C9.20421504,18.3733354 12.6419776,18.4714739 14.9033003,16.4590053 L19.8532733,21.4092032 C19.9808688,21.5363176 20.3600831,21.7181149 20.7724099,21.4092032 C21.1847368,21.1002914 20.8995198,20.5287998 20.7724099,20.4011997 L15.8224435,15.4510116 C17.3011119,13.46622 17.2145417,10.0176873 14.9833897,8.00415874 C12.7522376,5.99063017 9.14333839,5.99063017 6.9847916,8.23336236 C4.82624481,10.4760946 4.86029779,14.0341356 7.0613743,16.2351403 Z M12.9125258,7.82177085 C14.6813204,8.55444797 15.8346066,10.2805144 15.8346066,12.1951046 C15.8346066,14.1096949 14.6813204,15.8357613 12.9125258,16.5684384 C11.1437313,17.3011156 9.1077639,16.8961144 7.75399612,15.5422872 C6.8626594,14.6564941 6.36144102,13.4517508 6.36144217,12.1951034 C6.36144332,10.9384559 6.8626639,9.73371354 7.75400223,8.84792209 C9.1077639,7.49409488 11.1437313,7.08909374 12.9125258,7.82177085 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="New-Members-Deleted" transform="translate(-328.000000, -71.000000)">
+            <g id="icFilterMemberApply" transform="translate(330.000000, 73.000000)">
+                <g id="Rectangle-6-Copy">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#7BCB45" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <use id="Mask-Copy" fill="#FFFFFF" fill-rule="nonzero" transform="translate(13.187633, 14.050402) scale(-1, 1) rotate(24.000000) translate(-13.187633, -14.050402) " xlink:href="#path-3"></use>
+                <path d="M20.12,17.285 C20.12,17.5749494 20.3359474,17.81 20.6052622,17.81 L24.6747378,17.81 C24.9427408,17.81 25.16,17.5769709 25.16,17.285 C25.16,16.9950506 24.9440526,16.76 24.6747378,16.76 L20.6052622,16.76 C20.3372592,16.76 20.12,16.9930291 20.12,17.285 Z M15.92,20.33 C15.92,20.6199494 16.1484059,20.855 16.4332581,20.855 L24.6467419,20.855 C24.9302066,20.855 25.16,20.6219709 25.16,20.33 C25.16,20.0400506 24.9315941,19.805 24.6467419,19.805 L16.4332581,19.805 C16.1497934,19.805 15.92,20.0380291 15.92,20.33 Z M13.0909473,23.375 C13.0909473,23.6649494 13.2914625,23.9 13.6798974,23.9 L24.5817822,23.9 C24.968325,23.9 25.1810205,23.6669709 25.1810205,23.375 C25.1810205,23.0850506 24.9702171,22.85 24.5817822,22.85 L13.6798974,22.85 C13.2933546,22.85 13.0909473,23.0830291 13.0909473,23.375 Z" id="Mask" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

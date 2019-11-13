@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icEditProfileDesktop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M36.5456175,25.1721779 L41.631183,30.2826016 L28.7582123,43.2186153 L23.6755301,38.1081917 L36.5456175,25.1721779 Z M45.4901436,23.9396609 L43.222177,21.6605874 C42.3456863,20.7798042 40.9224464,20.7798042 40.0429778,21.6605874 L37.8704926,23.8437119 L42.9560581,28.9541831 L45.4901436,26.4076874 C46.1699521,25.7245021 46.1699521,24.6227987 45.4901436,23.9396609 Z M21.0141519,45.2913035 C20.9216012,45.7098691 21.2976655,46.0849251 21.7142385,45.9831337 L27.3812478,44.6023707 L22.2985656,39.4919471 L21.0141519,45.2913035 Z" id="path-1"></path>
+    </defs>
+    <g id="RHP-Search--Desktop-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Own-Profile" transform="translate(-1158.000000, -252.000000)">
+            <g id="Group-4" transform="translate(1019.000000, 201.000000)">
+                <g id="Group" transform="translate(118.000000, 30.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="icEditProfileDesktop" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

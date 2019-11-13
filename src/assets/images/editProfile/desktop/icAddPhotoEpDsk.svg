@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icAddPhotoEpDsk</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M26.7383015,22.7556342 L38.6862443,10.8076774 C39.7860667,9.70785366 39.7860667,7.9246916 38.6862443,6.82502517 C37.5864218,5.7252014 35.8034191,5.7252014 34.7035967,6.82502517 L22.7554966,18.7731393 L10.8073964,6.82486783 C9.70757396,5.72504406 7.92457134,5.72504406 6.82474885,6.82486783 C5.72508372,7.9246916 5.72508372,9.70785366 6.82474885,10.8075201 L18.772849,22.7554769 L6.82474885,34.703591 C5.72508372,35.8034148 5.72508372,37.5865769 6.82474885,38.6862433 C7.92457134,39.7860671 9.70757396,39.7860671 10.8073964,38.6862433 L22.7554966,26.7381291 L34.7035967,38.6862433 C35.8032618,39.7860671 37.5864218,39.7860671 38.6862443,38.6862433 C39.7860667,37.5864195 39.7860667,35.8034148 38.6862443,34.703591 L26.7383015,22.7556342 Z" id="path-1"></path>
+    </defs>
+    <g id="Desktop-Manage-Photos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="icAddPhotoEpDsk" fill="#A5A5A5" fill-rule="nonzero" transform="translate(22.755556, 22.755556) rotate(-44.000000) translate(-22.755556, -22.755556) " xlink:href="#path-1"></use>
+    </g>
+</svg>

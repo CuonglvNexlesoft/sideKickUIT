@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="53px" height="53px" viewBox="0 0 53 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>icIgnoreCardCarouselDsk</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M32.2626361,26.0667891 L50.8500856,7.47931781 C52.5610826,5.76831876 52.5610826,2.99424834 50.8500856,1.28349407 C49.1390885,-0.427504985 46.3652661,-0.427504985 44.6542691,1.28349407 L26.0665749,19.8712101 L7.47888067,1.28324929 C5.76788363,-0.427749763 2.99406124,-0.427749763 1.2830642,1.28324929 C-0.427688066,2.99424834 -0.427688066,5.76831876 1.2830642,7.47907304 L19.8707584,26.0665443 L1.2830642,44.6542603 C-0.427688066,46.3652593 -0.427688066,49.1393298 1.2830642,50.850084 C2.99406124,52.5610831 5.76788363,52.5610831 7.47888067,50.850084 L26.0665749,32.262368 L44.6542691,50.850084 C46.3650213,52.5610831 49.1390885,52.5610831 50.8500856,50.850084 C52.5610826,49.139085 52.5610826,46.3652593 50.8500856,44.6542603 L32.2626361,26.0667891 Z" id="path-1"></path>
+    </defs>
+    <g id="RHP-Search--Desktop-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="icIgnoreCardCarouselDsk" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>

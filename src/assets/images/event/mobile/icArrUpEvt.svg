@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="10px" viewBox="0 0 17 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icArrUpEvt</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12.6690005,4.53553391 C12.6867832,4.8124928 12.5898412,5.09544016 12.3781746,5.30710678 L5.30710678,12.3781746 C4.91658249,12.7686989 4.28341751,12.7686989 3.89289322,12.3781746 C3.50236893,11.9876503 3.50236893,11.3544853 3.89289322,10.963961 L10.3213203,4.53553391 L3.89289322,-1.89289322 C3.50236893,-2.28341751 3.50236893,-2.91658249 3.89289322,-3.30710678 C4.28341751,-3.69763107 4.91658249,-3.69763107 5.30710678,-3.30710678 L12.3781746,3.76396103 C12.5898412,3.97562765 12.6867832,4.25857502 12.6690005,4.53553391 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="icArrUpEvt" fill="#A5A5A5" fill-rule="nonzero" transform="translate(8.135534, 4.535534) rotate(-90.000000) translate(-8.135534, -4.535534) " xlink:href="#path-1"></use>
+    </g>
+</svg>

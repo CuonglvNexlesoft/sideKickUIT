@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>DiscoverToggle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="RHP-Search--Desktop-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Search" transform="translate(-171.000000, -189.000000)" fill="#FFFFFF">
+            <g id="Discover-Green" transform="translate(140.000000, 178.000000)">
+                <g id="Group-14">
+                    <g id="DiscoverToggle" transform="translate(31.000000, 11.000000)">
+                        <rect id="Rectangle-18" x="0" y="0" width="4.54545455" height="4.54545455"></rect>
+                        <rect id="Rectangle-18-Copy-2" x="0" y="5.45454545" width="4.54545455" height="4.54545455"></rect>
+                        <rect id="Rectangle-18-Copy-3" x="5.45454545" y="5.45454545" width="4.54545455" height="4.54545455"></rect>
+                        <rect id="Rectangle-18-Copy" x="5.45454545" y="0" width="4.54545455" height="4.54545455"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

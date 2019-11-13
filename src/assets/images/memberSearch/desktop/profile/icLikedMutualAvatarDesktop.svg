@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icLikedMutualAvatarDesktop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="25" cy="25" r="25"></circle>
+        <filter x="-13.0%" y="-11.0%" width="126.0%" height="126.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M2.97255735,11.1666786 C0.432010819,13.8954917 0.434919935,18.2761303 2.97255735,21.0071025 L13.3346108,32.1607675 C13.4363751,32.2711866 13.577934,32.3337469 13.7260215,32.3337469 C13.874109,32.3337469 14.0156679,32.2711866 14.1174322,32.1607675 C17.5747542,28.4472013 21.0305413,24.7294051 24.4878903,21.0157559 C27.0284369,18.2868958 27.0284369,13.9041755 24.4878903,11.1753181 C21.9473706,8.4464636 17.7943655,8.44640278 15.2538189,11.1753181 L13.7302236,12.8081919 L12.2066552,11.1666786 C10.9363684,9.80224995 9.25780885,9.1191067 7.58539074,9.1191067 C5.91297265,9.1191067 4.24281719,9.80224719 2.97255735,11.1666786 Z" id="path-4"></path>
+        <path d="M22.8111725,0.930714503 C21.61147,2.17108408 21.6128437,4.16228343 22.8111725,5.40363447 L27.7043644,10.4734822 C27.7524198,10.5236727 27.819267,10.5521092 27.8891972,10.5521092 C27.9591274,10.5521092 28.0259747,10.5236727 28.0740301,10.4734822 C29.7066543,8.78549753 31.3385538,7.09559018 32.9711909,5.40756781 C34.1708934,4.16717688 34.1708934,2.17503126 32.9711909,0.934641568 C31.7715009,-0.305746861 29.8103596,-0.305774508 28.6106571,0.934641568 L27.8911815,1.67685693 L27.1717187,0.930714503 C26.571861,0.310519659 25.7792079,0 24.9894549,0 C24.1997019,-1.42865807e-14 23.4110174,0.310518403 22.8111725,0.930714503 Z" id="path-6"></path>
+    </defs>
+    <g id="RHP-Search--Desktop-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icLikedMutualAvatarDesktop" transform="translate(4.000000, 3.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use fill="#7BCB45" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Group-20" transform="translate(8.000000, 9.000000)">
+                <mask id="mask-5" fill="white">
+                    <use xlink:href="#path-4"></use>
+                </mask>
+                <use id="path-1" fill="#FFFFFF" xlink:href="#path-4"></use>
+                <mask id="mask-7" fill="white">
+                    <use xlink:href="#path-6"></use>
+                </mask>
+                <use id="path-3" fill="#FFFFFF" xlink:href="#path-6"></use>
+            </g>
+        </g>
+    </g>
+</svg>

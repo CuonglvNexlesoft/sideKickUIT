@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="24px" viewBox="0 0 14 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>icArrowNext</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1138.70451,493.905031 L1147.61949,485.001122 C1147.86496,484.756543 1148,484.429535 1148,484.080855 C1148,483.731982 1147.86496,483.405167 1147.61949,483.160202 L1146.83831,482.380413 C1146.59322,482.13506 1146.2656,482 1145.91647,482 C1145.56734,482 1145.24011,482.13506 1144.99483,482.380413 L1134.38013,492.981281 C1134.13388,493.227021 1133.99904,493.555384 1134.00001,493.90445 C1133.99904,494.255065 1134.13369,494.583041 1134.38013,494.828974 L1144.98494,505.419587 C1145.23023,505.66494 1145.55746,505.8 1145.90678,505.8 C1146.25591,505.8 1146.58314,505.66494 1146.82862,505.419587 L1147.6096,504.639798 C1148.1178,504.132259 1148.1178,503.306031 1147.6096,502.798685 L1138.70451,493.905031 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="popup---add-private-album---view-shared-images" transform="translate(-1134.000000, -482.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="icArrowNext" fill="#FFFFFF" fill-rule="nonzero" transform="translate(1141.000000, 493.900000) rotate(180.000000) translate(-1141.000000, -493.900000) " xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

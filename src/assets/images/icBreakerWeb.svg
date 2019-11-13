@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>icBreakerWeb</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4.72,0.24 C7.2,0.24 9.2,2.16 9.2,4.56 C9.2,5.68 8.8,6.72 8,7.52 C7.28,8.24 6.88,9.28 6.88,10.48 L6.88,12.24 C6.88,12.96 6.32,13.52 5.6,13.52 L3.92,13.52 C3.2,13.52 2.64,12.96 2.64,12.24 L2.64,10.48 C2.64,9.36 2.24,8.24 1.44,7.44 C0.56,6.48 0.16,5.28 0.32,4 C0.64,2 2.32,0.24 4.72,0.24 Z M6.24,12.24 L6.24,11.44 L3.36,11.44 L3.36,12.24 C3.36,12.56 3.6,12.88 4,12.88 L5.68,12.88 C6,12.8 6.24,12.56 6.24,12.24 Z M7.52,7.04 C8.16,6.4 8.56,5.52 8.56,4.56 C8.56,2.56 6.88,0.88 4.72,0.88 C2.72,0.88 1.2,2.4 0.96,4 C0.8,5.12 1.12,6.16 1.92,6.96 C2.8,7.92 3.28,9.12 3.28,10.4 L3.28,10.72 L6.24,10.72 L6.24,10.4 C6.24,9.12 6.72,7.92 7.52,7.04 Z" id="path-1"></path>
+        <rect id="path-3" x="0.4" y="0" width="1" height="1.6"></rect>
+        <polygon id="path-5" points="0.16 1.52 0.64 2 1.84 0.88 1.36 0.4"></polygon>
+        <rect id="path-7" x="0.64" y="0.08" width="1.68" height="1"></rect>
+        <rect id="path-9" x="0" y="0.08" width="1.68" height="1"></rect>
+        <polygon id="path-11" points="0.96 0.4 0.48 0.88 1.68 2 2.16 1.52"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icBreakerWeb">
+            <g id="Clipped" transform="translate(3.200000, 2.400000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="SVGID_1_"></g>
+                <rect id="Rectangle-path" fill="#676767" fill-rule="nonzero" mask="url(#mask-2)" x="-3.68" y="-3.76" width="16.96" height="21.28"></rect>
+            </g>
+            <g id="Clipped" transform="translate(7.200000, 0.000000)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="SVGID_3_"></g>
+                <rect id="Rectangle-path" fill="#676767" fill-rule="nonzero" mask="url(#mask-4)" x="-3.6" y="-4" width="8.72" height="9.6"></rect>
+            </g>
+            <g id="Clipped" transform="translate(12.000000, 1.600000)">
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <g id="SVGID_5_"></g>
+                <rect id="Rectangle-path" fill="#676767" fill-rule="nonzero" mask="url(#mask-6)" x="-3.84" y="-3.6" width="9.68" height="9.6"></rect>
+            </g>
+            <g id="Clipped" transform="translate(13.600000, 7.200000)">
+                <mask id="mask-8" fill="white">
+                    <use xlink:href="#path-7"></use>
+                </mask>
+                <g id="SVGID_7_"></g>
+                <rect id="Rectangle-path" fill="#676767" fill-rule="nonzero" mask="url(#mask-8)" x="-3.36" y="-3.92" width="9.68" height="8.64"></rect>
+            </g>
+            <g id="Clipped" transform="translate(0.000000, 7.200000)">
+                <mask id="mask-10" fill="white">
+                    <use xlink:href="#path-9"></use>
+                </mask>
+                <g id="SVGID_9_"></g>
+                <rect id="Rectangle-path" fill="#676767" fill-rule="nonzero" mask="url(#mask-10)" x="-4" y="-3.92" width="9.68" height="8.64"></rect>
+            </g>
+            <g id="Clipped" transform="translate(1.600000, 1.600000)">
+                <mask id="mask-12" fill="white">
+                    <use xlink:href="#path-11"></use>
+                </mask>
+                <g id="SVGID_11_"></g>
+                <rect id="Rectangle-path" fill="#676767" fill-rule="nonzero" mask="url(#mask-12)" x="-3.52" y="-3.6" width="9.68" height="9.6"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

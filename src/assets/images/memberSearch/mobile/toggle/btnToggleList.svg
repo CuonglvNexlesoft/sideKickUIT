@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>btnToggleList</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Grid-OFF-" transform="translate(-32.000000, -21.000000)" fill="#7BCB45" fill-rule="nonzero">
+            <g id="btnToggleList" transform="translate(0.000000, 12.000000)">
+                <path d="M39.2058824,9 C38.3235294,9 37.4901961,9.49180328 37,10.2568306 C36.5098039,9.49180328 35.6764706,9 34.7941176,9 C33.2254902,9 32,10.3661202 32,12.1147541 C32,14.5737705 37,19 37,19 C37,19 42,14.5191257 42,12.1147541 C42,10.3661202 40.7254902,9 39.2058824,9 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

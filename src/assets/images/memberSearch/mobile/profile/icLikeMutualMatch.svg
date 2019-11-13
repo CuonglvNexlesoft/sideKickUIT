@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icLikeMutualMatch</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M17.2593703,387.597116 C18.1261043,386.666126 19.2656982,386.2 20.4068359,386.2 C21.5479737,386.2 22.693302,386.666128 23.5600542,387.597116 L24.5996277,388.717166 L25.6392195,387.603011 C27.3727057,385.740995 30.2064175,385.741037 31.9398854,387.603011 C33.6733715,389.464987 33.6733715,392.45544 31.9398854,394.317417 C29.5808392,396.851344 27.2228587,399.388101 24.863831,401.921971 C24.7943943,401.997313 24.6978047,402.04 24.5967605,402.04 C24.4957162,402.04 24.3991266,401.997313 24.32969,401.921971 L17.2593703,394.311513 C15.5278692,392.448094 15.5258842,389.459061 17.2593703,387.597116 Z M30.4935916,380.595053 C30.9028826,380.171875 31.4410241,379.96 31.9798947,379.96 C32.5187654,379.96 33.0596148,380.171876 33.4689145,380.595053 L33.9598242,381.104167 L34.4507425,380.597732 C35.2693332,379.751361 36.6074749,379.75138 37.426057,380.597732 C38.2446477,381.444085 38.2446477,382.803382 37.426057,383.649735 C36.312063,384.80152 35.1985722,385.954591 34.0845869,387.106351 C34.0517973,387.140597 34.0061856,387.16 33.9584702,387.16 C33.9107549,387.16 33.8651431,387.140597 33.8323536,387.106351 L30.4935916,383.647051 C29.6759382,382.800043 29.6750009,381.441392 30.4935916,380.595053 Z" id="path-1"></path>
+        <filter x="-31.7%" y="-22.6%" width="163.4%" height="163.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="New-Members-Grid-OFF-Copy-7" transform="translate(-12.000000, -378.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="icLikeMutualMatch">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

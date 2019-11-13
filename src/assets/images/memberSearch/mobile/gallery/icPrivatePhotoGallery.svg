@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="13px" viewBox="0 0 8 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icPrivatePhotoGallery</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="See-more-picture" transform="translate(-227.000000, -532.000000)">
+            <g id="icPrivatePhotoGallery" transform="translate(227.000000, 533.000000)">
+                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="4" cy="8" r="4"></circle>
+                <path d="M6,5 L6,2.20095694 C6,0.980861244 5.1,0 4,0 C2.9,0 2,0.980861244 2,2.20095694 L2,4.97607656" id="Shape" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

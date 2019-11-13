@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="19px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icMatchProspectDesktop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M703.412106,338.373197 C703.953815,337.791329 704.666061,337.5 705.379272,337.5 C706.092484,337.5 706.808314,337.79133 707.350034,338.373197 L707.999767,339.073229 L708.649512,338.376882 C709.732941,337.213122 711.504011,337.213148 712.587428,338.376882 C713.670857,339.540617 713.670857,341.40965 712.587428,342.573386 C711.113025,344.15709 709.639287,345.742563 708.164894,347.326232 C708.121496,347.373321 708.061128,347.4 707.997975,347.4 C707.934823,347.4 707.874454,347.373321 707.831056,347.326232 L703.412106,342.569696 C702.329918,341.405059 702.328678,339.536913 703.412106,338.373197 Z M711.683495,333.996908 C711.939302,333.732422 712.27564,333.6 712.612434,333.6 C712.949228,333.6 713.287259,333.732423 713.543072,333.996908 L713.84989,334.315104 L714.156714,333.998583 C714.668333,333.469601 715.504672,333.469613 716.016286,333.998583 C716.527905,334.527553 716.527905,335.377114 716.016286,335.906084 C715.320039,336.62595 714.624108,337.34662 713.927867,338.066469 C713.907373,338.087873 713.878866,338.1 713.849044,338.1 C713.819222,338.1 713.790714,338.087873 713.770221,338.066469 L711.683495,335.904407 C711.172461,335.375027 711.171876,334.52587 711.683495,333.996908 Z" id="path-1"></path>
+        <filter x="-32.6%" y="-32.6%" width="165.2%" height="164.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.426545516 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="GRID-MODE_Prospect--Faved-me" transform="translate(-700.000000, -331.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="icMatchProspectDesktop">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

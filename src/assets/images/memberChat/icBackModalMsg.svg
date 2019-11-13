@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="17px" viewBox="0 0 10 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icBackModalMsg</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="popup---quick-msg---edit-template" transform="translate(-451.000000, -226.000000)" fill="#646464" fill-rule="nonzero">
+            <g id="Group-2" transform="translate(433.000000, 212.000000)">
+                <g id="popup-copy">
+                    <g id="UI/icon/arrow-left" transform="translate(18.000000, 14.000000)">
+                        <path d="M3.36036781,8.5035935 L9.72820381,2.14365854 C9.9035428,1.96895935 10,1.73538211 10,1.4863252 C10,1.23713008 9.9035428,1.00369106 9.72820381,0.828715447 L9.17021896,0.271723577 C8.99515675,0.0964715447 8.76114079,0 8.51176363,0 C8.26238647,0 8.02864729,0.0964715447 7.85344669,0.271723577 L0.27152312,7.84377236 C0.095630575,8.01930081 -0.000688237868,8.25384553 3.70762665e-06,8.50317886 C-0.000688237868,8.75361789 0.0954921859,8.98788618 0.27152312,9.16355285 L7.84638884,16.7282764 C8.02158944,16.9035285 8.25532863,17 8.50484417,17 C8.75422133,17 8.98796052,16.9035285 9.16329951,16.7282764 L9.72114597,16.1712846 C10.0841406,15.8087561 10.0841406,15.2185935 9.72114597,14.8562033 L3.36036781,8.5035935 Z" id="icBackModalMsg"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

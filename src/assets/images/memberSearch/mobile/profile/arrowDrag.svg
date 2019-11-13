@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="12px" viewBox="0 0 60 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>arrowDrag</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.699999988">
+        <g id="New-Members-Grid-OFF-Copy-7" transform="translate(-158.000000, -94.000000)" fill="#D8D8D8">
+            <path d="M160.542515,94.0637083 L188,99.9251777 L215.457485,94.0637083 C216.593557,93.8211859 217.711129,94.5455513 217.953651,95.6816237 C217.984465,95.8259673 218,95.9731533 218,96.1207492 L218,96.1207492 C218,97.6463513 216.956091,98.9738547 215.473511,99.3336002 L188,106 L160.526489,99.3336002 C159.043909,98.9738547 158,97.6463513 158,96.1207492 L158,96.1207492 C158,94.9590791 158.94172,94.0173594 160.10339,94.0173594 C160.250986,94.0173594 160.398172,94.0328946 160.542515,94.0637083 Z" id="arrowDrag"></path>
+        </g>
+    </g>
+</svg>

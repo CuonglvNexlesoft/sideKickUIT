@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>RightPic Arrow Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.7202759,13.6527268 L16.4961528,8.82665853 C16.6276571,8.69409268 16.7,8.51684875 16.7,8.32785851 C16.7,8.13876336 16.6276571,7.96162434 16.4961528,7.82884876 L16.0776642,7.40619019 C15.9463676,7.27320487 15.7708556,7.2 15.5838227,7.2 C15.3967899,7.2 15.2214855,7.27320487 15.090085,7.40619019 L9.40364238,13.152039 C9.27172295,13.2852341 9.19948384,13.4632122 9.20000278,13.6524122 C9.19948384,13.8424513 9.27161913,14.0202195 9.40364238,14.1535195 L15.0847916,19.8938098 C15.2161921,20.0267951 15.3914965,20.1 15.5786332,20.1 C15.765666,20.1 15.9409704,20.0267951 16.0724746,19.8938098 L16.4908595,19.4711512 C16.7631054,19.1960561 16.7631054,18.7482269 16.4908595,18.4732366 L11.7202759,13.6527268 Z" id="path-1"></path>
+    </defs>
+    <g id="RHP-Search--Desktop-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="RightPic-Arrow-Copy">
+            <circle id="Oval-3" fill-opacity="0.3" fill="#A5A5A5" cx="13" cy="13" r="13"></circle>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" transform="translate(12.950000, 13.650000) scale(-1, 1) translate(-12.950000, -13.650000) " xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

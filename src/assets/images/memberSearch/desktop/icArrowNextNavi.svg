@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="25px" viewBox="0 0 19 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon / Keyboard Arrow - Left / Rounded</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-35.0%" y="-21.0%" width="170.0%" height="142.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.209380661 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M9.875,0.778114504 C9.60253736,0.505037689 9.23262989,0.351572996 8.846875,0.351572996 C8.46112011,0.351572996 8.09121264,0.505037689 7.81875,0.778114504 L1.125,7.4718645 C0.55625,8.0406145 0.55625,8.9593645 1.125,9.5281145 L7.81875,16.2218645 C8.3875,16.7906145 9.30625,16.7906145 9.875,16.2218645 C10.44375,15.6531145 10.44375,14.7343645 9.875,14.1656145 L4.21666667,8.49269784 L9.875,2.8343645 C10.44375,2.2656145 10.4291667,1.33228117 9.875,0.778114504 Z" id="path-2"></path>
+    </defs>
+    <g id="RHP-Search--Desktop-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Search-Option-CardSystem-ShowOption-Copy" transform="translate(-980.000000, -520.000000)">
+            <g id="Next-Profile" filter="url(#filter-1)" transform="translate(974.000000, 507.000000)">
+                <g id="Icon-/-Keyboard-Arrow---Left-/-Rounded" transform="translate(15.500000, 25.500000) scale(-1, 1) translate(-15.500000, -25.500000) translate(10.000000, 17.000000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="icon/navigation/chevron_left_24px" fill-rule="nonzero"></g>
+                    <g id="✱-/-Color-/-Icons-/-Selected-/-On-Surface-/-Inactive" mask="url(#mask-3)" fill="#000000" fill-opacity="0.54">
+                        <g transform="translate(-12.000000, -9.000000)" id="Rectangle">
+                            <rect x="0" y="0" width="35" height="35"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icCloseHomeStream</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.37223567,7.5800354 L14.7488099,2.20345485 C15.24373,1.70853415 15.24373,0.906111221 14.7488099,0.411261327 C14.2538898,-0.0836593703 13.4515386,-0.0836593703 12.9566185,0.411261327 L7.57997345,5.78791269 L2.2033284,0.411190523 C1.70840828,-0.0837301744 0.906057101,-0.0837301744 0.411136984,0.411190523 C-0.0837123281,0.906111221 -0.0837123281,1.70853415 0.411136984,2.20338404 L5.78778203,7.5799646 L0.411136984,12.956616 C-0.0837123281,13.4515367 -0.0837123281,14.2539596 0.411136984,14.7488095 C0.906057101,15.2437302 1.70840828,15.2437302 2.2033284,14.7488095 L7.57997345,9.37215812 L12.9566185,14.7488095 C13.4514678,15.2437302 14.2538898,15.2437302 14.7488099,14.7488095 C15.24373,14.2538888 15.24373,13.4515367 14.7488099,12.956616 L9.37223567,7.5800354 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Friends-request-Accepted" transform="translate(-275.000000, -168.000000)">
+            <g id="Icons/General/Cross" transform="translate(275.000000, 168.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="icCloseHomeStream" fill="#A5A5A5" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

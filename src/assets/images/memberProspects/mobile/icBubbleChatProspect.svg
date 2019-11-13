@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icBubbleChatProspect</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M115.913295,1417.5 C115.864184,1417.5 115.814491,1417.48794 115.769709,1417.46389 C115.671488,1417.4115 115.610307,1417.30929 115.610307,1417.19915 L115.610307,1412.91317 C112.957503,1411.54384 111.5,1409.14635 111.5,1406.14245 C111.5,1401.50026 115.798759,1398 121.5,1398 C127.201241,1398 131.5,1401.50026 131.5,1406.14245 C131.5,1410.78398 127.201241,1414.28424 121.5,1414.28424 C121.312714,1414.28424 121.12909,1414.27407 120.944884,1414.26441 L120.932731,1414.26383 L116.079938,1417.45001 C116.029662,1417.48314 115.971478,1417.5 115.913295,1417.5 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Prospects-Favourite-Swipe-I-have-fav-Copy" transform="translate(-111.000000, -1398.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="icBubbleChatProspect" fill="#7BCB45" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

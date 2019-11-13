@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="23px" viewBox="0 0 27 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>icFolderWhite</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2.4821727,22.4 L24.1178273,22.4 C25.4885794,22.4 26.6,21.28 26.6,19.8986667 L26.6,6.608 C26.6,5.22666667 25.4885794,4.10666667 24.1178273,4.10666667 L14.3373259,4.10666667 C14.0038997,4.10666667 13.7075209,3.99466667 13.4852368,3.77066667 L9.89164345,0.634666667 C9.41002786,0.186666667 8.85431755,0 8.26155989,0 L2.4821727,0 C1.11142061,0 0,1.12 0,2.50133333 L0,19.8986667 C-6.58093202e-16,21.28 1.11142061,22.4 2.4821727,22.4 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Notification:-Folder-created" transform="translate(-27.000000, -87.000000)">
+            <g id="Notification" transform="translate(6.000000, 68.000000)">
+                <g id="icFolderWhite" transform="translate(21.200000, 19.300000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

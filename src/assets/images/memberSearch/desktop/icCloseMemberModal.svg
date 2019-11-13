@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>icCloseMemberModal</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1256.51566,30.5445031 L1265.42908,21.6310738 C1266.24957,20.810582 1266.24957,19.4803052 1265.42908,18.6599307 C1264.60859,17.8394389 1263.27843,17.8394389 1262.45794,18.6599307 L1253.5444,27.5734774 L1244.63086,18.6598133 C1243.81037,17.8393215 1242.48022,17.8393215 1241.65972,18.6598133 C1240.83935,19.4803052 1240.83935,20.810582 1241.65972,21.6309565 L1250.57326,30.5443858 L1241.65972,39.4579324 C1240.83935,40.2784243 1240.83935,41.608701 1241.65972,42.4290755 C1242.48022,43.2495674 1243.81037,43.2495674 1244.63086,42.4290755 L1253.5444,33.5155289 L1262.45794,42.4290755 C1263.27831,43.2495674 1264.60859,43.2495674 1265.42908,42.4290755 C1266.24957,41.6085837 1266.24957,40.2784243 1265.42908,39.4579324 L1256.51566,30.5445031 Z" id="path-1"></path>
+    </defs>
+    <g id="RHP-Search--Desktop-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="See-picture" transform="translate(-1395.000000, -20.000000)">
+            <g id="MouseOver-Option" transform="translate(154.000000, 2.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="icCloseMemberModal" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

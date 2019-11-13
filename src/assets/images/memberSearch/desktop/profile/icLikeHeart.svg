@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="22px" viewBox="0 0 25 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>icHeartLike</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1.8778958,1.93518145 C3.13053017,0.645643161 4.77751142,0 6.42672392,2.97052705e-14 C8.07593642,2.97052705e-14 9.73120517,0.645645774 10.9838661,1.93518145 L12.4862942,3.48659274 L13.9887489,1.94334677 C16.4940442,-0.635779452 20.5894245,-0.635721968 23.0946932,1.94334677 C25.5999885,4.52241813 25.5999885,8.66457261 23.0946932,11.2436466 C19.6853166,14.753455 16.2774802,18.2671827 12.8681302,21.7769127 C12.7677779,21.8812709 12.6281832,21.9403973 12.4821505,21.9403973 C12.3361178,21.9403973 12.1965231,21.8812709 12.0961708,21.7769127 L1.8778958,11.2354682 C-0.624530686,8.65439797 -0.627399436,4.514211 1.8778958,1.93518145 Z" id="path-1"></path>
+    </defs>
+    <g id="RHP-Search--Desktop-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="icHeartLike" fill="#7EC34D" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>

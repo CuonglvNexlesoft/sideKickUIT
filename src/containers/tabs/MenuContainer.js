@@ -7,6 +7,7 @@ import * as AppActions from '../../actions/AppActions';
 function mapStateToProps(rootState) {
     return {
         appState: rootState.appState,
+        userInfo: rootState.userState.user,
     };
 }
 

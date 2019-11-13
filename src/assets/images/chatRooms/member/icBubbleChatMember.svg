@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icBubbleChatMember</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M5.29595379,24 C5.23702107,24 5.17738915,23.9855234 5.1236505,23.9566692 C5.00578506,23.8938049 4.93236888,23.7711501 4.93236888,23.6389764 L4.93236888,18.4958033 C1.74900322,16.8526056 0,13.9756214 0,10.3709382 C0,4.80030763 5.1585107,0.6 12,0.6 C18.8414893,0.6 24,4.80030763 24,10.3709382 C24,15.9407756 18.8414893,20.1410832 12,20.1410832 C11.7752566,20.1410832 11.5549081,20.1288872 11.3338605,20.117286 L11.3192772,20.1165919 L5.49592549,23.9400112 C5.43559436,23.9797724 5.36577407,24 5.29595379,24 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Chatrooms_VideoMembers-Copy-5" transform="translate(-274.000000, -25.000000)">
+            <g id="Group-3" transform="translate(13.000000, 25.000000)">
+                <g id="Group-2">
+                    <g id="Group-6">
+                        <g id="Group-5" transform="translate(261.000000, 0.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="icBubbleChatMember" fill="#FFFFFF" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

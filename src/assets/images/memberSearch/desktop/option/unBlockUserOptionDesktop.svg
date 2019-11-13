@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="27px" viewBox="0 0 23 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>unBlockUserOptionDesktop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.5,15 C7.35786439,15 4,11.6421356 4,7.5 C4,3.35786439 7.35786439,0 11.5,0 C15.6421356,0 19,3.35786439 19,7.5 C19,11.6421356 15.6421356,15 11.5,15 Z M11.5,13.4210526 C14.7701071,13.4210526 17.4210526,10.7701071 17.4210526,7.5 C17.4210526,4.22989291 14.7701071,1.57894737 11.5,1.57894737 C8.22989291,1.57894737 5.57894737,4.22989291 5.57894737,7.5 C5.57894737,10.7701071 8.22989291,13.4210526 11.5,13.4210526 Z" id="path-1"></path>
+    </defs>
+    <g id="RHP-Search--Desktop-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile-5-Dropdown---After-interaction" transform="translate(-678.000000, -282.000000)">
+            <g id="unBlockUserOptionDesktop" transform="translate(678.000000, 282.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#646464" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <path d="M11.5015007,18.7165443 C15.834019,18.689248 19.9171702,21.2529769 21.275714,26.251413 C21.4634666,26.9422036 22.7421015,26.8967542 22.9664361,26.3182534 C22.9927762,26.2503292 23.0045816,26.1750562 22.9983799,26.0927635 C22.0862472,14.0166228 1.07567312,13.9216279 0.00343850387,26.0927635 C-0.0708285449,26.9357827 1.07567312,27.6213891 1.72728735,26.0927635 C3.28717868,20.9214107 7.52179376,18.7416178 11.5015007,18.7165443 Z" id="Fill-1" fill="#646464"></path>
+            </g>
+        </g>
+    </g>
+</svg>

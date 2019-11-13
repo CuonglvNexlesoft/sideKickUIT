@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="7px" viewBox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icArrowDownProfile</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8.92689172,3.02195491 C8.93913918,3.22149287 8.87305909,3.42490294 8.72865146,3.58265761 L4.02485418,8.72120895 C3.78704996,8.9809925 3.38367538,8.99881027 3.12389183,8.76100606 C3.11004691,8.7483325 3.09676827,8.73505387 3.08409472,8.72120895 C2.81785933,8.43036644 2.81785933,7.98434119 3.08409472,7.69349868 L7.36039624,3.02195491 L3.08409472,-1.64958886 C2.81785933,-1.94043137 2.81785933,-2.38645661 3.08409472,-2.67729912 C3.32189893,-2.93708267 3.72527352,-2.95490045 3.98505707,-2.71709623 C3.99890199,-2.70442268 4.01218062,-2.69114405 4.02485418,-2.67729912 L8.72865146,2.46125221 C8.87305909,2.61900689 8.93913918,2.82241695 8.92689172,3.02195491 Z" id="path-1"></path>
+    </defs>
+    <g id="Edit-Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="icArrowDownProfile" fill="#333333" fill-rule="nonzero" transform="translate(5.906373, 3.021955) scale(-1, 1) rotate(90.000000) translate(-5.906373, -3.021955) " xlink:href="#path-1"></use>
+    </g>
+</svg>

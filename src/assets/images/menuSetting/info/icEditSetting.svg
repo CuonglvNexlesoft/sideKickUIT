@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icEditSetting</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M337.793818,234.580705 L344.59627,241.416408 L327.377385,258.71962 L320.578789,251.883917 L337.793818,234.580705 Z M349.758016,232.93209 L346.724384,229.883602 C345.55199,228.705466 343.648264,228.705466 342.471887,229.883602 L339.565971,232.803749 L346.368423,239.639515 L349.758016,236.233323 C350.667328,235.319494 350.667328,233.845856 349.758016,232.93209 Z M317.01893,261.492048 C316.895134,262.051921 317.398157,262.553596 317.955365,262.41744 L325.535557,260.570531 L318.736961,253.734828 L317.01893,261.492048 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu-Edit-Info" transform="translate(-317.000000, -229.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="icEditSetting" fill="#C0C0C0" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

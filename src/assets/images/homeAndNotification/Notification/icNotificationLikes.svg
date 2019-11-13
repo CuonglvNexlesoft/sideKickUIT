@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icNotificationLikes</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M3.90544266,4.59229232 C4.32986466,4.1533436 4.88790066,3.93357174 5.44669266,3.93357174 C6.00548466,3.93357174 6.56632866,4.15334449 6.99075966,4.59229232 L7.49981766,5.12038056 L8.00888466,4.59507174 C8.85773766,3.7171574 10.2453488,3.71717696 11.0941928,4.59507174 C11.9430458,5.4729674 11.9430458,6.8829243 11.0941928,7.76082085 C9.93901584,8.95553209 8.78436066,10.1515775 7.62919266,11.346262 C7.59519095,11.3817847 7.54789298,11.4019109 7.49841366,11.4019109 C7.44893434,11.4019109 7.40163637,11.3817847 7.36763466,11.346262 L3.90544266,7.75803699 C3.05756169,6.87946093 3.05658969,5.47017376 3.90544266,4.59229232 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-62.000000, -282.000000)">
+            <g id="icNotificationLikes" transform="translate(62.000000, 281.998500)">
+                <circle id="Oval-5" fill="#7BCB45" cx="7.5" cy="7.5" r="7.5"></circle>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

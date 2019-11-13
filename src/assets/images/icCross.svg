@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>icCross</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Messenger-Inbox---search--start" transform="translate(-276.000000, -184.000000)">
+            <g id="icCross" transform="translate(276.000000, 184.000000)">
+                <path d="M7.5001777,15 C11.6311928,15 15,11.6311928 15,7.5001777 C15,3.36916261 11.6311928,0 7.5001777,0 C3.36916261,0 0,3.36916261 0,7.5001777 C0,11.6311928 3.36916261,15 7.5001777,15 Z" id="Stroke-1" fill="#CCCCCC"></path>
+                <polygon id="Fill-3" fill="#BBBBBB" points="10.5 4.84776 10.1522086 4.5 7.50005988 7.15236 4.84791114 4.5 4.5 4.84776 7.15214875 7.50012 4.5 10.15224 4.84791114 10.5 7.50005988 7.84788 10.1522086 10.5 10.5 10.15224 7.84761173 7.50012"></polygon>
+                <polygon id="Stroke-5" stroke="#FFFFFF" stroke-width="0.75" points="10.5 4.84776 10.1522086 4.5 7.50005988 7.15236 4.84791114 4.5 4.5 4.84776 7.15214875 7.50012 4.5 10.15224 4.84791114 10.5 7.50005988 7.84788 10.1522086 10.5 10.5 10.15224 7.84761173 7.50012"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

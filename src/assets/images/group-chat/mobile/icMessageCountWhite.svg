@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icMessageCountWhite</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M5.29595379,23.4 C5.23702107,23.4 5.17738915,23.3855234 5.1236505,23.3566692 C5.00578506,23.2938049 4.93236888,23.1711501 4.93236888,23.0389764 L4.93236888,17.8958033 C1.74900322,16.2526056 0,13.3756214 0,9.77093824 C0,4.20030763 5.1585107,0 12,0 C18.8414893,0 24,4.20030763 24,9.77093824 C24,15.3407756 18.8414893,19.5410832 12,19.5410832 C11.7752566,19.5410832 11.5549081,19.5288872 11.3338605,19.517286 L11.3192772,19.5165919 L5.49592549,23.3400112 C5.43559436,23.3797724 5.36577407,23.4 5.29595379,23.4 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Chatrooms_OpenChat_Members-Copy" transform="translate(-332.000000, -245.000000)">
+            <g id="Group-3" transform="translate(14.000000, 136.000000)">
+                <g id="Group-2-Copy-2" transform="translate(0.000000, 103.000000)">
+                    <g id="Group-6">
+                        <g id="Group-5" transform="translate(318.000000, 6.000000)">
+                            <g id="icMessageCountWhite" transform="translate(0.000000, 0.600000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                                <g id="colour/white" mask="url(#mask-2)" fill="#FFFFFF">
+                                    <g transform="translate(-3.600000, -4.200000)" id="colour/light-grey">
+                                        <polygon points="0 0 31 0 31 31 0 31"></polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

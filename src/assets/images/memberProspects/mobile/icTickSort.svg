@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="8px" viewBox="0 0 10 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>icTickSort</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M98.7733333,13.6355556 C98.7022222,13.5662222 98.6666667,13.4622222 98.6666667,13.3928889 C98.6666667,13.3235556 98.7022222,13.2195556 98.7733333,13.1502222 L99.2711111,12.6648889 C99.4133333,12.5262222 99.6266667,12.5262222 99.7688889,12.6648889 L99.8044444,12.6995556 L101.76,14.7448889 C101.831111,14.8142222 101.937778,14.8142222 102.008889,14.7448889 L106.773333,9.92622222 L106.808889,9.92622222 C106.951111,9.78755556 107.164444,9.78755556 107.306667,9.92622222 L107.804444,10.4115556 C107.946667,10.5502222 107.946667,10.7582222 107.804444,10.8968889 L102.115556,16.6515556 C102.044444,16.7208889 101.973333,16.7555556 101.866667,16.7555556 C101.76,16.7555556 101.688889,16.7208889 101.617778,16.6515556 L98.8444444,13.7395556 L98.7733333,13.6355556 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Filter-Views-" transform="translate(-197.000000, -512.000000)">
+            <g id="Date-joined-Copy-2" transform="translate(99.000000, 503.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="icTickSort" fill="#333333" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

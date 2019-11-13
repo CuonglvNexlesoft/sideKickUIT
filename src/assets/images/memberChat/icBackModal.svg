@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="22px" viewBox="0 0 13 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>icBackModal</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4.20045977,10.7545447 L12.1602547,2.71109755 C12.3794285,2.49015447 12.5,2.19474792 12.5,1.87976418 C12.5,1.56460561 12.3794285,1.26937389 12.1602547,1.04808126 L11.4627737,0.34365031 C11.2439459,0.122008125 10.951426,0 10.6397045,0 C10.3279831,0 10.0358091,0.122008125 9.8168084,0.34365031 L0.339403971,9.92006506 C0.119538247,10.1420569 -0.000860265805,10.438687 4.63419458e-06,10.7540204 C-0.000860265805,11.0707521 0.119365222,11.3670326 0.339403971,11.5891991 L9.80798604,21.1563497 C10.0269869,21.3779919 10.3191608,21.5 10.6310553,21.5 C10.9427767,21.5 11.2349507,21.3779919 11.4541244,21.1563497 L12.1514325,20.4519187 C12.6051757,19.9934269 12.6051757,19.2470448 12.1514325,18.7887277 L4.20045977,10.7545447 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop---Direct-Messages" transform="translate(-448.000000, -176.000000)">
+            <g id="icBackModal" transform="translate(433.000000, 162.000000)">
+                <g id="Icons/PictureArrow" transform="translate(21.500000, 25.000000) scale(-1, 1) translate(-21.500000, -25.000000) translate(15.000000, 14.000000)">
+                    <g id="icBackModal">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#646464" fill-rule="nonzero" transform="translate(6.250000, 10.750000) scale(-1, 1) translate(-6.250000, -10.750000) " xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

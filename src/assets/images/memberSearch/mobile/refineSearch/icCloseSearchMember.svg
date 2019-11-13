@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icCloseSearchMember</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.6,0 C4.296,0 0,4.296 0,9.6 C0,14.904 4.296,19.2 9.6,19.2 C14.904,19.2 19.2,14.904 19.2,9.6 C19.2,4.296 14.904,0 9.6,0 Z M14.328,12.96 L12.96,14.328 L9.6,10.968 L6.24,14.328 L4.872,12.96 L8.232,9.6 L4.872,6.24 L6.24,4.872 L9.6,8.232 L12.96,4.872 L14.328,6.24 L10.968,9.6 L14.328,12.96 Z" id="path-1"></path>
+        <polygon id="path-3" points="9.528 8.16 8.16 9.528 4.8 6.168 1.44 9.528 0.072 8.16 3.432 4.8 0.072 1.44 1.44 0.072 4.8 3.432 8.16 0.072 9.528 1.44 6.168 4.8"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Filter-Search-Username" transform="translate(-250.000000, -130.000000)">
+            <g id="Icons/Close-erase" transform="translate(250.000000, 130.000000)">
+                <g id="colour/dark-grey" transform="translate(0.400000, 0.400000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g mask="url(#mask-2)" fill="#646464">
+                        <g transform="translate(-0.400000, -0.400000)">
+                            <rect x="0" y="0" width="20" height="20"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="colour/black" transform="translate(5.200000, 5.200000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="Mask" fill="#000000" xlink:href="#path-3"></use>
+                    <g id="colour/white" mask="url(#mask-4)" fill="#FFFFFF">
+                        <g transform="translate(-5.600000, -5.200000)" id="colour/light-grey">
+                            <rect x="0" y="0" width="21" height="21"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

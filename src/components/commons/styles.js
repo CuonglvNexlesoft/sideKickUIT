@@ -131,7 +131,7 @@ export default EStyleSheet.create(shorthand({
     },
     textHeadingEmptyModalConfirm:{
         fontSize: 18,
-        fontFamily: global.fontBold
+        // fontFamily: global.fontBold
     },
     textSubEmptyModalConfirm:{
         fontSize: 16,
@@ -227,7 +227,7 @@ export default EStyleSheet.create(shorthand({
 
     textHeadingModalPopup: {
         fontSize: 20,
-        fontFamily: global.fontBold,
+        // fontFamily: global.fontBold,
         color: global.color66
     },
     // bodyModalPopup
@@ -252,7 +252,7 @@ export default EStyleSheet.create(shorthand({
 
     textForgotPopup: {
         fontSize: 14,
-        fontFamily: global.fontBold,
+        // fontFamily: global.fontBold,
         color: global.color66,
         justifyContent: 'flex-start',
     },
@@ -271,7 +271,7 @@ export default EStyleSheet.create(shorthand({
     headingModalIntroduce: {
         fontSize: 20,
         marginTop: 10,
-        fontFamily: global.fontLight,
+        // fontFamily: global.fontLight,
         color: global.color66,
         marginBottom: 6,
         textAlign: 'center'
@@ -328,7 +328,7 @@ export default EStyleSheet.create(shorthand({
 
     textTabModalIntroduce: {
         fontSize: 14,
-        fontFamily: global.fontLight,
+        // fontFamily: global.fontLight,
         color: '#282F37'
     },
 
@@ -500,7 +500,7 @@ export default EStyleSheet.create(shorthand({
         //marginLeft:10
     },
     btnTextStyle: {
-        fontFamily: global.fontBold,
+        // fontFamily: global.fontBold,
         fontSize: global.sizeP12,
         color: global.colorFF,
         marginLeft: 0
@@ -635,7 +635,7 @@ export default EStyleSheet.create(shorthand({
     buttonText: {
         color: global.colorFF,
         fontSize: global.sizeP16,
-        fontFamily: global.fontBold,
+        // fontFamily: global.fontBold,
         marginLeft: 0
     },
     textEmptyFriends:{
@@ -644,7 +644,7 @@ export default EStyleSheet.create(shorthand({
     },
     LeftTextProperty: {
         lineHeight: 17,
-        fontFamily: global.fontBold,
+        // fontFamily: global.fontBold,
         color: global.color64,
         fontSize: global.sizeP16,
         flexWrap: "wrap",
@@ -1107,7 +1107,7 @@ export default EStyleSheet.create(shorthand({
 
     timerText: {
         fontSize: 10,
-        fontFamily: global.fontExtraBold
+        // fontFamily: global.fontExtraBold
     },
 
     icPin: {
@@ -1269,7 +1269,7 @@ export default EStyleSheet.create(shorthand({
         marginLeft: 12,
         // fontWeight: global.fontWeightLight',
         color: global.color33,
-        fontFamily: global.fontBold
+        // fontFamily: global.fontBold
 
     },
     textDescItemModal: {
@@ -1291,7 +1291,7 @@ export default EStyleSheet.create(shorthand({
     //  TextDropdown
     fontHeading: {
         fontSize: global.fontTitle,
-        fontFamily: global.fontExtraBold,
+        // fontFamily: global.fontExtraBold,
         fontWeight: 'bold'
     },
 
@@ -1306,7 +1306,7 @@ export default EStyleSheet.create(shorthand({
     fontHeadingSmall: {
         fontSize: 16,
         color: global.color66,
-        fontFamily: global.fontExtraBold,
+        // fontFamily: global.fontExtraBold,
         fontWeight: global.fontWeightDark
     },
 
@@ -1463,7 +1463,7 @@ export default EStyleSheet.create(shorthand({
     styleTextComment: {
         textAlign: 'center',
         width: '60%',
-        fontFamily: global.fontLightItalic,
+        // fontFamily: global.fontLightItalic,
         fontSize: global.sizeP14,
         color: global.color33
     },
@@ -1639,7 +1639,7 @@ export default EStyleSheet.create(shorthand({
 
     timerText: {
         fontSize: 10,
-        fontFamily: global.fontExtraBold
+        // fontFamily: global.fontExtraBold
     },
 
     icPin: {
@@ -1713,12 +1713,12 @@ export default EStyleSheet.create(shorthand({
     },
     buttonTextGeneral: {
         fontSize: 18,
-        fontFamily: global.fontSemiBold
+        // fontFamily: global.fontSemiBold
     },
     buttonTextBlack: {
         color: global.colorTextPrimary,
         fontSize: 18,
-        fontFamily: global.fontBold
+        // fontFamily: global.fontBold
     },
     // smallButton
     smallButtonContainer: {
@@ -1737,7 +1737,7 @@ export default EStyleSheet.create(shorthand({
     },
     smallButtonText: {
         fontSize: 13,
-        fontFamily: global.fontSemiBold,
+        // fontFamily: global.fontSemiBold,
         alignItems: 'center',
         justifyContent: 'center',
         alignSelf: 'center'
@@ -1764,7 +1764,7 @@ export default EStyleSheet.create(shorthand({
     },
     textSmallReg: {
         fontSize: width >= 375 ? 18 : 16,
-        fontFamily: global.fontSemiBold
+        // fontFamily: global.fontSemiBold
     },
 
     // background
@@ -1801,7 +1801,7 @@ export default EStyleSheet.create(shorthand({
         marginLeft: 12,
         // fontWeight: global.fontWeightLight',
         color: global.color33,
-        fontFamily: global.fontBold
+        // fontFamily: global.fontBold
 
     },
     textDescItemModal: {
@@ -1823,7 +1823,7 @@ export default EStyleSheet.create(shorthand({
     //  TextDropdown
     fontHeading: {
         fontSize: global.fontTitle,
-        fontFamily: global.fontExtraBold,
+        // fontFamily: global.fontExtraBold,
         fontWeight: 'bold'
     },
 
@@ -1838,7 +1838,7 @@ export default EStyleSheet.create(shorthand({
     fontHeadingSmall: {
         fontSize: 16,
         color: global.color66,
-        fontFamily: global.fontExtraBold,
+        // fontFamily: global.fontExtraBold,
         fontWeight: global.fontWeightDark
     },
 
@@ -1950,7 +1950,7 @@ export default EStyleSheet.create(shorthand({
         fontSize: global.sizeP12,
         lineHeight: global.sizeP12 + 3,
         // textAlign:'center',
-        fontFamily: global.fontSemiBold,
+        // fontFamily: global.fontSemiBold,
         color: global.colorFF,
     }
 }));

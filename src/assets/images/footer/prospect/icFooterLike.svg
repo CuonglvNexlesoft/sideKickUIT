@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="15px" viewBox="0 0 17 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icFooterLike</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M65.7102806,13.0076633 C66.5119666,12.1785379 67.5660346,11.7634133 68.6215306,11.7634133 C69.6770266,11.7634133 70.7363986,12.1785396 71.5381016,13.0076633 L72.4996556,14.0051633 L73.4612266,13.0129133 C75.0646156,11.3546306 77.6856589,11.3546676 79.2890309,13.0129133 C80.8924199,14.6711606 80.8924199,17.3344126 79.2890309,18.9926616 C77.1070299,21.2493384 74.9260146,23.5085352 72.7440306,25.7651616 C72.6798051,25.8322601 72.5904645,25.8702761 72.4970036,25.8702761 C72.4035426,25.8702761 72.314202,25.8322601 72.2499766,25.7651616 L65.7102806,18.9874032 C64.1087276,17.3278706 64.1068916,14.6658838 65.7102806,13.0076633 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Views-Notifications" transform="translate(-246.000000, -580.000000)">
+            <g id="Group-12" transform="translate(182.000000, 569.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="icFooterLike" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

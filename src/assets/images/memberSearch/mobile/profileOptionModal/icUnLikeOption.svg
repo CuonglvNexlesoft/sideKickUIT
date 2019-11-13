@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="25px" viewBox="0 0 28 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icUnLikeOption</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2.25693272,2.15379834 C3.57735672,0.788180104 5.31346872,0.104445402 7.05193272,0.104445402 C8.79039672,0.104445402 10.5352447,0.788182871 11.8556967,2.15379834 L13.4394327,3.79673952 L15.0231967,2.1624454 C17.6640727,-0.568843652 21.9810853,-0.568782776 24.6219333,2.1624454 C27.2628093,4.89367635 27.2628093,9.28020892 24.6219333,12.0114426 C21.0280493,15.7283221 17.4357887,19.4493521 13.8419327,23.1661485 C13.7361496,23.2766636 13.5890004,23.3392783 13.4350647,23.3392783 C13.2811291,23.3392783 13.1339798,23.2766636 13.0281967,23.1661485 L2.25693272,12.0027817 C-0.380919199,9.269434 -0.383943199,4.88498502 2.25693272,2.15379834 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="User-Option--After-actions----Unlike-/-Unfavourite" transform="translate(-28.000000, -397.000000)">
+            <g id="Group-5">
+                <g id="Option-popUp" transform="translate(9.000000, 277.000000)">
+                    <g id="colour/light-green" transform="translate(19.560000, 120.800000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="icUnLikeOption" fill="#7EC34D" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

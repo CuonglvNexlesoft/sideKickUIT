@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="14px" viewBox="0 0 10 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icBackWhiteOpenChat</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8.75,14.381241 C8.51646059,14.1471752 8.19939705,14.015634 7.86875,14.015634 C7.53810295,14.015634 7.22103941,14.1471752 6.9875,14.381241 L1.25,20.118741 C0.7625,20.606241 0.7625,21.393741 1.25,21.881241 L6.9875,27.618741 C7.475,28.106241 8.2625,28.106241 8.75,27.618741 C9.2375,27.131241 9.2375,26.343741 8.75,25.856241 L3.9,20.993741 L8.75,16.143741 C9.2375,15.656241 9.225,14.856241 8.75,14.381241 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Chatrooms_VideoChat_Texting" transform="translate(-27.000000, -39.000000)">
+            <g id="UI/HeaderLive-Copy-2" transform="translate(27.000000, 25.000000)">
+                <g id="UI/HeaderLive-Copy">
+                    <g id="Header">
+                        <g id="PrivateMessages">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="icBackWhiteOpenChat" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

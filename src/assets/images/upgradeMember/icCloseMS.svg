@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icCloseMS</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8.04503075,6.50003052 L12.6800085,1.86504728 C13.1066638,1.43839151 13.1066638,0.746647604 12.6800085,0.320052868 C12.2533533,-0.106602905 11.5616712,-0.106602905 11.1350159,0.320052868 L6.49997711,4.95509714 L1.86493828,0.31999183 C1.438283,-0.106663943 0.746600949,-0.106663943 0.319945676,0.31999183 C-0.106648559,0.746647604 -0.106648559,1.43839151 0.319945676,1.86498624 L4.95498451,6.49996948 L0.319945676,11.1350138 C-0.106648559,11.5616695 -0.106648559,12.2534134 0.319945676,12.6800082 C0.746600949,13.1066639 1.438283,13.1066639 1.86493828,12.6800082 L6.49997711,8.04496389 L11.1350159,12.6800082 C11.5616102,13.1066639 12.2533533,13.1066639 12.6800085,12.6800082 C13.1066638,12.2533524 13.1066638,11.5616695 12.6800085,11.1350138 L8.04503075,6.50003052 Z" id="path-1"></path>
+    </defs>
+    <g id="Web-upgrade" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Compare-membership" transform="translate(-130.000000, -377.000000)">
+            <g id="UI/icon/tick-Copy-8" transform="translate(130.000000, 377.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="icCloseMS" fill="#FF0400" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

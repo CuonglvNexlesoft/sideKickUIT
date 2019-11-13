@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>backArrowLiveStream</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M21.6964046,25.0038049 L28.7010242,18.2697561 C28.8938971,18.0847805 29,17.8374634 29,17.5737561 C29,17.3099024 28.8938971,17.0627317 28.7010242,16.8774634 L28.0872409,16.2877073 C27.8946724,16.1021463 27.6372549,16 27.36294,16 C27.0886251,16 26.831512,16.1021463 26.6387914,16.2877073 L18.2986754,24.3051707 C18.1051936,24.4910244 17.9992429,24.7393659 18,25.0033659 C17.9992429,25.2685366 18.1050414,25.5165854 18.2986754,25.7025854 L26.6310277,33.7122927 C26.8237484,33.8978537 27.0808615,34 27.3553286,34 C27.6296435,34 27.8867566,33.8978537 28.0796295,33.7122927 L28.6932606,33.1225366 C29.0925546,32.7386829 29.0925546,32.1138049 28.6932606,31.7300976 L21.6964046,25.0038049 Z" id="path-1"></path>
+    </defs>
+    <g id="Main-screens-Stage-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="messenger---open-screen" transform="translate(-10.000000, -30.000000)">
+            <g id="backArrowLiveStream" transform="translate(10.000000, 30.000000)">
+                <circle id="Oval" stroke="#FFFFFF" stroke-width="2" fill="#646464" cx="25" cy="25" r="24"></circle>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Shape" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

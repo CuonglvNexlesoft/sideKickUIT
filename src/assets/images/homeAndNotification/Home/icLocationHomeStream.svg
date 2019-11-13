@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="14px" viewBox="0 0 10 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icLocationHomeStream</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M5.14,0.56 C7.51596193,0.56 9.48,2.31796988 9.48,4.84096544 C9.48,5.75463412 9.2209229,6.73199243 8.801875,7.46701807 L5.4212963,13.3979447 C5.36466327,13.4988674 5.25694248,13.5614999 5.14,13.5614999 C5.02305752,13.5614999 4.91533673,13.4988674 4.8587037,13.3979447 L1.478125,7.46701807 C1.05909318,6.73202414 0.8,5.75463412 0.8,4.84096544 C0.8,2.31796988 2.76403807,0.56 5.14,0.56 Z M5.14,2.77975904 C3.98973283,2.77975904 3.05037037,3.70636573 3.05037037,4.84096544 C3.05037037,5.97557942 3.98973604,6.90216867 5.14,6.90216867 C6.29026396,6.90216867 7.22962963,5.97557942 7.22962963,4.84096544 C7.22962963,3.70636573 6.29026717,2.77975904 5.14,2.77975904 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="icLocationHomeStream" fill="#333333" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icIgnoreProspect</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M488.3825,335.625244 C488.237706,335.480124 488.041126,335.398568 487.836125,335.398568 C487.631124,335.398568 487.434544,335.480124 487.28975,335.625244 L483.5,339.407244 L479.71025,335.617494 C479.565456,335.472374 479.368876,335.390818 479.163875,335.390818 C478.958874,335.390818 478.762294,335.472374 478.6175,335.617494 C478.31525,335.919744 478.31525,336.407994 478.6175,336.710244 L482.40725,340.499994 L478.6175,344.289744 C478.31525,344.591994 478.31525,345.080244 478.6175,345.382494 C478.91975,345.684744 479.408,345.684744 479.71025,345.382494 L483.5,341.592744 L487.28975,345.382494 C487.592,345.684744 488.08025,345.684744 488.3825,345.382494 C488.68475,345.080244 488.68475,344.591994 488.3825,344.289744 L484.59275,340.499994 L488.3825,336.710244 C488.677,336.415744 488.677,335.919744 488.3825,335.625244 Z" id="path-1"></path>
+        <filter x="-44.0%" y="-44.0%" width="188.1%" height="188.1%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.426545516 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="GRID-MODE_Prospect-Liked-me" transform="translate(-475.000000, -332.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="icIgnoreProspect">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icAddBlack</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M347.554223,399.380023 L351.076806,395.857436 C351.401065,395.533178 351.401065,395.007452 351.076806,394.68324 C350.752548,394.358982 350.22687,394.358982 349.902612,394.68324 L346.379983,398.205874 L342.857353,394.683194 C342.533095,394.358935 342.007417,394.358935 341.683159,394.683194 C341.358947,395.007452 341.358947,395.533178 341.683159,395.85739 L345.205788,399.379977 L341.683159,402.90261 C341.358947,403.226869 341.358947,403.752594 341.683159,404.076806 C342.007417,404.401065 342.533095,404.401065 342.857353,404.076806 L346.379983,400.554173 L349.902612,404.076806 C350.226824,404.401065 350.752548,404.401065 351.076806,404.076806 C351.401065,403.752548 351.401065,403.226869 351.076806,402.90261 L347.554223,399.380023 Z" id="path-1"></path>
+    </defs>
+    <g id="RHP-Edit-Profile--General-Details" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Edit-profile---General-details" transform="translate(-339.000000, -392.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="icAddBlack" fill="#333333" fill-rule="nonzero" transform="translate(346.380000, 399.380000) rotate(-44.000000) translate(-346.380000, -399.380000) " xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

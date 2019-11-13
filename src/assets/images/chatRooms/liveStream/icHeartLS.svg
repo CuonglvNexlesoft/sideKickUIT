@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="30px" viewBox="0 0 32 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icHeartLS</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2.42056116,3.33532656 C4.02393316,1.67707584 6.13206916,0.84682656 8.24306116,0.84682656 C10.3540532,0.84682656 12.4727972,1.6770792 14.0762032,3.33532656 L15.9993112,5.33032656 L17.9224532,3.34582656 C21.1292312,0.02926128 26.3713178,0.0293352 29.5780618,3.34582656 C32.7848398,6.66232128 32.7848398,11.9888251 29.5780618,15.3053232 C25.2140598,19.8186768 20.8520292,24.3370704 16.4880612,28.8503232 C16.3596102,28.9845201 16.180929,29.0605523 15.9940072,29.0605523 C15.8070853,29.0605523 15.6284041,28.9845201 15.4999532,28.8503232 L2.42056116,15.2948064 C-0.782544741,11.9757413 -0.786216741,6.65176752 2.42056116,3.33532656 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="icHeartLS" fill="#7EC34D" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>

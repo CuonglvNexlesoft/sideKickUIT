@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="23px" viewBox="0 0 26 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-home-footer--msg</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Messenger-Inbox---5-pin" transform="translate(-19.000000, -1111.000000)" fill="#D4D7DC" fill-rule="nonzero">
+            <g id="Group-10-Copy" transform="translate(0.000000, 1093.000000)">
+                <path d="M30.4769763,19.3904443 L19.6320962,29.5578198 C19.2288081,29.9359136 19,30.4640664 19,31.0168741 L19,40.8367477 L28.5344076,40.8367477 L28.5344076,35.9503691 C28.5344076,34.2935149 29.8775533,32.9503691 31.5344076,32.9503691 L32.1553526,32.9503691 C33.8122069,32.9503691 35.1553526,34.2935149 35.1553526,35.9503691 L35.1553526,40.8367477 L44.6897602,40.8367477 L44.6897602,31.0168741 C44.6897602,30.4640664 44.4609521,29.9359136 44.057664,29.5578198 L33.2127839,19.3904443 C32.4434615,18.6691832 31.2462987,18.6691832 30.4769763,19.3904443 Z" id="ic-home-footer--msg"></path>
+            </g>
+        </g>
+    </g>
+</svg>

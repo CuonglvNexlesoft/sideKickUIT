@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="16px" viewBox="0 0 18 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icAddFriendDone</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.0738462,5.44 C11.0246154,5.392 11,5.32 11,5.272 C11,5.224 11.0246154,5.152 11.0738462,5.104 L11.4184615,4.768 C11.5169231,4.672 11.6646154,4.672 11.7630769,4.768 L11.7876923,4.792 L13.1415385,6.208 C13.1907692,6.256 13.2646154,6.256 13.3138462,6.208 L16.6123077,2.872 L16.6369231,2.872 C16.7353846,2.776 16.8830769,2.776 16.9815385,2.872 L17.3261538,3.208 C17.4246154,3.304 17.4246154,3.448 17.3261538,3.544 L13.3876923,7.528 C13.3384615,7.576 13.2892308,7.6 13.2153846,7.6 C13.1415385,7.6 13.0923077,7.576 13.0430769,7.528 L11.1230769,5.512 L11.0738462,5.44 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icAddFriendDone">
+            <path d="M10.9724238,15.9816514 C11.5471698,15.9816514 12,15.5045872 12,14.8990826 C12,14.8807339 12,14.8807339 12,14.8623853 C12,11.1009174 9.31785196,8 5.99129173,8 C2.66473149,8 0,11.1376147 0,14.8990826 C0,14.8990826 0,14.8990826 0,14.9174312 C0,15.5229358 0.470246734,16 1.0275762,16 L10.9724238,15.9816514 Z" id="Shape" fill="#A5A5A5" fill-rule="nonzero"></path>
+            <circle id="Oval" fill="#A5A5A5" fill-rule="nonzero" cx="6.5" cy="3.5" r="3.5"></circle>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Shape" fill="#A5A5A5" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

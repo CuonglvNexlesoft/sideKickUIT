@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="23px" viewBox="0 0 5 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icOptionProfileMobile</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2.45454545,5 C1.09893743,5 1.77635684e-15,3.88071187 1.77635684e-15,2.5 C1.77635684e-15,1.11928813 1.09893743,0 2.45454545,0 C3.81015348,0 4.90909091,1.11928813 4.90909091,2.5 C4.90909091,3.88071187 3.81015348,5 2.45454545,5 Z M11.5,5 C10.144392,5 9.04545455,3.88071187 9.04545455,2.5 C9.04545455,1.11928813 10.144392,0 11.5,0 C12.855608,0 13.9545455,1.11928813 13.9545455,2.5 C13.9545455,3.88071187 12.855608,5 11.5,5 Z M20.5454545,5 C19.1898465,5 18.0909091,3.88071187 18.0909091,2.5 C18.0909091,1.11928813 19.1898465,0 20.5454545,0 C21.9010626,0 23,1.11928813 23,2.5 C23,3.88071187 21.9010626,5 20.5454545,5 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="New-Members-Grid-OFF-Copy-7" transform="translate(-344.000000, -437.000000)">
+            <g id="Menu-Icon" transform="translate(347.000000, 449.000000) rotate(-270.000000) translate(-347.000000, -449.000000) translate(327.000000, 429.000000)">
+                <g id="icOptionProfileMobile" transform="translate(8.000000, 18.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#333333" opacity="0.600000024" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icDeletePhotoEditProfile</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.6,-7.10542736e-15 C4.296,-7.10542736e-15 -9.23705556e-14,4.296 -9.23705556e-14,9.6 C-9.23705556e-14,14.904 4.296,19.2 9.6,19.2 C14.904,19.2 19.2,14.904 19.2,9.6 C19.2,4.296 14.904,-7.10542736e-15 9.6,-7.10542736e-15 Z" id="path-1"></path>
+        <path d="M10.6934064,9.6000216 L13.9735445,6.31987961 C14.2754852,6.01793861 14.2754852,5.52839677 13.9735445,5.22649895 C13.6716039,4.92455794 13.1821058,4.92455794 12.8801651,5.22649895 L9.5999838,8.50668413 L6.31980247,5.22645576 C6.01786182,4.92451475 5.52836375,4.92451475 5.22642309,5.22645576 C4.92452564,5.52839677 4.92452564,6.01793861 5.22642309,6.31983642 L8.50660442,9.5999784 L5.22642309,12.8801636 C4.92452564,13.1821046 4.92452564,13.6716464 5.22642309,13.9735442 C5.52836375,14.2754853 6.01786182,14.2754853 6.31980247,13.9735442 L9.5999838,10.6933591 L12.8801651,13.9735442 C13.1820626,14.2754853 13.6716039,14.2754853 13.9735445,13.9735442 C14.2754852,13.6716032 14.2754852,13.1821046 13.9735445,12.8801636 L10.6934064,9.6000216 Z" id="path-3"></path>
+    </defs>
+    <g id="Edit-Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icDeletePhotoEditProfile" transform="translate(0.400000, 0.400000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+            <mask id="mask-4" fill="white">
+                <use xlink:href="#path-3"></use>
+            </mask>
+            <use id="Shape" fill="#FF0400" fill-rule="nonzero" xlink:href="#path-3"></use>
+        </g>
+    </g>
+</svg>

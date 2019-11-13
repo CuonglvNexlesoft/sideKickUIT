@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="7px" viewBox="0 0 13 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>arrowUpWhite</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.57406932,3.2538068 C9.58725959,3.46563257 9.51587012,3.68171217 9.35990093,3.84749201 L4.2410627,9.28831107 C3.97508724,9.5710167 3.53029333,9.58457918 3.2475877,9.31860371 C3.23718468,9.30881633 3.22708244,9.29871409 3.21729506,9.28831107 C2.92968017,8.98260488 2.92968017,8.50585346 3.21729506,8.20014726 L7.87091731,3.2538068 L3.21729506,-1.69253366 C2.92968017,-1.99823985 2.92968017,-2.47499128 3.21729506,-2.78069747 C3.48327053,-3.0634031 3.92806443,-3.07696558 4.21077006,-2.81099011 C4.22117308,-2.80120273 4.23127532,-2.79110049 4.2410627,-2.78069747 L9.35990093,2.66012159 C9.51587012,2.82590143 9.58725959,3.04198103 9.57406932,3.2538068 Z" id="path-1"></path>
+    </defs>
+    <g id="Edit-Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="arrowUpWhite" fill="#FFFFFF" fill-rule="nonzero" transform="translate(6.288598, 3.253807) scale(-1, 1) rotate(-90.000000) translate(-6.288598, -3.253807) " xlink:href="#path-1"></use>
+    </g>
+</svg>

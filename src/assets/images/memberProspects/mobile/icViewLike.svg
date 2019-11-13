@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="21px" viewBox="0 0 24 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>icViewLike</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M21.804681,173.852237 C23.0084781,172.61797 24.5912474,172 26.176161,172 C27.7610746,172 29.3518083,172.617972 30.5556309,173.852237 L31.9994829,175.337152 L33.4433604,173.860052 C35.8509801,171.391471 39.786691,171.391526 42.1942852,173.860052 C44.6019049,176.328581 44.6019049,180.293196 42.1942852,182.761728 C38.9178323,186.1211 35.6428593,189.484225 32.3664319,192.843523 C32.2699921,192.943408 32.1358399,193 31.9955007,193 C31.8551614,193 31.7210092,192.943408 31.6245694,192.843523 L21.804681,182.7539 C19.3998183,180.283458 19.3970614,176.320725 21.804681,173.852237 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Prospects-Likes-Swipe-Copy-3" transform="translate(-20.000000, -172.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="icViewLike" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

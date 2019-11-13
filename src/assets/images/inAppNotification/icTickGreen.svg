@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icTickGreen</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M394.184615,1513.6 C394.061538,1513.48 394,1513.3 394,1513.18 C394,1513.06 394.061538,1512.88 394.184615,1512.76 L395.046154,1511.92 C395.292308,1511.68 395.661538,1511.68 395.907692,1511.92 L395.969231,1511.98 L399.353846,1515.52 C399.476923,1515.64 399.661538,1515.64 399.784615,1515.52 L408.030769,1507.18 L408.092308,1507.18 C408.338462,1506.94 408.707692,1506.94 408.953846,1507.18 L409.815385,1508.02 C410.061538,1508.26 410.061538,1508.62 409.815385,1508.86 L399.969231,1518.82 C399.846154,1518.94 399.723077,1519 399.538462,1519 C399.353846,1519 399.230769,1518.94 399.107692,1518.82 L394.307692,1513.78 L394.184615,1513.6 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A4-Copy" transform="translate(-394.000000, -1507.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="icTickGreen" fill="#91E359" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

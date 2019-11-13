@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="142px" height="103px" viewBox="0 0 142 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icQuickMessageEmptyState</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.600000024">
+        <g id="Quick-messages-Empty-state" transform="translate(-117.000000, -245.000000)" stroke="#666666" stroke-width="4">
+            <g id="Group" transform="translate(90.000000, 247.000000)">
+                <g id="icQuickMessageEmptyState" transform="translate(29.000000, 0.000000)">
+                    <g id="Page-1">
+                        <path d="M32.1620868,51.5842105 C34.1543887,63.5722641 41.529607,69.4669685 53.4446416,75.3152079 L53.4446416,96.960449 C53.4446416,97.5164619 53.7695436,98.0326359 54.291267,98.297074 C54.5298027,98.4189003 54.7930145,98.4789474 55.0544638,98.4789474 C55.3629151,98.4789474 55.671954,98.3940731 55.9392785,98.2272115 L81.7122971,82.1363255 C82.7551564,82.187712 83.7310377,82.2396758 84.7251323,82.2396758 C115.005653,82.2396758 137.837515,64.5621612 137.837515,41.1212813 C137.837515,17.6775147 115.005653,0 84.7251323,0 C69.5857531,0 56.308245,4.41923432 46.8149941,11.7692282 L69.8554277,11.7692282 L48.2431302,51.5842105 L32.1620868,51.5842105 Z" id="Stroke-3"></path>
+                        <path d="M13.7837515,23.4473684 L55.135006,23.4473684" id="Stroke-5" stroke-linecap="round"></path>
+                        <path d="M0,32.8263158 L41.3512545,32.8263158" id="Stroke-7" stroke-linecap="round"></path>
+                        <path d="M13.7837515,42.2052632 L36.7566706,42.2052632" id="Stroke-9" stroke-linecap="round"></path>
+                    </g>
+                    <circle id="Oval-10" cx="74" cy="42" r="5"></circle>
+                    <circle id="Oval-10" cx="91" cy="42" r="5"></circle>
+                    <circle id="Oval-10" cx="110" cy="42" r="5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
