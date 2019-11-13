@@ -14,20 +14,37 @@ import * as CommonUtils from '../../utils/CommonUtils';
 import Locale from '../../utils/Locale';
 import GlobalKeys from '../../constants/GlobalKeys';
 import { Metrics, Colors } from '../../themes';
+import TextComponent from '../commons/Text';
+import Avatar from '../commons/Avatar';
 
 export default class MenuComponent extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            
+
         };
     }
 
     render() {
         return (
-            <View style={[styles.container, {  }]}>
-                <Text>MENU TAB</Text>
+            <View style={[styles.container, {}]}>
+                <View>
+                    <Avatar
+                        ref="avatar"
+                        showOnline={false}
+                        user={{userId: 1}}
+                        size="x-large"
+                        canPress={false}
+                        // pinned={this.props.pinned}
+                        // screen={constants.SCREENS_NAME.CONVERSATION}
+                        isDynamicallyAvatar
+                    />
+                </View>
+                <View>
+                    <TextComponent text={'Le Van Cuong'} />
+                </View>
+
             </View>
         )
     }
@@ -38,11 +55,13 @@ export default class MenuComponent extends Component {
 }
 
 MenuComponent.defaultProps = {
-    
+
 };
 
 const styles = EStyleSheet.create(shorthand({
     container: {
         flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
     }
 }));

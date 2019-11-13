@@ -7,7 +7,7 @@ import * as SettingReducer from './SettingReducer';
 const allReducers = Object.assign({},
     AppReducer,
     UserReducer,
-    ProductReducer,
+    // ProductReducer,
     SettingReducer,
 );
 

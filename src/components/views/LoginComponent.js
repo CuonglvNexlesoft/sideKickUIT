@@ -285,7 +285,7 @@ export default class LoginComponent extends Component {
 
     onSubmit() {
         Actions[ScreenName.DASHBOARD]();
-        // const user = this.getUser();
+        //const user = this.getUser();
         // if (user) {
         //     this.props.appActions.showLoading();
         //     console.log(this.props.userActions)

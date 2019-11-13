@@ -46,6 +46,7 @@ import * as Themes from '../../themes';
 import Strings from '../../constants/Strings';
 import * as CommonUtils from '../../utils/CommonUtils';
 import io from "socket.io-client";
+import ModalMenu from '../commons/ModalMenu';
 
 export default class ClassDetailComponent extends Component {
 
@@ -67,7 +68,7 @@ export default class ClassDetailComponent extends Component {
           </Button>
         }
         headerRight={
-          <Button width={Themes.Metrics.headerButtonWidth} color={'transparent'} onPress={() => Actions.pop()}>
+          <Button width={Themes.Metrics.headerButtonWidth} color={'transparent'} onPress={() => this.refs.modalConversationMenu.showModal()}>
               <Icon name='md-more' style={{ color: Themes.Colors.background, fontSize: 26 }} />
           </Button>
         }
@@ -121,6 +122,24 @@ export default class ClassDetailComponent extends Component {
               }}>
               <Text>Send</Text>
             </TouchableOpacity>
+            <ModalMenu
+                            ref={"modalConversationMenu"}
+                            // disabled={!chatted}
+                            // onDeleteConversation={this.goBack}
+                            // onPressReport={this.onPressReport}
+                            // onAddDeleteFolder={this.onAddDeleteFolder}
+                            // isModal={this.props.isModal}
+                            // selectedPeerVcard={this.props.selectedPeerVcard}
+                            // conversations={this.props.conversationsState.data}
+                            // pinned={pinned}
+                            // pinListLength={this.props.pinListLength}
+                            // conversationDetailAction={this.props.conversationDetailAction}
+                            // onOpenModalDeleteConversation={() => {
+                            //     //console.log('onOpenModalDeleteConversation', this.getMessages()[this.getMessages().length - 1].id);
+                            //     this.refs.modalDeleteConversation.showModal(this.conversationInfor, lastMessageInConversationId);
+                            // }
+                            // }
+                        />
           </View>
         </View>
       </Container>

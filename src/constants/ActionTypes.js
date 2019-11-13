@@ -11,6 +11,7 @@ export const SETTING = {
 
 export const USER = {
     USER_DATA: 'USER_DATA',
+    USER_AVATAR: 'USER_AVATAR'
 }
 
 export const PRODUCT = {

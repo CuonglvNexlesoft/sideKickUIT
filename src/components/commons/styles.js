@@ -135,7 +135,7 @@ export default EStyleSheet.create(shorthand({
     },
     textSubEmptyModalConfirm:{
         fontSize: 16,
-        fontFamily: global.fontRegular
+        //fontFamily: global.fontRegular
     },
     headingEmptyModalConfirm: {
         flex: 1,
@@ -238,7 +238,7 @@ export default EStyleSheet.create(shorthand({
     textBodyModalPopup: {
         fontSize: 14,
         textAlign: 'center',
-        fontFamily: global.fontSemiBold,
+        // fontFamily: global.fontSemiBold,
         color: global.color66,
         paddingBottom: 15
     },
@@ -279,7 +279,7 @@ export default EStyleSheet.create(shorthand({
 
     textSelectModalIntroduce: {
         fontSize: 12,
-        fontFamily: global.fontSemiBold,
+        // fontFamily: global.fontSemiBold,
         color: global.color66,
         textAlign: 'center'
     },
@@ -334,12 +334,12 @@ export default EStyleSheet.create(shorthand({
 
     textSelectedModalIntroduce: {
         color: global.primaryColor,
-        fontFamily: global.fontSemiBold
+        // fontFamily: global.fontSemiBold
     },
 
     textSelectingModalIntroduce: {
         color: 'white',
-        fontFamily: global.fontSemiBold
+        // fontFamily: global.fontSemiBold
     },
 
     icTriangleGreen: {
@@ -366,7 +366,7 @@ export default EStyleSheet.create(shorthand({
 
     textItemModalIntroduce: {
         fontSize: 14,
-        fontFamily: global.fontRegular,
+        // //fontFamily: global.fontRegular,
         color: global.color66
     },
 
@@ -605,7 +605,7 @@ export default EStyleSheet.create(shorthand({
         paddingTop: 2,
         //marginBottom: 10,
         //paddingBottom: 10,
-        fontFamily: global.fontRegular,
+        // //fontFamily: global.fontRegular,
         flex: 1,
         paddingBottom: 0,
     },
@@ -650,4 +650,1307 @@ export default EStyleSheet.create(shorthand({
         flexWrap: "wrap",
         width: '100%'
     },
+    fontBold: {
+        // fontWeight: '$fontWeightBold'
+      },
+      rowContainer: {
+        flexDirection: 'row'
+      },
+      leftContainer: {
+        flex: 1,
+        paddingLeft: 5,
+        paddingRight : 10,
+      },
+      flexEnd: {
+        alignItems: 'flex-end',
+        // flex: 1 ,
+      },
+      flexDirectionRow:{
+        flexDirection: 'row'
+      },
+      flexDirectionColumn: {
+        flexDirection: 'column'
+      },
+      alignCenter: {
+        alignItems: 'center',
+        justifyContent: 'center'
+      },
+    
+      margin6: {
+        marginLeft: 6,
+        marginRight: 6
+      },
+      marginRight6: {
+          marginRight: 6
+      },
+      marginLeft6: {
+        marginLeft: 6
+      },
+      marginLeft10: {
+        marginLeft: 10
+      },
+      margin10: {
+        marginLeft: 10,
+        marginRight: 10
+      },
+    
+      marginLeft12: {
+        marginLeft: 10
+      },
+      marginLeft16: {
+        marginLeft: 16
+      },
+      marginRight22: {
+        marginRight: 22
+      },
+      font18: {
+        fontSize: 18
+      },
+    
+      colorSizeBold: {
+        // color: '$colorTextBlack',
+        //fontSize: '$fontPrimary',
+        //fontFamily :"$fontBold"
+      },
+    
+      colorSizeBold00: {
+        color: global.color00,
+        //fontSize: '$fontPrimary',
+        //fontFamily :"$fontBold"
+      },
+    
+      colorLightItalic: {
+        //color: '$colorTextBlack',
+        //fontSize: '$fontPrimary',
+        // fontFamily: global.fontLightItalic
+      },
+    
+    
+      modalLoading: {
+        width: "100%",
+        height: "100%",
+        alignItems: "center",
+        justifyContent: "center"
+      },
+    
+      modalViewCenter: {
+        justifyContent: "center",
+        flex: 1
+      },
+    
+      bgOpacity8: {
+        backgroundColor: 'rgba(0,0,0,.8)'
+      },
+    
+      modalViewBottom: {
+        justifyContent: "flex-end",
+        flex: 1
+      },
+      profileButtonView: {
+        backgroundColor: "#7EC34C"
+      },
+    
+      profileButtonText: {
+        color: "white"
+      },
+      headerProfileModal: {
+        backgroundColor:global.colorF4,
+        height: 90,
+        borderTopLeftRadius: 6,
+        borderTopRightRadius: 6,
+        alignItems: "center",
+        justifyContent: "space-between",
+        flexDirection: 'row'
+      },
+    
+      avatarContainer:{
+        flexDirection: 'row'
+      },
+      contentProfileModal: {
+        backgroundColor: "#fff",
+        marginBottom: 10,
+        borderBottomLeftRadius: 6,
+        borderBottomRightRadius: 6
+      },
+      contentReportModal: {
+        backgroundColor: "#fff",
+        marginBottom: 10,
+        borderRadius: 6,
+      },
+    
+      textProfileModal: {
+        fontSize: 17,
+        // fontWeight: '$fontWeightNormal',
+        //color: '$colorTextBlack',
+        // fontFamily :"$fontBold"
+      },
+      rightArrow:{
+        width:20,
+        height:20
+      },
+      textSexOld: {
+        fontSize: 14,
+        // fontWeight: '$fontWeightNormal',
+        // color: '$colorTextBlack',
+        // fontFamily :"$fontLight"
+      },
+      textLocation: {
+        fontSize: 14,
+        // color: '$colorTextBlack',
+        // fontFamily :"$fontLight"
+      },
+    
+      matchUser: {
+        alignItems: "center",
+        justifyContent: "center",
+        paddingTop: 30,
+        paddingBottom: 20,
+      },
+      titleDontMatchUser: {
+        fontSize: 18,
+        // color: '$primaryColor',
+        // fontFamily :"$fontBold"
+      },
+      titleMatchUser: {
+        fontSize: 18,
+        color: global.primaryColor,
+        // fontFamily :"$fontBold"
+      },
+      descMatchUser: {
+        fontSize: 18,
+        // color: '$colorTextBlack',
+        // fontFamily :"$fontLight"
+      },
+    
+    // optionItemModal
+      dividerRowModal: {
+        backgroundColor: global.transparent204,
+        height: 1
+      },
+    
+      optionItemModal: {
+        marginLeft: 10,
+        marginRight: 10,
+        paddingBottom: 10
+      },
+    
+      rowIconWithText: {
+        flexDirection: 'row',
+        flex : 1,
+        marginRight : 10
+      },
+    
+      rowIconTick: {
+        flex : 0.2 ,
+        alignItems:"flex-end",
+        marginRight : 10
+      },
+    
+      rowItemButton: {
+        paddingTop: 14,
+        paddingBottom: 14,
+        flexDirection: 'row',
+        borderColor:global.transparent204,
+        justifyContent:'space-between'
+      },
+    
+      rowItemModal: {
+        paddingTop: 14,
+        paddingBottom: 14,
+        flexDirection: 'row',
+        borderBottomWidth: 1,
+        borderColor: global.transparent204
+      },
+      noneBorder: {
+        borderBottomWidth: 0
+      },
+    
+     
+    
+      iconModal: {
+        width:22
+      },
+    
+    
+    
+    //conversationModal
+      conversationModal: {
+        backgroundColor: 'white',
+        borderRadius: 6,
+        marginBottom: 10,
+        paddingLeft: 5,
+        paddingRight: 5
+      },
+    
+      ReportModal:{
+        backgroundColor: 'white',
+        borderRadius: 6,
+        marginBottom: 10,
+       
+      },
+    
+    //  modalConfirm
+      modalConfirm: {
+        borderRadius: 12,
+        backgroundColor: 'rgba(255,255,255,.84)',
+        paddingTop: 20,
+        marginLeft: 40,
+        marginRight: 40,
+        alignSelf:'center',
+        justifyContent:'center'
+      },
+      //headingModalConfirm
+      headingModalConfirm: {
+        alignItems:'center'
+      },
+      textHeadingModalConfirm: {
+        fontSize: 17,
+        '@media android': {
+        },
+        // fontFamily:'$fontBold'
+      },
+      // descModalConfirm
+      descModalConfirm: {
+        paddingLeft: 50,
+        paddingRight: 50,
+        paddingTop: 20,
+        paddingBottom: 20
+      },
+      textDescModalConfirm: {
+        fontSize: 14,
+        textAlign: 'center',
+        // fontFamily:'$fontRegular'
+    
+      },
+      // buttonModalConfirmWrapper
+      buttonModalConfirmWrapper: {
+        flexDirection:'row',
+        justifyContent:'space-between',
+        borderTopWidth: .6,
+        height: 44,
+        borderColor:global.transparent77,
+        '@media android': {
+          borderTopWidth: .8,
+        },
+      },
+      dividerButtonModalConfirm: {
+        width: .6,
+        height: 44,
+        backgroundColor: global.transparent77,
+        '@media android': {
+        },
+      },
+      buttonModalConfirm: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexDirection:'row',
+        flex: 1
+      },
+      textButtonModalConfirm: {
+        fontSize: 16,
+        // fontFamily:'$fontRegular',
+        textAlign: 'center'
+    
+      },
+      redButtonModalConfirm: {
+        color: global.colorRed
+      },
+      blueButtonModalConfirm: {
+        color: '#0076FF'
+      },
+    
+      modalAddCustomStyle: {
+        width: width,
+        backgroundColor: "transparent"
+      },
+      avatarWrapper: {
+        marginLeft: 10,
+        marginRight: 10,
+        alignItems: 'center',
+        // justifyContent: 'center',
+        // alignSelf: 'center'
+    },
+    bgAvatar: {
+        justifyContent: 'center',
+        alignSelf: 'center',
+        flexDirection: 'column',
+        alignItems: 'center',
+    },
+    w140: {
+        height: 140,
+        width: 140,
+        borderRadius: 70
+    },
+    w100: {
+        height: 100,
+        width: 100,
+        borderRadius: 50
+    },
+    w50: {
+        height: 50,
+        width: 50,
+        borderRadius: 25
+    },
+
+    width50: {
+        width: 50
+    },
+
+    w30: {
+        height: 30,
+        width: 30,
+        borderRadius: 15
+    },
+
+    w35: {
+        height: 35,
+        width: 35,
+        borderRadius: 17.5
+    },
+
+    w25: {
+        height: 25,
+        width: 25,
+        borderRadius: 12.5
+    },
+    w60: {
+        height: 60,
+        width: 60,
+        borderRadius: 30
+    },
+    w66: {
+        height: 66,
+        width: 66,
+        borderRadius: 33
+    },
+    w70: {
+        height: 70,
+        width: 70,
+        borderRadius: 35
+    },
+    w40: {
+        height: 40,
+        width: 40,
+        borderRadius: 20
+    },
+    status: {
+        height: 11,
+        width: 11,
+        backgroundColor: '#7ccb45',
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        borderRadius: 50,
+        position: 'absolute',
+        bottom: 10,
+        right: -2,
+        borderColor: 'white',
+        borderWidth: 2
+    },
+    statusLarge: {
+        height: 15,
+        width: 15,
+        backgroundColor: '#7ccb45',
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        borderRadius: 50,
+        position: 'absolute',
+        bottom: 8,
+        right: -2,
+        borderColor: 'white',
+        borderWidth: 2
+    },
+    status2: {
+        height: 13,
+        width: 13,
+        backgroundColor: '#7ccb45',
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        borderRadius: 50,
+        position: 'absolute',
+        bottom: 5,
+        right: 0,
+        borderColor: 'white',
+        borderWidth: 2
+    },
+
+    statusSmall: {
+        height: 11,
+        width: 11,
+        backgroundColor: '#7ccb45',
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        borderRadius: 50,
+        position: 'absolute',
+        bottom: 0,
+        right: -2,
+        borderColor: 'white',
+        borderWidth: 2
+    },
+
+    timer: {
+        backgroundColor: global.colorFF,
+        width: 30,
+        height: 18,
+        position: 'absolute',
+        bottom: 0,
+        left: 10,
+        borderRadius: 10,
+        borderColor: 'black',
+        borderWidth: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+
+    timerText: {
+        fontSize: 10,
+        fontFamily: global.fontExtraBold
+    },
+
+    icPin: {
+        '@media android': {},
+        height: 14,
+        width: 14,
+        position: 'absolute',
+        top: 2,
+        left: 9,
+    },
+
+    icPinSmall: {
+        '@media android': {},
+        height: 8,
+        width: 8,
+        position: 'absolute',
+        top: 0,
+        left: 1
+    },
+
+    textAvatar: {
+        color: 'white',
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        backgroundColor: 'transparent',
+        // //fontFamily: global.fontRegular
+    },
+    textAvatarBig: {
+        fontSize: 20
+    },
+    textAvatarNormal: {
+        fontSize: 16
+    },
+    textAvatarSmall: {
+        fontSize: 10
+    },
+    textLimit: {
+        fontSize: 16,
+        color: global.colorRed,
+        lineHeight: global.sizeP18
+    },
+    userNameWrapper: {
+        marginTop: 6,
+        alignItems: "center"
+    },
+
+    userNameText: {
+        fontSize: 12,
+        color: global.colorTextBlack,
+        // //fontFamily: global.fontRegular
+    },
+    // Detail Avatar
+    nameText: {
+        // //fontFamily: global.fontRegular
+    },
+    statusText: {
+        fontSize: 12,
+        color: global.color53,
+        // //fontFamily: global.fontRegular
+    },
+
+    // buttonComponent
+    buttonPrimaryContainer: {
+        '@media android': {},
+        height: 40,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 6,
+        paddingBottom: 4
+    },
+    buttonTextGeneral: {
+        fontSize: 18,
+        // fontFamily: global.fontSemiBold
+    },
+    buttonTextBlack: {
+        color: global.colorTextPrimary,
+        fontSize: 18,
+        // fontFamily: global.fontBold
+    },
+    // smallButton
+    smallButtonContainer: {
+        '@media android': {},
+        height: 30,
+        width: 75,
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        borderRadius: 6
+    },
+    smallButtonWhite: {
+        backgroundColor: 'white',
+        borderColor: global.colorCc,
+        borderWidth: 1
+    },
+    smallButtonText: {
+        fontSize: 13,
+        // fontFamily: global.fontSemiBold,
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center'
+    },
+    // smallButtonReg1
+    buttonSmallReg1: {
+        //width: width >= 375 ? 100 : 80,
+        minWidth: width >= 375 ? 120 : 80,
+        height: 40,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 40,
+        paddingLeft: 20,
+        paddingRight: 20,
+        paddingBottom: 3
+    },
+    buttonSmallReg2: {
+        width: 80,
+        height: 40,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 6,
+        paddingBottom: 4
+    },
+    textSmallReg: {
+        fontSize: width >= 375 ? 18 : 16,
+        // fontFamily: global.fontSemiBold
+    },
+
+    // background
+    bkgPrimary: {
+        backgroundColor: global.primaryColor
+    },
+    bkgWhite: {
+        backgroundColor: 'white'
+    },
+
+    bkgTransparent: {
+        backgroundColor: 'rgba(0,0,0,0)'
+    },
+
+
+    textColorWhite: {
+        color: 'white'
+    },
+    textColorBlack: {
+        color: global.colorTextBlack
+    },
+
+
+    //TimeCout
+    timeText: {
+        fontSize: 12,
+        color: global.color53,
+        // //fontFamily: global.fontRegular
+    },
+
+    //Item button
+    textRowItemModal: {
+        fontSize: 16,
+        marginLeft: 12,
+        // fontWeight: global.fontWeightLight',
+        color: global.color33,
+        fontFamily: global.fontBold
+
+    },
+    textDescItemModal: {
+        fontSize: 13,
+        marginLeft: 12,
+        // fontWeight: global.fontWeightLight',
+        color: global.colorBb,
+        // //fontFamily: global.fontRegular
+    },
+    textLimitItemModal: {
+        fontSize: 16,
+        marginLeft: 4,
+        // fontWeight: global.fontWeightLight',
+        color: global.colorRed,
+        //fontFamily: global.fontRegular
+    },
+
+
+    //  TextDropdown
+    fontHeading: {
+        fontSize: global.fontTitle,
+        fontFamily: global.fontExtraBold,
+        fontWeight: 'bold'
+    },
+
+    fontHeadingColorFocused: {
+        color: global.grayColor
+    },
+
+    arrowColorFocused: {
+        tintColor: global.grayColor
+    },
+
+    fontHeadingSmall: {
+        fontSize: 16,
+        color: global.color66,
+        fontFamily: global.fontExtraBold,
+        fontWeight: global.fontWeightDark
+    },
+
+
+    //Item Option Modal
+    iconModal: {
+        width: 25,
+        alignItems: 'center',
+    },
+
+    rowItemButton: {
+        paddingTop: 14,
+        paddingBottom: 14,
+        flexDirection: 'row',
+        borderColor: global.transparent204,
+        justifyContent: 'space-between'
+    },
+
+    rowIconWithText: {
+        flexDirection: 'row',
+        flex: 1,
+        marginRight: 10,
+        alignItems: 'center',
+    },
+
+    rowIconTick: {
+        flex: 0.2,
+        alignItems: "flex-end",
+        marginRight: 10
+    },
+
+    backIconReg: {
+    },
+    optionItemContainer: { flexDirection: "row", alignItems: "center", paddingTop: 5, paddingBottom: 5, paddingLeft: 20, paddingRight: 15 },
+    buttonOutlineStyle: {
+        borderRadius: 6,
+        borderWidth: 1,
+        borderColor: 'rgba(255,255,255, 1)',
+        height: 40,
+        // width:'100%',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    textBtnOutLineStyle: {
+        backgroundColor: 'transparent',
+        color: 'white',
+        fontSize: 16,
+        marginLeft: 10,
+        //fontFamily: global.fontRegular
+    },
+    styleContainer: { flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginLeft: -8 },
+    styleDot: {
+        backgroundColor: global.primaryColor,
+        width: 10,
+        height: 10,
+        borderRadius: 5,
+        borderColor: '#FFFF',
+        borderWidth: 1
+    },
+    extraStyleText: {
+        fontSize: 9, marginLeft: 2,
+        color: '#7EC34D',
+        backgroundColor: 'transparent',
+    },
+    onlineStatusText: {
+        fontSize: 12, marginLeft: 7,
+        color: '#333333',
+        backgroundColor: 'transparent',
+    },
+    containerName: { flexDirection: 'row', alignItems: 'center', marginTop: -4 },
+    filterButton: {
+        flex: 1, alignItems: 'center',
+        justifyContent: 'center',
+        height: 48
+    },
+
+    actionFloatingButton: {
+        width: 50,
+        height: 50,
+        borderRadius: 25,
+        backgroundColor: global.primaryColor,
+        position: 'absolute',
+        bottom: 15,
+        right: 15,
+        justifyContent: 'center',
+        alignItems: 'center',
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 0 },
+        shadowOpacity: 0.5,
+        elevation: 4,
+    },
+    unReadCount: {
+        maxHeight: 20,
+        borderRadius: 10,
+        bottom: 15,
+        right: -14,
+        position: 'absolute',
+        zIndex: 2,
+        backgroundColor: '#FF0000',
+        justifyContent: 'center',
+        alignSelf: 'flex-start',
+        alignItems: 'center',
+        borderColor: global.colorFF,
+        borderWidth: 1,
+        paddingVertical: 2,
+    },
+    unReadCountNumber: {
+        fontSize: global.sizeP12,
+        lineHeight: global.sizeP12 + 3,
+        // textAlign:'center',
+        // fontFamily: global.fontSemiBold,
+        color: global.colorFF,
+    },
+    colorSizePrimary: {
+        // color: '$colorTextBlack',
+        // fontSize: '$fontPrimary',
+        // fontFamily: "$fontRegular",
+        backgroundColor: 'transparent'
+    },
+
+    textUnderLine: {
+        color: 'white',
+        // fontSize: '$fontPrimary',
+        // fontFamily: "$fontRegular",
+        textDecorationLine: "underline",
+        backgroundColor: 'transparent'
+    },
+
+    textGuide: {
+        fontSize: 14,
+        color: 'white',
+        lineHeight: 15,
+        marginBottom: 10,
+        // margin: '22px 0 18px 0',
+        // fontFamily: global.fontSemiBold,
+        backgroundColor: 'transparent',
+        textAlign: 'center',
+    },
+
+    headingScreen: {
+        color: global.color81,
+        fontSize: 23,
+        textAlign: 'center',
+        marginTop: 25,
+      //  fontWeight: "700",
+        // fontFamily: global.fontSemiBold,
+        lineHeight: 25,
+        backgroundColor: 'transparent'
+    },
+    viewComment: {
+        flexDirection: 'row'
+    },
+    styleTextComment: {
+        textAlign: 'center',
+        width: '60%',
+        fontFamily: global.fontLightItalic,
+        fontSize: global.sizeP14,
+        color: global.color33
+    },
+    unReadCount:{
+        color:global.colorFF,
+       
+        fontWeight:"200",
+        fontSize:12,
+    },
+    textContent:{
+        position:'absolute',
+        left:0,
+        bottom:7,
+        width:20,
+        height: 15,
+        alignItems:'center'
+    },
+    iconMess : {
+    height:20,
+    width:20,
+    },
+    messageCountContainer:{
+        justifyContent:'center',
+        width:25,
+        height:25,
+    },
+    avatarWrapper: {
+        marginLeft: 10,
+        marginRight: 10,
+        alignItems: 'center',
+        // justifyContent: 'center',
+        // alignSelf: 'center'
+    },
+    bgAvatar: {
+        justifyContent: 'center',
+        alignSelf: 'center',
+        flexDirection: 'column',
+        alignItems: 'center',
+    },
+    w140: {
+        height: 140,
+        width: 140,
+        borderRadius: 70
+    },
+    w100: {
+        height: 100,
+        width: 100,
+        borderRadius: 50
+    },
+    w50: {
+        height: 50,
+        width: 50,
+        borderRadius: 25
+    },
+
+    width50: {
+        width: 50
+    },
+
+    w30: {
+        height: 30,
+        width: 30,
+        borderRadius: 15
+    },
+
+    w35: {
+        height: 35,
+        width: 35,
+        borderRadius: 17.5
+    },
+
+    w25: {
+        height: 25,
+        width: 25,
+        borderRadius: 12.5
+    },
+    w20: {
+        height: 20,
+        width: 20,
+        borderRadius: 12.5
+    },
+    w60: {
+        height: 60,
+        width: 60,
+        borderRadius: 30
+    },
+    w66: {
+        height: 66,
+        width: 66,
+        borderRadius: 33
+    },
+    w70: {
+        height: 70,
+        width: 70,
+        borderRadius: 35
+    },
+    w40: {
+        height: 40,
+        width: 40,
+        borderRadius: 20
+    },
+    status: {
+        height: 11,
+        width: 11,
+        backgroundColor: '#7ccb45',
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        borderRadius: 50,
+        position: 'absolute',
+        bottom: 10,
+        right: -2,
+        borderColor: 'white',
+        borderWidth: 2
+    },
+    statusLarge: {
+        height: 15,
+        width: 15,
+        backgroundColor: '#7ccb45',
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        borderRadius: 50,
+        position: 'absolute',
+        bottom: 8,
+        right: -2,
+        borderColor: 'white',
+        borderWidth: 2
+    },
+    status2: {
+        height: 13,
+        width: 13,
+        backgroundColor: '#7ccb45',
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        borderRadius: 50,
+        position: 'absolute',
+        bottom: 5,
+        right: 0,
+        borderColor: 'white',
+        borderWidth: 2
+    },
+
+    statusSmall: {
+        height: 11,
+        width: 11,
+        backgroundColor: '#7ccb45',
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        borderRadius: 50,
+        position: 'absolute',
+        bottom: 0,
+        right: -2,
+        borderColor: 'white',
+        borderWidth: 2
+    },
+
+    timer: {
+        backgroundColor: global.colorFF,
+        width: 30,
+        height: 18,
+        position: 'absolute',
+        bottom: 0,
+        left: 10,
+        borderRadius: 10,
+        borderColor: 'black',
+        borderWidth: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+
+    timerText: {
+        fontSize: 10,
+        fontFamily: global.fontExtraBold
+    },
+
+    icPin: {
+        '@media android': {},
+        height: 14,
+        width: 14,
+        position: 'absolute',
+        top: 2,
+        left: 9,
+    },
+
+    icPinSmall: {
+        '@media android': {},
+        height: 8,
+        width: 8,
+        position: 'absolute',
+        top: 0,
+        left: 1
+    },
+
+    textAvatar: {
+        color: 'white',
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        backgroundColor: 'transparent',
+        //fontFamily: global.fontRegular
+    },
+    textAvatarBig: {
+        fontSize: 20
+    },
+    textAvatarNormal: {
+        fontSize: 16
+    },
+    textAvatarSmall: {
+        fontSize: 10
+    },
+    textLimit: {
+        fontSize: 16,
+        color: global.colorRed,
+        lineHeight: global.sizeP18
+    },
+    userNameWrapper: {
+        marginTop: 6,
+        alignItems: "center"
+    },
+
+    userNameText: {
+        fontSize: 12,
+        color: global.colorTextBlack,
+        //fontFamily: global.fontRegular
+    },
+    // Detail Avatar
+    nameText: {
+        //fontFamily: global.fontRegular
+    },
+    statusText: {
+        fontSize: 12,
+        color: global.color53,
+        //fontFamily: global.fontRegular
+    },
+
+    // buttonComponent
+    buttonPrimaryContainer: {
+        '@media android': {},
+        height: 40,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 6,
+        paddingBottom: 4
+    },
+    buttonTextGeneral: {
+        fontSize: 18,
+        fontFamily: global.fontSemiBold
+    },
+    buttonTextBlack: {
+        color: global.colorTextPrimary,
+        fontSize: 18,
+        fontFamily: global.fontBold
+    },
+    // smallButton
+    smallButtonContainer: {
+        '@media android': {},
+        height: 30,
+        width: 75,
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        borderRadius: 6
+    },
+    smallButtonWhite: {
+        backgroundColor: 'white',
+        borderColor: global.colorCc,
+        borderWidth: 1
+    },
+    smallButtonText: {
+        fontSize: 13,
+        fontFamily: global.fontSemiBold,
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center'
+    },
+    // smallButtonReg1
+    buttonSmallReg1: {
+        //width: width >= 375 ? 100 : 80,
+        minWidth: width >= 375 ? 120 : 80,
+        height: 40,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 40,
+        paddingLeft: 20,
+        paddingRight: 20,
+        paddingBottom: 3
+    },
+    buttonSmallReg2: {
+        width: 80,
+        height: 40,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 6,
+        paddingBottom: 4
+    },
+    textSmallReg: {
+        fontSize: width >= 375 ? 18 : 16,
+        fontFamily: global.fontSemiBold
+    },
+
+    // background
+    bkgPrimary: {
+        backgroundColor: global.primaryColor
+    },
+    bkgWhite: {
+        backgroundColor: 'white'
+    },
+
+    bkgTransparent: {
+        backgroundColor: 'rgba(0,0,0,0)'
+    },
+
+
+    textColorWhite: {
+        color: 'white'
+    },
+    textColorBlack: {
+        color: global.colorTextBlack
+    },
+
+
+    //TimeCout
+    timeText: {
+        fontSize: 12,
+        color: global.color53,
+        //fontFamily: global.fontRegular
+    },
+
+    //Item button
+    textRowItemModal: {
+        fontSize: 16,
+        marginLeft: 12,
+        // fontWeight: global.fontWeightLight',
+        color: global.color33,
+        fontFamily: global.fontBold
+
+    },
+    textDescItemModal: {
+        fontSize: 13,
+        marginLeft: 12,
+        // fontWeight: global.fontWeightLight',
+        color: global.colorBb,
+        //fontFamily: global.fontRegular
+    },
+    textLimitItemModal: {
+        fontSize: 16,
+        marginLeft: 4,
+        // fontWeight: global.fontWeightLight',
+        color: global.colorRed,
+        //fontFamily: global.fontRegular
+    },
+
+
+    //  TextDropdown
+    fontHeading: {
+        fontSize: global.fontTitle,
+        fontFamily: global.fontExtraBold,
+        fontWeight: 'bold'
+    },
+
+    fontHeadingColorFocused: {
+        color: global.grayColor
+    },
+
+    arrowColorFocused: {
+        tintColor: global.grayColor
+    },
+
+    fontHeadingSmall: {
+        fontSize: 16,
+        color: global.color66,
+        fontFamily: global.fontExtraBold,
+        fontWeight: global.fontWeightDark
+    },
+
+
+    //Item Option Modal
+    iconModal: {
+        width: 25,
+        alignItems: 'center',
+    },
+
+    rowItemButton: {
+        paddingTop: 14,
+        paddingBottom: 14,
+        flexDirection: 'row',
+        borderColor: global.transparent204,
+        justifyContent: 'space-between'
+    },
+
+    rowIconWithText: {
+        flexDirection: 'row',
+        flex: 1,
+        marginRight: 10,
+        alignItems: 'center',
+    },
+
+    rowIconTick: {
+        flex: 0.2,
+        alignItems: "flex-end",
+        marginRight: 10
+    },
+
+    backIconReg: {
+    },
+    optionItemContainer: { flexDirection: "row", alignItems: "center", paddingTop: 5, paddingBottom: 5, paddingLeft: 20, paddingRight: 15 },
+    buttonOutlineStyle: {
+        borderRadius: 6,
+        borderWidth: 1,
+        borderColor: 'rgba(255,255,255, 1)',
+        height: 40,
+        // width:'100%',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    textBtnOutLineStyle: {
+        backgroundColor: 'transparent',
+        color: 'white',
+        fontSize: 16,
+        marginLeft: 10,
+        //fontFamily: global.fontRegular
+    },
+    styleContainer: { flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginLeft: -8 },
+    styleDot: {
+        backgroundColor: global.primaryColor,
+        width: 10,
+        height: 10,
+        borderRadius: 5,
+        borderColor: '#FFFF',
+        borderWidth: 1
+    },
+    extraStyleText: {
+        fontSize: 9, marginLeft: 2,
+        color: '#7EC34D',
+        backgroundColor: 'transparent',
+    },
+    onlineStatusText: {
+        fontSize: 12, marginLeft: 7,
+        color: '#333333',
+        backgroundColor: 'transparent',
+    },
+    containerName: { flexDirection: 'row', alignItems: 'center', marginTop: -4 },
+    filterButton: {
+        flex: 1, alignItems: 'center',
+        justifyContent: 'center',
+        height: 48
+    },
+
+    actionFloatingButton: {
+        width: 50,
+        height: 50,
+        borderRadius: 25,
+        backgroundColor: global.primaryColor,
+        position: 'absolute',
+        bottom: 15,
+        right: 15,
+        justifyContent: 'center',
+        alignItems: 'center',
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 0 },
+        shadowOpacity: 0.5,
+        elevation: 4,
+    },
+    unReadCount: {
+        maxHeight: 20,
+        borderRadius: 10,
+        bottom: 15,
+        right: -14,
+        position: 'absolute',
+        zIndex: 2,
+        backgroundColor: '#FF0000',
+        justifyContent: 'center',
+        alignSelf: 'flex-start',
+        alignItems: 'center',
+        borderColor: global.colorFF,
+        borderWidth: 1,
+        paddingVertical: 2,
+    },
+    unReadCountNumber: {
+        fontSize: global.sizeP12,
+        lineHeight: global.sizeP12 + 3,
+        // textAlign:'center',
+        fontFamily: global.fontSemiBold,
+        color: global.colorFF,
+    }
 }));

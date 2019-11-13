@@ -11,7 +11,7 @@ const persistConfig = {
     storage: AsyncStorage,
     whitelist: ['userState','settingState'],
 };
-//const middleware = [thunk];
+const middleware = [thunk];
 // const loggerMiddleware = createLogger()
 // if (__DEV__) {
 //     middleware.push(loggerMiddleware);
@@ -22,7 +22,7 @@ const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 export default function getStore() {
     const store = createStore(
         combineReducer,
-        //composeEnhancer(applyMiddleware(...middleware))
+        composeEnhancer(applyMiddleware(...middleware))
     );
     // begin periodically persisting the store
     persistStore(store, persistConfig);

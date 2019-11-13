@@ -19,7 +19,7 @@ export function setUserData(user) {
 //         });
 //     }
 // }
-export function setUser(user) {
+export function getMainPhotosetUser(user) {
     return dispatch => {
         return new Promise.resolve(
             dispatch(setUserData(user))
@@ -40,6 +40,14 @@ export function setUser(user) {
 //         });
 //     }
 // }
+export function getMainPhoto(user) {
+    // return dispatch => {
+    //     return new Promise.resolve(
+    //         dispatch(setUserData(user))
+    //     )
+    // }
+    return (dispatch) => { dispatch({ type: USER.USER_AVATAR }); }
+}
 
 export function removeUser() {
     return (dispatch) => { dispatch(setUserData(null)); }

@@ -5840,12 +5840,10 @@ react-native-fab@^1.0.7:
   dependencies:
     prop-types "^15.5.10"
 
-react-native-fast-image@^4.0.14:
-  version "4.0.14"
-  resolved "https://registry.yarnpkg.com/react-native-fast-image/-/react-native-fast-image-4.0.14.tgz#1e84c9a01b1471793e294ef4e7c3cc20e09562a0"
-  integrity sha512-MeRgL70JxoY/hn8ZRGBsDED9SGvTEeznneL//fWZyLaG0CM+w2CH4QXAMvADnIvu2RFd8WQWNii6c6VOpVe4Tg==
-  dependencies:
-    prop-types "^15.5.10"
+react-native-fast-image@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/react-native-fast-image/-/react-native-fast-image-7.0.2.tgz#e06b21f42f4a9786eaa86f3db35d919070fb8403"
+  integrity sha512-MfuzJbC0RjYobR2gFCdqe1I7jvNOCfDkjQ7VGOHXniqjohhULMkcWNBE9Umovi9Dx93lJ6t5utcE2wf/09zvlg==
 
 react-native-fs@^2.5.1:
   version "2.14.1"

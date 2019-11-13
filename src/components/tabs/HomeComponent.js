@@ -32,6 +32,7 @@ export default class HomeComponent extends Component {
   }
 
   componentDidMount() {
+    console.log('aaaaa',this.props.user)
    
   }
 

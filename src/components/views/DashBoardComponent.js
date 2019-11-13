@@ -45,16 +45,43 @@ export default class DashboardComponent extends Component {
     }
 
     render() {
-        const tabLabels = ['HOME', 'NEWS', 'WATCH', 'SCORES', 'MENU']; // [Strings.checklist, Strings.notifications, Strings.favorite, Strings.admin]
+        const tabLabels = ['HOME', 'NEWS', 'PROFILE', 'SCORES', 'MENU']; // [Strings.checklist, Strings.notifications, Strings.favorite, Strings.admin]
         const initialTab = 0;
         const {activeTab} = this.state;
         return (
-            <Container title={'DASHBOARD TITLE'} style={styles.container}
+            <Container title={tabLabels[activeTab]} style={styles.container}
                 titleTextStyle={{ color: Themes.Colors.background }}
 
                 statusBarColor={Themes.Colors.background}
                 statusBarProps={{ barStyle: "dark-content" }}>
-                <Home tabLabel={{ label: 'HOME', icon: 'home', iconComponent: EIcon }} />
+                {/* <Home tabLabel={{ label: 'HOME', icon: 'home', iconComponent: EIcon }} /> */}
+                <ScrollableTabView style={{ borderBottomColor: 'transparent' }}
+                    initialPage={initialTab} tabBarPosition={'bottom'}
+                    renderTabBar={(props) =>
+                        <CustomTab {...props} initialPage={initialTab} activeColor={Themes.Colors.activeTab}
+                            hideLabelInactive={false}
+                            inActiveColor={Themes.Colors.grey}
+                            style={{
+                                ...props.style,
+                                height: Themes.Metrics.tabHeight,
+                                borderTopColor: Themes.Colors.grey,
+                                borderTopWidth: Themes.Metrics.borderWidth,
+                                backgroundColor: Themes.Colors.background,
+                                paddingHorizontal: CommonUtils.isTablet() ? '20%' : 0,
+                            }}
+                            iconStyle={{}}
+                            labelStyle={{ fontFamily: Themes.Fonts.type.regular, fontWeight: 'normal', fontSize: 12 }}
+                        />}
+                    ref={(tabView) => { this.tabView = tabView; }}
+                    onChangeTab={({ i, ref }) => this.onChangeTab(i, ref)}
+                >
+                    <Home tabLabel={{ label: tabLabels[0], icon: 'ios-home', iconComponent: Icon }} />
+
+                    <News tabLabel={{ label: tabLabels[1], icon: 'newspaper-o', iconComponent: FAIcon }} />
+
+                    <Menu tabLabel={{ label: tabLabels[2], icon: 'user', iconComponent: EIcon }} />
+
+                </ScrollableTabView>
             </Container>
         );
     }
