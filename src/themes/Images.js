@@ -515,6 +515,7 @@ const images = {
   icFilterWhite: require('./../assets/images/chatRooms/chatRooms/icFilterWhite.png'),
   icFilterBlack: require('./../assets/images/chatRooms/chatRooms/icFilterBlack.png'),
   bgPopupStatus: require('./../assets/images/chatRooms/chatRooms/BGPopupStatus.png'),
+  icModerate: require('./../assets/images/chatRooms/chatRooms/icModerate.png'),
 
   icBackShadow: require('./../assets/images/chatRooms/chatRooms/icBackShadow.png'),
 

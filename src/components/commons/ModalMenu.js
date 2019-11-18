@@ -9,6 +9,7 @@ import stylesCommon from "./styles";
 import PropTypes from 'prop-types';
 import Button from "./ButtonRHP";
 import ProfileOptionItem from "./ProfileOptionItem";
+import Images from "../../themes/Images"
 // import * as commonUtils from "../../../utils/commonUtils";
 // import global from '../../../styles/_var';
 
@@ -21,7 +22,7 @@ export default class ModalMenu extends ModalDropDown {
         this.unpinOrPinConversation = this.unpinOrPinConversation.bind(this);
         //this.deleteConversation = this.deleteConversation.bind(this);
         this.reportConversation = this.reportConversation.bind(this);
-        this.pressDeleteConversation = this.pressDeleteConversation.bind(this);
+        this.pressCreateTest = this.pressCreateTest.bind(this);
         this.pressAddDeleteFolder = this.pressAddDeleteFolder.bind(this);
         this.showModal = this.showModal.bind(this);
         this.backdropOpacity = 0.5;
@@ -35,12 +36,12 @@ export default class ModalMenu extends ModalDropDown {
 
     }
 
-    showModal(data){
+    showModal(data) {
         //this.conversationInfor = data.conversationInfor;
         this.openModal();
     }
 
-    onCloseModal(){
+    onCloseModal() {
         clearTimeout();
         this.closeModal();
         super.onCloseModal();
@@ -54,7 +55,7 @@ export default class ModalMenu extends ModalDropDown {
         //EventRegister.removeEventListener(this.onShow);
     }
 
-    pressDeleteConversation() {
+    pressCreateTest() {
         // this.closeModal().then(
         //     () => setTimeout(() => {
         //         // commonUtils.sendEvtMessage({
@@ -67,11 +68,11 @@ export default class ModalMenu extends ModalDropDown {
         // );
         this.onNewClose();
         setTimeout(() => {
-            if(this.props.onOpenModalDeleteConversation) this.props.onOpenModalDeleteConversation();
+            if (this.props.onCreateTest) this.props.onCreateTest();
         }, 500)
     }
 
-    pressBlockUser(){
+    pressBlockUser() {
         // this.closeModal().then(()=>{
         //     commonUtils.sendEvtMessage({
         //         from: "ModalConversationMenu",
@@ -161,24 +162,35 @@ export default class ModalMenu extends ModalDropDown {
             // {/*<View style={stylesCommon.contentProfileModal}>*/}
             <View style={stylesCommon.conversationModal}>
                 <SeparatorLineList>
-
                     <ProfileOptionItem
-                        title={textUnpin.title}
-                        subText={textUnpin.description}
+                        image={Images.icModerate}
+                        title={"Notification"}
+                        subText={"Given notification to Student"}
                         titleLast={textLimit}
                         limitedPinTitle={'I18n.t("LimitPin")'}
+                        onPress={this.pressCreateTest}
                     />
                     <ProfileOptionItem
-                        title={"I18n.t('Folder.AddToFolder')"}
-                        subText={"I18n.t('Folder.AddACopyOfThisConversationToAFolder')"}
-                        onPress={this.pressAddDeleteFolder}
-                        disabled = {disabled}   
+                        image={Images.icGroupChat}
+                        title={"Roll Call"}
+                        subText={"List of names to establish who is present"}
+                        titleLast={textLimit}
+                        limitedPinTitle={'I18n.t("LimitPin")'}
+                        onPress={this.pressCreateTest}
                     />
                     <ProfileOptionItem
-                        title={"I18n.t('DeleteConversation')"}
-                        subText={"I18n.t('ThisWillRemoveTheConversation_')"}
-                        onPress={this.pressDeleteConversation}
-                        disabled = {disabled}
+                        image={Images.icAddNoteOption}
+                        title={"Assignment"}
+                        subText={"Give a minute Test "}
+                        // onPress={this.pressAddDeleteFolder}
+                        disabled={disabled}
+                    />
+                    <ProfileOptionItem
+                        image={Images.icBlock}
+                        title={"Black lists"}
+                        subText={"List reported user"}
+                        // onPress={this.pressDeleteConversation}
+                        disabled={disabled}
                     />
 
                 </SeparatorLineList>

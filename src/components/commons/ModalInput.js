@@ -118,7 +118,7 @@ export default class ModalInput extends ModalInfo {
                 backgroundColor: 'white'
 
               }}>
-              <Text>Cancle</Text>
+              <Text>Close</Text>
             </View>
           </TouchableOpacity>
         </View>

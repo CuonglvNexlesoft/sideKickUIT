@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from "redux";
 import * as AppActions from '../../actions/AppActions';
 import * as UserActions from '../../actions/UserActions';
-import ClassDetailComponent from '../../components/views/ClassDetailComponent'
+import CreateTestComponent from '../../components/views/CreateTestComponent'
 // import * as ProductActions from '../../actions/ProductActions';
 
 function mapStateToProps(rootState) {
@@ -25,4 +25,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(ClassDetailComponent)
+)(CreateTestComponent)

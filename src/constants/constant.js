@@ -25,3 +25,11 @@ export const AVATAR_COLOR_RANGE = [
   '#E74C3C',
   '#95A5A6',
 ];
+
+export const CHAT_STATUS = {
+  LIVE: 5,
+  ACTIVE: 1,
+  BUSY: 2,
+  AWAY: 3,
+  AVAILABLE: 4,
+};

@@ -10,6 +10,7 @@ module.exports = {
     DASHBOARD_PARENT: 'DashBoardParent',
     DASHBOARD: 'DashBoard',
     DETAIL: 'DETAIL',
+    TEST: 'TEST',
 
     IMAGE_VIEWER: 'IMAGE_VIEWER',
 };
