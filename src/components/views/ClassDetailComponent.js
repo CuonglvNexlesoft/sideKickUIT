@@ -51,6 +51,7 @@ import Avatar from '../commons/Avatar';
 import ChatRoomUserStatusPopUp from '../modules/ChatRoomUserStatusPopUp';
 import TextComponent from '../commons/Text';
 import PDFView from 'react-native-view-pdf';
+import ModalRollCall from '../modules/ModalRollCall';
 const resources = {
   file: Platform.OS === 'ios' ? 'downloadedDocument.pdf' : '/sdcard/Download/downloadedDocument.pdf',
   url: 'https://www.ets.org/Media/Tests/TOEFL/pdf/SampleQuestions.pdf',
@@ -64,12 +65,99 @@ export default class ClassDetailComponent extends Component {
       chatMessages: [],
       text: '',
       isShowUserStatus: false,
-      isShowChat: false
+      isShowChat: false,
+      setMessageType: 1,
+      memberInClass: 0
     };
   }
 
   createTest = () => {
     Actions[ScreenName.TEST]({})
+  }
+
+  renderEmptyState(){
+    return (
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <IconButton nameIcon={Themes.Images.icMssEmpty} />
+        <TextComponent text={"No chat message"} />
+      </View>
+    );
+  }
+
+  renderItemMessage(item){
+    if(item.message.type === 3)
+    return (
+      <View style={{ flexDirection: 'row', justifyContent: "flex-start", alignItems: 'center', paddingVertical: 5 }}>
+        <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: "center" }}>
+          <View style={{}}>
+          <IconButton nameIcon={Themes.Images.icVerify} btnStyle={{paddingHorizontal: 10}}/>
+          </View>
+          <View style={{ justifyContent: 'center'}}>
+            <Text style={styles.name}>{item.user.displayName}</Text>
+            <Text numberOfLines={5} style={{ fontStyle: 'italic' }}>{item.message.body}</Text>
+          </View>
+        </View>
+      </View>
+    );
+    if(item.message.type === 2)
+    return (
+      <View style={{ flexDirection: 'row', justifyContent: "flex-start", alignItems: 'center', paddingVertical: 5 }}>
+        <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: "center" }}>
+          <View style={{}}>
+            <Avatar
+              ref="avatar"
+              showOnline={false}
+              user={{ userId: 1 }}
+              size="s-small"
+              canPress={false}
+              isDynamicallyAvatar
+            />
+          </View>
+          <View style={{ justifyContent: 'center', borderRadius: 10, borderWidth: 1, backgroundColor: 'white', padding: 5 }}>
+            <Text style={styles.name}>{item.user.displayName}</Text>
+            <Text numberOfLines={5} style={{ fontStyle: 'italic' }}>{item.message.body}</Text>
+            <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
+            <IconButton nameIcon={Themes.Images.icEyeWhisper} />
+            <Text style={{color: '#c2c2d6', fontStyle: 'italic', fontSize: 8 }}>Only teacher can see your message</Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    );
+    return (
+      <View style={{ flexDirection: 'row', justifyContent: "flex-start", alignItems: 'center', paddingVertical: 5 }}>
+        <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: "center" }}>
+          <View style={{}}>
+            <Avatar
+              ref="avatar"
+              showOnline={false}
+              user={{ userId: 1 }}
+              size="s-small"
+              canPress={false}
+              isDynamicallyAvatar
+            />
+          </View>
+          <View style={{ justifyContent: 'center' }}>
+            <Text style={styles.name}>{item.user.displayName}</Text>
+            <Text numberOfLines={5} style={{ fontStyle: 'italic' }}>{item.message.body}</Text>
+          </View>
+        </View>
+      </View>
+    );
+  }
+
+  renderListMessage(){
+    if(this.state.chatMessages.length === 0) return this.renderEmptyState();
+    return(
+      <FlatList
+            ref={'flatList'}
+            data={this.state.chatMessages}
+            style={{ flex: 1, backgroundColor: 'white', marginBottom: 10, borderRadius: 10 }}
+            showsVerticalScrollIndicator={false}
+            renderItem={({ item }) => this.renderItemMessage(item)
+            }
+          />
+    );
   }
 
   render() {
@@ -98,7 +186,7 @@ export default class ClassDetailComponent extends Component {
           </View> */}
           <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', paddingRight: 10 }}>
             <IconButton nameIcon={Themes.Images.icGroupChat} />
-            <TextComponent text={45} />
+            <TextComponent text={this.state.memberInClass.toString()} />
           </View>
           </View>
           <View style={{ flex: 1, borderWidth: 2, borderColor: '#008000' }}>
@@ -123,32 +211,7 @@ export default class ClassDetailComponent extends Component {
             }}
             />
             </View>
-          <FlatList
-            ref={'flatList'}
-            data={this.state.chatMessages}
-            style={{ flex: 1 }}
-            extraData={this.state}
-            showsVerticalScrollIndicator={false}
-            renderItem={({ item }) =>
-              <View style={{ flexDirection: 'row', justifyContent: "flex-start", alignItems: 'center', paddingVertical: 5 }}>
-                <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: "center" }}>
-                  <View style={{}}>
-                    <Avatar
-                      ref="avatar"
-                      showOnline={false}
-                      user={{ userId: 1 }}
-                      size="s-small"
-                      canPress={false}
-                      isDynamicallyAvatar
-                    />
-                  </View>
-                  <View style={{ borderRadius: 10, borderWidth: 0.5, padding: 5, backgroundColor: '#cccccc', minWidth: 100, justifyContent: 'center' }}>
-                    <Text numberOfLines={5} style={styles.name}>{item.message}</Text>
-                  </View>
-                </View>
-              </View>
-            }
-          />
+          {this.renderListMessage()}
           </View>
           {this.state.isShowUserStatus && <View style={{
             position: 'absolute',
@@ -175,6 +238,8 @@ export default class ClassDetailComponent extends Component {
               canPress={true}
               isDynamicallyAvatar
               styleAvatar={{ marginLeft: 15 }}
+              borderColor={this.state.setMessageType == 1 ? '#7EC34D' : this.state.setMessageType == 2 ? '#E67E22' : '#757575'}
+              isBorder
             />
             <View style={{ flex: 1 }}>
               <TextInput
@@ -196,20 +261,46 @@ export default class ClassDetailComponent extends Component {
             <ModalMenu
               ref={"modalConversationMenu"}
               onCreateTest={this.createTest}
+              onStartRollCall={this.onStartRollCall}
 
             />
+            <ModalRollCall
+              ref={'modalInput'}
+              styleModalPopupCustom={{ width: '95%', paddingLeft: 10, paddingRight: 10 }}
+              onSubmmit={this.onSubmitRollCall} />
           </View>
         </View>
       </Container>
     );
   }
 
+  onShowStatusPopup = ()=>{
+    this.setState({
+      isShowUserStatus: false
+    })
+  }
+
+  onUserStatusItemClick = (item) => {
+    this.onShowStatusPopup();
+    this.setState({
+      setMessageType: item
+    })
+  }
+
   componentDidMount() {
+    console.log('123')
     // this.keyboardWillShowListener = Keyboard.addListener('keyboardWillShow', this._keyboardWillShow.bind(this));
     // this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this._keyboardDidHide.bind(this));
     this.socket = io("http://localhost:3000");
     this.socket.on("chat message", msg => {
       this.setState({ chatMessages: [...this.state.chatMessages, JSON.parse(msg)] });
+    });
+    this.socket.on("roll call", msg => {
+      let objRollCall = JSON.parse(msg)
+      this.refs.modalInput.openModal(objRollCall.timeout, objRollCall.key);
+    });
+    this.socket.on("roll call success", msg => {
+      this.setState({ memberInClass: this.state.memberInClass + 1 });
     });
 
   }
@@ -224,11 +315,21 @@ export default class ClassDetailComponent extends Component {
     })
   }
 
+  onSubmitRollCall = () => {
+    let objMessage = {};
+    this.socket.emit("roll call success", JSON.stringify(objMessage));
+  }
+
+  onStartRollCall = () => {
+    let objMessage = { timeout: 1000, key: "123", };
+    console.log('000', this.socket)
+    this.socket.emit("roll call", JSON.stringify(objMessage));
+  }
+
   sendMessage() {
-    console.log(this.props.userInfo)
     Keyboard.dismiss();
-    this.refs.flatList.scrollToEnd();
-    let objMessage = { user: this.props.userInfo, message: this.state.text };
+    this.refs.flatList && this.refs.flatList.scrollToEnd();
+    let objMessage = { user: this.props.userInfo, message: { body: this.state.text, type: this.state.setMessageType} };
     this.socket.emit("chat message", JSON.stringify(objMessage));
     this.setState({ text: "" });
   }

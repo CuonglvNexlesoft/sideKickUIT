@@ -72,6 +72,23 @@ export default class ModalMenu extends ModalDropDown {
         }, 500)
     }
 
+    onStartRollCall = () => {
+        // this.closeModal().then(
+        //     () => setTimeout(() => {
+        //         // commonUtils.sendEvtMessage({
+        //         //     from: "ModalConversationMenu",
+        //         //     eventType: eventTypes.PRESS_DELETE_CONVERSATION,
+        //         //     data: this.conversationInfor
+        //         // });
+        //         if(this.props.onOpenModalDeleteConversation) this.props.onOpenModalDeleteConversation();
+        //     }, 500)
+        // );
+        this.onNewClose();
+        setTimeout(() => {
+            if (this.props.onStartRollCall) this.props.onStartRollCall();
+        }, 500)
+    }
+
     pressBlockUser() {
         // this.closeModal().then(()=>{
         //     commonUtils.sendEvtMessage({
@@ -176,7 +193,7 @@ export default class ModalMenu extends ModalDropDown {
                         subText={"List of names to establish who is present"}
                         titleLast={textLimit}
                         limitedPinTitle={'I18n.t("LimitPin")'}
-                        onPress={this.pressCreateTest}
+                        onPress={this.onStartRollCall}
                     />
                     <ProfileOptionItem
                         image={Images.icAddNoteOption}

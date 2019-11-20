@@ -10,6 +10,14 @@ io.on("connection", socket => {
     console.log(msg);
     io.sockets.emit("chat message", msg);
   });
+  socket.on("roll call", msg => {
+    console.log(msg);
+    io.sockets.emit("roll call", msg);
+  });
+  socket.on("roll call success", msg => {
+    console.log(msg);
+    io.sockets.emit("roll call success", msg);
+  });
 });
 
 server.listen(port, () => console.log("server running on port:" + port));

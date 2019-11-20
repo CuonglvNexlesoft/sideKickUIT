@@ -145,6 +145,7 @@ class Avatar extends Component {
       || nextState.avatarUrl !== this.state.avatarUrl
       || nextProps.isLive !== this.props.isLive 
       || nextProps.timer !== this.props.timer
+      || nextProps.borderColor !== this.props.borderColor
       // || !utils.deepEqual(nextProps.usersState,this.props.usersState)
     ) {
       return true;
@@ -266,10 +267,9 @@ class Avatar extends Component {
     if (!this.state.fail) {
       opacity = 1;
     }
-
     if (this.props.isBorder) {
       styleBorder = {
-        borderWidth: 1,
+        borderWidth: 2,
         borderColor: this.props.borderColor ? this.props.borderColor :this.props.isLive ? global.primaryColor : global.colorFF,
         shadowColor: global.color98,
         shadowOffset: { width: 0, height: 0 },
