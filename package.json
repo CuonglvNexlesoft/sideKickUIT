@@ -8,7 +8,8 @@
     "lint": "eslint .",
     "i": "react-native run-ios",
     "a": "react-native run-android",
-    "i8": "react-native run-ios --simulator 'iPhone 8 Plus'"
+    "i8": "react-native run-ios --simulator 'iPhone 8 Plus'",
+    "yarn": "watchman watch-del-all && rm -rf node_modules/ && yarn cache clean && yarn install"
   },
   "dependencies": {
     "axios": "^0.18.0",
