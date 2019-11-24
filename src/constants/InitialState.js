@@ -47,5 +47,42 @@ export const TEST = {
     activeStudent: 0,
     startDate: "01/01/2019",
     endDate: "01/01/2019",
-    
+    data: [
+        {
+            id: '01',
+            question: '1 + 2 = 2',
+            options: [
+                "True",
+                "False",
+            ],
+            answer: "True"
+        },
+        {
+            id: '02',
+            question: "Which one is correct team name in NBA?",
+            options: [
+                "New York Bulls",
+                "Los Angeles Kings",
+                "Golden State Warriros",
+                "Huston Rocket"
+            ],
+            answer: "Huston Rocket"
+        },
+        {
+            id: '03',
+            question: '1 + 2 = 2',
+            answerList: [{title:  'True', key: 1}, {title:  'False', key: 0}]
+        },
+        {
+            id: '04',
+            question: '1 + 2 = 2',
+            answerList: [{title:  'True', key: 1}, {title:  'False', key: 0}]
+        },
+        {
+            id: '05',
+            question: '1 + 2 = 2',
+            answerList: [{title:  'True', key: 1}, {title:  'False', key: 0}]
+        }
+    ],
+    listSubmited: []
 }

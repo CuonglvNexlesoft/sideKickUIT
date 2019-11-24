@@ -77,7 +77,7 @@ export default class ClassDetailComponent extends Component {
 
   renderEmptyState(){
     return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <View style={{ flex: 1, backgroundColor: 'white', marginBottom: 10, borderRadius: 10, justifyContent: 'center', alignItems: 'center'}}>
         <IconButton nameIcon={Themes.Images.icMssEmpty} />
         <TextComponent text={"No chat message"} />
       </View>

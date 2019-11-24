@@ -199,14 +199,14 @@ export default class ModalMenu extends ModalDropDown {
                         image={Images.icAddNoteOption}
                         title={"Assignment"}
                         subText={"Give a minute Test "}
-                        // onPress={this.pressAddDeleteFolder}
+                        onPress={this.pressCreateTest}
                         disabled={disabled}
                     />
                     <ProfileOptionItem
                         image={Images.icBlock}
                         title={"Black lists"}
                         subText={"List reported user"}
-                        // onPress={this.pressDeleteConversation}
+                        onPress={this.pressCreateTest}
                         disabled={disabled}
                     />
 
