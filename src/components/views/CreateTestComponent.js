@@ -54,13 +54,13 @@ import TextComponent from '../commons/Text';
 import CheckBoxLineItem from '../modules/CheckBoxLineItem';
 import ButtonOutline from '../commons/ButtonOutline';
 var moment = require('moment');
-import { TabView, SceneMap } from 'react-native-tab-view';
+import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
 const FirstRoute = () => (
-  <View style={[{flex: 1, backgroundColor: '#ff4081' }]} />
+  <View style={[{ flex: 1, backgroundColor: '#ff4081' }]} />
 );
 
 const SecondRoute = () => (
-  <View style={[{ flex: 1, backgroundColor: '#673ab7' }]} />
+  <View style={[{ flex: 1, backgroundColor: 'yellow' }]} />
 );
 
 export default class CreateTestComponent extends Component {
@@ -77,10 +77,20 @@ export default class CreateTestComponent extends Component {
     // };
     this.state = {
       index: 0,
-      routes: [
-        { key: 'first', title: 'First' },
-        { key: 'second', title: 'Second' },
-      ],
+      // routes: [
+      //   { id: 1, title: '0' },
+      //   { id: 3, title: '1' },
+      //   { id: 2, title: '2' },
+      //   // { key: '3', title: '3' },
+      //   // { key: '4', title: '4' },
+      //   // { key: '5', title: '5' },
+      //   // { key: '6', title: '6' },
+      //   // { key: '7', title: '7' },
+      //   // { key: '8', title: '8' },
+      //   // { key: '9', title: '9' },
+      // ],
+      routes: props.testData,
+      timeToReset: 1,
     };
     this._interval = null;
   }
@@ -93,13 +103,15 @@ export default class CreateTestComponent extends Component {
         selectAnswerId: index,
       });
     };
+
     return (
       <Container
         title={("Assignment").toUpperCase()}
         headerLeft={
-          <View style={{ paddingLeft: 15 }}>
-            <TextComponent text={"1/15"} style={{ fontSize: 15 }} />
-          </View>
+          // <View style={{ paddingLeft: 15 }}>
+          //   <TextComponent text={"1/15"} style={{ fontSize: 15 }} />
+          // </View>
+          null
         }
         headerRight={
           <TouchableOpacity
@@ -111,57 +123,73 @@ export default class CreateTestComponent extends Component {
         titleTextStyle={{ color: Themes.Colors.background }}
         statusBarColor={Themes.Colors.transparent}
         statusBarProps={{ barStyle: "dark-content" }}>
-        <TabView
-          navigationState={this.state}
-          renderScene={SceneMap({
-            first: FirstRoute,
-            second: SecondRoute,
-          })}
-          onIndexChange={index => this.setState({ index })}
-          initialLayout={{ width: Dimensions.get('window').width }}
-        />
-        {/* <View style={{ flex: 1, paddingHorizontal: 5, paddingBottom: 15 }}>
-          <View style={{}}>
-            <Text numberOfLines={5} style={styles.name}>Assignmemt : {this.props.testData.testName} </Text>
-          </View>
-          <View style={{}}>
-            <Text numberOfLines={5} style={styles.name}>Set time : {this.props.testData.startDate}</Text>
-          </View>
-          <View style={{}}>
-            <Text numberOfLines={5} style={styles.name}>Set time : {this.props.testData.endDate}</Text>
-          </View>
-          <View style={{ justifyContent: 'center', alignItems: 'center' }}>
+        <View style={{ flex: 1, paddingHorizontal: 5, paddingBottom: 15 }}>
+          <View style={{ justifyContent: 'center', alignItems: 'center', padding: 10 }}>
             <TextComponent text={timeReset} style={{ fontSize: 20, fontWeight: 'bold' }} />
-
           </View>
-          <View style={{ width: "100%", minHeight: 200, padding: 10, borderRadius: 10, borderWidth: 1 }}>
-            <Text numberOfLines={5} style={{ paddingBottom: 10 }}>{"this.props.testData.data[this.state.indexQuestion].question"}</Text>
-            <FlatList
-              data={this.props.testData.data[this.state.indexQuestion].answerList}
-              extraData={this.state.selectAnswerId}
-              renderItem={({ item, index }) =>
-                <CheckBoxLineItem
-                  style={{ backgroundColor: '#ffe6e6', borderRadius: 10, padding: 10, paddingLeft: 25, marginBottom: 10 }}
-                  minHeight={0}
-                  styleRadioSelected={{ marginLeft: 0 }}
-                  divider={false}
-                  textLeft={item.title}
-                  styleLeftTextShow={{}}
-                  isCheck={index === this.state.selectAnswerId ? true : false}
-                  onClickAction={
-                    () => {
-                      onSelectFilter(index);
+          <TabView
+            navigationState={this.state}
+            renderScene={({ route, jumpTo }) => {
+              return (
+                <View>
+                  <View style={{ width: "100%", minHeight: 200, padding: 10, borderRadius: 10, borderWidth: 1 }}>
+                    <Text numberOfLines={5} style={{ paddingBottom: 10 }}>{route.question}</Text>
+                  </View>
+                  <FlatList
+                    style={{ paddingTop: 15 }}
+                    data={route.options}
+                    extraData={this.state.selectAnswerId}
+                    renderItem={({ item, index }) => {
+                      return (
+                        <CheckBoxLineItem
+                          style={{ backgroundColor: '#ffe6e6', borderRadius: 10, padding: 10, paddingLeft: 25, marginBottom: 10 }}
+                          minHeight={0}
+                          styleRadioSelected={{ marginLeft: 0 }}
+                          divider={false}
+                          textLeft={item}
+                          styleLeftTextShow={{}}
+                          isCheck={index === this.state.selectAnswerId ? true : false}
+                          onClickAction={
+                            () => {
+                              onSelectFilter(index);
+                            }
+                          }
+                        />
+                      )
                     }
-                  }
-                />
-              }
-            />
-          </View>
+                    }
+                  />
+                </View>
+
+              );
+
+            }
+            }
+            onIndexChange={index => {
+              this.setState({ index })
+            }
+            }
+            initialLayout={{ width: Dimensions.get('window').width, height: 0 }}
+            renderTabBar={props =>
+              <TabBar
+                {...props}
+                tabStyle={{}} // here
+                renderLabel={({ route, focused, color }) => {
+                  return (
+                    <Text style={{}}>
+                      {route.key}
+                    </Text>
+                  )
+                }
+                }
+              />}
+
+          />
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', padding: 15 }}>
-            <ButtonOutline onClick={()=>this.setState({indexQuestion: this.state.indexQuestion + 1})} icSrc={Themes.Images.icArrowLeft} name={'Previous'} btnStyle={{ width: 100, justifyContent: 'center', alignItems: 'center', backgroundColor: '#004d1a' }} />
-            <ButtonOutline onClick={()=>this.setState({indexQuestion: this.state.indexQuestion - 1})} icRight={Themes.Images.icArrowRight} iconStyle={{ marginLeft: 10 }} name={'Next'} btnStyle={{ width: 100, justifyContent: 'center', alignItems: 'center', backgroundColor: '#004d1a' }} />
+            <ButtonOutline disable={this.state.index === 0} onClick={() => this.setState({ index: this.state.index - 1 })} icSrc={Themes.Images.icArrowLeft} name={'Previous'} btnStyle={{ width: 100, justifyContent: 'center', alignItems: 'center', backgroundColor: '#004d1a' }} />
+            <ButtonOutline disable={this.state.index === this.props.testData.length - 1} onClick={() => this.setState({ index: this.state.index + 1 })} icRight={Themes.Images.icArrowRight} iconStyle={{ marginLeft: 10 }} name={'Next'} btnStyle={{ width: 100, justifyContent: 'center', alignItems: 'center', backgroundColor: '#004d1a' }} />
           </View>
-        </View> */}
+        </View>
       </Container>
     );
   }
@@ -173,6 +201,10 @@ export default class CreateTestComponent extends Component {
     // this.socket.on("chat message", msg => {
     //   this.setState({ chatMessages: [...this.state.chatMessages, JSON.parse(msg)] });
     // });
+    // this.setState({
+    //   routes: this.props.testData
+    // },
+    // ()=>console.log(this.state.routes))
     if (this._interval) {
       clearInterval(this._interval);
       this._interval = null;

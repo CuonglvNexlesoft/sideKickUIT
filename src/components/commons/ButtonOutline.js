@@ -16,7 +16,7 @@ const ButtonOutline = ({ name, btnStyle, onClick, icSrc, textStyle, disable, loa
     }
     let styleDisable  = disable && isBlur ? {opacity: 0.5} : null;
     return (
-        <TouchableOpacity style={[styles.buttonStyle, btnStyle]} onPress={onClick} disabled={disable} activeOpacity={activeOpacity}>
+        <TouchableOpacity style={[styles.buttonStyle, btnStyle, styleDisable]} onPress={onClick} disabled={disable} activeOpacity={activeOpacity}>
             {icSrc ? <Image style={[{ resizeMode: "contain" }, iconStyle]}
                 source={icSrc} /> : null}
             {name ? <Text text={name} style={[styles.textBtStyle, textStyle]} /> : null}

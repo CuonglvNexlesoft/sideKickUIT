@@ -49,7 +49,7 @@ export const TEST = {
     endDate: "01/01/2019",
     data: [
         {
-            id: '01',
+            key: "1",
             question: '1 + 2 = 2',
             options: [
                 "True",
@@ -58,7 +58,7 @@ export const TEST = {
             answer: "True"
         },
         {
-            id: '02',
+            key: "2",
             question: "Which one is correct team name in NBA?",
             options: [
                 "New York Bulls",
@@ -69,19 +69,37 @@ export const TEST = {
             answer: "Huston Rocket"
         },
         {
-            id: '03',
-            question: '1 + 2 = 2',
-            answerList: [{title:  'True', key: 1}, {title:  'False', key: 0}]
+            key: "3",
+            question: "Which one is correct team name in NBA?",
+            options: [
+                "New York Bulls",
+                "Los Angeles Kings",
+                "Golden State Warriros",
+                "Huston Rocket"
+            ],
+            answer: "Huston Rocket"
         },
         {
-            id: '04',
-            question: '1 + 2 = 2',
-            answerList: [{title:  'True', key: 1}, {title:  'False', key: 0}]
+            key: "4",
+            question: "Which one is correct team name in NBA?",
+            options: [
+                "New York Bulls",
+                "Los Angeles Kings",
+                "Golden State Warriros",
+                "Huston Rocket"
+            ],
+            answer: "Huston Rocket"
         },
         {
-            id: '05',
-            question: '1 + 2 = 2',
-            answerList: [{title:  'True', key: 1}, {title:  'False', key: 0}]
+            key: "5",
+            question: "Which one is correct team name in NBA?",
+            options: [
+                "New York Bulls",
+                "Los Angeles Kings",
+                "Golden State Warriros",
+                "Huston Rocket"
+            ],
+            answer: "Huston Rocket"
         }
     ],
     listSubmited: []

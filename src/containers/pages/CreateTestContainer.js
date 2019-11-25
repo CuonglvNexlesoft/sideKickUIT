@@ -10,7 +10,7 @@ function mapStateToProps(rootState) {
         appState: rootState.appState,
         userInfo: rootState.userState.user,
         // productState: rootState.productState,
-        testData: rootState.testState,
+        testData: rootState.testState.data,
     };
 }
 

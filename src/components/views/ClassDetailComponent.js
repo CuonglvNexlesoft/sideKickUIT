@@ -52,11 +52,7 @@ import ChatRoomUserStatusPopUp from '../modules/ChatRoomUserStatusPopUp';
 import TextComponent from '../commons/Text';
 import PDFView from 'react-native-view-pdf';
 import ModalRollCall from '../modules/ModalRollCall';
-const resources = {
-  file: Platform.OS === 'ios' ? 'downloadedDocument.pdf' : '/sdcard/Download/downloadedDocument.pdf',
-  url: 'https://www.ets.org/Media/Tests/TOEFL/pdf/SampleQuestions.pdf',
-  base64: 'JVBERi0xLjMKJcfs...',
-};
+import DocumentPicker from 'react-native-document-picker';
 export default class ClassDetailComponent extends Component {
 
   constructor(props) {
@@ -67,63 +63,65 @@ export default class ClassDetailComponent extends Component {
       isShowUserStatus: false,
       isShowChat: false,
       setMessageType: 1,
-      memberInClass: 0
+      memberInClass: 0,
+      singleFile: null
     };
+    this.openFile =this.openFile.bind(this);
   }
 
   createTest = () => {
     Actions[ScreenName.TEST]({})
   }
 
-  renderEmptyState(){
+  renderEmptyState() {
     return (
-      <View style={{ flex: 1, backgroundColor: 'white', marginBottom: 10, borderRadius: 10, justifyContent: 'center', alignItems: 'center'}}>
+      <View style={{ flex: 1, backgroundColor: 'white', marginBottom: 10, borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
         <IconButton nameIcon={Themes.Images.icMssEmpty} />
         <TextComponent text={"No chat message"} />
       </View>
     );
   }
 
-  renderItemMessage(item){
-    if(item.message.type === 3)
-    return (
-      <View style={{ flexDirection: 'row', justifyContent: "flex-start", alignItems: 'center', paddingVertical: 5 }}>
-        <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: "center" }}>
-          <View style={{}}>
-          <IconButton nameIcon={Themes.Images.icVerify} btnStyle={{paddingHorizontal: 10}}/>
-          </View>
-          <View style={{ justifyContent: 'center'}}>
-            <Text style={styles.name}>{item.user.displayName}</Text>
-            <Text numberOfLines={5} style={{ fontStyle: 'italic' }}>{item.message.body}</Text>
-          </View>
-        </View>
-      </View>
-    );
-    if(item.message.type === 2)
-    return (
-      <View style={{ flexDirection: 'row', justifyContent: "flex-start", alignItems: 'center', paddingVertical: 5 }}>
-        <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: "center" }}>
-          <View style={{}}>
-            <Avatar
-              ref="avatar"
-              showOnline={false}
-              user={{ userId: 1 }}
-              size="s-small"
-              canPress={false}
-              isDynamicallyAvatar
-            />
-          </View>
-          <View style={{ justifyContent: 'center', borderRadius: 10, borderWidth: 1, backgroundColor: 'white', padding: 5 }}>
-            <Text style={styles.name}>{item.user.displayName}</Text>
-            <Text numberOfLines={5} style={{ fontStyle: 'italic' }}>{item.message.body}</Text>
-            <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
-            <IconButton nameIcon={Themes.Images.icEyeWhisper} />
-            <Text style={{color: '#c2c2d6', fontStyle: 'italic', fontSize: 8 }}>Only teacher can see your message</Text>
+  renderItemMessage(item) {
+    if (item.message.type === 3)
+      return (
+        <View style={{ flexDirection: 'row', justifyContent: "flex-start", alignItems: 'center', paddingVertical: 5 }}>
+          <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: "center" }}>
+            <View style={{}}>
+              <IconButton nameIcon={Themes.Images.icVerify} btnStyle={{ paddingHorizontal: 10 }} />
+            </View>
+            <View style={{ justifyContent: 'center' }}>
+              <Text style={styles.name}>{item.user.displayName}</Text>
+              <Text numberOfLines={5} style={{ fontStyle: 'italic' }}>{item.message.body}</Text>
             </View>
           </View>
         </View>
-      </View>
-    );
+      );
+    if (item.message.type === 2)
+      return (
+        <View style={{ flexDirection: 'row', justifyContent: "flex-start", alignItems: 'center', paddingVertical: 5 }}>
+          <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: "center" }}>
+            <View style={{}}>
+              <Avatar
+                ref="avatar"
+                showOnline={false}
+                user={{ userId: 1 }}
+                size="s-small"
+                canPress={false}
+                isDynamicallyAvatar
+              />
+            </View>
+            <View style={{ justifyContent: 'center', borderRadius: 10, borderWidth: 1, backgroundColor: 'white', padding: 5 }}>
+              <Text style={styles.name}>{item.user.displayName}</Text>
+              <Text numberOfLines={5} style={{ fontStyle: 'italic' }}>{item.message.body}</Text>
+              <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                <IconButton nameIcon={Themes.Images.icEyeWhisper} />
+                <Text style={{ color: '#c2c2d6', fontStyle: 'italic', fontSize: 8 }}>Only teacher can see your message</Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      );
     return (
       <View style={{ flexDirection: 'row', justifyContent: "flex-start", alignItems: 'center', paddingVertical: 5 }}>
         <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: "center" }}>
@@ -146,22 +144,61 @@ export default class ClassDetailComponent extends Component {
     );
   }
 
-  renderListMessage(){
-    if(this.state.chatMessages.length === 0) return this.renderEmptyState();
-    return(
+  renderListMessage() {
+    if (this.state.chatMessages.length === 0) return this.renderEmptyState();
+    return (
       <FlatList
-            ref={'flatList'}
-            data={this.state.chatMessages}
-            style={{ flex: 1, backgroundColor: 'white', marginBottom: 10, borderRadius: 10 }}
-            showsVerticalScrollIndicator={false}
-            renderItem={({ item }) => this.renderItemMessage(item)
-            }
-          />
+        ref={'flatList'}
+        data={this.state.chatMessages}
+        style={{ flex: 1, backgroundColor: 'white', marginBottom: 10, borderRadius: 10 }}
+        showsVerticalScrollIndicator={false}
+        renderItem={({ item }) => this.renderItemMessage(item)
+        }
+      />
     );
   }
 
+  async openFile() {
+    //Opening Document Picker for selection of one file
+    try {
+      const res = await DocumentPicker.pick({
+        type: [DocumentPicker.types.allFiles],
+        //There can me more options as well
+        // DocumentPicker.types.allFiles
+        // DocumentPicker.types.images
+        // DocumentPicker.types.plainText
+        // DocumentPicker.types.audio
+        // DocumentPicker.types.pdf
+      });
+      //Printing the log realted to the file
+      console.log('res : ' + JSON.stringify(res));
+      console.log('URI : ' + res.uri);
+      console.log('Type : ' + res.type);
+      console.log('File Name : ' + res.name);
+      console.log('File Size : ' + res.size);
+      //Setting the state to show single file attributes
+      this.setState({ singleFile: res.uri.replace("file://","") });
+    } catch (err) {
+      //Handling any exception (If any)
+      if (DocumentPicker.isCancel(err)) {
+        //If user canceled the document selection
+        alert('Canceled from single doc picker');
+      } else {
+        //For Unknown Error
+        alert('Unknown Error: ' + JSON.stringify(err));
+        throw err;
+      }
+    }
+  }
+
   render() {
-    const resourceType = 'url';
+    const resourceType = 'file';
+    let resources = {
+      file: this.state.singleFile,
+      url: 'https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf',
+      base64: 'JVBERi0xLjMKJcfs...',
+    };
+    
     return (
       <Container
         title={this.props.class.name}
@@ -179,39 +216,42 @@ export default class ClassDetailComponent extends Component {
         statusBarColor={Themes.Colors.transparent}
         statusBarProps={{ barStyle: "dark-content" }}>
         <View style={{ flex: 1, paddingHorizontal: 5, paddingBottom: 15, backgroundColor: '#e6e6e6' }}>
-          <View style={{ flexDirection: 'row', width: '100%', justifyContent: 'space-between'}}>
-          {/* <View style={{ flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', paddingRight: 10 }}>
+          <View style={{ flexDirection: 'row', width: '100%', justifyContent: 'space-between' }}>
+            {/* <View style={{ flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', paddingRight: 10 }}>
             <IconButton nameIcon={Themes.Images.icNotificationOutLine} />
             <TextComponent text={45}  style={{position: 'absolute', backgroundColor: 'red', borderRadius: 10, minWidth: 20, padding: 2, left: 20, top: 0}}/>
           </View> */}
-          <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', paddingRight: 10 }}>
-            <IconButton nameIcon={Themes.Images.icGroupChat} />
-            <TextComponent text={this.state.memberInClass.toString()} />
-          </View>
+            <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', paddingRight: 10 }}>
+              <IconButton nameIcon={Themes.Images.icGroupChat} />
+              <TextComponent text={this.state.memberInClass.toString()} />
+            </View>
+            <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', paddingRight: 10 }}>
+              <IconButton nameIcon={Themes.Images.icFolderEditProfile} onClick={this.openFile}/>
+            </View>
           </View>
           <View style={{ flex: 1, borderWidth: 2, borderColor: '#008000' }}>
             {/* Some Controls to change PDF resource */}
-            <PDFView
+            {this.state.singleFile && <PDFView
               fadeInDuration={250.0}
               style={{ flex: 1 }}
               resource={resources[resourceType]}
               resourceType={resourceType}
               onLoad={() => console.log("PDF")}
-              onError={() => console.log('Cannot render PDF', error)}
-            />
+              onError={(error) => console.log('Cannot render PDF', error)}
+            />}
           </View>
           <View style={{ flex: 1 }}>
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 10 }}>
-            <TextComponent text={'Discussion: '} />
-            <IconButton 
-            nameIcon={Themes.Images.icArrowDownProfile} 
-            btnStyle={{width: 50}} 
-            onClick={()=>{
-              this.setState({isShowChat: !this.state.isShowChat})
-            }}
-            />
+              <TextComponent text={'Discussion: '} />
+              <IconButton
+                nameIcon={Themes.Images.icArrowDownProfile}
+                btnStyle={{ width: 50 }}
+                onClick={() => {
+                  this.setState({ isShowChat: !this.state.isShowChat })
+                }}
+              />
             </View>
-          {this.renderListMessage()}
+            {this.renderListMessage()}
           </View>
           {this.state.isShowUserStatus && <View style={{
             position: 'absolute',
@@ -274,7 +314,7 @@ export default class ClassDetailComponent extends Component {
     );
   }
 
-  onShowStatusPopup = ()=>{
+  onShowStatusPopup = () => {
     this.setState({
       isShowUserStatus: false
     })
@@ -329,7 +369,7 @@ export default class ClassDetailComponent extends Component {
   sendMessage() {
     Keyboard.dismiss();
     this.refs.flatList && this.refs.flatList.scrollToEnd();
-    let objMessage = { user: this.props.userInfo, message: { body: this.state.text, type: this.state.setMessageType} };
+    let objMessage = { user: this.props.userInfo, message: { body: this.state.text, type: this.state.setMessageType } };
     this.socket.emit("chat message", JSON.stringify(objMessage));
     this.setState({ text: "" });
   }
