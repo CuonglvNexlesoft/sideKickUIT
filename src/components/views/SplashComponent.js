@@ -75,7 +75,8 @@ export default class SplashComponent extends Component {
         const check = CommonUtils.isEmpty(this.props.userState.user)
         if (check === false) {
             SplashScreen.hide()
-            this.navigate(ScreenName.DASHBOARD);
+            // this.navigate(ScreenName.DASHBOARD);
+            this.navigate(ScreenName.LOGIN);
         } else
             if (check === true) {
                 SplashScreen.hide()

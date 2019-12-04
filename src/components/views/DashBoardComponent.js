@@ -56,6 +56,7 @@ export default class DashboardComponent extends Component {
                 statusBarProps={{ barStyle: "dark-content" }}>
                 {/* <Home tabLabel={{ label: 'HOME', icon: 'home', iconComponent: EIcon }} /> */}
                 <ScrollableTabView style={{ borderBottomColor: 'transparent' }}
+                locked
                     initialPage={initialTab} tabBarPosition={'bottom'}
                     renderTabBar={(props) =>
                         <CustomTab {...props} initialPage={initialTab} activeColor={Themes.Colors.activeTab}

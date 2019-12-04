@@ -17,6 +17,7 @@ import SplashScreen from 'react-native-splash-screen';
 import LeftMenuContainer from './pages/LeftMenuContainer';
 import DashBoardContainer from './pages/DashBoardContainer';
 import ClassDetailContainer from './pages/ClassDetailContainer';
+import SetupClassContainer from './pages/SetupClassContainer';
 import CreateTestContainer from './pages/CreateTestContainer';
 import SpashContainer from './pages/SpashContainer';
 import LoginContainer from './pages/LoginContainer';
@@ -106,6 +107,7 @@ export default class AppContainer extends Component {
                         </Scene> */}
                         <Scene key={ScreenName.DASHBOARD} component={DashBoardContainer} hideNavBar />
                         <Scene key={ScreenName.DETAIL} component={ClassDetailContainer} hideNavBar />
+                        <Scene key={ScreenName.SETUP} component={SetupClassContainer} hideNavBar />
                         <Scene key={ScreenName.TEST} component={CreateTestContainer} hideNavBar />
                         <Scene key={ScreenName.IMAGE_VIEWER}
                             hideNavBar={true} direction="vertical"

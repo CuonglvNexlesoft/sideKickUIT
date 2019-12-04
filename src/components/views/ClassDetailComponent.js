@@ -13,6 +13,7 @@ import {
   Dimensions,
   TouchableWithoutFeedback,
   FlatList,
+  Linking
 } from 'react-native';
 import { Actions, ActionConst } from 'react-native-router-flux';
 import ScreenName from '../../constants/ScreenName';
@@ -53,6 +54,10 @@ import TextComponent from '../commons/Text';
 import PDFView from 'react-native-view-pdf';
 import ModalRollCall from '../modules/ModalRollCall';
 import DocumentPicker from 'react-native-document-picker';
+import FileViewer from 'react-native-file-viewer';
+import RNFS from 'react-native-fs';
+import IconTooltip from '../commons/IconTooltip';
+import ModalGetLink from '../commons/ModalGetLink';
 export default class ClassDetailComponent extends Component {
 
   constructor(props) {
@@ -61,12 +66,12 @@ export default class ClassDetailComponent extends Component {
       chatMessages: [],
       text: '',
       isShowUserStatus: false,
-      isShowChat: false,
+      isShowChat: true,
       setMessageType: 1,
       memberInClass: 0,
       singleFile: null
     };
-    this.openFile =this.openFile.bind(this);
+    this.openFile = this.openFile.bind(this);
   }
 
   createTest = () => {
@@ -159,6 +164,19 @@ export default class ClassDetailComponent extends Component {
   }
 
   async openFile() {
+    // const localFile = `${RNFS.DocumentDirectoryPath}/temporaryfile.pdf`;
+    // const options = {
+    //   fromUrl: 'https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf',
+    //   toFile: localFile
+    // };
+    // RNFS.downloadFile(options).promise
+    // .then(() => FileViewer.open(localFile))
+    // .then(() => {
+    //   // success
+    // })
+    // .catch(error => {
+    //   // error
+    // });
     //Opening Document Picker for selection of one file
     try {
       const res = await DocumentPicker.pick({
@@ -177,7 +195,15 @@ export default class ClassDetailComponent extends Component {
       console.log('File Name : ' + res.name);
       console.log('File Size : ' + res.size);
       //Setting the state to show single file attributes
-      this.setState({ singleFile: res.uri.replace("file://","") });
+      // this.setState({ singleFile: res.uri.replace("file://", "") });
+      // this.setState({ singleFile: res.uri });
+      FileViewer.open(res.uri.replace("file://", "") )
+        .then(() => {
+          // success
+        })
+        .catch(error => {
+          // error
+        });
     } catch (err) {
       //Handling any exception (If any)
       if (DocumentPicker.isCancel(err)) {
@@ -192,13 +218,13 @@ export default class ClassDetailComponent extends Component {
   }
 
   render() {
-    const resourceType = 'file';
+    const resourceType = 'url';
+    // let absolutePath = RNFS.DocumentDirectoryPath + '/temporaryfile.pdf';
     let resources = {
       file: this.state.singleFile,
       url: 'https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf',
       base64: 'JVBERi0xLjMKJcfs...',
     };
-    
     return (
       <Container
         title={this.props.class.name}
@@ -226,32 +252,43 @@ export default class ClassDetailComponent extends Component {
               <TextComponent text={this.state.memberInClass.toString()} />
             </View>
             <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', paddingRight: 10 }}>
-              <IconButton nameIcon={Themes.Images.icFolderEditProfile} onClick={this.openFile}/>
+              <IconTooltip
+                // iconView={<IconButton nameIcon={Themes.Images.icFolderEditProfile} onClick={this.openFile}/>}
+                onPress={() => {
+                  this.refs.modalGetLink.openModal()
+                  // Linking.openURL('https://www.google.com/').catch((err) => console.error('An error occurred', err));
+                }}
+                textView={<TextComponent text={"Get From Online"} style={{ textDecorationLine: 'underline', fontStyle: 'italic' }} />}
+              />
+              <IconButton nameIcon={Themes.Images.icFolderEditProfile} onClick={this.openFile} />
             </View>
           </View>
-          <View style={{ flex: 1, borderWidth: 2, borderColor: '#008000' }}>
+          {this.state.singleFile && <View style={{ flex: 1, borderWidth: 2, borderColor: '#008000' }}>
             {/* Some Controls to change PDF resource */}
-            {this.state.singleFile && <PDFView
-              fadeInDuration={250.0}
-              style={{ flex: 1 }}
-              resource={resources[resourceType]}
-              resourceType={resourceType}
-              onLoad={() => console.log("PDF")}
-              onError={(error) => console.log('Cannot render PDF', error)}
-            />}
-          </View>
-          <View style={{ flex: 1 }}>
+              <PDFView
+                fadeInDuration={150.0}
+                style={{ flex: 1 }}
+                resource={resources[resourceType]}
+                resourceType={resourceType}
+                onLoad={() => console.log("PDF")}
+                onError={(error) => console.log('Cannot render PDF', error)}
+                onPageChanged={(active)=>{
+                  console.log(active)
+                }}
+              />
+          </View>}
+          <View style={{ height: !this.state.singleFile ? "90%" : this.state.isShowChat ? "40%" : "5%" }}>
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 10 }}>
               <TextComponent text={'Discussion: '} />
               <IconButton
-                nameIcon={Themes.Images.icArrowDownProfile}
-                btnStyle={{ width: 50 }}
+                nameIcon={this.state.isShowChat ? Themes.Images.icArrowDownProfile : Themes.Images.icArrowDownProfile}
+                btnStyle={!this.state.isShowChat && { transform: [{ rotate: '180deg' }] }}
                 onClick={() => {
                   this.setState({ isShowChat: !this.state.isShowChat })
                 }}
               />
             </View>
-            {this.renderListMessage()}
+            {this.state.isShowChat && this.renderListMessage()}
           </View>
           {this.state.isShowUserStatus && <View style={{
             position: 'absolute',
@@ -267,7 +304,8 @@ export default class ClassDetailComponent extends Component {
 
           <View style={{
             flexDirection: 'row',
-            alignItems: 'center'
+            alignItems: 'center',
+            height: 50
           }}>
             <Avatar
               onPress={() => this.setState({ isShowUserStatus: !this.state.isShowUserStatus })}
@@ -308,6 +346,10 @@ export default class ClassDetailComponent extends Component {
               ref={'modalInput'}
               styleModalPopupCustom={{ width: '95%', paddingLeft: 10, paddingRight: 10 }}
               onSubmmit={this.onSubmitRollCall} />
+            <ModalGetLink
+              ref={'modalGetLink'}
+              styleModalPopupCustom={{ width: '95%', paddingLeft: 10, paddingRight: 10 }}
+              onSubmmit={(link) => this.setState({ singleFile: link})} />
           </View>
         </View>
       </Container>

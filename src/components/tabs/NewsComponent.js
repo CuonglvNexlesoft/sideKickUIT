@@ -8,7 +8,10 @@ import ChatRoomCardItem from "../modules/ChatRoomCardItem";
 import IconButton from "../commons/IconButton";
 import { Metrics, Colors, Images } from '../../themes';
 import FastImage from 'react-native-fast-image';
-
+import { SwipeListView } from 'react-native-swipe-list-view';
+import global from '../commons/_var'
+import TextComponent from "../commons/Text";
+import SearchModal from "../commons/ModalSearch";
 export default class NewsComponent extends Component {
     constructor(props) {
         super(props);
@@ -65,14 +68,17 @@ export default class NewsComponent extends Component {
     }
 
     onPressNext(item) {
-        Actions[ScreenName.DETAIL]({ class: item })
+        if (this.refs.searchModal) this.refs.searchModal.openModal();
+        // Actions[ScreenName.DETAIL]({ class: item })
     }
 
     renderRow(item) {
         return (
+            <View style={{paddingBottom: 15}}>
             <TouchableOpacity
                 onPress={this.onPressNext.bind(this, item)}
-                style={{ borderWidth: 1,  marginBottom: 20, borderRadius: 5 }}>
+                activeOpacity={1}
+                style={{ borderWidth: 1, backgroundColor: 'white'}}>
                 <View style={{ flexDirection: 'row', alignItems:'center', justifyContent: 'center' }}>
                     <FastImage
                     //source={{ uri: this.state.avatarUrl, priority: FastImage.priority.normal }}
@@ -103,22 +109,77 @@ export default class NewsComponent extends Component {
                     </View>
                     <View style={{ flexDirection: 'row', justifyContent: 'space-between',alignItems: 'center' }}>
                         <IconButton nameIcon={Images.icLikesHomeStream} iconSize={{width: 25, height: 25}}/>
-                        <Text style={styles.email}>1 like</Text>
+                        <Text style={styles.email}>1 Follow</Text>
                     </View>
                 </View>
             </TouchableOpacity>
+            </View>
+        );
+    }
+
+    renderRowHide = (item) => {
+        return (
+            <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'flex-end', paddingBottom: 15 }}>
+                {/* <TouchableOpacity style={{
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    borderColor: '#979797',
+                    backgroundColor: '#D8D8D8',
+                    width: 80,
+                }}
+                    onPress={() => {
+                        
+                    }}
+                >
+                    <IconButton
+                        nameIcon={Images.icBlockSwipeCard}
+                        disabled
+                    />
+                    <Text
+                        // text={I18n.t("Btn.Block")}
+                        color={global.color33}
+                        // fontFamily={global.fontSemiBold}
+                        size={global.sizeP14}
+                    />
+                </TouchableOpacity> */}
+                <TouchableOpacity style={{
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    borderColor: '#979797',
+                    backgroundColor: global.colorRed,
+                    width: 80,
+                    marginLeft: 5
+                }}
+                    onPress={() => {
+                        // this.refs.modalDeleteConversation.showModal(conversationItem, conversationItem.message.id);
+                    }}
+                >
+                    <IconButton
+                        nameIcon={Images.icDeleteSwipeCard}
+                        disabled
+                    />
+                    <TextComponent
+                        text={"Delete"}
+                        color={global.colorFF}
+                        // fontFamily={global.fontSemiBold}
+                        size={global.sizeP14}
+                    />
+                </TouchableOpacity>
+            </View>
         );
     }
 
     render() {
         return (
             <View style={styles.container}>
-                <TouchableOpacity style={{ paddingBottom: 15 }} onPress={() => this.onOpendCreateForm()}>
+                {/* <TouchableOpacity style={{ paddingBottom: 15 }} onPress={() => this.onOpendCreateForm()}>
                     <View style={{ height: 25, width: 100, borderRadius: 50, borderWidth: 1.5, justifyContent: 'center', alignItems: 'center' }}>
                         <Text style={styles.name}>Add class</Text>
                     </View>
-                </TouchableOpacity>
-                <FlatList
+                </TouchableOpacity> */}
+                <SwipeListView
+                disableRightSwipe
+                rightOpenValue={-80}
                 scrollEventThrottle={16}
                 showsVerticalScrollIndicator={false}
                 removeClippedSubviews={true}
@@ -134,12 +195,19 @@ export default class NewsComponent extends Component {
                     renderItem={({ item }) =>
                         this.renderRow(item)
                     }
+                    renderHiddenItem={({ item }) =>
+                        this.renderRowHide(item)
+                    }
                     keyExtractor={item => item.email}
                 />
                 <ModalInput
                     ref={'modalInput'}
                     styleModalPopupCustom={{ width: '95%', paddingLeft: 10, paddingRight: 10 }}
                     onSubmmit={(value) => this.createClass(value)} />
+                <SearchModal
+                // type = {'eventFilter'}
+                styleRefineModal={{height: 800, backgroundColor: 'transparent'}}
+                ref={'searchModal'}/>
             </View>
         );
     }
