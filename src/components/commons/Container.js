@@ -65,14 +65,14 @@ export default class Container extends React.Component {
         const { statusBarColor } = this.props;
         const title = this.props.title || "";
         return (
-            <KeyboardAvoidingView {...this.props} style={[styles.container, (this.props.style || null), {marginBottom: Platform.OS == 'ios' ? keyboardHeight : null}]}>
+            <View {...this.props} style={[styles.container, (this.props.style || null), {marginBottom: Platform.OS == 'ios' ? keyboardHeight : null}]}>
                 {this.props.hadStatusBar &&
                     <StatusBar backgroundColor={statusBarColor} barStyle="light-content"
                         style={[styles.statusBar, (this.props.statusBarStyle || null)]} {...this.props.statusBarProps} />
                 }
                 {this.props.hadHeader &&
                     <Header {...this.props.headerProps} style={[styles.header, (this.props.headerStyle || null)]}
-                        color={this.props.headerColor || Themes.Colors.primary}
+                        color={this.props.headerColor || Themes.Colors.transparent}
                         left={this.props.headerLeft || null}
                         right={this.props.headerRight || null}
                     >
@@ -81,10 +81,10 @@ export default class Container extends React.Component {
                         }
                     </Header>
                 }
-                <View style={[styles.content, this.props.contentStyle]}>
+                <View style={[styles.content, this.props.contentStyle, {backgroundColor: 'red'}]}>
                     {this.props.children}
                 </View>
-            </KeyboardAvoidingView>
+            </View>
         )
 
     }

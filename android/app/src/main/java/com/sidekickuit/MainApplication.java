@@ -1,6 +1,7 @@
 package com.sidekickuit;
 
 import android.app.Application;
+import androidx.multidex.MultiDexApplication;
 import android.util.Log;
 
 import com.facebook.react.PackageList;
@@ -11,10 +12,12 @@ import io.github.elyx0.reactnativedocumentpicker.DocumentPickerPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
+import com.rnfs.RNFSPackage;
+import com.AlexanderZaytsev.RNI18n.RNI18nPackage;
 
 import java.util.List;
 
-public class MainApplication extends Application implements ReactApplication {
+public class MainApplication extends MultiDexApplication implements ReactApplication {
 
   private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
     @Override
@@ -27,7 +30,8 @@ public class MainApplication extends Application implements ReactApplication {
       @SuppressWarnings("UnnecessaryLocalVariable")
       List<ReactPackage> packages = new PackageList(this).getPackages();
       // Packages that cannot be autolinked yet can be added manually here, for example:
-      // packages.add(new MyReactNativePackage());
+      // packages.add(new RNFSPackage());
+      // packages.add(new RNI18nPackage());
       return packages;
     }
 

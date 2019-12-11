@@ -63,11 +63,14 @@ export default class HomeComponent extends Component {
     this.setState({ chatMessage: "" });
   }
 
-  onPressNext(item) {
+  onPressNext(item, index) {
+    if(index == 0)
     Actions[ScreenName.SETUP]({ class: item })
+    else
+    Actions[ScreenName.DETAIL]({ class: item })
   }
 
-  renderRow(item) {
+  renderRow(item, index) {
     return (
       // <TouchableOpacity
       //   onPress={this.onPressNext.bind(this, item)}
@@ -88,7 +91,7 @@ export default class HomeComponent extends Component {
         //backgroundImage={item.coverUrl == 'string' ? 'https://img.redhotpie.com.au/imageUser/MemberPhoto/2590_131878617392725266.jpg' : item.coverUrl}
         backgroundImage={item.coverUrl}
         roomName={item.name}
-        onPress={this.onPressNext.bind(this, item)}
+        onPress={this.onPressNext.bind(this, item, index)}
         memberInRoom={1}
         memberLive={1}
       />
@@ -196,8 +199,8 @@ export default class HomeComponent extends Component {
           data={this.state.users}
           extraData={this.state}
           showsVerticalScrollIndicator={false}
-          renderItem={({ item }) =>
-            this.renderRow(item)
+          renderItem={({ item, index }) =>
+            this.renderRow(item, index)
           }
           keyExtractor={item => item.email}
         />

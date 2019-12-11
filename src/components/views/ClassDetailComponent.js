@@ -13,7 +13,7 @@ import {
   Dimensions,
   TouchableWithoutFeedback,
   FlatList,
-  Linking
+  Linking,
 } from 'react-native';
 import { Actions, ActionConst } from 'react-native-router-flux';
 import ScreenName from '../../constants/ScreenName';
@@ -58,6 +58,10 @@ import FileViewer from 'react-native-file-viewer';
 import RNFS from 'react-native-fs';
 import IconTooltip from '../commons/IconTooltip';
 import ModalGetLink from '../commons/ModalGetLink';
+import { DocumentView, RNPdftron } from 'react-native-pdftron';
+import global from '../commons/_var'
+import SelectLinkModal from '../commons/SelectLinkModal';
+const {width, height}= Dimensions.get('window');
 export default class ClassDetailComponent extends Component {
 
   constructor(props) {
@@ -69,9 +73,12 @@ export default class ClassDetailComponent extends Component {
       isShowChat: true,
       setMessageType: 1,
       memberInClass: 0,
-      singleFile: null
+      singleFile: null,
+      permissionGranted: Platform.OS === 'ios' ? true : false
     };
     this.openFile = this.openFile.bind(this);
+    RNPdftron.initialize("Insert commercial license key here after purchase");
+    RNPdftron.enableJavaScript(true);
   }
 
   createTest = () => {
@@ -80,8 +87,8 @@ export default class ClassDetailComponent extends Component {
 
   renderEmptyState() {
     return (
-      <View style={{ flex: 1, backgroundColor: 'white', marginBottom: 10, borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
-        <IconButton nameIcon={Themes.Images.icMssEmpty} />
+      <View style={{ flex: 1, backgroundColor: 'white', marginBottom: 10, borderRadius: 10, justifyContent: 'center', alignItems: 'center', paddingHorizontal: 15 }}>
+        <IconButton nameIcon={Themes.Images.icMssEmpty} iconSize={{width: 60, height: 30}}/>
         <TextComponent text={"No chat message"} />
       </View>
     );
@@ -155,7 +162,7 @@ export default class ClassDetailComponent extends Component {
       <FlatList
         ref={'flatList'}
         data={this.state.chatMessages}
-        style={{ flex: 1, backgroundColor: 'white', marginBottom: 10, borderRadius: 10 }}
+        style={{ flex: 1, backgroundColor: 'white', marginBottom: 10, borderRadius: 10, paddingHorizontal: 15 }}
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => this.renderItemMessage(item)
         }
@@ -164,13 +171,15 @@ export default class ClassDetailComponent extends Component {
   }
 
   async openFile() {
-    // const localFile = `${RNFS.DocumentDirectoryPath}/temporaryfile.pdf`;
+    //https://www.tutorialspoint.com/software_engineering/software_engineering_tutorial.pdf
+    // const localFile = `${RNFS.DocumentDirectoryPath}/1.pdf`;
     // const options = {
     //   fromUrl: 'https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf',
     //   toFile: localFile
     // };
     // RNFS.downloadFile(options).promise
-    // .then(() => FileViewer.open(localFile))
+    // .then(() => 
+    // console.log('downloaded'))
     // .then(() => {
     //   // success
     // })
@@ -189,11 +198,11 @@ export default class ClassDetailComponent extends Component {
         // DocumentPicker.types.pdf
       });
       //Printing the log realted to the file
-      console.log('res : ' + JSON.stringify(res));
-      console.log('URI : ' + res.uri);
-      console.log('Type : ' + res.type);
-      console.log('File Name : ' + res.name);
-      console.log('File Size : ' + res.size);
+      // console.log('res : ' + JSON.stringify(res));
+      // console.log('URI : ' + res.uri);
+      // console.log('Type : ' + res.type);
+      // console.log('File Name : ' + res.name);
+      // console.log('File Size : ' + res.size);
       //Setting the state to show single file attributes
       // this.setState({ singleFile: res.uri.replace("file://", "") });
       // this.setState({ singleFile: res.uri });
@@ -217,9 +226,70 @@ export default class ClassDetailComponent extends Component {
     }
   }
 
+  onDownLoadFile=()=>{
+    let absolutePath = RNFS.DocumentDirectoryPath + '/1.pdf';
+    console.log('vbbb', absolutePath)
+    const localFile = `${RNFS.DocumentDirectoryPath}/1.pdf`;
+    const options = {
+      fromUrl: 'https://www.tutorialspoint.com/software_engineering/software_engineering_tutorial.pdf',
+      toFile: localFile
+    };
+    RNFS.downloadFile(options).promise
+    .then(() => FileViewer.open(localFile))
+    .then(() => {
+      // success
+    })
+    .catch(error => {
+      // error
+    });
+  }
+
+  renderToolbarInput(){
+    return(
+      <View style={{
+        flexDirection: 'row',
+        alignItems: 'center',
+        height: 50,
+        backgroundColor: global.colorF3
+      }}>
+        <Avatar
+          onPress={() => this.setState({ isShowUserStatus: !this.state.isShowUserStatus })}
+          ref="avatar"
+          showOnline={false}
+          user={{ userId: 1 }}
+          size="small"
+          canPress={true}
+          isDynamicallyAvatar
+          styleAvatar={{ marginLeft: 15 }}
+          borderColor={this.state.setMessageType == 1 ? '#7EC34D' : this.state.setMessageType == 2 ? '#E67E22' : '#757575'}
+          isBorder
+        />
+        <View style={{ flex: 1 }}>
+          <TextInput
+            style={{
+              height: 35,
+              borderColor: 'gray',
+              borderWidth: 1,
+              borderRadius: 10,
+              paddingLeft: 15,
+              backgroundColor: 'white'
+            }}
+            placeholder={'Type message'}
+            onChangeText={text => this.onChangeText(text)}
+            value={this.state.text}
+          />
+        </View>
+        <IconButton
+          nameIcon={Themes.Images.icSend}
+          onClick={() => this.sendMessage()}
+        />
+      </View>
+    );
+  }
+
   render() {
     const resourceType = 'url';
-    // let absolutePath = RNFS.DocumentDirectoryPath + '/temporaryfile.pdf';
+    let absolutePath = RNFS.DocumentDirectoryPath + '/temporaryfile.pdf';
     let resources = {
       file: this.state.singleFile,
       url: 'https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf',
@@ -227,68 +297,76 @@ export default class ClassDetailComponent extends Component {
     };
     return (
       <Container
-        title={this.props.class.name}
+        title={this.props.class.name.toUpperCase()}
         headerLeft={
-          <Button width={Themes.Metrics.headerButtonWidth} color={'transparent'} onPress={() => Actions.pop()}>
-            <Icon name='ios-arrow-back' style={{ color: Themes.Colors.background, fontSize: 26 }} />
-          </Button>
+          <IconButton nameIcon={Themes.Images.icBackArrowBlack} onClick={() => Actions.pop()} btnStyle={{paddingLeft: 15}} />
         }
         headerRight={
-          <Button width={Themes.Metrics.headerButtonWidth} color={'transparent'} onPress={() => this.refs.modalConversationMenu.showModal()}>
-            <Icon name='md-more' style={{ color: Themes.Colors.background, fontSize: 26 }} />
-          </Button>
+          <IconButton nameIcon={Themes.Images.icMenuBlack} onClick={() => this.refs.modalConversationMenu.showModal()} btnStyle={{paddingRight: 25}} />
         }
-        titleTextStyle={{ color: Themes.Colors.background }}
+        titleTextStyle={{ color: Themes.Colors.primary, fontSize: 25, fontWeight: 'bold'}}
         statusBarColor={Themes.Colors.transparent}
         statusBarProps={{ barStyle: "dark-content" }}>
-        <View style={{ flex: 1, paddingHorizontal: 5, paddingBottom: 15, backgroundColor: '#e6e6e6' }}>
+        <View style={{ flex: 1, paddingHorizontal: 5, paddingBottom: 15,  backgroundColor: global.colorFF }}>
           <View style={{ flexDirection: 'row', width: '100%', justifyContent: 'space-between' }}>
-            {/* <View style={{ flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', paddingRight: 10 }}>
-            <IconButton nameIcon={Themes.Images.icNotificationOutLine} />
+            <View style={{ flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', paddingRight: 10 }}>
+            <IconButton nameIcon={Themes.Images.icNotificationOutLine} onClick={()=>this.refs.selectLinkModal.openModal()}/>
             <TextComponent text={45}  style={{position: 'absolute', backgroundColor: 'red', borderRadius: 10, minWidth: 20, padding: 2, left: 20, top: 0}}/>
-          </View> */}
+          </View>
+            <TouchableOpacity 
+            onPress={() => {
+                  this.refs.modalGetLink.openModal()
+                }}
+            style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', paddingRight: 10, }}>
+              <IconButton nameIcon={Themes.Images.icSearch} />
+
+              <TextComponent text={"Find"} style={{ }}/>
+            </TouchableOpacity>
             <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', paddingRight: 10 }}>
-              <IconButton nameIcon={Themes.Images.icGroupChat} />
-              <TextComponent text={this.state.memberInClass.toString()} />
-            </View>
-            <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', paddingRight: 10 }}>
+            {/* <IconTooltip
+                style={{paddingRight: 15}}
+                onPress={this.onDownLoadFile}
+                textView={<TextComponent text={"Download"} style={{ textDecorationLine: 'underline', fontStyle: 'italic',  }} />}
+              />
               <IconTooltip
-                // iconView={<IconButton nameIcon={Themes.Images.icFolderEditProfile} onClick={this.openFile}/>}
                 onPress={() => {
                   this.refs.modalGetLink.openModal()
-                  // Linking.openURL('https://www.google.com/').catch((err) => console.error('An error occurred', err));
                 }}
-                textView={<TextComponent text={"Get From Online"} style={{ textDecorationLine: 'underline', fontStyle: 'italic' }} />}
-              />
-              <IconButton nameIcon={Themes.Images.icFolderEditProfile} onClick={this.openFile} />
+                textView={<TextComponent text={"Read Online"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', }} />}
+              /> */}
+              
+              <IconButton nameIcon={Themes.Images.icFolderEditProfile} onClick={this.openFile} btnStyle={{paddingLeft: 15}} />
             </View>
           </View>
-          {this.state.singleFile && <View style={{ flex: 1, borderWidth: 2, borderColor: '#008000' }}>
-            {/* Some Controls to change PDF resource */}
-              <PDFView
-                fadeInDuration={150.0}
-                style={{ flex: 1 }}
-                resource={resources[resourceType]}
-                resourceType={resourceType}
-                onLoad={() => console.log("PDF")}
-                onError={(error) => console.log('Cannot render PDF', error)}
-                onPageChanged={(active)=>{
-                  console.log(active)
-                }}
+          <View style={{ flex: 1, borderWidth: 2, borderColor: global.color0B, backgroundColor: global.color0B }}>
+          {this.state.singleFile && <DocumentView
+              document={resources['url']}
+              showLeadingNavButton={true}
+              leadingNavButtonIcon={Platform.OS === 'ios' ? 'ic_close_black_24px.png' : 'ic_arrow_back_white_24dp'}
+              onLeadingNavButtonPressed={this.onLeadingNavButtonPressed}
+            />}
+          </View>
+          <View style={{ height: !this.state.singleFile ? "25%" : this.state.isShowChat ? "30%" : 60 , backgroundColor: global.colorF3, justifyContent: 'flex-end' }}>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 10}}>
+              <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
+              <TextComponent text={'Question: '} style={{paddingRight: 15}} />
+              <IconTooltip
+                style={{ borderWidth: 1, justifyContent: 'center', padding: 5, borderRadius: 15, backgroundColor: 'white', borderColor: global.colorF4}}
+                onPress={this.onDownLoadFile}
+                textView={<TextComponent text={"I have a question!"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', padding: 3 }} />}
               />
-          </View>}
-          <View style={{ height: !this.state.singleFile ? "90%" : this.state.isShowChat ? "40%" : "5%" }}>
-            <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 10 }}>
-              <TextComponent text={'Discussion: '} />
+              </View>
+        
               <IconButton
                 nameIcon={this.state.isShowChat ? Themes.Images.icArrowDownProfile : Themes.Images.icArrowDownProfile}
                 btnStyle={!this.state.isShowChat && { transform: [{ rotate: '180deg' }] }}
                 onClick={() => {
-                  this.setState({ isShowChat: !this.state.isShowChat })
+                  this.state.singleFile && this.setState({ isShowChat: !this.state.isShowChat })
                 }}
               />
             </View>
             {this.state.isShowChat && this.renderListMessage()}
+            {this.state.isShowChat && this.renderToolbarInput()}
           </View>
           {this.state.isShowUserStatus && <View style={{
             position: 'absolute',
@@ -301,42 +379,8 @@ export default class ClassDetailComponent extends Component {
               closeView={this.onShowStatusPopup}
             />
           </View>}
-
-          <View style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-            height: 50
-          }}>
-            <Avatar
-              onPress={() => this.setState({ isShowUserStatus: !this.state.isShowUserStatus })}
-              ref="avatar"
-              showOnline={false}
-              user={{ userId: 1 }}
-              size="small"
-              canPress={true}
-              isDynamicallyAvatar
-              styleAvatar={{ marginLeft: 15 }}
-              borderColor={this.state.setMessageType == 1 ? '#7EC34D' : this.state.setMessageType == 2 ? '#E67E22' : '#757575'}
-              isBorder
-            />
-            <View style={{ flex: 1 }}>
-              <TextInput
-                style={{
-                  height: 35,
-                  borderColor: 'gray',
-                  borderWidth: 1,
-                  borderRadius: 10,
-                  paddingLeft: 15
-                }}
-                onChangeText={text => this.onChangeText(text)}
-                value={this.state.text}
-              />
-            </View>
-            <IconButton
-              nameIcon={Themes.Images.icSend}
-              onClick={() => this.sendMessage()}
-            />
-            <ModalMenu
+        </View>
+        <ModalMenu
               ref={"modalConversationMenu"}
               onCreateTest={this.createTest}
               onStartRollCall={this.onStartRollCall}
@@ -350,8 +394,10 @@ export default class ClassDetailComponent extends Component {
               ref={'modalGetLink'}
               styleModalPopupCustom={{ width: '95%', paddingLeft: 10, paddingRight: 10 }}
               onSubmmit={(link) => this.setState({ singleFile: link})} />
-          </View>
-        </View>
+            <SelectLinkModal
+            styleRefineModal={{height: 500, backgroundColor: 'transparent'}}
+            type={'full'}
+            ref={'selectLinkModal'}/>
       </Container>
     );
   }
@@ -369,8 +415,48 @@ export default class ClassDetailComponent extends Component {
     })
   }
 
+  async requestStoragePermission() {
+    try {
+      const granted = await PermissionsAndroid.request(
+        PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE
+      );
+      if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+        this.setState({
+          permissionGranted: true
+        });
+        console.log("Storage permission granted");
+      } else {
+        this.setState({
+          permissionGranted: false
+        });
+        console.log("Storage permission denied");
+      }
+    } catch (err) {
+      console.warn(err);
+    }
+  }
+  
+  onLeadingNavButtonPressed = () => {
+    console.log('leading nav button pressed');
+    if (Platform.OS === 'ios') {
+      Alert.alert(
+        'App',
+        'onLeadingNavButtonPressed',
+        [
+          {text: 'OK', onPress: () => console.log('OK Pressed')},
+        ],
+        { cancelable: true }
+      )
+    } else {
+      BackHandler.exitApp();
+    }
+  }
+
   componentDidMount() {
     console.log('123')
+    if (Platform.OS === 'android') {
+      this.requestStoragePermission();
+    }
     // this.keyboardWillShowListener = Keyboard.addListener('keyboardWillShow', this._keyboardWillShow.bind(this));
     // this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this._keyboardDidHide.bind(this));
     this.socket = io("http://localhost:3000");

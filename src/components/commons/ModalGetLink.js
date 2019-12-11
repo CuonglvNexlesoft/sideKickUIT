@@ -3,6 +3,8 @@ import React, { Commponent } from "react";
 import { View, TouchableOpacity, Image, Platform, Text, TextInput, Linking } from "react-native";
 import ModalInfo from "./ModalInfo";
 import Proptypes from "prop-types";
+import TextComponent from "./Text";
+import global from '../commons/_var'
 
 const IS_IOS = Platform.OS === 'ios';
 export default class ModalGetLink extends ModalInfo {
@@ -76,7 +78,7 @@ export default class ModalGetLink extends ModalInfo {
 
 
         <View style={{ justifyContent: 'center', alignItems: 'center', width: '100%' }}>
-          <Text>PDF ONLINE</Text>
+          <Text>Download File</Text>
         </View>
 
         <View style={{ flexDirection: 'row', justifyContent: 'center', justifyContent: 'center', width: "100%", padding: 10 }}>
@@ -102,7 +104,7 @@ export default class ModalGetLink extends ModalInfo {
             </View>
           </TouchableOpacity>
         </View>
-        <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '100%', paddingHorizontal: 50 }}>
           <TouchableOpacity activeOpacity={0.9} onPress={()=>Linking.openURL('https://www.google.com/').catch((err) => console.error('An error occurred', err))}>
             <View
               style={{
@@ -116,6 +118,24 @@ export default class ModalGetLink extends ModalInfo {
               <Text>Browser file</Text>
             </View>
           </TouchableOpacity>
+          {/* <TouchableOpacity activeOpacity={0.9} onPress={()=>Linking.openURL('https://www.google.com/').catch((err) => console.error('An error occurred', err))}>
+            <View
+              style={{
+                // height: 30, width: 60,
+                borderWidth: 1,
+                borderRadius: 15,
+                justifyContent: 'center', alignItems: 'center',
+                backgroundColor: 'white',
+                padding: 10
+              }}>
+              <Text>Get from Course</Text>
+            </View>
+          </TouchableOpacity> */}
+          <TouchableOpacity
+                onPress={() => Linking.openURL('https://courses.uit.edu.vn/login/index.php').catch((err) => console.error('An error occurred', err))}
+                style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', borderColor: global.grayColor, borderRadius: 20, borderWidth: 2, padding: 10 }}>
+                <TextComponent text={"Go to Course"} style={{ color: global.blueLightColor }} />
+              </TouchableOpacity>
         </View>
 
       </View>
