@@ -61,7 +61,9 @@ import ModalGetLink from '../commons/ModalGetLink';
 import { DocumentView, RNPdftron } from 'react-native-pdftron';
 import global from '../commons/_var'
 import SelectLinkModal from '../commons/SelectLinkModal';
-const {width, height}= Dimensions.get('window');
+import SetupModal from '../commons/SetupModal';
+import DownloadedFileModal from '../commons/DownloadedFileModal';
+const { width, height } = Dimensions.get('window');
 export default class ClassDetailComponent extends Component {
 
   constructor(props) {
@@ -73,12 +75,15 @@ export default class ClassDetailComponent extends Component {
       isShowChat: true,
       setMessageType: 1,
       memberInClass: 0,
-      singleFile: null,
-      permissionGranted: Platform.OS === 'ios' ? true : false
+      fileUrl: null,
+      localFile: "",
+      permissionGranted: Platform.OS === 'ios' ? true : false,
+      listDownloadedFile: []
     };
     this.openFile = this.openFile.bind(this);
     RNPdftron.initialize("Insert commercial license key here after purchase");
     RNPdftron.enableJavaScript(true);
+    this._viewer = null;
   }
 
   createTest = () => {
@@ -88,7 +93,7 @@ export default class ClassDetailComponent extends Component {
   renderEmptyState() {
     return (
       <View style={{ flex: 1, backgroundColor: 'white', marginBottom: 10, borderRadius: 10, justifyContent: 'center', alignItems: 'center', paddingHorizontal: 15 }}>
-        <IconButton nameIcon={Themes.Images.icMssEmpty} iconSize={{width: 60, height: 30}}/>
+        <IconButton nameIcon={Themes.Images.icMssEmpty} iconSize={{ width: 60, height: 30 }} />
         <TextComponent text={"No chat message"} />
       </View>
     );
@@ -204,15 +209,14 @@ export default class ClassDetailComponent extends Component {
       // console.log('File Name : ' + res.name);
       // console.log('File Size : ' + res.size);
       //Setting the state to show single file attributes
-      // this.setState({ singleFile: res.uri.replace("file://", "") });
-      // this.setState({ singleFile: res.uri });
-      FileViewer.open(res.uri.replace("file://", "") )
-        .then(() => {
-          // success
-        })
-        .catch(error => {
-          // error
-        });
+      this.setState({ localFile: res.uri.replace("file://", "") });
+      // FileViewer.open(res.uri.replace("file://", "") )
+      //   .then(() => {
+      //     // success
+      //   })
+      //   .catch(error => {
+      //     // error
+      //   });
     } catch (err) {
       //Handling any exception (If any)
       if (DocumentPicker.isCancel(err)) {
@@ -226,26 +230,58 @@ export default class ClassDetailComponent extends Component {
     }
   }
 
-  onDownLoadFile=()=>{
-    let absolutePath = RNFS.DocumentDirectoryPath + '/1.pdf';
-    console.log('vbbb', absolutePath)
-    const localFile = `${RNFS.DocumentDirectoryPath}/1.pdf`;
+  onDownLoadFile = () => {
+    // let absolutePath = RNFS.DocumentDirectoryPath + '/aaaaa.pdf';
+    // console.log('vbbb', absolutePath)
+    const localFile = `${RNFS.DocumentDirectoryPath}/xaaaaa.pdf`;
     const options = {
-      fromUrl: 'https://www.tutorialspoint.com/software_engineering/software_engineering_tutorial.pdf',
+      fromUrl: 'https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf',
       toFile: localFile
     };
     RNFS.downloadFile(options).promise
-    .then(() => FileViewer.open(localFile))
-    .then(() => {
-      // success
-    })
-    .catch(error => {
-      // error
-    });
+      .then(() => this.setState({ localFile: localFile }))
+    // FileViewer.open(localFile))
+    // .then(() => {
+    //   // success
+    // })
+    // .catch(error => {
+    //   // error
+    // });
+
   }
 
-  renderToolbarInput(){
-    return(
+  onGetListFile = () => {
+    RNFS.readDir(RNFS.DocumentDirectoryPath) // On Android, use "RNFS.DocumentDirectoryPath" (MainBundlePath is not defined)
+      .then((result) => {
+        console.log('GOT RESULT', result.filter(e=>e.name.includes(".pdf")), result[0].isFile(), result[1].isFile())
+        this.setState({
+          listDownloadedFile: result.filter(e=>e.name.includes(".pdf"))
+        },
+        ()=>this.refs.downloadedFileModal.openModal()
+        )
+
+        // stat the first file
+        // return Promise.all([RNFS.stat(result[0].path), result[0].path]);
+      })
+      // .then((statResult) => {
+      //   if (statResult[0].isFile()) {
+      //     // if we have a file, read it
+      //     return RNFS.readFile(statResult[1], 'utf8');
+      //   }
+
+      //   return 'no file';
+      // })
+      // .then((contents) => {
+      //   // log the file contents
+      //   console.log(contents);
+      // })
+      // .catch((err) => {
+      //   console.log(err.message, err.code);
+      // });
+  }
+
+  renderToolbarInput() {
+    return (
       <View style={{
         flexDirection: 'row',
         alignItems: 'center',
@@ -287,87 +323,105 @@ export default class ClassDetailComponent extends Component {
     );
   }
 
+  onSelectFileFromModal=(path)=>{
+    this.setState({ localFile: path })
+  }
+
   render() {
     const resourceType = 'url';
-    let absolutePath = RNFS.DocumentDirectoryPath + '/temporaryfile.pdf';
+    let absolutePath = RNFS.DocumentDirectoryPath + '/x1.pdf';
     let resources = {
-      file: this.state.singleFile,
+      file: this.state.fileUrl,
       url: 'https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf',
       base64: 'JVBERi0xLjMKJcfs...',
     };
+    // console.log(this.state.localFile, absolutePath)
     return (
       <Container
         title={this.props.class.name.toUpperCase()}
         headerLeft={
-          <IconButton nameIcon={Themes.Images.icBackArrowBlack} onClick={() => Actions.pop()} btnStyle={{paddingLeft: 15}} />
+          <IconButton nameIcon={Themes.Images.icBackArrowBlack} onClick={() =>{
+            this._viewer && this._viewer.saveDocument().then(() => {
+              console.log('saveDocument');
+            });
+             Actions.pop()}} btnStyle={{ paddingLeft: 15 }} />
         }
         headerRight={
-          <IconButton nameIcon={Themes.Images.icMenuBlack} onClick={() => this.refs.modalConversationMenu.showModal()} btnStyle={{paddingRight: 25}} />
+          <IconButton nameIcon={Themes.Images.icMenuBlack} onClick={() => this.refs.modalConversationMenu.showModal()} btnStyle={{ paddingRight: 25 }} />
         }
-        titleTextStyle={{ color: Themes.Colors.primary, fontSize: 25, fontWeight: 'bold'}}
+        titleTextStyle={{ color: Themes.Colors.primary, fontSize: 25, fontWeight: 'bold' }}
         statusBarColor={Themes.Colors.transparent}
         statusBarProps={{ barStyle: "dark-content" }}>
-        <View style={{ flex: 1, paddingHorizontal: 5, paddingBottom: 15,  backgroundColor: global.colorFF }}>
+        <View style={{ flex: 1, paddingHorizontal: 5, paddingBottom: 15, backgroundColor: global.colorFF }}>
           <View style={{ flexDirection: 'row', width: '100%', justifyContent: 'space-between' }}>
             <View style={{ flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', paddingRight: 10 }}>
-            <IconButton nameIcon={Themes.Images.icNotificationOutLine} onClick={()=>this.refs.selectLinkModal.openModal()}/>
-            <TextComponent text={45}  style={{position: 'absolute', backgroundColor: 'red', borderRadius: 10, minWidth: 20, padding: 2, left: 20, top: 0}}/>
-          </View>
-            <TouchableOpacity 
-            onPress={() => {
-                  this.refs.modalGetLink.openModal()
-                }}
-            style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', paddingRight: 10, }}>
+              <IconButton nameIcon={Themes.Images.icNotificationOutLine} onClick={() => this.refs.selectLinkModal.openModal()} />
+              <TextComponent text={45} style={{ position: 'absolute', backgroundColor: 'red', borderRadius: 10, minWidth: 20, padding: 2, left: 20, top: 0 }} />
+            </View>
+
+            <TouchableOpacity
+              onPress={() => {
+                this.refs.modalGetLink.openModal()
+              }}
+              style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', paddingRight: 10, }}>
               <IconButton nameIcon={Themes.Images.icSearch} />
 
-              <TextComponent text={"Find"} style={{ }}/>
+              <TextComponent text={"Find"} style={{}} />
             </TouchableOpacity>
             <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', paddingRight: 10 }}>
-            {/* <IconTooltip
-                style={{paddingRight: 15}}
-                onPress={this.onDownLoadFile}
-                textView={<TextComponent text={"Download"} style={{ textDecorationLine: 'underline', fontStyle: 'italic',  }} />}
-              />
               <IconTooltip
+                style={{paddingRight: 15}}
+                onPress={this.onGetListFile}
+                textView={<TextComponent text={"Get list file"} style={{ textDecorationLine: 'underline', fontStyle: 'italic',  }} />}
+              />
+              {/* <IconTooltip
                 onPress={() => {
                   this.refs.modalGetLink.openModal()
                 }}
                 textView={<TextComponent text={"Read Online"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', }} />}
               /> */}
-              
-              <IconButton nameIcon={Themes.Images.icFolderEditProfile} onClick={this.openFile} btnStyle={{paddingLeft: 15}} />
+
+              <IconButton nameIcon={Themes.Images.icFolderEditProfile} onClick={this.openFile} btnStyle={{ paddingLeft: 15 }} />
+            </View>
+            <View style={{ flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', paddingRight: 10 }}>
+              <IconButton nameIcon={Themes.Images.icSettingSetting} onClick={() => this.refs.setupModal.openModal()} />
+              <TextComponent text={45} style={{ position: 'absolute', backgroundColor: 'red', borderRadius: 10, minWidth: 20, padding: 2, left: 20, top: 0 }} />
             </View>
           </View>
           <View style={{ flex: 1, borderWidth: 2, borderColor: global.color0B, backgroundColor: global.color0B }}>
-          {this.state.singleFile && <DocumentView
-              document={resources['url']}
+            {this.state.localFile !== "" && <DocumentView
+              ref={(c) => this._viewer = c}
+              // document={resources['url']}
+              document={this.state.localFile}
+              // document={absolutePath}
+              readOnly={false}
               showLeadingNavButton={true}
               leadingNavButtonIcon={Platform.OS === 'ios' ? 'ic_close_black_24px.png' : 'ic_arrow_back_white_24dp'}
               onLeadingNavButtonPressed={this.onLeadingNavButtonPressed}
             />}
           </View>
-          <View style={{ height: !this.state.singleFile ? "25%" : this.state.isShowChat ? "30%" : 60 , backgroundColor: global.colorF3, justifyContent: 'flex-end' }}>
-            <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 10}}>
-              <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
-              <TextComponent text={'Question: '} style={{paddingRight: 15}} />
-              <IconTooltip
-                style={{ borderWidth: 1, justifyContent: 'center', padding: 5, borderRadius: 15, backgroundColor: 'white', borderColor: global.colorF4}}
-                onPress={this.onDownLoadFile}
-                textView={<TextComponent text={"I have a question!"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', padding: 3 }} />}
-              />
+          {/* <View style={{ height: !this.state.fileUrl ? "25%" : this.state.isShowChat ? "30%" : 60, backgroundColor: global.colorF3, justifyContent: 'flex-end' }}>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 10 }}>
+              <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                <TextComponent text={'Question: '} style={{ paddingRight: 15 }} />
+                <IconTooltip
+                  style={{ borderWidth: 1, justifyContent: 'center', padding: 5, borderRadius: 15, backgroundColor: 'white', borderColor: global.colorF4 }}
+                  onPress={this.onDownLoadFile}
+                  textView={<TextComponent text={"I have a question!"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', padding: 3 }} />}
+                />
               </View>
-        
+
               <IconButton
                 nameIcon={this.state.isShowChat ? Themes.Images.icArrowDownProfile : Themes.Images.icArrowDownProfile}
                 btnStyle={!this.state.isShowChat && { transform: [{ rotate: '180deg' }] }}
                 onClick={() => {
-                  this.state.singleFile && this.setState({ isShowChat: !this.state.isShowChat })
+                  this.state.fileUrl && this.setState({ isShowChat: !this.state.isShowChat })
                 }}
               />
             </View>
             {this.state.isShowChat && this.renderListMessage()}
             {this.state.isShowChat && this.renderToolbarInput()}
-          </View>
+          </View> */}
           {this.state.isShowUserStatus && <View style={{
             position: 'absolute',
             bottom: 65,
@@ -381,23 +435,34 @@ export default class ClassDetailComponent extends Component {
           </View>}
         </View>
         <ModalMenu
-              ref={"modalConversationMenu"}
-              onCreateTest={this.createTest}
-              onStartRollCall={this.onStartRollCall}
+          ref={"modalConversationMenu"}
+          onCreateTest={this.createTest}
+          onStartRollCall={this.onStartRollCall}
 
-            />
-            <ModalRollCall
-              ref={'modalInput'}
-              styleModalPopupCustom={{ width: '95%', paddingLeft: 10, paddingRight: 10 }}
-              onSubmmit={this.onSubmitRollCall} />
-            <ModalGetLink
-              ref={'modalGetLink'}
-              styleModalPopupCustom={{ width: '95%', paddingLeft: 10, paddingRight: 10 }}
-              onSubmmit={(link) => this.setState({ singleFile: link})} />
-            <SelectLinkModal
-            styleRefineModal={{height: 500, backgroundColor: 'transparent'}}
-            type={'full'}
-            ref={'selectLinkModal'}/>
+        />
+        <ModalRollCall
+          ref={'modalInput'}
+          styleModalPopupCustom={{ width: '95%', paddingLeft: 10, paddingRight: 10 }}
+          onSubmmit={this.onSubmitRollCall} />
+        <ModalGetLink
+          ref={'modalGetLink'}
+          styleModalPopupCustom={{ width: '95%', paddingLeft: 10, paddingRight: 10 }}
+          onDownLoadFile={this.onDownLoadFile}
+          onSubmmit={(link) => this.setState({ fileUrl: link })} />
+        <SelectLinkModal
+          styleRefineModal={{ height: 500, backgroundColor: 'transparent' }}
+          type={'full'}
+          ref={'selectLinkModal'} />
+        <DownloadedFileModal
+          styleRefineModal={{ height: 500, backgroundColor: 'transparent' }}
+          listDownloadedFile={this.state.listDownloadedFile}
+          onSelectFile={this.onSelectFileFromModal}
+          type={'full'}
+          ref={'downloadedFileModal'} />
+          <SetupModal
+          styleRefineModal={{ height: 800, backgroundColor: 'transparent' }}
+          type={'full'}
+          ref={'setupModal'} />
       </Container>
     );
   }
@@ -435,7 +500,7 @@ export default class ClassDetailComponent extends Component {
       console.warn(err);
     }
   }
-  
+
   onLeadingNavButtonPressed = () => {
     console.log('leading nav button pressed');
     if (Platform.OS === 'ios') {
@@ -443,7 +508,7 @@ export default class ClassDetailComponent extends Component {
         'App',
         'onLeadingNavButtonPressed',
         [
-          {text: 'OK', onPress: () => console.log('OK Pressed')},
+          { text: 'OK', onPress: () => console.log('OK Pressed') },
         ],
         { cancelable: true }
       )
@@ -459,7 +524,7 @@ export default class ClassDetailComponent extends Component {
     }
     // this.keyboardWillShowListener = Keyboard.addListener('keyboardWillShow', this._keyboardWillShow.bind(this));
     // this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this._keyboardDidHide.bind(this));
-    this.socket = io("http://localhost:3000");
+    this.socket = io("https://sidekickuit.herokuapp.com/");
     this.socket.on("chat message", msg => {
       this.setState({ chatMessages: [...this.state.chatMessages, JSON.parse(msg)] });
     });

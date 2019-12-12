@@ -33,7 +33,7 @@ const HeaderRefineModal = ({
           <TextComponent
             text={headingLowerCase ? heading : heading.toUpperCase()}
             size={fontSize ? fontSize : global.sizeP16}
-            fontFamily={global.fontBold}
+            // fontFamily={global.fontBold}
             color={global.color33}
             style={styles.textHeading}
           />

@@ -136,6 +136,11 @@ export default class ModalGetLink extends ModalInfo {
                 style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', borderColor: global.grayColor, borderRadius: 20, borderWidth: 2, padding: 10 }}>
                 <TextComponent text={"Go to Course"} style={{ color: global.blueLightColor }} />
               </TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => this.props.onDownLoadFile()}
+                style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', borderColor: global.grayColor, borderRadius: 20, borderWidth: 2, padding: 10 }}>
+                <TextComponent text={"Download"} style={{ color: global.blueLightColor }} />
+              </TouchableOpacity>
         </View>
 
       </View>
