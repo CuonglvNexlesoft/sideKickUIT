@@ -34,6 +34,7 @@ import * as CommonUtils from '../../utils/CommonUtils';
 import BuildUtils from '../../utils/BuildUtils';
 import * as Themes from '../../themes';
 import Strings from '../../constants/Strings';
+import global from '../commons/_var'
 
 export default class DashboardComponent extends Component {
 
@@ -50,28 +51,30 @@ export default class DashboardComponent extends Component {
         const {activeTab} = this.state;
         return (
             <Container title={tabLabels[activeTab]} style={styles.container}
-                titleTextStyle={{ color: Themes.Colors.background }}
-
-                statusBarColor={Themes.Colors.background}
+                titleTextStyle={{ color: global.color33, fontWeight: 'bold', fontSize: 20, color: global.color33 }}
+                // statusBarColor={global.colorFb}
+                // headerColor={global.colorFb}
                 statusBarProps={{ barStyle: "dark-content" }}>
-                {/* <Home tabLabel={{ label: 'HOME', icon: 'home', iconComponent: EIcon }} /> */}
-                <ScrollableTabView style={{ borderBottomColor: 'transparent' }}
-                locked
+                <ScrollableTabView style={{ borderBottomColor: 'transparent', flex: 1 }}
+                    locked
                     initialPage={initialTab} tabBarPosition={'bottom'}
                     renderTabBar={(props) =>
-                        <CustomTab {...props} initialPage={initialTab} activeColor={Themes.Colors.activeTab}
+                        <CustomTab {...props} initialPage={initialTab}
+                             activeColor={Themes.Colors.windowTint}
                             hideLabelInactive={false}
                             inActiveColor={Themes.Colors.grey}
                             style={{
                                 ...props.style,
                                 height: Themes.Metrics.tabHeight,
-                                borderTopColor: Themes.Colors.grey,
-                                borderTopWidth: Themes.Metrics.borderWidth,
-                                backgroundColor: Themes.Colors.background,
+                                // borderTopColor: global.color0B,
+                                // borderTopWidth: 2,
+                                // backgroundColor: global.colorFb,
                                 paddingHorizontal: CommonUtils.isTablet() ? '20%' : 0,
+                                paddingBottom: 10,
+                                paddingTop: 5
                             }}
                             iconStyle={{}}
-                            labelStyle={{ fontFamily: Themes.Fonts.type.regular, fontWeight: 'normal', fontSize: 12 }}
+                            labelStyle={{ fontFamily: Themes.Fonts.type.regular, fontWeight: 'bold', fontSize: 12, color: global.colorFF }}
                         />}
                     ref={(tabView) => { this.tabView = tabView; }}
                     onChangeTab={({ i, ref }) => this.onChangeTab(i, ref)}
@@ -81,6 +84,7 @@ export default class DashboardComponent extends Component {
                     <News tabLabel={{ label: tabLabels[1], icon: 'newspaper-o', iconComponent: FAIcon }} />
 
                     <Menu tabLabel={{ label: tabLabels[2], icon: 'user', iconComponent: EIcon }} />
+
 
                 </ScrollableTabView>
             </Container>
@@ -124,7 +128,7 @@ DashboardComponent.defaultProps = {
 const styles = EStyleSheet.create(shorthand({
     container: {
         flex: 1,
-        backgroundColor: Themes.Colors.background,
+        // backgroundColor: global.colorFb,
     },
     contents: {
     },

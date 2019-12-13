@@ -177,7 +177,7 @@ export default class SelectLinkModal extends ModalRefine {
       <View style={{ flex: 1, backgroundColor: 'white' }}>
             <FlatList
               ref={'flatList'}
-              data={data}
+              data={data.sort()}
               style={{marginBottom: 10, borderRadius: 10, paddingHorizontal: 15 }}
               showsVerticalScrollIndicator={false}
               renderItem={({ item }) => this.renderItemMessage(item)

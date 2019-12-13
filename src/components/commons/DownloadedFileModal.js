@@ -74,6 +74,7 @@ export default class DownloadedFileModal extends ModalRefine {
   }
 
   openModal(data) {
+    // console.log(this.props.listDownloadedFile, "\n", this.props.listDownloadedFile.sort())
     super.openModal();
   }
 
@@ -113,30 +114,32 @@ export default class DownloadedFileModal extends ModalRefine {
         <FillterSortItem
           style={{ paddingBottom: 15, paddingTop: 15 }}
           divider={false}
-          textLeft={item.name}
+          textLeft={item.name.toString()}
           styleLeftTextProperty={[{
             lineHeight: 17,
             // fontFamily: global.fontBold,
             fontWeight: 'bold',
             color: global.color64,
             fontSize: global.sizeP16,
-            maxWidth: window.width * 0.6,
+            // maxWidth: window.width * 0.6,
             flexWrap: "wrap",
-            width: '100%'
-          }, { maxWidth: 305 }]}
-          textLeftSub={item.ctime}
+            width: 350
+          }]}
+          numberOfLinesTextLeft={2}
+          textLeftSub={item.ctime.toString()}
           numberOfLinesTextSubLeft={2}
-          itemRight={
-            <View style={{ justifyContent: 'space-between', alignItems: 'center',}}>
-              <IconTooltip
-                style={{ paddingRight: 15 }}
-                onPress={this.onSelectFile.bind(this, item)}
-                textView={<TextComponent text={"Select"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', }} />}
-              />
-            </View>
-          }
-          // hideRight
-          disable
+          // itemRight={
+          //   <View style={{ justifyContent: 'space-between', alignItems: 'center',}}>
+          //     <IconTooltip
+          //       style={{ paddingRight: 15 }}
+          //       onPress={this.onSelectFile.bind(this, item)}
+          //       textView={<TextComponent text={"Select"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', }} />}
+          //     />
+          //   </View>
+          // }
+          onClickAction={this.onSelectFile.bind(this, item)}
+          hideRight
+          // disable
           customStyleLeftSubContainer={{ width: 305 }}
         />
       </View>

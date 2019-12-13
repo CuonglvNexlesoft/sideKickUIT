@@ -832,7 +832,10 @@ const images = {
   icAddPhotoRg: require("./../assets/images/loginRegistration/icAddPhotoRg.png"),
   // Date finder
   dateFinderHeaderImage: require('./../assets/images/dateFinder/dateFinderHeaderImage.png'),
-  icDateFinderEmpty:require('./../assets/images/dateFinder/icDateFinderEmpty.png')
+  icDateFinderEmpty:require('./../assets/images/dateFinder/icDateFinderEmpty.png'),
+  dotnet: require('./../assets/images/dotNET-framework.jpg'),
+  java:require('./../assets/images/download.png'),
+  react:require('./../assets/images/react.png')
 };
 
 export default images

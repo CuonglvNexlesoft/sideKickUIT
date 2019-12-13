@@ -96,7 +96,7 @@ export default class Container extends React.Component {
 }
 
 Container.defaultProps = {
-    statusBarColor: Themes.Colors.primary,
+    statusBarColor: 'transparent',
     hadStatusBar: true,
     statusBarProps: {},
     hadHeader: true,
@@ -127,7 +127,7 @@ const styles = EStyleSheet.create(shorthand({
         alignSelf: 'center',
         textAlign: 'center',
         textAlignVertical: 'center',
-        marginHorizontal: 50,
+        // marginHorizontal: 50,
     },
     content: {
         flex: 1,

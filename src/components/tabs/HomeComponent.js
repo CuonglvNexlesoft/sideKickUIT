@@ -16,24 +16,19 @@ export default class HomeComponent extends Component {
       chatMessages: [],
       users: [
         {
-          "name": "Proxima Midnight",
+          "name": "JAVA",
           "email": "proxima@appdividend.com",
-          "coverUrl": "https://images.theconversation.com/files/49135/original/22qc7r28-1400667334.jpg?ixlib=rb-1.1.0&q=30&auto=format&w=600&h=429&fit=crop&dpr=2"
+          "coverUrl": Images.java
         },
         {
-          "name": "Ebony Maw",
+          "name": "REACT NATIVE",
           "email": "ebony@appdividend.com",
-          "coverUrl": "https://pbs.twimg.com/profile_images/763061332702736385/KoK6gHzp.jpg"
+          "coverUrl": Images.react
         },
         {
-          "name": "Black Dwarf",
+          "name": "DOT NET",
           "email": "dwarf@appdividend.com",
-          "coverUrl": "https://pbs.twimg.com/profile_images/763061332702736385/KoK6gHzp.jpg"
-        },
-        {
-          "name": "Mad Titan",
-          "email": "thanos@appdividend.com",
-          "coverUrl": "https://images.theconversation.com/files/49135/original/22qc7r28-1400667334.jpg?ixlib=rb-1.1.0&q=30&auto=format&w=600&h=429&fit=crop&dpr=2"
+          "coverUrl": Images.dotnet
         },
       ],
       text: ""
@@ -204,6 +199,14 @@ export default class HomeComponent extends Component {
           }
           keyExtractor={item => item.email}
         />
+        <View style={{height: 50, width: Metrics.screenWidth, position: 'absolute', bottom: 20, alignItems: 'flex-end'}}>
+          <IconButton 
+          activeOpacity={0.5}
+          onClick={()=>{
+
+          }}
+          nameIcon={Images.icAddPhotoEditProfile} iconSize={{width: 60, height: 60}}/>
+        </View>
         <ModalInput
           ref={'modalInput'}
           styleModalPopupCustom={{ width: '95%', paddingLeft: 10, paddingRight: 10 }}
@@ -216,7 +219,7 @@ export default class HomeComponent extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "white",
+    backgroundColor: global.colorFF,
     padding: 10
   }
 });

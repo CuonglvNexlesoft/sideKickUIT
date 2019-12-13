@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
         borderTopRightRadius: 10,
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
+        opacity: 0.5
     },
     imageBackgroundContainer: {
         flex: 2.5,

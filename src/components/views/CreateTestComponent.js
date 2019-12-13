@@ -55,6 +55,7 @@ import CheckBoxLineItem from '../modules/CheckBoxLineItem';
 import ButtonOutline from '../commons/ButtonOutline';
 var moment = require('moment');
 import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
+import global from '../commons/_var'
 const FirstRoute = () => (
   <View style={[{ flex: 1, backgroundColor: '#ff4081' }]} />
 );
@@ -95,6 +96,10 @@ export default class CreateTestComponent extends Component {
     this._interval = null;
   }
 
+  checkCorrectAnswer=(item)=>{
+    console.log(item)
+  }
+
   render() {
     const { timeToReset } = this.state;
     let timeReset = moment.utc(timeToReset * 1000).format('HH:mm:ss');
@@ -103,15 +108,15 @@ export default class CreateTestComponent extends Component {
         selectAnswerId: index,
       });
     };
-
+    console.log(this.props.testData)
     return (
       <Container
         title={("Assignment").toUpperCase()}
         headerLeft={
-          // <View style={{ paddingLeft: 15 }}>
-          //   <TextComponent text={"1/15"} style={{ fontSize: 15 }} />
-          // </View>
-          null
+          <View style={{ paddingLeft: 15 }}>
+            <TextComponent text={this.state.index + 1 + "/"+ this.props.testData.length} style={{ fontSize: 15 }} />
+          </View>
+          // null
         }
         headerRight={
           <TouchableOpacity
@@ -120,10 +125,10 @@ export default class CreateTestComponent extends Component {
             <TextComponent text={"Submit"} style={{ fontSize: 15 }} />
           </TouchableOpacity>
         }
-        titleTextStyle={{ color: Themes.Colors.background }}
+        titleTextStyle={{ color: Themes.Colors.primary, fontSize: 25, fontWeight: 'bold' }}
         statusBarColor={Themes.Colors.transparent}
         statusBarProps={{ barStyle: "dark-content" }}>
-        <View style={{ flex: 1, paddingHorizontal: 5, paddingBottom: 15 }}>
+        <View style={{ flex: 1, paddingHorizontal: 5, paddingBottom: 15, backgroundColor: global.colorFF }}>
           <View style={{ justifyContent: 'center', alignItems: 'center', padding: 10 }}>
             <TextComponent text={timeReset} style={{ fontSize: 20, fontWeight: 'bold' }} />
           </View>
@@ -142,7 +147,7 @@ export default class CreateTestComponent extends Component {
                     renderItem={({ item, index }) => {
                       return (
                         <CheckBoxLineItem
-                          style={{ backgroundColor: '#ffe6e6', borderRadius: 10, padding: 10, paddingLeft: 25, marginBottom: 10 }}
+                          style={{ backgroundColor: global.colorF4, borderRadius: 10, padding: 10, paddingLeft: 25, marginBottom: 10 }}
                           minHeight={0}
                           styleRadioSelected={{ marginLeft: 0 }}
                           divider={false}

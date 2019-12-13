@@ -41,7 +41,7 @@ export default class MenuComponent extends Component {
                 break;
         }
         return (
-            <View style={[styles.container, {}]}>
+            <View style={[styles.container, { backgroundColor: 'white'}]}>
                 <View style={{ paddingVertical: 15, flexDirection: 'row' }}>
                     <View>
                         <Avatar

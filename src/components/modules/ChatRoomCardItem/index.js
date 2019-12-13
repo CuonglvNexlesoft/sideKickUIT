@@ -26,10 +26,11 @@ class ChatRoomCardItem extends Component {
             <TouchableOpacity style={styles.container} onPress={this.props.onPress}>
                 <FastImage
                         style={styles.imageBackground}
-                        source={{
-                            uri: this.props.backgroundImage,
-                            priority: FastImage.priority.normal,
-                        }}
+                        // source={{
+                        //     uri: this.props.backgroundImage,
+                        //     priority: FastImage.priority.normal,
+                        // }}
+                        source={this.props.backgroundImage}
                         resizeMode={FastImage.resizeMode.cover}
                     />
                 <View style={styles.imageBackgroundContainer}/>
@@ -50,7 +51,7 @@ class ChatRoomCardItem extends Component {
                         />
                     </View>
                     <View>
-                        <ButtonOutline
+                        {/* <ButtonOutline
                             name={"Active"}
                             disable
                             textStyle={{
@@ -60,7 +61,7 @@ class ChatRoomCardItem extends Component {
                             btnStyle={styles.buttonOutline}
                             icSrc={Images.icVideoCall}
                             iconStyle={{width:16, height: 16}}
-                        />
+                        /> */}
                     </View>
                 </View>
             </TouchableOpacity>

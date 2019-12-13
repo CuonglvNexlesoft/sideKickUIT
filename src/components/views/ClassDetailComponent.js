@@ -81,7 +81,9 @@ export default class ClassDetailComponent extends Component {
       permissionGranted: Platform.OS === 'ios' ? true : false,
       listDownloadedFile: [],
       isShowPopupTest: false,
-      listNotify:[]
+      listNotifyForTeacher:[],
+      listNotifyForStudent:[],
+      hasChangePDF: false
     };
     this.openFile = this.openFile.bind(this);
     RNPdftron.initialize("Insert commercial license key here after purchase");
@@ -357,20 +359,21 @@ export default class ClassDetailComponent extends Component {
   }
 
   render() {
-    const resourceType = 'url';
-    let absolutePath = RNFS.DocumentDirectoryPath + '/x1.pdf';
-    let resources = {
-      file: this.state.fileUrl,
-      url: 'https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf',
-      base64: 'JVBERi0xLjMKJcfs...',
-    };
-    // console.log(this.state.localFile, absolutePath)
+    // console.log(this.state.localFile)
+    // const resourceType = 'url';
+    // let absolutePath = RNFS.DocumentDirectoryPath + '/x1.pdf';
+    // let resources = {
+    //   file: this.state.fileUrl,
+    //   url: 'https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf',
+    //   base64: 'JVBERi0xLjMKJcfs...',
+    // };
+    // // console.log(this.state.localFile, absolutePath)
     return (
       <Container
         title={this.props.class.name.toUpperCase()}
         headerLeft={
           <IconButton nameIcon={Themes.Images.icBackArrowBlack} onClick={() => {
-            this._viewer && this._viewer.saveDocument().then(() => {
+            this.state.hasChangePDF && this._viewer && this._viewer.saveDocument().then(() => {
               console.log('saveDocument');
             });
             Actions.pop()
@@ -379,7 +382,7 @@ export default class ClassDetailComponent extends Component {
         headerRight={
           
           this.props.userInfo.userType === 0 && 
-          <IconButton nameIcon={Themes.Images.icSettingChatRoom} 
+          <IconButton nameIcon={Themes.Images.icSettings} 
           iconSize={{height: 25, width: 25}}
           // onClick={() => this.refs.modalConversationMenu.showModal()} 
           onClick={() => this.refs.setupModal.openModal()} 
@@ -397,7 +400,7 @@ export default class ClassDetailComponent extends Component {
           <View style={{ flexDirection: 'row', width: '100%', justifyContent: 'space-between', borderBottomWidth: 3, borderBottomColor: global.color56A, marginBottom: 5 }}>
             <View style={{ flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', paddingRight: 10 }}>
               <IconButton nameIcon={Themes.Images.icNotificationOutLine} onClick={() => this.refs.selectLinkModal.openModal()} />
-              <TextComponent text={45} style={{ position: 'absolute', backgroundColor: 'red', borderRadius: 10, minWidth: 20, padding: 2, left: 20, top: 0 }} />
+              {this.state.listNotifyForTeacher.length != 0 && <TextComponent text={this.state.listNotifyForTeacher.length} style={{ position: 'absolute', backgroundColor: 'red', borderRadius: 10, minWidth: 20, padding: 2, left: 20, top: 0 }} />}
             </View>
 
             <TouchableOpacity
@@ -437,6 +440,10 @@ export default class ClassDetailComponent extends Component {
               showLeadingNavButton={true}
               leadingNavButtonIcon={Platform.OS === 'ios' ? 'ic_close_black_24px.png' : 'ic_arrow_back_white_24dp'}
               onLeadingNavButtonPressed={this.onLeadingNavButtonPressed}
+              onAnnotationChanged={({action, annotations}) => { 
+                console.log('annotations changed', action, annotations); 
+                this.setState({hasChangePDF: true})
+              }}
             />}
             <View style={{ backgroundColor: global.lightBlue, borderTopRightRadius: 15, borderTopLeftRadius: 15 }}>
               <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
