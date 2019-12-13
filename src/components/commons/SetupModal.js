@@ -166,6 +166,10 @@ export default class  SetupModal extends ModalRefine {
   this.props.onStartTest();
 }
 
+onNotifyLink=()=>{
+
+}
+
   renderHeader() {
     return (
       <HeaderRefineModal
@@ -318,6 +322,14 @@ export default class  SetupModal extends ModalRefine {
               </View>
 
             </View>
+            <View style={{ paddingTop: 15 , justifyContent: 'center', alignItems: 'center'}}>
+                <TouchableOpacity
+                  onPress={this.onNotifyLink}
+                  style={{width: 100, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', borderColor: global.grayColor, borderRadius: 20, borderWidth: 2, padding: 10, backgroundColor: global.primaryColor }}>
+                  <TextComponent text={"Send link"} style={{ paddingRight: 5, color: global.purple, fontWeight: 'bold' }} />
+                  {/* <Image source={Themes.Images.btnPlus}/> */}
+                </TouchableOpacity>
+              </View>
 
           </View>
 

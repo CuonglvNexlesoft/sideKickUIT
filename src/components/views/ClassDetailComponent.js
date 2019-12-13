@@ -64,6 +64,7 @@ import SelectLinkModal from '../commons/SelectLinkModal';
 import SetupModal from '../commons/SetupModal';
 import DownloadedFileModal from '../commons/DownloadedFileModal';
 import LocationPulseLoader from '../modules/Pulse/PulseLoader';
+import { throwStatement } from '@babel/types';
 const { width, height } = Dimensions.get('window');
 export default class ClassDetailComponent extends Component {
 
@@ -93,6 +94,7 @@ export default class ClassDetailComponent extends Component {
 
   createTest = () => {
     Actions[ScreenName.TEST]({})
+    this.setState({isShowPopupTest: false})
   }
 
   renderEmptyState() {
@@ -264,7 +266,7 @@ export default class ClassDetailComponent extends Component {
 
   onDownLoadFile = (fileName) => {
     // let absolutePath = RNFS.DocumentDirectoryPath + '/aaaaa.pdf';
-    const localFile = `${RNFS.DocumentDirectoryPath}/${fileName}.pdf`;
+    const localFile = `${RNFS.DocumentDirectoryPath}/${fileName}`;
     const options = {
       fromUrl: 'https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf',
       toFile: localFile
@@ -400,7 +402,10 @@ export default class ClassDetailComponent extends Component {
           <View style={{ flexDirection: 'row', width: '100%', justifyContent: 'space-between', borderBottomWidth: 3, borderBottomColor: global.color56A, marginBottom: 5 }}>
             <View style={{ flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', paddingRight: 10 }}>
               <IconButton nameIcon={Themes.Images.icNotificationOutLine} onClick={() => this.refs.selectLinkModal.openModal()} />
-              {this.state.listNotifyForTeacher.length != 0 && <TextComponent text={this.state.listNotifyForTeacher.length} style={{ position: 'absolute', backgroundColor: 'red', borderRadius: 10, minWidth: 20, padding: 2, left: 20, top: 0 }} />}
+              {this.state.listNotifyForTeacher.length != 0 &&
+              <View style={{justifyContent:'center', alignItems: 'center', backgroundColor: 'red', minWidth: 20, borderRadius: 20, padding: 2, position: 'absolute', top: 0, left: 18}}>
+                <TextComponent text={this.state.listNotifyForTeacher.length} textAlign={'center'} />
+              </View>}
             </View>
 
             <TouchableOpacity
@@ -416,7 +421,7 @@ export default class ClassDetailComponent extends Component {
               <IconTooltip
                 style={{ paddingRight: 15 }}
                 onPress={this.onGetListFile}
-                textView={<TextComponent text={"Get list file"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', }} />}
+                textView={<TextComponent text={"Recent files"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', }} />}
               />
               {/* <IconTooltip
                 onPress={() => {
@@ -512,7 +517,10 @@ export default class ClassDetailComponent extends Component {
         <SelectLinkModal
           styleRefineModal={{ height: 500, backgroundColor: 'transparent' }}
           type={'full'}
-          ref={'selectLinkModal'} />
+          ref={'selectLinkModal'}
+          forWho={this.props.userInfo.userType}
+          listNotifyForTeacher={this.state.listNotifyForTeacher}
+          />
         <DownloadedFileModal
           styleRefineModal={{ height: 500, backgroundColor: 'transparent' }}
           listDownloadedFile={this.state.listDownloadedFile}
@@ -595,6 +603,15 @@ export default class ClassDetailComponent extends Component {
     this.socket = io("http://localhost:3000");
     this.socket.on("chat message", msg => {
       this.setState({ chatMessages: [...this.state.chatMessages, JSON.parse(msg)] });
+      console.log(JSON.parse(msg).message.type)
+      if (JSON.parse(msg).message && JSON.parse(msg).message.type === 2) {
+        let objRollCall = {
+          title: JSON.parse(msg).user.displayName,
+          link: JSON.parse(msg).message.body
+        }
+        this.setState({ listNotifyForTeacher: [objRollCall, ...this.state.listNotifyForTeacher] });
+      }
+
     });
     if (this.props.userInfo.userType !== 0)
     {
@@ -609,14 +626,17 @@ export default class ClassDetailComponent extends Component {
     });
 
       this.socket.on("test", msg => {
-        console.log('test', this.socket)
+        // console.log('test', this.socket)
         let objRollCall = JSON.parse(msg)
         this.setState({isShowPopupTest: true}, ()=>setTimeout(()=>this.setState({isShowPopupTest: false}), 10000))
       });
 
       this.socket.on("i have a question", msg => {
-        console.log('i have a question')
-        let objRollCall = JSON.parse(msg)
+        let objRollCall = {
+          title: "Le Van Cuong",
+          link: "I have a question!"
+        }
+        this.setState({ listNotifyForTeacher: [ objRollCall,...this.state.listNotifyForTeacher] });
       });
 
   }

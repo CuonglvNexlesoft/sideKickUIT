@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     fontSize: global.sizeP14,
     color: global.colorFb,
     fontStyle: 'italic',
-    textDecorationLine: 'underline'
+    // textDecorationLine: 'underline'
 
   },
   rightTextProperty: {

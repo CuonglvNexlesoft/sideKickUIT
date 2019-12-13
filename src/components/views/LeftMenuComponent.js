@@ -23,7 +23,9 @@ import Strings from '../../constants/Strings';
 import * as CommonUtils from '../../utils/CommonUtils';
 import BuildUtils from '../../utils/BuildUtils';
 import Locale from '../../utils/Locale';
-
+import TextComponent from '../commons/Text';
+import global from '../commons/_var'
+import Avatar from '../commons/Avatar';
 const defaultImage = Themes.Images.default_avatar;
 
 const locales = [
@@ -70,16 +72,59 @@ export default class LeftMenuComponent extends Component {
     renderSettings() {
         const { settings } = this.state;
         return (
-            <View style={styles.settings}>
-                {this.renderLanguages()}
+            <View style={{ flex: 1, paddingTop: 25, paddingHorizontal: 15}}>
+                {/* {this.renderLanguages()} */}
+                <View style={{  flexDirection: 'row' , alignItems: 'center'}}>
+                    <View>
+                        <Avatar
+                            ref="avatar"
+                            showOnline={false}
+                            user={{ userId: 1 }}
+                            size="w70"
+                            canPress={false}
+                            isDynamicallyAvatar
+                        />
+                    </View>
+
+                    <View style={{ justifyContent: 'center', paddingTop: 5, paddingBottom: 5 }}>
+                        <TextComponent text={"Le Van Cuong"} style={{ paddingTop: 5, paddingBottom: 5, fontSize: 15, fontWeight: 'bold' }} />
+                        <View style={{ height: 25, width: 100, borderRadius: 50, borderWidth: 1.5, justifyContent: 'center', alignItems: 'center' }}>
+                            <TextComponent text={"Student"} />
+                        </View>
+                    </View>
+                </View>
+                {this.renderChangeTheme()}
                 {this.renderLogout()}
             </View>
         )
     }
+
+    renderChangeTheme(){
+        return (
+            <View style={{justifyContent: 'flex-start', paddingVertical: 15}}>
+                <TextComponent text={'Themes:'}/>
+                <View style={{paddingLeft: 60, flexDirection: 'row'}}>
+                    <View style={{width: 25, height: 25, backgroundColor: global.color0B, marginRight: 5}}/>
+                    <View style={{width: 25, height: 25, backgroundColor: global.red, marginRight: 5}}/>
+                    <View style={{width: 25, height: 25, backgroundColor: global.green, marginRight: 5}}/>
+                    <View style={{width: 25, height: 25, backgroundColor: global.colorFF8, marginRight: 5}}/>
+                </View>
+                <View style={{paddingLeft: 60, flexDirection: 'row', paddingTop: 5}}>
+                    <View style={{width: 25, height: 25, backgroundColor: global.color33, marginRight: 5}}/>
+                    <View style={{width: 25, height: 25, backgroundColor: global.color35D, marginRight: 5}}/>
+                    <View style={{width: 25, height: 25, backgroundColor: global.lightBlue, marginRight: 5}}/>
+                    <View style={{width: 25, height: 25, backgroundColor: global.purple, marginRight: 5}}/>
+                </View>
+            </View>
+        )
+    }
+
     renderLogout(){
         return (
-            <View>
-                <TouchableOpacity onPress={()=>{this.props.userActions.removeUser(); Actions[ScreenName.LOGIN]({ type: ActionConst.RESET });}}>
+            <View style={{justifyContent:'center', alignItems: 'center'}}>
+                <TouchableOpacity 
+                style={{borderWidth: 1, borderRadius: 20, width: 100, justifyContent:'center', alignItems: 'center'}}
+                onPress={()=>{ Actions[ScreenName.LOGIN]({ type: ActionConst.RESET });}}>
                     <Text>Logout!</Text>
                 </TouchableOpacity>
             </View>

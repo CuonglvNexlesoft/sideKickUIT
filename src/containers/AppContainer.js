@@ -94,17 +94,17 @@ export default class AppContainer extends Component {
                         <Scene key={ScreenName.SPLASH} component={SpashContainer} hideNavBar initial={true} />
                         <Scene key={ScreenName.LOGIN} component={LoginContainer} hideNavBar />
 
-                        {/* <Scene key={ScreenName.DRAWER} 
+                        <Scene key={ScreenName.DRAWER} 
                             drawer 
                             overlay
                             hideNavBar hideTabBar passProps
                             type={ActionConst.RESET}
                             contentComponent={LeftMenuContainer}
-                            drawerWidth={Themes.Metrics.leftMenuWidth}
+                            drawerWidth={Themes.Metrics.leftMenuWidth - 80}
                         >
                             <Scene key={ScreenName.DASHBOARD} component={DashBoardContainer} hideNavBar />
                            
-                        </Scene> */}
+                        </Scene>
                         <Scene key={ScreenName.DASHBOARD} component={DashBoardContainer} hideNavBar />
                         <Scene key={ScreenName.DETAIL} component={ClassDetailContainer} hideNavBar />
                         <Scene key={ScreenName.SETUP} component={SetupClassContainer} hideNavBar />

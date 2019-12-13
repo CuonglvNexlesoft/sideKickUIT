@@ -119,8 +119,9 @@ export default class SelectLinkModal extends ModalRefine {
             width: '100%'
           }, { maxWidth: 305 }]}
           textLeftSub={item.link.toString()}
-          numberOfLinesTextSubLeft={2}
+          numberOfLinesTextSubLeft={4}
           itemRight={
+            this.props.forWho === 1 ?
             <View style={{ justifyContent: 'space-between', alignItems: 'center', flex: 1 }}>
               <IconTooltip
                 style={{ paddingRight: 15 }}
@@ -134,6 +135,13 @@ export default class SelectLinkModal extends ModalRefine {
                 textView={<TextComponent text={"Read Online"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', }} />}
               />
             </View>
+            :
+            <IconTooltip
+                onPress={() => {
+                  this.refs.modalGetLink.openModal()
+                }}
+                textView={<TextComponent text={"Reply now"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', }} />}
+              />
           }
           // hideRight
           disable
@@ -144,7 +152,7 @@ export default class SelectLinkModal extends ModalRefine {
   }
 
   renderContent() {
-    const data = [
+    const data = this.props.forWho === 1 ? [
       {
         title: "software_engineering",
         link: "https://www.tutorialspoint.com/software_engineering/software_engineering_tutorial.pdf"
@@ -173,6 +181,8 @@ export default class SelectLinkModal extends ModalRefine {
         link: "https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf"
       }
     ]
+    :
+    this.props.listNotifyForTeacher
     return (
       <View style={{ flex: 1, backgroundColor: 'white' }}>
             <FlatList

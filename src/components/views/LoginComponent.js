@@ -291,8 +291,8 @@ export default class LoginComponent extends Component {
             // console.log(this.props.userActions)
             this.props.userActions.setUser(user).then(result => {
                 // this.props.appActions.hideLoading();
-                Actions[ScreenName.DASHBOARD]();
-                // Actions[ScreenName.DRAWER]({ type: ActionConst.RESET });
+                // Actions[ScreenName.DASHBOARD]();
+                Actions[ScreenName.DRAWER]({ type: ActionConst.RESET });
             }, error => {
                 this.showError(error);
             });

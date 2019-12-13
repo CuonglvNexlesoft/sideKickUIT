@@ -35,6 +35,7 @@ import BuildUtils from '../../utils/BuildUtils';
 import * as Themes from '../../themes';
 import Strings from '../../constants/Strings';
 import global from '../commons/_var'
+import IconButton from '../commons/IconButton';
 
 export default class DashboardComponent extends Component {
 
@@ -50,7 +51,13 @@ export default class DashboardComponent extends Component {
         const initialTab = 0;
         const {activeTab} = this.state;
         return (
-            <Container title={tabLabels[activeTab]} style={styles.container}
+            <Container 
+            headerLeft={
+                <IconButton nameIcon={Themes.Images.footerIcMenu} onClick={() => {
+                    Actions.drawerOpen()
+                }} btnStyle={{ paddingLeft: 15 }} />
+              }
+            title={tabLabels[activeTab]} style={styles.container}
                 titleTextStyle={{ color: global.color33, fontWeight: 'bold', fontSize: 20, color: global.color33 }}
                 // statusBarColor={global.colorFb}
                 // headerColor={global.colorFb}

@@ -78,7 +78,7 @@ ChatRoomCardItem.propTypes = {
     memberLive: PropTypes.number,
     memberInRoom: PropTypes.number,
     roomName: PropTypes.string,
-    backgroundImage: PropTypes.string,
+    // backgroundImage:  PropTypes.string,
     onPress: PropTypes.func
 };
 

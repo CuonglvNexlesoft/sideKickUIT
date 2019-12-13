@@ -91,7 +91,7 @@ export default class CreateTestComponent extends Component {
       //   // { key: '9', title: '9' },
       // ],
       routes: props.testData,
-      timeToReset: 1,
+      timeToReset: 5*60,
     };
     this._interval = null;
   }
@@ -108,7 +108,6 @@ export default class CreateTestComponent extends Component {
         selectAnswerId: index,
       });
     };
-    console.log(this.props.testData)
     return (
       <Container
         title={("Assignment").toUpperCase()}
