@@ -22,7 +22,7 @@ export const USER = {
         email: '14521116@gm.uit.edu.vn',
         age: 24,
         gender: 1,// male 1 vs female 0,
-        userType: 0 // 0 admin, 1 student
+        userType: 1 // 0 admin, 1 student
     },
     rehydrate: false,
     data: []

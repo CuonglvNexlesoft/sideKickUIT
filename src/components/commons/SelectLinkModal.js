@@ -41,6 +41,7 @@ export default class SelectLinkModal extends ModalRefine {
     super(props);
     this.state = {
       ...this.state,
+      swipeToClose: false,
       animationDuration: 100,
       swipeThreshold: 30,
       indexSelectAllmember: 0,
@@ -117,7 +118,7 @@ export default class SelectLinkModal extends ModalRefine {
             flexWrap: "wrap",
             width: '100%'
           }, { maxWidth: 305 }]}
-          textLeftSub={item.link}
+          textLeftSub={item.link.toString()}
           numberOfLinesTextSubLeft={2}
           itemRight={
             <View style={{ justifyContent: 'space-between', alignItems: 'center', flex: 1 }}>
@@ -173,7 +174,7 @@ export default class SelectLinkModal extends ModalRefine {
       }
     ]
     return (
-          <View style={{ flex: 1, backgroundColor: 'white' }}>
+      <View style={{ flex: 1, backgroundColor: 'white' }}>
             <FlatList
               ref={'flatList'}
               data={data}
@@ -182,7 +183,7 @@ export default class SelectLinkModal extends ModalRefine {
               renderItem={({ item }) => this.renderItemMessage(item)
               }
             />
-          </View>
+      </View>
     );
   }
 

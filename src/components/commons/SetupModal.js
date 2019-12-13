@@ -98,6 +98,7 @@ export default class  SetupModal extends ModalRefine {
     super(props);
     this.state = {
       ...this.state,
+      swipeToClose: false,
       animationDuration: 100,
       swipeThreshold: 30,
       indexSelectAllmember: 0,
@@ -113,8 +114,8 @@ export default class  SetupModal extends ModalRefine {
       pageNumber: 1,
       timeOutselectOptionHasChange: 0,
       enableDiscuss: true,
-      enableRollCall: true,
-      enableTest: true,
+      enableRollCall: false,
+      enableTest: false,
       enableRemind: true,
       arrLink: [],
       text: '',
@@ -151,7 +152,19 @@ export default class  SetupModal extends ModalRefine {
     return super.closeModal();
   }
 
+  onStartRollCall=()=>{
+      this.setState({
+        enableRollCall: true
+      });
+    this.props.onStartRollCall();
+  }
 
+  onStartTest=()=>{
+    this.setState({
+      enableTest: true
+    });
+  this.props.onStartTest();
+}
 
   renderHeader() {
     return (
@@ -345,11 +358,7 @@ export default class  SetupModal extends ModalRefine {
               circleColorOn={global.colorFF}
               switchOn={this.state.enableTest}
               onPress={
-                value => {
-                  this.setState({
-                    enableTest: !this.state.enableTest
-                  });
-                }
+                this.onStartTest
               }
             />
             {this.state.enableTest && <View style={{ paddingVertical: 10, width: 180 }}>
@@ -413,11 +422,7 @@ export default class  SetupModal extends ModalRefine {
               circleColorOn={global.colorFF}
               switchOn={this.state.enableRollCall}
               onPress={
-                value => {
-                  this.setState({
-                    enableRollCall: !this.state.enableRollCall
-                  });
-                }
+                this.onStartRollCall
               }
             />
           </View>

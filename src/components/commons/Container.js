@@ -6,7 +6,8 @@ import {
     Image, ListView,
     Modal, StyleSheet,
     Keyboard, LayoutAnimation,
-    KeyboardAvoidingView
+    KeyboardAvoidingView,
+    Dimensions
 } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import shorthand from 'react-native-styles-shorthand';
@@ -14,7 +15,7 @@ import * as Themes from './../../themes';
 
 import StatusBar from './StatusBar';
 import Header from './Header';
-
+const { width, height } = Dimensions.get('window');
 export default class Container extends React.Component {
     constructor(props) {
         super(props);
@@ -65,7 +66,7 @@ export default class Container extends React.Component {
         const { statusBarColor } = this.props;
         const title = this.props.title || "";
         return (
-            <View {...this.props} style={[styles.container, (this.props.style || null), {marginBottom: Platform.OS == 'ios' ? keyboardHeight : null}]}>
+            <KeyboardAvoidingView behavior={'padding'} {...this.props} style={[styles.container, (this.props.style || null), {marginBottom: Platform.OS == 'ios' ? keyboardHeight : null}]}>
                 {this.props.hadStatusBar &&
                     <StatusBar backgroundColor={statusBarColor} barStyle="light-content"
                         style={[styles.statusBar, (this.props.statusBarStyle || null)]} {...this.props.statusBarProps} />
@@ -81,10 +82,10 @@ export default class Container extends React.Component {
                         }
                     </Header>
                 }
-                <View style={[styles.content, this.props.contentStyle, {backgroundColor: 'red'}]}>
+                <View style={[styles.content, this.props.contentStyle,]}>
                     {this.props.children}
                 </View>
-            </View>
+            </KeyboardAvoidingView>
         )
 
     }
@@ -112,7 +113,7 @@ Container.defaultProps = {
 
 const styles = EStyleSheet.create(shorthand({
     container: {
-        flex: 1,
+        height: height
     },
     statusBar: {
         

@@ -41,6 +41,7 @@ export default class DownloadedFileModal extends ModalRefine {
     super(props);
     this.state = {
       ...this.state,
+      swipeToClose: false,
       animationDuration: 100,
       swipeThreshold: 30,
       indexSelectAllmember: 0,

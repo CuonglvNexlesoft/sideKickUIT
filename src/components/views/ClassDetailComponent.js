@@ -63,6 +63,7 @@ import global from '../commons/_var'
 import SelectLinkModal from '../commons/SelectLinkModal';
 import SetupModal from '../commons/SetupModal';
 import DownloadedFileModal from '../commons/DownloadedFileModal';
+import LocationPulseLoader from '../modules/Pulse/PulseLoader';
 const { width, height } = Dimensions.get('window');
 export default class ClassDetailComponent extends Component {
 
@@ -78,7 +79,9 @@ export default class ClassDetailComponent extends Component {
       fileUrl: null,
       localFile: "",
       permissionGranted: Platform.OS === 'ios' ? true : false,
-      listDownloadedFile: []
+      listDownloadedFile: [],
+      isShowPopupTest: false,
+      listNotify:[]
     };
     this.openFile = this.openFile.bind(this);
     RNPdftron.initialize("Insert commercial license key here after purchase");
@@ -92,7 +95,7 @@ export default class ClassDetailComponent extends Component {
 
   renderEmptyState() {
     return (
-      <View style={{ flex: 1, backgroundColor: 'white', marginBottom: 10, borderRadius: 10, justifyContent: 'center', alignItems: 'center', paddingHorizontal: 15 }}>
+      <View style={{ height: 200, backgroundColor: global.colorFF, justifyContent: 'center', alignItems: 'center', paddingHorizontal: 15, borderWidth: 1, borderColor: global.lightBlue }}>
         <IconButton nameIcon={Themes.Images.icMssEmpty} iconSize={{ width: 60, height: 30 }} />
         <TextComponent text={"No chat message"} />
       </View>
@@ -100,65 +103,92 @@ export default class ClassDetailComponent extends Component {
   }
 
   renderItemMessage(item) {
-    if (item.message.type === 3)
-      return (
-        <View style={{ flexDirection: 'row', justifyContent: "flex-start", alignItems: 'center', paddingVertical: 5 }}>
-          <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: "center" }}>
-            <View style={{}}>
-              <IconButton nameIcon={Themes.Images.icVerify} btnStyle={{ paddingHorizontal: 10 }} />
+    switch (item.user.userType) {
+      case 1:
+        if (item.message.type === 3)
+          return (
+            <View style={{ flexDirection: 'row', justifyContent: "flex-start", alignItems: 'center', paddingVertical: 5 }}>
+              <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: "center" }}>
+                <View style={{}}>
+                  <IconButton nameIcon={Themes.Images.icVerify} btnStyle={{ paddingHorizontal: 10 }} />
+                </View>
+                <View style={{ justifyContent: 'center' }}>
+                  <Text style={styles.name}>{'Anonymous'}</Text>
+                  <Text numberOfLines={5} style={{ fontStyle: 'italic' }}>{item.message.body}</Text>
+                </View>
+              </View>
             </View>
-            <View style={{ justifyContent: 'center' }}>
-              <Text style={styles.name}>{item.user.displayName}</Text>
-              <Text numberOfLines={5} style={{ fontStyle: 'italic' }}>{item.message.body}</Text>
+          );
+        if (item.message.type === 2)
+          return (
+            <View style={{ flexDirection: 'row', justifyContent: "flex-start", alignItems: 'center', paddingVertical: 5 }}>
+              <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: "center" }}>
+                <View style={{}}>
+                  <Avatar
+                    ref="avatar"
+                    showOnline={false}
+                    user={{ userId: 1 }}
+                    size="s-small"
+                    canPress={false}
+                    isDynamicallyAvatar
+                  />
+                </View>
+                <View style={{ justifyContent: 'center', borderRadius: 10, borderWidth: 1, backgroundColor: 'white', padding: 5 }}>
+                  <Text style={styles.name}>{item.user.displayName}</Text>
+                  <Text numberOfLines={5} style={{ fontStyle: 'italic' }}>{item.message.body}</Text>
+                  <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                    <IconButton nameIcon={Themes.Images.icEyeWhisper} />
+                    <Text style={{ color: '#c2c2d6', fontStyle: 'italic', fontSize: 8 }}>Only teacher can see your message</Text>
+                  </View>
+                </View>
+              </View>
             </View>
-          </View>
-        </View>
-      );
-    if (item.message.type === 2)
-      return (
-        <View style={{ flexDirection: 'row', justifyContent: "flex-start", alignItems: 'center', paddingVertical: 5 }}>
-          <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: "center" }}>
-            <View style={{}}>
-              <Avatar
-                ref="avatar"
-                showOnline={false}
-                user={{ userId: 1 }}
-                size="s-small"
-                canPress={false}
-                isDynamicallyAvatar
-              />
-            </View>
-            <View style={{ justifyContent: 'center', borderRadius: 10, borderWidth: 1, backgroundColor: 'white', padding: 5 }}>
-              <Text style={styles.name}>{item.user.displayName}</Text>
-              <Text numberOfLines={5} style={{ fontStyle: 'italic' }}>{item.message.body}</Text>
-              <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-                <IconButton nameIcon={Themes.Images.icEyeWhisper} />
-                <Text style={{ color: '#c2c2d6', fontStyle: 'italic', fontSize: 8 }}>Only teacher can see your message</Text>
+          );
+        if (item.message.type === 1)
+        return (
+          <View style={{ flexDirection: 'row', justifyContent: "flex-start", alignItems: 'center', paddingVertical: 5 }}>
+            <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: "center" }}>
+              <View style={{}}>
+                <Avatar
+                  ref="avatar"
+                  showOnline={false}
+                  user={{ userId: 1 }}
+                  size="s-small"
+                  canPress={false}
+                  isDynamicallyAvatar
+                />
+              </View>
+              <View style={{ justifyContent: 'center' }}>
+                <Text style={styles.name}>{item.user.displayName}</Text>
+                <Text numberOfLines={5} style={{ fontStyle: 'italic' }}>{item.message.body}</Text>
               </View>
             </View>
           </View>
-        </View>
-      );
-    return (
-      <View style={{ flexDirection: 'row', justifyContent: "flex-start", alignItems: 'center', paddingVertical: 5 }}>
-        <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: "center" }}>
-          <View style={{}}>
-            <Avatar
-              ref="avatar"
-              showOnline={false}
-              user={{ userId: 1 }}
-              size="s-small"
-              canPress={false}
-              isDynamicallyAvatar
-            />
-          </View>
-          <View style={{ justifyContent: 'center' }}>
-            <Text style={styles.name}>{item.user.displayName}</Text>
-            <Text numberOfLines={5} style={{ fontStyle: 'italic' }}>{item.message.body}</Text>
-          </View>
-        </View>
-      </View>
-    );
+        );
+        break;
+      case 0:
+          return (
+            <View style={{ flexDirection: 'row', justifyContent: "flex-start", alignItems: 'center', paddingVertical: 5, backgroundColor: global.orange, marginVertical: 10, borderRadius: 15 }}>
+              <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: "center" }}>
+                <View style={{}}>
+                  <Avatar
+                    ref="avatar"
+                    showOnline={false}
+                    user={{ userId: 1 }}
+                    size="s-small"
+                    canPress={false}
+                    isDynamicallyAvatar
+                  />
+                </View>
+                <View style={{ justifyContent: 'center' }}>
+                  <Text style={styles.name}>{item.user.displayName}</Text>
+                  <Text numberOfLines={5} style={{ fontStyle: 'italic' }}>{item.message.body}</Text>
+                </View>
+              </View>
+            </View>
+          );
+        break;
+    }
   }
 
   renderListMessage() {
@@ -167,7 +197,7 @@ export default class ClassDetailComponent extends Component {
       <FlatList
         ref={'flatList'}
         data={this.state.chatMessages}
-        style={{ flex: 1, backgroundColor: 'white', marginBottom: 10, borderRadius: 10, paddingHorizontal: 15 }}
+        style={{ height: 200, backgroundColor: 'white', paddingHorizontal: 15, borderWidth: 1, borderColor: global.lightBlue }}
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => this.renderItemMessage(item)
         }
@@ -230,10 +260,9 @@ export default class ClassDetailComponent extends Component {
     }
   }
 
-  onDownLoadFile = () => {
+  onDownLoadFile = (fileName) => {
     // let absolutePath = RNFS.DocumentDirectoryPath + '/aaaaa.pdf';
-    // console.log('vbbb', absolutePath)
-    const localFile = `${RNFS.DocumentDirectoryPath}/xaaaaa.pdf`;
+    const localFile = `${RNFS.DocumentDirectoryPath}/${fileName}.pdf`;
     const options = {
       fromUrl: 'https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf',
       toFile: localFile
@@ -253,31 +282,31 @@ export default class ClassDetailComponent extends Component {
   onGetListFile = () => {
     RNFS.readDir(RNFS.DocumentDirectoryPath) // On Android, use "RNFS.DocumentDirectoryPath" (MainBundlePath is not defined)
       .then((result) => {
-        console.log('GOT RESULT', result.filter(e=>e.name.includes(".pdf")), result[0].isFile(), result[1].isFile())
+        // console.log('GOT RESULT', result.filter(e => e.name.includes(".pdf")), result[0].isFile(), result[1].isFile())
         this.setState({
-          listDownloadedFile: result.filter(e=>e.name.includes(".pdf"))
+          listDownloadedFile: result.filter(e => e.name.includes(".pdf"))
         },
-        ()=>this.refs.downloadedFileModal.openModal()
+          () => this.refs.downloadedFileModal.openModal()
         )
 
         // stat the first file
         // return Promise.all([RNFS.stat(result[0].path), result[0].path]);
       })
-      // .then((statResult) => {
-      //   if (statResult[0].isFile()) {
-      //     // if we have a file, read it
-      //     return RNFS.readFile(statResult[1], 'utf8');
-      //   }
+    // .then((statResult) => {
+    //   if (statResult[0].isFile()) {
+    //     // if we have a file, read it
+    //     return RNFS.readFile(statResult[1], 'utf8');
+    //   }
 
-      //   return 'no file';
-      // })
-      // .then((contents) => {
-      //   // log the file contents
-      //   console.log(contents);
-      // })
-      // .catch((err) => {
-      //   console.log(err.message, err.code);
-      // });
+    //   return 'no file';
+    // })
+    // .then((contents) => {
+    //   // log the file contents
+    //   console.log(contents);
+    // })
+    // .catch((err) => {
+    //   console.log(err.message, err.code);
+    // });
   }
 
   renderToolbarInput() {
@@ -286,7 +315,7 @@ export default class ClassDetailComponent extends Component {
         flexDirection: 'row',
         alignItems: 'center',
         height: 50,
-        backgroundColor: global.colorF3
+        backgroundColor: global.colorFF,
       }}>
         <Avatar
           onPress={() => this.setState({ isShowUserStatus: !this.state.isShowUserStatus })}
@@ -323,7 +352,7 @@ export default class ClassDetailComponent extends Component {
     );
   }
 
-  onSelectFileFromModal=(path)=>{
+  onSelectFileFromModal = (path) => {
     this.setState({ localFile: path })
   }
 
@@ -340,20 +369,32 @@ export default class ClassDetailComponent extends Component {
       <Container
         title={this.props.class.name.toUpperCase()}
         headerLeft={
-          <IconButton nameIcon={Themes.Images.icBackArrowBlack} onClick={() =>{
+          <IconButton nameIcon={Themes.Images.icBackArrowBlack} onClick={() => {
             this._viewer && this._viewer.saveDocument().then(() => {
               console.log('saveDocument');
             });
-             Actions.pop()}} btnStyle={{ paddingLeft: 15 }} />
+            Actions.pop()
+          }} btnStyle={{ paddingLeft: 15 }} />
         }
         headerRight={
-          <IconButton nameIcon={Themes.Images.icMenuBlack} onClick={() => this.refs.modalConversationMenu.showModal()} btnStyle={{ paddingRight: 25 }} />
+          
+          this.props.userInfo.userType === 0 && 
+          <IconButton nameIcon={Themes.Images.icSettingChatRoom} 
+          iconSize={{height: 25, width: 25}}
+          // onClick={() => this.refs.modalConversationMenu.showModal()} 
+          onClick={() => this.refs.setupModal.openModal()} 
+          btnStyle={{ paddingRight: 25 }} />
+          //:
+          // <View style={{ flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', paddingRight: 10 }}>
+          //     <IconButton nameIcon={Themes.Images.icSettingSetting} onClick={() => this.refs.setupModal.openModal()} />
+          //     <TextComponent text={45} style={{ position: 'absolute', backgroundColor: 'red', borderRadius: 10, minWidth: 20, padding: 2, left: 20, top: 0 }} />
+          // </View>
         }
         titleTextStyle={{ color: Themes.Colors.primary, fontSize: 25, fontWeight: 'bold' }}
         statusBarColor={Themes.Colors.transparent}
         statusBarProps={{ barStyle: "dark-content" }}>
         <View style={{ flex: 1, paddingHorizontal: 5, paddingBottom: 15, backgroundColor: global.colorFF }}>
-          <View style={{ flexDirection: 'row', width: '100%', justifyContent: 'space-between' }}>
+          <View style={{ flexDirection: 'row', width: '100%', justifyContent: 'space-between', borderBottomWidth: 3, borderBottomColor: global.color56A, marginBottom: 5 }}>
             <View style={{ flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', paddingRight: 10 }}>
               <IconButton nameIcon={Themes.Images.icNotificationOutLine} onClick={() => this.refs.selectLinkModal.openModal()} />
               <TextComponent text={45} style={{ position: 'absolute', backgroundColor: 'red', borderRadius: 10, minWidth: 20, padding: 2, left: 20, top: 0 }} />
@@ -370,9 +411,9 @@ export default class ClassDetailComponent extends Component {
             </TouchableOpacity>
             <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', paddingRight: 10 }}>
               <IconTooltip
-                style={{paddingRight: 15}}
+                style={{ paddingRight: 15 }}
                 onPress={this.onGetListFile}
-                textView={<TextComponent text={"Get list file"} style={{ textDecorationLine: 'underline', fontStyle: 'italic',  }} />}
+                textView={<TextComponent text={"Get list file"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', }} />}
               />
               {/* <IconTooltip
                 onPress={() => {
@@ -383,13 +424,11 @@ export default class ClassDetailComponent extends Component {
 
               <IconButton nameIcon={Themes.Images.icFolderEditProfile} onClick={this.openFile} btnStyle={{ paddingLeft: 15 }} />
             </View>
-            <View style={{ flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', paddingRight: 10 }}>
-              <IconButton nameIcon={Themes.Images.icSettingSetting} onClick={() => this.refs.setupModal.openModal()} />
-              <TextComponent text={45} style={{ position: 'absolute', backgroundColor: 'red', borderRadius: 10, minWidth: 20, padding: 2, left: 20, top: 0 }} />
-            </View>
+          
           </View>
-          <View style={{ flex: 1, borderWidth: 2, borderColor: global.color0B, backgroundColor: global.color0B }}>
-            {this.state.localFile !== "" && <DocumentView
+          <View style={{ flex: 1, backgroundColor: global.colorFF, justifyContent: 'flex-end' }}>
+            {this.state.localFile !== "" && 
+            <DocumentView
               ref={(c) => this._viewer = c}
               // document={resources['url']}
               document={this.state.localFile}
@@ -399,29 +438,29 @@ export default class ClassDetailComponent extends Component {
               leadingNavButtonIcon={Platform.OS === 'ios' ? 'ic_close_black_24px.png' : 'ic_arrow_back_white_24dp'}
               onLeadingNavButtonPressed={this.onLeadingNavButtonPressed}
             />}
-          </View>
-          {/* <View style={{ height: !this.state.fileUrl ? "25%" : this.state.isShowChat ? "30%" : 60, backgroundColor: global.colorF3, justifyContent: 'flex-end' }}>
-            <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 10 }}>
-              <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-                <TextComponent text={'Question: '} style={{ paddingRight: 15 }} />
-                <IconTooltip
-                  style={{ borderWidth: 1, justifyContent: 'center', padding: 5, borderRadius: 15, backgroundColor: 'white', borderColor: global.colorF4 }}
-                  onPress={this.onDownLoadFile}
-                  textView={<TextComponent text={"I have a question!"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', padding: 3 }} />}
+            <View style={{ backgroundColor: global.lightBlue, borderTopRightRadius: 15, borderTopLeftRadius: 15 }}>
+              <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: 10,}}>
+                  <TextComponent text={'Question: '} style={{ paddingRight: 15 }} />
+                  <IconTooltip
+                    style={{ borderWidth: 1, justifyContent: 'center', padding: 5, borderRadius: 15, backgroundColor: 'white', borderColor: global.colorF4 }}
+                    onPress={this.onIhaveAQuestion}
+                    textView={<TextComponent text={"I have a question!"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', padding: 3 }} />}
+                  />
+                </View>
+
+                <IconButton
+                  nameIcon={this.state.isShowChat ? Themes.Images.icArrowDownProfile : Themes.Images.icArrowDownProfile}
+                  btnStyle={!this.state.isShowChat ? { transform: [{ rotate: '180deg' }], paddingLeft: 25 } : {paddingRight: 25}}
+                  onClick={() => {
+                    this.setState({ isShowChat: !this.state.isShowChat })
+                  }}
                 />
               </View>
-
-              <IconButton
-                nameIcon={this.state.isShowChat ? Themes.Images.icArrowDownProfile : Themes.Images.icArrowDownProfile}
-                btnStyle={!this.state.isShowChat && { transform: [{ rotate: '180deg' }] }}
-                onClick={() => {
-                  this.state.fileUrl && this.setState({ isShowChat: !this.state.isShowChat })
-                }}
-              />
+              {this.state.isShowChat && this.renderListMessage()}
+              {this.state.isShowChat && this.renderToolbarInput()}
             </View>
-            {this.state.isShowChat && this.renderListMessage()}
-            {this.state.isShowChat && this.renderToolbarInput()}
-          </View> */}
+          </View>
           {this.state.isShowUserStatus && <View style={{
             position: 'absolute',
             bottom: 65,
@@ -434,6 +473,20 @@ export default class ClassDetailComponent extends Component {
             />
           </View>}
         </View>
+
+        {this.state.isShowPopupTest && <View style={{position: 'absolute', bottom: height*0.7, right: 25}}>
+          <LocationPulseLoader
+          backgroundColor={global.red}
+            item={
+              <TouchableOpacity 
+              onPress={this.createTest}
+              style={{width: 60, height: 60, backgroundColor: 'white',  borderRadius: 40, justifyContent: 'center', alignItems: 'center', borderWidth: 3, borderColor: 'red'}}>
+                  <TextComponent text={'Quick test!'} style={{fontWeight: 'bold', fontSize: 10, justifyContent: 'center', alignItems: 'center' }} textAlign={'center'} numberOfLines={2}/>
+              </TouchableOpacity>
+            }
+          />
+        </View>}
+    
         <ModalMenu
           ref={"modalConversationMenu"}
           onCreateTest={this.createTest}
@@ -446,7 +499,7 @@ export default class ClassDetailComponent extends Component {
           onSubmmit={this.onSubmitRollCall} />
         <ModalGetLink
           ref={'modalGetLink'}
-          styleModalPopupCustom={{ width: '95%', paddingLeft: 10, paddingRight: 10 }}
+          styleModalPopupCustom={{ width: '95%', paddingLeft: 5, paddingRight: 5, paddingTop: 5 }}
           onDownLoadFile={this.onDownLoadFile}
           onSubmmit={(link) => this.setState({ fileUrl: link })} />
         <SelectLinkModal
@@ -459,12 +512,19 @@ export default class ClassDetailComponent extends Component {
           onSelectFile={this.onSelectFileFromModal}
           type={'full'}
           ref={'downloadedFileModal'} />
-          <SetupModal
+        <SetupModal
           styleRefineModal={{ height: 800, backgroundColor: 'transparent' }}
+          onStartTest={this.onStartTest}
+          onStartRollCall={this.onStartRollCall}
           type={'full'}
           ref={'setupModal'} />
       </Container>
     );
+  }
+
+  onIhaveAQuestion=()=>{
+    let objMessage = {};
+    this.socket.emit("i have a question", JSON.stringify(objMessage));
   }
 
   onShowStatusPopup = () => {
@@ -518,23 +578,39 @@ export default class ClassDetailComponent extends Component {
   }
 
   componentDidMount() {
-    console.log('123')
+    // console.log('123')
     if (Platform.OS === 'android') {
       this.requestStoragePermission();
     }
     // this.keyboardWillShowListener = Keyboard.addListener('keyboardWillShow', this._keyboardWillShow.bind(this));
     // this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this._keyboardDidHide.bind(this));
-    this.socket = io("https://sidekickuit.herokuapp.com/");
+    // this.socket = io("https://stark-bayou-32028.herokuapp.com/");
+    this.socket = io("http://localhost:3000");
     this.socket.on("chat message", msg => {
       this.setState({ chatMessages: [...this.state.chatMessages, JSON.parse(msg)] });
     });
-    this.socket.on("roll call", msg => {
-      let objRollCall = JSON.parse(msg)
-      this.refs.modalInput.openModal(objRollCall.timeout, objRollCall.key);
-    });
+    if (this.props.userInfo.userType !== 0)
+    {
+      this.socket.on("roll call", msg => {
+        let objRollCall = JSON.parse(msg)
+        this.refs.modalInput && this.refs.modalInput.openModal(objRollCall.timeout, objRollCall.key);
+      });
+    }
+  
     this.socket.on("roll call success", msg => {
       this.setState({ memberInClass: this.state.memberInClass + 1 });
     });
+
+      this.socket.on("test", msg => {
+        console.log('test', this.socket)
+        let objRollCall = JSON.parse(msg)
+        this.setState({isShowPopupTest: true}, ()=>setTimeout(()=>this.setState({isShowPopupTest: false}), 10000))
+      });
+
+      this.socket.on("i have a question", msg => {
+        console.log('i have a question')
+        let objRollCall = JSON.parse(msg)
+      });
 
   }
   componentWillUnmount() {
@@ -555,12 +631,18 @@ export default class ClassDetailComponent extends Component {
 
   onStartRollCall = () => {
     let objMessage = { timeout: 1000, key: "123", };
-    console.log('000', this.socket)
+    // console.log('000', this.socket)
     this.socket.emit("roll call", JSON.stringify(objMessage));
   }
 
+  onStartTest = () => {
+    let objMessage = { timeout: 1000, key: "123", };
+    // console.log('000', this.socket)
+    this.socket.emit("test", JSON.stringify(objMessage));
+  }
+
   sendMessage() {
-    Keyboard.dismiss();
+    // Keyboard.dismiss();
     this.refs.flatList && this.refs.flatList.scrollToEnd();
     let objMessage = { user: this.props.userInfo, message: { body: this.state.text, type: this.state.setMessageType } };
     this.socket.emit("chat message", JSON.stringify(objMessage));
