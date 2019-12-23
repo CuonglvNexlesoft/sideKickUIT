@@ -50,8 +50,8 @@ export default class LoginComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            username: null,
-            password: null,
+            Username: null,
+            Password: null,
             // keyboard: false,
             focusUser: false,
             focusPass: false,
@@ -161,12 +161,12 @@ export default class LoginComponent extends Component {
                         <TextInput ref={ref => { this.txtUserName = ref }} style={[styles.input, { borderBottomWidth: this.state.focusUser ? 3 : 2, borderColor: this.state.focusUser ? '#070707' : Themes.Colors.grey }]}
                             autoCapitalize={'none'}
                             underlineColorAndroid={'transparent'}
-                            value={this.state.username}
-                            // placeholder={Strings.username}
+                            value={this.state.Username}
+                            // placeholder={Strings.Username}
                             placeholder={'mssv@gm.uit.com'}
                             returnKeyType={'next'}
                             onSubmitEditing={() => this.txtPassword.focus()}
-                            onChangeText={username => this.setState({ username })}
+                            onChangeText={Username => this.setState({ Username })}
                             onFocus={() => { this.setState({ focusUser: true, focusPass: false }) }}
                         />
                         <Image
@@ -177,11 +177,11 @@ export default class LoginComponent extends Component {
                         <TextInput ref={ref => { this.txtPassword = ref }} style={[styles.input, { marginTop: 20, borderBottomWidth: this.state.focusPass ? 3 : 2, borderColor: this.state.focusPass ? '#070707' : Themes.Colors.grey }]}
                             autoCapitalize={'none'}
                             underlineColorAndroid={'transparent'}
-                            value={this.state.password} secureTextEntry
-                            placeholder={Strings.password}
+                            value={this.state.Password} secureTextEntry
+                            placeholder={Strings.Password}
                             returnKeyType={'done'}
                             onSubmitEditing={() => this.onSubmit()}
-                            onChangeText={password => this.setState({ password })}
+                            onChangeText={Password => this.setState({ Password })}
                             onFocus={() => { this.setState({ focusUser: false, focusPass: true }) }}
                         />
                         <TouchableOpacity
@@ -288,29 +288,38 @@ export default class LoginComponent extends Component {
         const user = this.getUser();
         if (user) {
             // this.props.appActions.showLoading();
-            // console.log(this.props.userActions)
-            this.props.userActions.setUser(user).then(result => {
-                // this.props.appActions.hideLoading();
-                // Actions[ScreenName.DASHBOARD]();
-                Actions[ScreenName.DRAWER]({ type: ActionConst.RESET });
-            }, error => {
-                this.showError(error);
+            this.props.userActions.login(user).then(res=>{
+                if (res.data.msg === "Đăng nhập thành công!") {
+                    Actions[ScreenName.DRAWER]({ type: ActionConst.RESET });
+                    // this.props.userActions.setUser(res.user).then(result => {
+                    //     Actions[ScreenName.DRAWER]({ type: ActionConst.RESET });
+                    // });
+                }
+                else this.showError(error);
             });
+            // Actions[ScreenName.DRAWER]({ type: ActionConst.RESET });
+            // this.props.userActions.setUser(user).then(result => {
+            //     // this.props.appActions.hideLoading();
+            //     // Actions[ScreenName.DASHBOARD]();
+            //     // Actions[ScreenName.DRAWER]({ type: ActionConst.RESET });
+            // }, error => {
+            //     this.showError(error);
+            // });
         }
     }
 
 
     getUser() {
-        const { username, password } = this.state;
-        if (CommonUtils.isEmpty(username)) {
+        const { Username, Password } = this.state;
+        if (CommonUtils.isEmpty(Username)) {
             this.showError('Username Empty!');
             return false;
         }
-        if (CommonUtils.isEmpty(password)) {
+        if (CommonUtils.isEmpty(Password)) {
             this.showError('Password Empty!');
             return false;
         }
-        return { username, password };
+        return { Username, Password };
     }
 
     showError(message, timeout = 4000) {

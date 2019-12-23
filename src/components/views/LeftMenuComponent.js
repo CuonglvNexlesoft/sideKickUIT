@@ -124,7 +124,10 @@ export default class LeftMenuComponent extends Component {
             <View style={{justifyContent:'center', alignItems: 'center'}}>
                 <TouchableOpacity 
                 style={{borderWidth: 1, borderRadius: 20, width: 100, justifyContent:'center', alignItems: 'center'}}
-                onPress={()=>{ Actions[ScreenName.LOGIN]({ type: ActionConst.RESET });}}>
+                onPress={()=>{ 
+                    this.props.userActions.logout();
+                    Actions[ScreenName.LOGIN]({ type: ActionConst.RESET });
+                }}>
                     <Text>Logout!</Text>
                 </TouchableOpacity>
             </View>

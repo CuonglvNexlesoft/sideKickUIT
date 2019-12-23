@@ -19,21 +19,21 @@ dev.buildMode = 'DEV';
 dev.serverSchema = 'http';
 dev.apiPrefix = 'api';
 dev.uploadPrefix = 'uploads';
-dev.serverHost = 'golfnews.vn';
+dev.serverHost = '61.28.235.199:8989';
 
 const staging = {};
 staging.buildMode = 'STAGING';
 staging.serverSchema = 'http';
 staging.apiPrefix = 'api';
 staging.uploadPrefix = 'uploads';
-staging.serverHost = 'golfnews.vn';
+staging.serverHost = '61.28.235.199:8989';
 
 const production = {};
 production.buildMode = 'PRODUCTION';
 production.serverSchema = 'https';
 production.apiPrefix='api';
 production.uploadPrefix='uploads';
-production.serverHost = 'golfnews.vn';
+production.serverHost = '61.28.235.199:8989';
 
 //
 export const buildApp = (build) => {

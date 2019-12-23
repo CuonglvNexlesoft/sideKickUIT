@@ -107,6 +107,7 @@ export default class DashboardComponent extends Component {
         //     CommonUtils.log("=== ERROR:", error.message);
         //     this.showError(error.message || error);
         // });
+        this.props.classActions.getClassList()
     }
 
     onChangeTab(index, ref) {

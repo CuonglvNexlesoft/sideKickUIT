@@ -4,7 +4,7 @@ import {bindActionCreators} from "redux";
 import DashBoardComponent from '../../components/views/DashBoardComponent';
 
 import * as AppActions from '../../actions/AppActions';
-import * as ProductActions from '../../actions/ProductActions';
+import * as ClassActions from '../../actions/ClassActions';
 
 function mapStateToProps(rootState) {
     return {
@@ -17,7 +17,7 @@ function mapDispatchToProps(dispatch) {
 
     return {
         appActions: bindActionCreators(AppActions, dispatch),
-        productActions: bindActionCreators(ProductActions, dispatch),
+        classActions: bindActionCreators(ClassActions, dispatch),
     };
 }
 

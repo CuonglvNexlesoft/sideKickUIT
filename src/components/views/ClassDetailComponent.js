@@ -599,8 +599,8 @@ export default class ClassDetailComponent extends Component {
     }
     // this.keyboardWillShowListener = Keyboard.addListener('keyboardWillShow', this._keyboardWillShow.bind(this));
     // this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this._keyboardDidHide.bind(this));
-    // this.socket = io("https://stark-bayou-32028.herokuapp.com/");
-    this.socket = io("http://localhost:3000");
+    this.socket = io("https://stark-bayou-32028.herokuapp.com/");
+    // this.socket = io("http://localhost:3000");
     this.socket.on("chat message", msg => {
       this.setState({ chatMessages: [...this.state.chatMessages, JSON.parse(msg)] });
       console.log(JSON.parse(msg).message.type)

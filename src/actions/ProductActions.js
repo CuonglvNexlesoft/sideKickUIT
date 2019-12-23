@@ -1,7 +1,7 @@
 import { PRODUCT } from '../constants/ActionTypes';
 import * as CommonUtils from '../utils/CommonUtils';
 import GlobalKeys from '../constants/GlobalKeys';
-import ProductService from '../services/ProductService';
+// import ProductService from '../services/ProductService';
 import { showLoading, hideLoading } from './AppActions';
 import {findIndex} from 'lodash';
 
@@ -71,16 +71,16 @@ export function removeProducts() {
     }
 }
 
-export function fetchProducts(pageNumber, pageSize) {
-    return dispatch => {
-        dispatch(showLoading())
-        return ProductService.fetchProducts({ pageNumber, pageSize }).then(products => {
-            dispatch(setProducts(products));
-            dispatch(hideLoading())
-            return products;
-        }, error => {
-            console.log("ACTION FETCH PRODUCTS ERROR", error);
-            throw error;
-        })
-    }
-}
+// export function fetchProducts(pageNumber, pageSize) {
+//     return dispatch => {
+//         dispatch(showLoading())
+//         return ProductService.fetchProducts({ pageNumber, pageSize }).then(products => {
+//             dispatch(setProducts(products));
+//             dispatch(hideLoading())
+//             return products;
+//         }, error => {
+//             console.log("ACTION FETCH PRODUCTS ERROR", error);
+//             throw error;
+//         })
+//     }
+// }

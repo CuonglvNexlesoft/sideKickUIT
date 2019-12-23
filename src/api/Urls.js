@@ -1,6 +1,6 @@
 import BuildUtils from '../utils/BuildUtils';
 
-export const getURL = (url, splitSign = ':') => BuildUtils.build.serverSchema + splitSign + url;
+export const getURL = (url, splitSign = ':') => BuildUtils.build.serverSchema + splitSign + url + '/' + BuildUtils.build.apiPrefix;
 
 export const SERVER_URL = getURL(BuildUtils.build.serverHost, '://');
 
@@ -32,5 +32,9 @@ export default {
         getShipHistories: 'trips',
         status: 'trips/status',
         getStatus: 'trips/getstatus',
-    }
+    },
+
+    logginUser: "User/Login",
+    logoutUser: "User/Logout"
+    ,getClassList: "LopHoc/GetDanhSachLopHoc"
 };
