@@ -15,5 +15,10 @@
   "signup2":"ĐĂNG KÍ",
   "forgotPassword":"Quên mật khẩu ?",
   "enterYourEmail":"Điền e-mail của bạn ở đây",
-  "fullname_signup":"HỌ TÊN"
+  "fullname_signup":"HỌ TÊN",
+  "logout":"Đăng xuất"
+  ,"theme": "Chủ đề:"
+  ,"home": "Trang chủ"
+  ,"newfeed": "Tin tức"
+  ,"account": "Tài khoản"
 }

@@ -89,7 +89,7 @@ LocationPulseLoader.defaultProps = {
   pressDuration: 100,
   pressInEasing: Easing.in,
   pressOutEasing: Easing.in,
-  borderColor: '#7BCB45',
+  borderColor: '#f54242',
   backgroundColor: '#7BCB45',
   getStyle: undefined,
 };

@@ -59,9 +59,9 @@ export default class HomeComponent extends Component {
   }
 
   onPressNext(item, index) {
-    if(index == 0)
-    Actions[ScreenName.SETUP]({ class: item })
-    else
+    // if(index == 0)
+    // Actions[ScreenName.SETUP]({ class: item })
+    // else
     Actions[ScreenName.DETAIL]({ class: item })
   }
 
@@ -191,7 +191,7 @@ export default class HomeComponent extends Component {
           </View>
         </TouchableOpacity> */}
         <FlatList
-          data={this.state.users}
+          data={this.state.users.filter(e=>e.name.includes(this.state.text))}
           extraData={this.state}
           showsVerticalScrollIndicator={false}
           renderItem={({ item, index }) =>

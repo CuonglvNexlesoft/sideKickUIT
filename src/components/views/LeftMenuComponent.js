@@ -72,7 +72,7 @@ export default class LeftMenuComponent extends Component {
     renderSettings() {
         const { settings } = this.state;
         return (
-            <View style={{ flex: 1, paddingTop: 25, paddingHorizontal: 15}}>
+            <View style={{ flex: 1, paddingTop: 25, paddingHorizontal: 15, paddingBottom: 50}}>
                 {/* {this.renderLanguages()} */}
                 <View style={{  flexDirection: 'row' , alignItems: 'center'}}>
                     <View>
@@ -94,6 +94,7 @@ export default class LeftMenuComponent extends Component {
                     </View>
                 </View>
                 {this.renderChangeTheme()}
+                {this.renderLanguages()}
                 {this.renderLogout()}
             </View>
         )
@@ -102,9 +103,9 @@ export default class LeftMenuComponent extends Component {
     renderChangeTheme(){
         return (
             <View style={{justifyContent: 'flex-start', paddingVertical: 15}}>
-                <TextComponent text={'Themes:'}/>
+                <TextComponent text={Strings.theme}/>
                 <View style={{paddingLeft: 60, flexDirection: 'row'}}>
-                    <View style={{width: 25, height: 25, backgroundColor: global.color0B, marginRight: 5}}/>
+                    <View style={{width: 25, height: 25, backgroundColor: 'rgb(156,156,156)', marginRight: 5}}/>
                     <View style={{width: 25, height: 25, backgroundColor: global.red, marginRight: 5}}/>
                     <View style={{width: 25, height: 25, backgroundColor: global.green, marginRight: 5}}/>
                     <View style={{width: 25, height: 25, backgroundColor: global.colorFF8, marginRight: 5}}/>
@@ -121,14 +122,14 @@ export default class LeftMenuComponent extends Component {
 
     renderLogout(){
         return (
-            <View style={{justifyContent:'center', alignItems: 'center'}}>
+            <View style={{justifyContent:'center', alignItems: 'center', paddingTop: 40}}>
                 <TouchableOpacity 
-                style={{borderWidth: 1, borderRadius: 20, width: 100, justifyContent:'center', alignItems: 'center'}}
+                style={{borderWidth: 1, borderRadius: 20, width: 100, justifyContent:'center', alignItems: 'center', padding: 5, backgroundColor: global.red}}
                 onPress={()=>{ 
                     this.props.userActions.logout();
                     Actions[ScreenName.LOGIN]({ type: ActionConst.RESET });
                 }}>
-                    <Text>Logout!</Text>
+                    <Text>{Strings.logout}</Text>
                 </TouchableOpacity>
             </View>
         )

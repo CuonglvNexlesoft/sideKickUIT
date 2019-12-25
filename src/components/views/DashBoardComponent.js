@@ -47,7 +47,7 @@ export default class DashboardComponent extends Component {
     }
 
     render() {
-        const tabLabels = ['HOME', 'News feed', 'Account', 'SCORES', 'MENU']; // [Strings.checklist, Strings.notifications, Strings.favorite, Strings.admin]
+        const tabLabels = [Strings.home, Strings.newfeed, Strings.account, 'SCORES', 'MENU']; // [Strings.checklist, Strings.notifications, Strings.favorite, Strings.admin]
         const initialTab = 0;
         const {activeTab} = this.state;
         return (

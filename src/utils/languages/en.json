@@ -15,5 +15,10 @@
   "signup2":"SIGN UP",
   "forgotPassword":"Forgot Password ?",
   "enterYourEmail": "Your e-mail goes here",
-  "fullname_signup":"FULL NAME"
+  "fullname_signup":"FULL NAME",
+  "logout":"Log out"
+  ,"theme": "Theme:"
+  ,"home": "Home"
+  ,"newfeed": "News feed"
+  ,"account": "Account"
 }

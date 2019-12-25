@@ -137,7 +137,7 @@ export default class ClassDetailComponent extends Component {
                     isDynamicallyAvatar
                   />
                 </View>
-                <View style={{ justifyContent: 'center', borderRadius: 10, borderWidth: 1, backgroundColor: 'white', padding: 5 }}>
+                <View style={{ justifyContent: 'center', borderRadius: 10, backgroundColor: global.colorEb, padding: 5 }}>
                   <Text style={styles.name}>{item.user.displayName}</Text>
                   <Text numberOfLines={5} style={{ fontStyle: 'italic' }}>{item.message.body}</Text>
                   <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
@@ -201,7 +201,7 @@ export default class ClassDetailComponent extends Component {
       <FlatList
         ref={'flatList'}
         data={this.state.chatMessages}
-        style={{ height: 200, backgroundColor: 'white', paddingHorizontal: 15, borderWidth: 1, borderColor: global.lightBlue }}
+        style={{ maxHeight: 400, backgroundColor: 'white', paddingHorizontal: 15, borderWidth: 1, borderColor: global.lightBlue }}
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => this.renderItemMessage(item)
         }
@@ -383,7 +383,7 @@ export default class ClassDetailComponent extends Component {
         }
         headerRight={
           
-          this.props.userInfo.userType === 0 && 
+          // this.props.userInfo.userType === 0 && 
           <IconButton nameIcon={Themes.Images.icSettings} 
           iconSize={{height: 25, width: 25}}
           // onClick={() => this.refs.modalConversationMenu.showModal()} 
@@ -486,14 +486,16 @@ export default class ClassDetailComponent extends Component {
           </View>}
         </View>
 
-        {this.state.isShowPopupTest && <View style={{position: 'absolute', bottom: height*0.7, right: 25}}>
+        {this.state.isShowPopupTest && <View style={{position: 'absolute', bottom: height*0.8, right: 30}}>
           <LocationPulseLoader
           backgroundColor={global.red}
             item={
               <TouchableOpacity 
               onPress={this.createTest}
-              style={{width: 60, height: 60, backgroundColor: 'white',  borderRadius: 40, justifyContent: 'center', alignItems: 'center', borderWidth: 3, borderColor: 'red'}}>
-                  <TextComponent text={'Quick test!'} style={{fontWeight: 'bold', fontSize: 10, justifyContent: 'center', alignItems: 'center' }} textAlign={'center'} numberOfLines={2}/>
+              style={{width: 50, height: 50, backgroundColor: 'white',  borderRadius: 40, justifyContent: 'center', alignItems: 'center', borderWidth: 3, borderColor: '#f54242'}}
+              >
+                  {/* <TextComponent text={'Quick test!'} style={{fontWeight: 'bold', fontSize: 10, justifyContent: 'center', alignItems: 'center' }} textAlign={'center'} numberOfLines={2}/> */}
+                  <IconButton nameIcon={Themes.Images.icEditNotesProfile}/>
               </TouchableOpacity>
             }
           />
@@ -669,7 +671,7 @@ export default class ClassDetailComponent extends Component {
   }
 
   sendMessage() {
-    // Keyboard.dismiss();
+    Keyboard.dismiss();
     this.refs.flatList && this.refs.flatList.scrollToEnd();
     let objMessage = { user: this.props.userInfo, message: { body: this.state.text, type: this.state.setMessageType } };
     this.socket.emit("chat message", JSON.stringify(objMessage));

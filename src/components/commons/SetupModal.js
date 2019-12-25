@@ -119,7 +119,7 @@ export default class  SetupModal extends ModalRefine {
       enableRemind: true,
       arrLink: [],
       text: '',
-      selectTimeTest: 0,
+      selectTimeTest: null,
       note: ''
     };
     this.backdropOpacity = 0.5;
@@ -254,6 +254,11 @@ onNotifyLink=()=>{
         link: "https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf"
       }
     ]
+    const onSelectFilter = index => {
+      this.setState({
+        selectTimeTest: index,
+      });
+    };
     return (
           <View style={{ flex: 1, backgroundColor: 'white' }}>
             {/* <FlatList
@@ -370,7 +375,11 @@ onNotifyLink=()=>{
               circleColorOn={global.colorFF}
               switchOn={this.state.enableTest}
               onPress={
-                this.onStartTest
+                ()=>{
+                  this.setState({
+                    enableTest:  true
+                  })
+                }
               }
             />
             {this.state.enableTest && <View style={{ paddingVertical: 10, width: 180 }}>
@@ -385,6 +394,7 @@ onNotifyLink=()=>{
                 onClickAction={
                   () => {
                     onSelectFilter(0);
+                    this.onStartTest();
                   }
                 }
               />
@@ -399,6 +409,7 @@ onNotifyLink=()=>{
                 onClickAction={
                   () => {
                     onSelectFilter(1);
+                    this.onStartTest();
                   }
                 }
               />
@@ -413,6 +424,7 @@ onNotifyLink=()=>{
                 onClickAction={
                   () => {
                     onSelectFilter(2);
+                    this.onStartTest();
                   }
                 }
               />

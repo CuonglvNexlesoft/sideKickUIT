@@ -63,7 +63,9 @@ export default class MenuComponent extends Component {
                 </View>
                 <View style={{ flexDirection: 'row', justifyContent: 'space-around', paddingBottom: 25 }}>
                     <View style={{}}>
-                        <IconButton nameIcon={Images.icSettingSetting} />
+                        <IconButton 
+                        onClick={()=>Actions.drawerOpen()}
+                        nameIcon={Images.icSettingSetting} />
                         <TextComponent text={"Settings"} />
                     </View>
                     <View style={{ width: 80, height: 80, backgroundColor: '#2db300', borderRadius: 50, justifyContent: 'center' }}>
@@ -81,8 +83,11 @@ export default class MenuComponent extends Component {
                 <View style={{ alignItems: 'center', justifyContent: 'center' }}>
                     <View style={{ width: '80%', paddingBottom: 30 }}>
                         <TextComponent text={"MSSV: "} style={{ color: '#73264b', position: 'absolute', backgroundColor: 'white', zIndex: 10, top: -8, left: 20, textAlign: 'center', paddingHorizontal: 10, fontStyle: 'italic', }} />
-                        <LinearGradient start={[0, 0.5]}
-                            end={[1, 0.5]}
+                        <LinearGradient 
+                            // start={[0, 0.5]}
+                            // end={[1, 0.5]}
+                            start={{ x: 0, y: 0 }}
+                            end={{ x: 1, y: 0 }}
                             colors={['#cc0099', '#4AAE9B']}
                             style={{ borderRadius: 50, height: 34, width: '100%' }}>
                             <View style={{
@@ -99,8 +104,11 @@ export default class MenuComponent extends Component {
                     </View>
                     <View style={{ width: '80%', paddingBottom: 30 }}>
                         <TextComponent text={"E-mail: "} style={{ color: '#73264b', position: 'absolute', backgroundColor: 'white', zIndex: 10, top: -8, left: 20, textAlign: 'center', paddingHorizontal: 10, fontStyle: 'italic', }} />
-                        <LinearGradient start={[0, 0.5]}
-                            end={[1, 0.5]}
+                        <LinearGradient 
+                            // start={[0, 0.5]}
+                            // end={[1, 0.5]}
+                            start={{ x: 0, y: 0 }}
+                            end={{ x: 1, y: 0 }}
                             colors={['#cc0099', '#4AAE9B']}
                             style={{ borderRadius: 50, height: 34, width: '100%' }}>
                             <View style={{
@@ -117,8 +125,11 @@ export default class MenuComponent extends Component {
                     </View>
                     <View style={{ width: '80%', paddingBottom: 30 }}>
                         <TextComponent text={"Phone: "} style={{ color: '#73264b', position: 'absolute', backgroundColor: 'white', zIndex: 10, top: -8, left: 20, textAlign: 'center', paddingHorizontal: 10, fontStyle: 'italic', }} />
-                        <LinearGradient start={[0, 0.5]}
-                            end={[1, 0.5]}
+                        <LinearGradient 
+                            // start={[0, 0.5]}
+                            // end={[1, 0.5]}
+                            start={{ x: 0, y: 0 }}
+                            end={{ x: 1, y: 0 }}
                             colors={['#cc0099', '#4AAE9B']}
                             style={{ borderRadius: 50, height: 34, width: '100%' }}>
                             <View style={{
