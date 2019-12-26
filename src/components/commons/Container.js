@@ -68,7 +68,7 @@ export default class Container extends React.Component {
         return (
             <KeyboardAvoidingView behavior={'padding'} {...this.props} style={[styles.container, (this.props.style || null), {marginBottom: Platform.OS == 'ios' ? keyboardHeight : null}]}>
                 {this.props.hadStatusBar &&
-                    <StatusBar backgroundColor={statusBarColor} barStyle="light-content"
+                    <StatusBar backgroundColor={statusBarColor} barStyle="dark-content"
                         style={[styles.statusBar, (this.props.statusBarStyle || null)]} {...this.props.statusBarProps} />
                 }
                 {this.props.hadHeader &&

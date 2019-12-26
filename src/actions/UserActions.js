@@ -46,6 +46,22 @@ export function login(params){
     };
 }
 
+export function updateUserInfo(params){
+    return dispatch => {
+        return UserService.updateUserInfo(params).then(res => {
+            console.log('updateUserInfo',res)
+            if (res.status === 200) {
+                // let mappingUser = new User(res.data.user);
+                // console.log(mappingUser)
+                // dispatch(setUserData(mappingUser));
+            } else {
+                console.log("ERROR: login fail", res.data.msg);
+            }
+            return res;
+        });
+    };
+}
+
 export function logout(params){
     return dispatch => {
         return UserService.logout({

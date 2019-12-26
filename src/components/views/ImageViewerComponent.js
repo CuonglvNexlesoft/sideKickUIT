@@ -40,7 +40,7 @@ export default class ImageViewer extends React.Component {
         const loading = this.state.loading;
         return (
             <View style={styles.container}>
-                <StatusBar backgroundColor={'#000000'} barStyle="light-content" />
+                <StatusBar backgroundColor={'#000000'} barStyle="dark-content" />
                 {this.renderContents()}
             </View>
         )

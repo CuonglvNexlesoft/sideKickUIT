@@ -178,6 +178,7 @@ export default class DownloadedFileModal extends ModalRefine {
     ]
     return (
           <View style={{ flex: 1, backgroundColor: 'white' }}>
+           {this.props.listDownloadedFile.length > 0 &&
             <FlatList
               ref={'flatList'}
               data={this.props.listDownloadedFile}
@@ -185,7 +186,7 @@ export default class DownloadedFileModal extends ModalRefine {
               showsVerticalScrollIndicator={false}
               renderItem={({ item }) => this.renderItemMessage(item)
               }
-            />
+            />}
           </View>
     );
   }

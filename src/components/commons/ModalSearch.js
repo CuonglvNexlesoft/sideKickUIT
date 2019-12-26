@@ -23,6 +23,7 @@ import HeaderRefineModal from "../../components/modules/HeaderRefineModal";
 // import ButtonGroup from "../buttons/ButtonGroup";
 import PropTypes from 'prop-types';
 import global from "../../components/commons/_var";
+import { WebView } from 'react-native-webview';
 // import FooterRefineModal from "../../modules/FooterRefineModal/index";
 // import ButtonOutline from "../buttons/ButtonOutline";
 // import * as CONSTANTS from '../../../../redhotpie-shared-lib/constants/constants';
@@ -924,12 +925,14 @@ export default class SearchModal extends ModalRefine {
 
     renderContent() {
         return (
-            <View style={{backgroundColor: 'white', flex: 1}}>
-                <ScrollView>
-                    <View style={{flex: 1, backgroundColor: 'red'}}>
-                    </View>
-                </ScrollView>
-            </View>
+            // <View style={{backgroundColor: 'white', flex: 1}}>
+            //     <ScrollView>
+                <WebView
+                    source={{ uri: 'https://daa.uit.edu.vn/thongbaochinhquy' }}
+                    style={{ flex: 1 }}
+                />
+                /* </ScrollView>
+            </View> */
         );
     }
 

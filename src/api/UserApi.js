@@ -9,6 +9,9 @@ class UserApi extends BaseApi {
     logout(params){
       return super.execute(this.Methods.POST, this.Urls.logoutUser, null, params);
   }
+  updateUserInfo(params){
+    return super.execute(this.Methods.POST, this.Urls.updateUserInfo, null, params);
+}
 
 }
 

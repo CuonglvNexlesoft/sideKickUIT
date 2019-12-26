@@ -58,6 +58,7 @@
     "react-native-swiper": "^1.5.14",
     "react-native-vector-icons": "^4.6.0",
     "react-native-view-pdf": "^0.10.1",
+    "react-native-webview": "^8.0.1",
     "react-navigation": "2.2.5",
     "react-navigation-redux-helpers": "1.1.2",
     "react-redux": "^5.0.7",

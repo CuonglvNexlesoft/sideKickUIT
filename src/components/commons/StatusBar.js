@@ -9,7 +9,7 @@ export default class StatusBarLight extends React.Component {
                 <Image style={styles.statusBarBG} source={this.props.source}>
                     <StatusBar animated
                         backgroundColor="rgba(0,0,0,0)"
-                        barStyle="light-content"
+                        barStyle="dark-content"
                         translucent={true}
                         {...this.props}
                     />
