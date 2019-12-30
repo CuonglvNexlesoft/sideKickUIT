@@ -3,6 +3,7 @@ import {bindActionCreators} from "redux";
 
 import MenuComponent from '../../components/tabs/MenuComponent';
 import * as AppActions from '../../actions/AppActions';
+import * as UserActions from '../../actions/UserActions';
 
 function mapStateToProps(rootState) {
     return {
@@ -15,6 +16,7 @@ function mapDispatchToProps(dispatch) {
 
     return {
         appActions: bindActionCreators(AppActions, dispatch),
+        userActions: bindActionCreators(UserActions, dispatch),
     };
 }
 

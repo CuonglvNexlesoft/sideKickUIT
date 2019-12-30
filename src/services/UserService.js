@@ -13,6 +13,12 @@ class UserService extends BaseService {
             return result;
         }, this.handleError)
     }
+    signUp(params){
+        return UserApi.signUp(params).then(result => {
+            // console.log('asdasdas', result)
+            return result;
+        }, this.handleError)
+    }
     updateUserInfo(params){
         return UserApi.updateUserInfo(params).then(result => {
             // console.log('asdasdas', result)

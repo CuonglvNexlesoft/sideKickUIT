@@ -5,12 +5,13 @@ import {
     TouchableOpacity,
     Image, ListView,
     Modal, StyleSheet,
+    Dimensions
 } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import shorthand from 'react-native-styles-shorthand';
 
 import * as Themes from './../../themes';
-
+const {height}=Dimensions.get('window')
 export default class Header extends React.Component {
     constructor(props) {
         super(props);
@@ -60,7 +61,7 @@ const styles = EStyleSheet.create(shorthand({
         height: Themes.Metrics.headerHeight,
         width: '100%',
         '@media ios': {
-            marginTop: 32,
+            marginTop: height > 810 ? 32 : 20,
         },
     },
     headerBg: {

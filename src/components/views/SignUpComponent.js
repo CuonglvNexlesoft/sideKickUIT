@@ -57,7 +57,8 @@ export default class SignUpComponent extends Component {
             focusEmail: false,
             focusFullname: false,
             focusPass: false,
-            borderTextinputColor: '#070707'
+            borderTextinputColor: '#070707',
+            isSecureTextEntry: true
         };
     }
 
@@ -124,8 +125,8 @@ export default class SignUpComponent extends Component {
             <View style={styles.inputPanel}>
                 <View style={{ marginBottom: 5 }}>
                     <View style={{ flex: 1 }}>
-                        <View style={{ height: 70 }}>
-                            <View style={{ height: 20, justifyContent: 'center' }}>
+                        <View style={{ height: 80 }}>
+                            <View style={{ height: Platform.OS === 'android' ? 20 : 30, justifyContent: 'center', paddingTop: 10 }}>
                                 <Text style={{ fontSize: 12.5, fontFamily: Themes.Fonts.type.light }}>{Strings.fullname_signup}</Text>
                             </View>
                             <TextInput ref={ref => { this.txtFullname = ref }} style={[styles.input, { borderBottomWidth: this.state.focusFullname ? 3 : 2, borderColor: this.state.focusFullname ? '#070707' : Themes.Colors.grey }]}
@@ -140,21 +141,24 @@ export default class SignUpComponent extends Component {
                                 onFocus={() => { this.setState({ focusEmail: false, focusPass: false, focusFullname: true }) }}
                             />
                         </View>
-                        <View style={{ height: 70 }}>
-                            <View style={{ height: 20, justifyContent: 'center' }}>
+                        <View style={{ height: 80 }}>
+                            <View style={{ height: Platform.OS === 'android' ? 20 : 30, justifyContent: 'center', paddingTop: 10 }}>
                                 <Text style={{ fontSize: 12.5 }}>{Strings.password.toUpperCase()}</Text>
                             </View>
                             <TextInput ref={ref => { this.txtPassword = ref }} style={[styles.input, { borderBottomWidth: this.state.focusPass ? 3 : 2, borderColor: this.state.focusPass ? '#070707' : Themes.Colors.grey }]}
                                 autoCapitalize={'none'}
                                 underlineColorAndroid={'transparent'}
-                                value={this.state.password} secureTextEntry
+                                value={this.state.password} 
+                                secureTextEntry={this.state.isSecureTextEntry}
                                 placeholder={Strings.password}
                                 returnKeyType={'next'}
                                 onSubmitEditing={() => this.txtEmail.focus()}
                                 onChangeText={password => this.setState({ password })}
                                 onFocus={() => { this.setState({ focusEmail: false, focusPass: true, focusFullname: false }) }}
                             />
-                            <TouchableOpacity style={{ position: 'absolute', top: 20, width: 20, alignSelf: 'flex-end', backgroundColor: 'transparent' }}>
+                            <TouchableOpacity 
+                            onPress={()=>this.setState({ isSecureTextEntry: !this.state.isSecureTextEntry})}
+                            style={{ position: 'absolute', top: 20, width: 20, alignSelf: 'flex-end', backgroundColor: 'transparent' }}>
                                 <Image
                                     style={{ width: 20, backgroundColor: 'transparent' }}
                                     resizeMode={'contain'}
@@ -162,8 +166,8 @@ export default class SignUpComponent extends Component {
                                 />
                             </TouchableOpacity>
                         </View>
-                        <View style={{ height: 70, justifyContent: 'center' }}>
-                            <View style={{ height: 20 }}>
+                        <View style={{ height: 80, justifyContent: 'center' }}>
+                            <View style={{ height: Platform.OS === 'android' ? 20 : 30, paddingTop: 10 }}>
                                 <Text style={{ fontSize: 12.5 }}>E-MAIL</Text>
                             </View>
                             <TextInput ref={ref => { this.txtEmail = ref }} style={[styles.input, { borderBottomWidth: this.state.focusEmail ? 3 : 2, borderColor: this.state.focusEmail ? '#070707' : Themes.Colors.grey }]}
@@ -245,12 +249,14 @@ export default class SignUpComponent extends Component {
     }
 
     onSubmit() {
+        // Actions[ScreenName.DRAWER]({ type: ActionConst.RESET });
         const user = this.getUser();
+        console.log(user)
         if (user) {
-            this.props.appActions.showLoading();
-            console.log(this.props.userActions)
-            this.props.userActions.setUser(user).then(result => {
-                this.props.appActions.hideLoading();
+            // this.props.appActions.showLoading();
+            // console.log(this.props.userActions)
+            this.props.userActions.signUp(user).then(result => {
+                // this.props.appActions.hideLoading();
                 Actions[ScreenName.DRAWER]({ type: ActionConst.RESET });
             }, error => {
                 this.showError(error);
@@ -260,7 +266,7 @@ export default class SignUpComponent extends Component {
 
 
     getUser() {
-        const { fullname, password } = this.state;
+        const { fullname, password, email } = this.state;
         if (CommonUtils.isEmpty(fullname)) {
             this.showError('Username Empty!');
             return false;
@@ -269,7 +275,7 @@ export default class SignUpComponent extends Component {
             this.showError('Password Empty!');
             return false;
         }
-        return { fullname, password };
+        return { Username: fullname, Password: password, Email: email };
     }
 
     showError(message, timeout = 4000) {
@@ -306,7 +312,7 @@ const styles = EStyleSheet.create(shorthand({
     },
     input: {
         width: '100%',
-        height: 30,
+        height: 40,
         marginTop: 5,
         marginBottom: 15,
         backgroundColor: Themes.Colors.background,

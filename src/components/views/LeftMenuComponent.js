@@ -5,6 +5,8 @@ import {
     TouchableOpacity,
     StyleSheet,
     PixelRatio,
+    Platform,
+    Dimensions
 } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import shorthand from 'react-native-styles-shorthand';
@@ -27,7 +29,7 @@ import TextComponent from '../commons/Text';
 import global from '../commons/_var'
 import Avatar from '../commons/Avatar';
 const defaultImage = Themes.Images.default_avatar;
-
+const {height}=Dimensions.get('window')
 const locales = [
     { locale: 'en-US', name: 'english' },
     { locale: 'vi-VN', name: 'vietnamese' },
@@ -72,7 +74,7 @@ export default class LeftMenuComponent extends Component {
     renderSettings() {
         const { settings } = this.state;
         return (
-            <View style={{ flex: 1, paddingTop: 25, paddingHorizontal: 15, paddingBottom: 50}}>
+            <View style={{ flex: 1, paddingHorizontal: 15, paddingBottom: 50}}>
                 {/* {this.renderLanguages()} */}
                 <View style={{  flexDirection: 'row' , alignItems: 'center'}}>
                     <View>
@@ -277,7 +279,7 @@ LeftMenuComponent.defaultProps = {
 const styles = EStyleSheet.create(shorthand({
     container: {
         maxWidth: Themes.Metrics.leftMenuWidth,
-        marginTop: 32
+        marginTop: Platform.OS === 'android' ? 20 :  height > 810 ? 45 : 32
     },
     contents: {
         flex: 1

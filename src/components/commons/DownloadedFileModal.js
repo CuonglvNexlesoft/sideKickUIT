@@ -109,12 +109,14 @@ export default class DownloadedFileModal extends ModalRefine {
   }
 
   renderItemMessage(item) {
+    let _name = item.name ? item.name.toString() : "Noname";
+    let _time = item.ctime ? item.ctime.toString() : "None";
     return (
       <View style={{}}>
         <FillterSortItem
           style={{ paddingBottom: 15, paddingTop: 15 }}
           divider={false}
-          textLeft={item.name.toString()}
+          textLeft={_name}
           styleLeftTextProperty={[{
             lineHeight: 17,
             // fontFamily: global.fontBold,
@@ -126,7 +128,7 @@ export default class DownloadedFileModal extends ModalRefine {
             width: 350
           }]}
           numberOfLinesTextLeft={2}
-          textLeftSub={item.ctime.toString()}
+          textLeftSub={_time}
           numberOfLinesTextSubLeft={2}
           // itemRight={
           //   <View style={{ justifyContent: 'space-between', alignItems: 'center',}}>
@@ -176,9 +178,10 @@ export default class DownloadedFileModal extends ModalRefine {
         link: "https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf"
       }
     ]
+    console.log(this.props.listDownloadedFile)
+    if(this.props.listDownloadedFile.length === 0) return null;
     return (
           <View style={{ flex: 1, backgroundColor: 'white' }}>
-           {this.props.listDownloadedFile.length > 0 &&
             <FlatList
               ref={'flatList'}
               data={this.props.listDownloadedFile}
@@ -186,7 +189,7 @@ export default class DownloadedFileModal extends ModalRefine {
               showsVerticalScrollIndicator={false}
               renderItem={({ item }) => this.renderItemMessage(item)
               }
-            />}
+            />
           </View>
     );
   }
@@ -199,4 +202,8 @@ export default class DownloadedFileModal extends ModalRefine {
 DownloadedFileModal.proptypes = {
   dataCount: PropTypes.object,
   openFolderModal: PropTypes.func
+};
+
+DownloadedFileModal.defaultProps = {
+  listDownloadedFile: []
 };

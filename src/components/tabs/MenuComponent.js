@@ -26,8 +26,13 @@ export default class MenuComponent extends Component {
 
     constructor(props) {
         super(props);
+        const { userInfo } = props;
+        console.log('userInfo', userInfo)
         this.state = {
-            isEditInfo: false
+            isEditInfo: false,
+            textEmail: userInfo.email.toString(),
+            textPhone: userInfo.phoneNumber.toString(),
+            textAddress: userInfo.address.toString(),
         };
     }
 
@@ -44,7 +49,16 @@ export default class MenuComponent extends Component {
         }
         return (
             <View style={[styles.container, { backgroundColor: 'white' }]}>
-                <View style={{ paddingVertical: 15, flexDirection: 'row' }}>
+                <TextInput
+                                        style={{
+                                            height: 40,
+                                            backgroundColor: 'red'
+                                        }}
+                                        placeholder={this.state.textEmail}
+                                        onChangeText={text => this.onChangeTextEmail(text)}
+                                        value={this.state.textEmail}
+                                    />
+                {/* <View style={{ paddingVertical: 15, flexDirection: 'row' }}>
                     <View>
                         <Avatar
                             ref="avatar"
@@ -86,9 +100,9 @@ export default class MenuComponent extends Component {
                         <IconButton nameIcon={Images.icEditSetting} disabled />
                         <TextComponent text={Strings.editInfo} />
                     </TouchableOpacity>
-                </View>
+                </View> */}
 
-                <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+                {/* <View style={{ alignItems: 'center', justifyContent: 'center' }}>
                     <View style={{ width: '80%', paddingBottom: 30 }}>
                         <TextComponent text={"MSSV: "} style={{ color: '#73264b', position: 'absolute', backgroundColor: 'white', zIndex: 10, top: -8, left: 20, textAlign: 'center', paddingHorizontal: 10, fontStyle: 'italic', }} />
                         <LinearGradient
@@ -128,14 +142,16 @@ export default class MenuComponent extends Component {
                                 height: 30
                             }}>
                                 {!this.state.isEditInfo ?
-                                    <TextComponent text={userInfo.email} style={{ fontWeight: 'bold' }} />
+                                    <TextComponent text={this.state.textEmail} style={{ fontWeight: 'bold' }} />
                                     :
                                     <TextInput
                                         style={{
+                                            height: 40,
+                                            backgroundColor: 'red'
                                         }}
-                                        placeholder={userInfo.email}
-                                        onChangeText={text => this.onChangeText(text)}
-                                        value={this.state.text}
+                                        placeholder={this.state.textEmail}
+                                        onChangeText={text => this.onChangeTextEmail(text)}
+                                        value={this.state.textEmail}
                                     />}
                             </View>
                         </LinearGradient>
@@ -158,14 +174,15 @@ export default class MenuComponent extends Component {
                                 height: 30
                             }}>
                                 {!this.state.isEditInfo ?
-                                    <TextComponent text={userInfo.address} style={{ fontWeight: 'bold' }} />
+                                    <TextComponent text={this.state.textAddress} style={{ fontWeight: 'bold' }} />
                                     :
                                     <TextInput
                                         style={{
+                                            height: 40
                                         }}
-                                        placeholder={userInfo.address}
-                                        onChangeText={text => this.onChangeText(text)}
-                                        value={this.state.text}
+                                        placeholder={this.state.textAddress}
+                                        onChangeText={text => this.onChangeTextAddress(text)}
+                                        value={this.state.textAddress}
                                     />}
                             </View>
                         </LinearGradient>
@@ -188,31 +205,28 @@ export default class MenuComponent extends Component {
                                 height: 30
                             }}>
                                 {!this.state.isEditInfo ?
-                                    <TextComponent text={userInfo.phoneNumber.toString()} style={{ fontWeight: 'bold' }} />
+                                    <TextComponent text={this.state.textPhone.toString()} style={{ fontWeight: 'bold' }} />
                                     :
                                     <TextInput
                                         style={{
+                                            height: 40
                                         }}
-                                        placeholder={userInfo.phoneNumber.toString()}
-                                        onChangeText={text => this.onChangeText(text)}
-                                        value={this.state.text}
+                                        placeholder={this.state.textPhone}
+                                        onChangeText={text => this.onChangeTextPhone(text)}
+                                        value={this.state.textPhone}
                                     />}
                             </View>
                         </LinearGradient>
                         
                         <View style={{ justifyContent: 'center', alignItems: 'center', paddingTop: 40 }}>
                             <TouchableOpacity
-                                style={{ borderWidth: 1, borderColor: 'white', borderRadius: 25, height: 40, width: 150, justifyContent: 'center', alignItems: 'center', padding: 5, backgroundColor: global.primaryColor }}
-                                onPress={() => {
-                                    this.setState({
-                                        isEditInfo: false
-                                    })
-                                }}>
+                                style={{ borderWidth: 1, borderColor: 'white', borderRadius: 25, height: 30, width: 150, justifyContent: 'center', alignItems: 'center', padding: 5, backgroundColor: global.primaryColor }}
+                                onPress={this.onUpdate}>
                                 <Text style={{color: 'white', fontWeight: 'bold'}}>{Strings.update.toUpperCase()}</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
-                </View>
+                </View> */}
 
 
 
@@ -221,6 +235,40 @@ export default class MenuComponent extends Component {
     }
 
     componentDidMount() {
+    }
+
+    onUpdate=()=>{
+        const { userInfo } = this.props;
+        this.setState({
+            isEditInfo: false
+        });
+        let params = {
+            ID: userInfo.userId,
+            Email: this.state.textEmail,
+            SDT: this.state.textPhone,
+            DiaChi: this.state.textAddress,
+        }
+        this.props.userActions.updateUserInfo(params).then(res=>{
+            console.log(res)
+        });
+    }
+
+    onChangeTextEmail(text){
+        this.setState({
+            textEmail: text
+        })
+    }
+
+    onChangeTextAddress(text){
+        this.setState({
+            textAddress: text
+        })
+    }
+
+    onChangeTextPhone(text){
+        this.setState({
+            textPhone: text
+        })
     }
 
 }

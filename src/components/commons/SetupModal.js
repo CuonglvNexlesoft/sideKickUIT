@@ -32,8 +32,8 @@ import IconTooltip from "./IconTooltip";
 //const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
 import React, { Component } from 'react';
 import {
-  View, Image, TextInput, TouchableOpacity, ScrollView, FlatList ,
-  
+  View, Image, TextInput, TouchableOpacity, ScrollView, FlatList,
+
   TouchableHighlight,
   StyleSheet, Keyboard,
   UIManager, Platform,
@@ -93,7 +93,7 @@ import global from '../commons/_var'
 import CheckBoxLineItem from '../modules/CheckBoxLineItem';
 let selectedIndexs = [];
 
-export default class  SetupModal extends ModalRefine {
+export default class SetupModal extends ModalRefine {
   constructor(props) {
     super(props);
     this.state = {
@@ -152,23 +152,23 @@ export default class  SetupModal extends ModalRefine {
     return super.closeModal();
   }
 
-  onStartRollCall=()=>{
-      this.setState({
-        enableRollCall: true
-      });
+  onStartRollCall = () => {
+    this.setState({
+      enableRollCall: true
+    });
     this.props.onStartRollCall();
   }
 
-  onStartTest=()=>{
+  onStartTest = () => {
     this.setState({
       enableTest: true
     });
-  this.props.onStartTest();
-}
+    this.props.onStartTest();
+  }
 
-onNotifyLink=()=>{
+  onNotifyLink = () => {
 
-}
+  }
 
   renderHeader() {
     return (
@@ -260,8 +260,8 @@ onNotifyLink=()=>{
       });
     };
     return (
-          <View style={{ flex: 1, backgroundColor: 'white' }}>
-            {/* <FlatList
+      <View style={{ flex: 1, backgroundColor: 'white' }}>
+        {/* <FlatList
               ref={'flatList'}
               data={data}
               style={{marginBottom: 10, borderRadius: 10, paddingHorizontal: 15 }}
@@ -269,8 +269,8 @@ onNotifyLink=()=>{
               renderItem={({ item }) => this.renderItemMessage(item)
               }
             /> */}
-            <ScrollView style={{ flex: 1, backgroundColor: global.colorF3 }}>
-          <View style={{ justifyContent: 'center', backgroundColor: global.color0B, paddingHorizontal: 15, minHeight: 100, paddingBottom: 15,  }}>
+        <ScrollView style={{ backgroundColor: global.colorF3 }}>
+          <View style={{ justifyContent: 'center', backgroundColor: global.color0B, paddingHorizontal: 15, minHeight: 100, paddingBottom: 15, }}>
 
             <View style={{ padding: 5 }}>
               <TextComponent text={"Document"} style={{ color: 'white', fontSize: 20 }} />
@@ -303,7 +303,7 @@ onNotifyLink=()=>{
 
             </View>
 
-            <View style={{ backgroundColor: 'white', borderRadius: 10, minHeight: 100 }}>
+            <View style={{ backgroundColor: 'white', borderRadius: 10, minHeight: 30 }}>
               {this.state.arrLink.length > 0 && <FlatList
                 data={this.state.arrLink}
                 renderItem={({ item, index }) =>
@@ -320,25 +320,25 @@ onNotifyLink=()=>{
                 <TextInput
                   placeholder={"Pasted link here"}
                   textAlignVertical={'center'}
-                  style={{ height: 30, paddingLeft: 15 }}
+                  style={{ height: 40, paddingLeft: 15 }}
                   onChangeText={this.onChangeLink}
                   value={this.state.text}
                 />
               </View>
 
             </View>
-            <View style={{ paddingTop: 15 , justifyContent: 'center', alignItems: 'center'}}>
-                <TouchableOpacity
-                  onPress={this.onNotifyLink}
-                  style={{width: 100, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', borderColor: global.grayColor, borderRadius: 20, borderWidth: 2, padding: 10, backgroundColor: global.primaryColor }}>
-                  <TextComponent text={"Send link"} style={{ paddingRight: 5, color: global.purple, fontWeight: 'bold' }} />
-                  {/* <Image source={Themes.Images.btnPlus}/> */}
-                </TouchableOpacity>
-              </View>
+            <View style={{ paddingTop: 15, justifyContent: 'center', alignItems: 'center' }}>
+              <TouchableOpacity
+                onPress={this.onNotifyLink}
+                style={{ width: 100, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', borderColor: global.grayColor, borderRadius: 20, borderWidth: 2, padding: 10, backgroundColor: global.primaryColor }}>
+                <TextComponent text={"Send link"} style={{ paddingRight: 5, color: global.purple, fontWeight: 'bold' }} />
+                {/* <Image source={Themes.Images.btnPlus}/> */}
+              </TouchableOpacity>
+            </View>
 
           </View>
 
-          <View style={{  flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 15, minHeight: 50, backgroundColor: global.colorFF }}>
+          <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 15, minHeight: 50, backgroundColor: global.colorFF }}>
 
             <View style={{ padding: 5 }}>
               <TextComponent text={"Discussion"} style={{ fontSize: 20 }} />
@@ -361,7 +361,7 @@ onNotifyLink=()=>{
             />
           </View>
 
-          <View style={{  flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 15, minHeight: 50,  }}>
+          <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 15, minHeight: 50, }}>
 
             <View style={{ padding: 5 }}>
               <TextComponent text={"Test"} style={{ fontSize: 20 }} />
@@ -375,9 +375,9 @@ onNotifyLink=()=>{
               circleColorOn={global.colorFF}
               switchOn={this.state.enableTest}
               onPress={
-                ()=>{
+                () => {
                   this.setState({
-                    enableTest:  true
+                    enableTest: true
                   })
                 }
               }
@@ -497,14 +497,14 @@ onNotifyLink=()=>{
               </View>
 
             </View>
-            
+
           </View>
-          <View style={{width: '100%', justifyContent: 'center', alignItems: 'center', paddingVertical: 20}}>
-          <TouchableOpacity
-                onPress={() => this.refs.modalGetLink.openModal()}
-                style={{width: "30%", flexDirection: 'row', backgroundColor: global.primaryColor, justifyContent: 'center', alignItems: 'center', borderColor: global.grayColor, borderRadius: 30, borderWidth: 2, padding: 10 }}>
-                <TextComponent text={"Done"} style={{ paddingRight: 5, color: global.colorFF, fontSize: 20 }} />
-              </TouchableOpacity>
+          <View style={{ width: '100%', justifyContent: 'center', alignItems: 'center', paddingVertical: 10 }}>
+            <TouchableOpacity
+              onPress={() => this.refs.modalGetLink.openModal()}
+              style={{ width: "30%", flexDirection: 'row', backgroundColor: global.primaryColor, justifyContent: 'center', alignItems: 'center', borderColor: global.grayColor, borderRadius: 30, borderWidth: 2, padding: 5 }}>
+              <TextComponent text={"Done"} style={{ paddingRight: 5, color: global.colorFF, fontSize: 16 }} />
+            </TouchableOpacity>
           </View>
           <ModalAddLink
             ref={'modalGetLink'}
@@ -516,7 +516,7 @@ onNotifyLink=()=>{
             }
           />
         </ScrollView>
-          </View>
+      </View>
     );
   }
 
@@ -525,7 +525,7 @@ onNotifyLink=()=>{
   }
 }
 
- SetupModal.proptypes = {
+SetupModal.proptypes = {
   dataCount: PropTypes.object,
   openFolderModal: PropTypes.func
 };

@@ -36,6 +36,7 @@ export default {
 
     logginUser: "User/Login",
     logoutUser: "User/Logout"
+    ,signUp: "User/Signup"
     ,updateUserInfo: "User/UpdateUserProfile"
     ,getClassList: "LopHoc/GetDanhSachLopHoc"
 };

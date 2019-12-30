@@ -19,21 +19,21 @@ dev.buildMode = 'DEV';
 dev.serverSchema = 'http';
 dev.apiPrefix = 'api';
 dev.uploadPrefix = 'uploads';
-dev.serverHost = '61.28.235.199:8989';
+dev.serverHost = 'doan.tecconect.top';
 
 const staging = {};
 staging.buildMode = 'STAGING';
 staging.serverSchema = 'http';
 staging.apiPrefix = 'api';
 staging.uploadPrefix = 'uploads';
-staging.serverHost = '61.28.235.199:8989';
+staging.serverHost = 'doan.tecconect.top';
 
 const production = {};
 production.buildMode = 'PRODUCTION';
 production.serverSchema = 'https';
 production.apiPrefix='api';
 production.uploadPrefix='uploads';
-production.serverHost = '61.28.235.199:8989';
+production.serverHost = 'doan.tecconect.top';
 
 //
 export const buildApp = (build) => {

@@ -90,7 +90,7 @@ export default class ModalGetLink extends ModalInfo {
           </View>
 
           <TextInput
-            style={{ height: 30, width: "60%", borderColor: 'gray', borderWidth: 1, borderRadius: 10, paddingLeft: 10 }}
+            style={{ height: 40, width: "60%", borderColor: 'gray', borderWidth: 1, borderRadius: 10, paddingLeft: 10 }}
             onChangeText={text => this.onChangeGvName(text)}
             value={this.state.text}
           />
@@ -119,13 +119,17 @@ export default class ModalGetLink extends ModalInfo {
           </View>
 
           <TextInput
-            style={{ height: 30, width: "60%", borderColor: 'gray', borderWidth: 1, borderRadius: 10, paddingLeft: 10 }}
+            style={{ height: 40, width: "60%", borderColor: 'gray', borderWidth: 1, borderRadius: 10, paddingLeft: 10 }}
             onChangeText={text => this.onFileName(text)}
 
             value={this.state.text.substring(this.state.text.lastIndexOf('/')+1)}
           />
 
-          <TouchableOpacity activeOpacity={0.9} style={{ paddingLeft: 5 }} onPress={() => {this.closeModal; this.props.onDownLoadFile(this.state.text.substring(this.state.text.lastIndexOf('/')+1))}}>
+          <TouchableOpacity activeOpacity={0.9} style={{ paddingLeft: 5 }} 
+          onPress={() => {
+            this.closeModal();
+             this.props.onDownLoadFile(this.state.text.substring(this.state.text.lastIndexOf('/')+1))
+          }}>
             <View
               style={{
                 height: 30,

@@ -45,6 +45,21 @@ export function login(params){
         });
     };
 }
+export function signUp(params){
+    return dispatch => {
+        return UserService.signUp(params).then(res => {
+            console.log('signUp',res)
+            // if (res.status === 200) {
+            //     let mappingUser = new User(res.data.user);
+            //     console.log(mappingUser)
+            //     dispatch(setUserData(mappingUser));
+            // } else {
+            //     console.log("ERROR: login fail", res.data.msg);
+            // }
+            return res;
+        });
+    };
+}
 
 export function updateUserInfo(params){
     return dispatch => {
