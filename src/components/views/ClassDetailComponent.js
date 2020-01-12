@@ -84,7 +84,8 @@ export default class ClassDetailComponent extends Component {
       isShowPopupTest: false,
       listNotifyForTeacher:[],
       listNotifyForStudent:[],
-      hasChangePDF: false
+      hasChangePDF: false,
+      limitIHaveQuetion: false
     };
     this.openFile = this.openFile.bind(this);
     RNPdftron.initialize("Insert commercial license key here after purchase");
@@ -124,6 +125,7 @@ export default class ClassDetailComponent extends Component {
             </View>
           );
         if (item.message.type === 2)
+          if(this.props.userInfo.userType === 0 || this.props.userInfo.userId === item.user.userId)
           return (
             <View style={{ flexDirection: 'row', justifyContent: "flex-start", alignItems: 'center', paddingVertical: 5 }}>
               <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: "center" }}>
@@ -148,6 +150,7 @@ export default class ClassDetailComponent extends Component {
               </View>
             </View>
           );
+          else return null;
         if (item.message.type === 1)
         return (
           <View style={{ flexDirection: 'row', justifyContent: "flex-start", alignItems: 'center', paddingVertical: 5 }}>
@@ -458,13 +461,14 @@ export default class ClassDetailComponent extends Component {
             />}
             <View style={{ backgroundColor: global.lightBlue, borderTopRightRadius: 15, borderTopLeftRadius: 15 }}>
               <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: 10,}}>
+                <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: 10 }}>
                   <TextComponent text={'Question: '} style={{ paddingRight: 15 }} />
-                  <IconTooltip
-                    style={{ borderWidth: 1, justifyContent: 'center', padding: 5, borderRadius: 15, backgroundColor: 'white', borderColor: global.colorF4 }}
+                  {this.props.userInfo.userType === 1 && <IconTooltip
+                    style={{ borderWidth: 1, justifyContent: 'center', padding: 5, borderRadius: 15, backgroundColor: 'white', borderColor: global.colorF4,}}
                     onPress={this.onIhaveAQuestion}
+                    disable={!this.state.limitIHaveQuetion}
                     textView={<TextComponent text={"I have a question!"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', padding: 3 }} />}
-                  />
+                  />}
                 </View>
 
                 <IconButton
@@ -501,7 +505,7 @@ export default class ClassDetailComponent extends Component {
               style={{width: 50, height: 50, backgroundColor: 'white',  borderRadius: 40, justifyContent: 'center', alignItems: 'center', borderWidth: 3, borderColor: '#f54242'}}
               >
                   {/* <TextComponent text={'Quick test!'} style={{fontWeight: 'bold', fontSize: 10, justifyContent: 'center', alignItems: 'center' }} textAlign={'center'} numberOfLines={2}/> */}
-                  <IconButton nameIcon={Themes.Images.icEditNotesProfile}/>
+                  <IconButton nameIcon={Themes.Images.icEditNotesProfile} onClick={this.createTest}/>
               </TouchableOpacity>
             }
           />
@@ -560,6 +564,11 @@ export default class ClassDetailComponent extends Component {
   }
 
   onIhaveAQuestion=()=>{
+    this.setState({
+      limitIHaveQuetion: true
+    }, ()=>setTimeout(()=>this.setState({
+      limitIHaveQuetion: false
+    }), 3000))
     let objMessage = {};
     this.socket.emit("i have a question", JSON.stringify(objMessage));
   }

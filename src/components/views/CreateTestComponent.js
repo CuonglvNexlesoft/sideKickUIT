@@ -108,6 +108,7 @@ export default class CreateTestComponent extends Component {
         selectAnswerId: index,
       });
     };
+    let themeColor = this.props.settingState && this.props.settingState.colorTheme ? { backgroundColor: this.props.settingState.colorTheme} : null;
     return (
       <Container
         title={("Assignment").toUpperCase()}
@@ -117,6 +118,7 @@ export default class CreateTestComponent extends Component {
           </View>
           // null
         }
+        style={themeColor}
         headerRight={
           <TouchableOpacity
             onPress={() => Actions.pop()}
@@ -170,7 +172,7 @@ export default class CreateTestComponent extends Component {
             }
             }
             onIndexChange={index => {
-              this.setState({ index })
+              this.setState({ index,  selectAnswerId: null })
             }
             }
             initialLayout={{ width: Dimensions.get('window').width, height: 0 }}
@@ -190,8 +192,8 @@ export default class CreateTestComponent extends Component {
 
           />
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', padding: 15 }}>
-            <ButtonOutline disable={this.state.index === 0} onClick={() => this.setState({ index: this.state.index - 1 })} icSrc={Themes.Images.icArrowLeft} name={'Previous'} btnStyle={{ width: 100, justifyContent: 'center', alignItems: 'center', backgroundColor: '#004d1a' }} />
-            <ButtonOutline disable={this.state.index === this.props.testData.length - 1} onClick={() => this.setState({ index: this.state.index + 1 })} icRight={Themes.Images.icArrowRight} iconStyle={{ marginLeft: 10 }} name={'Next'} btnStyle={{ width: 100, justifyContent: 'center', alignItems: 'center', backgroundColor: '#004d1a' }} />
+            <ButtonOutline disable={this.state.index === 0} onClick={() => this.setState({ index: this.state.index - 1,  selectAnswerId: null })} icSrc={Themes.Images.icArrowLeft} name={'Previous'} btnStyle={{ width: 100, justifyContent: 'center', alignItems: 'center', backgroundColor: '#004d1a' }} />
+            <ButtonOutline disable={this.state.index === this.props.testData.length - 1} onClick={() => this.setState({ index: this.state.index + 1, selectAnswerId: null })} icRight={Themes.Images.icArrowRight} iconStyle={{ marginLeft: 10 }} name={'Next'} btnStyle={{ width: 100, justifyContent: 'center', alignItems: 'center', backgroundColor: '#004d1a' }} />
           </View>
         </View>
       </Container>
@@ -229,7 +231,7 @@ export default class CreateTestComponent extends Component {
   }
 
   sendMessage() {
-    console.log(this.props.userInfo)
+    // console.log(this.props.userInfo)
     Keyboard.dismiss();
     this.refs.flatList.scrollToEnd();
     let objMessage = { user: this.props.userInfo, message: this.state.text };

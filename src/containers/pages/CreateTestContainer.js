@@ -11,6 +11,7 @@ function mapStateToProps(rootState) {
         userInfo: rootState.userState.user,
         // productState: rootState.productState,
         testData: rootState.testState.data,
+        settingState: rootState.settingState
     };
 }
 
