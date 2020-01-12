@@ -112,7 +112,7 @@ export default class LeftMenuComponent extends Component {
             <View style={{justifyContent: 'flex-start', paddingVertical: 15}}>
                 <TextComponent text={Strings.theme}/>
                 <View style={{paddingLeft: 60, flexDirection: 'row'}}>
-                    <TouchableOpacity onPress={()=>this.onChangeTheme('rgb(156,156,156)')} style={{width: 25, height: 25, backgroundColor: 'rgb(156,156,156)', marginRight: 5}}/>
+                    <TouchableOpacity onPress={()=>this.onChangeTheme(global.colorFF)} style={{ borderWidth: 0.5,width: 25, height: 25, backgroundColor: global.colorFF, marginRight: 5}}/>
                     <TouchableOpacity onPress={()=>this.onChangeTheme(global.red)} style={{width: 25, height: 25, backgroundColor: global.red, marginRight: 5}}/>
                     <TouchableOpacity onPress={()=>this.onChangeTheme(global.yellow)} style={{width: 25, height: 25, backgroundColor: global.yellow, marginRight: 5}}/>
                     <TouchableOpacity onPress={()=>this.onChangeTheme(global.colorFF8)} style={{width: 25, height: 25, backgroundColor: global.colorFF8, marginRight: 5}}/>
