@@ -3,7 +3,7 @@
  */
 import React, { Component } from "react";
 import ModalComponent from "./Modal";
-import { View, Image, TextInput, TouchableOpacity, Platform, Keyboard, ScrollView, FlatList } from "react-native";
+import { View, Image, TextInput, TouchableOpacity, Platform, Keyboard, ScrollView, FlatList, Linking } from "react-native";
 // import * as eventTypes from "../../../../redhotpie-shared-lib/constants/eventTypes";
 // import { EventRegister } from 'react-native-event-listeners';//eslint-disable-line import/no-unresolved
 import styles from "./styles";
@@ -101,6 +101,11 @@ export default class SelectLinkModal extends ModalRefine {
     );
   }
 
+  onDownLoadFile =(item)=>{
+    this.closeModal();
+    this.props.onDownLoadFile(item.link.substring(item.link.lastIndexOf('/')+1))
+  }
+
   renderItemMessage(item) {
     return (
       <View style={{}}>
@@ -125,25 +130,24 @@ export default class SelectLinkModal extends ModalRefine {
             <View style={{ justifyContent: 'space-between', alignItems: 'center', flex: 1 }}>
               <IconTooltip
                 style={{ paddingRight: 15 }}
-                onPress={this.onDownLoadFile}
+                onPress={this.onDownLoadFile.bind(this, item)}
                 textView={<TextComponent text={"Download"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', }} />}
               />
               <IconTooltip
-                onPress={() => {
-                  this.refs.modalGetLink.openModal()
-                }}
+                onPress={() => Linking.openURL(item.link)}
                 textView={<TextComponent text={"Read Online"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', }} />}
               />
             </View>
             :
-            <IconTooltip
-                onPress={() => {
-                  this.refs.modalGetLink.openModal()
-                }}
-                textView={<TextComponent text={"Reply now"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', }} />}
-              />
+            null
+            // <IconTooltip
+            //     onPress={() => {
+            //       this.refs.modalGetLink.openModal()
+            //     }}
+            //     textView={<TextComponent text={"Reply now"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', }} />}
+            //   />
           }
-          // hideRight
+          hideRight
           disable
           customStyleLeftSubContainer={{ width: 305 }}
         />
@@ -152,39 +156,19 @@ export default class SelectLinkModal extends ModalRefine {
   }
 
   renderContent() {
-    const data = this.props.forWho === 1 ? [
-      {
-        title: "software_engineering",
-        link: "https://www.tutorialspoint.com/software_engineering/software_engineering_tutorial.pdf"
-      }
-      ,
-      {
-        title: "softwaredesign",
-        link: "https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf"
-      }
-      , {
-        title: "software_engineering",
-        link: "https://www.tutorialspoint.com/software_engineering/software_engineering_tutorial.pdf"
-      }
-      ,
-      {
-        title: "softwaredesign",
-        link: "https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf"
-      },
-      {
-        title: "software_engineering",
-        link: "https://www.tutorialspoint.com/software_engineering/software_engineering_tutorial.pdf"
-      }
-      ,
-      {
-        title: "softwaredesign",
-        link: "https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf"
-      }
-    ]
+    const data = this.props.forWho === 1 ? 
+    this.props.selectedClass.listDocs
     :
     this.props.listNotifyForTeacher
     return (
       <View style={{ flex: 1, backgroundColor: 'white' }}>
+            <View style={{justifyContent: 'center', alignItems: 'flex-end'}}>
+        <IconTooltip
+                style={{ paddingRight: 15 }}
+                onPress={()=>this.props.onClearList()}
+                textView={<TextComponent text={"Clear all"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', color: 'blue' }} />}
+              />
+        </View>
             <FlatList
               ref={'flatList'}
               data={data.sort()}

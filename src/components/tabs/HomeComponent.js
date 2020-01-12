@@ -36,7 +36,7 @@ export default class HomeComponent extends Component {
   }
 
   componentDidMount() {
-
+    console.log(this.props.classState)
   }
 
   onOpendCreateForm() {
@@ -45,11 +45,13 @@ export default class HomeComponent extends Component {
 
   createClass(_class) {
     if (_class) {
-      let newArrClass = this.state.users;
-      newArrClass.unshift(_class)
-      this.setState({
-        users: newArrClass
-      });
+      // let newArrClass = this.state.users;
+      // newArrClass.unshift(_class)
+      // this.setState({
+      //   users: newArrClass
+      // });
+      console.log(_class)
+      this.props.ClassActions.creatClass(_class)
     }
   }
 
@@ -62,6 +64,7 @@ export default class HomeComponent extends Component {
     // if(index == 0)
     // Actions[ScreenName.SETUP]({ class: item })
     // else
+    this.props.ClassActions.getClassDetail(item.id)
     Actions[ScreenName.DETAIL]({ class: item })
   }
 
@@ -84,10 +87,10 @@ export default class HomeComponent extends Component {
       // </TouchableOpacity>
       <ChatRoomCardItem
         //backgroundImage={item.coverUrl == 'string' ? 'https://img.redhotpie.com.au/imageUser/MemberPhoto/2590_131878617392725266.jpg' : item.coverUrl}
-        backgroundImage={item.coverUrl}
+        backgroundImage={item.coverUrl || Images.react}
         roomName={item.name}
         onPress={this.onPressNext.bind(this, item, index)}
-        memberInRoom={1}
+        memberInRoom={item.total}
         memberLive={1}
       />
     );
@@ -191,8 +194,8 @@ export default class HomeComponent extends Component {
           </View>
         </TouchableOpacity> */}
         <FlatList
-          data={this.state.users.filter(e=>e.name.includes(this.state.text))}
-          extraData={this.state}
+          data={this.props.classState.dataClass.filter(e=>e.name.includes(this.state.text))}
+          extraData={this.props.classState}
           showsVerticalScrollIndicator={false}
           renderItem={({ item, index }) =>
             this.renderRow(item, index)
@@ -203,7 +206,7 @@ export default class HomeComponent extends Component {
           <IconButton 
           activeOpacity={0.5}
           onClick={()=>{
-
+            this.onOpendCreateForm()
           }}
           nameIcon={Images.icAddPhotoEditProfile} iconSize={{width: 60, height: 60}}/>
         </View>

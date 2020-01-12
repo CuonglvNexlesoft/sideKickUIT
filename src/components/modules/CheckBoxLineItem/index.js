@@ -6,7 +6,7 @@ import React from 'react';
 import {View, TouchableOpacity, Image} from 'react-native';
 import ActionLineItem from '../../commons/lineItem/ActionLineItem';
 
-const CheckBoxLineItem = ({isGuestMember, onClickAction, isCheck, textLeft, divider, customDividerStyle, styleLeftTextShow, minHeight, style, numberOfLines, type, itemLeft, styleRadioSelected}) => {
+const CheckBoxLineItem = ({hideRight,isGuestMember, onClickAction, isCheck, textLeft, divider, customDividerStyle, styleLeftTextShow, minHeight, style, numberOfLines, type, itemLeft, styleRadioSelected}) => {
     return (
         <TouchableOpacity activeOpacity={isGuestMember ? 1 : 0.5} style={style} onPress={onClickAction}>
             <ActionLineItem
@@ -28,7 +28,7 @@ const CheckBoxLineItem = ({isGuestMember, onClickAction, isCheck, textLeft, divi
                     />
                 }
                 rightStyle={styleRadioSelected}
-                itemRight={
+                itemRight={ !hideRight &&
                     <View style={[styles.textWithIoptionHolderconRightContainer, styleRadioSelected]}>
                         {isCheck ? (
                             <View style={[styles.imageContainer, styleRadioSelected]}>
@@ -53,6 +53,7 @@ CheckBoxLineItem.defaultProps = {
     numberOfLines: 1,
     isGuestMember: false,
     itemLeft: null,
+    hideRight: false
 };
 CheckBoxLineItem.propTypes = {
     isCheck: PropTypes.bool,

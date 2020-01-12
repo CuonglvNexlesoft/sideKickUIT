@@ -13,7 +13,20 @@ class ClassService extends BaseService {
             return result;
         }, this.handleError)
     }
+
+    creatClass(params){
+        return ClassApi.creatClass(params).then(result => {
+            // console.log('asdasdas', result)
+            return result;
+        }, this.handleError)
+    }
     
+    getClassDetail(id){
+        return ClassApi.getClassDetail(id).then(result => {
+            // console.log('asdasdas', result)
+            return result;
+        }, this.handleError)
+    }
 
 }
 export default new ClassService();

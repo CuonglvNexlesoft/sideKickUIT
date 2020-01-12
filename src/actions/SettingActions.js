@@ -14,6 +14,10 @@ export function setSettings(settings) {
     }
 }
 
+export function setTheme(_color) {
+    return (dispatch) => dispatch({ type: SETTING.SET_COLOR, data: _color });
+}
+
 // export function getSettings() {
 //     return dispatch => {
 //         return new Promise((resolve, reject) => {

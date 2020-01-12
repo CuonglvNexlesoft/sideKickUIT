@@ -16,6 +16,7 @@
   "forgotPassword":"Quên mật khẩu ?",
   "enterYourEmail":"Điền e-mail của bạn ở đây",
   "fullname_signup":"HỌ TÊN",
+  "username_signup":"Tên đăng nhập",
   "logout":"Đăng xuất"
   ,"theme": "Chủ đề:"
   ,"home": "Trang chủ"
@@ -26,4 +27,8 @@
   ,"editInfo": "Sửa thông tin"
   ,"setting": "Cài đặt"
   ,"update": "Cập nhật"
+  ,"className": "Tên lớp"
+  ,"total": "Sỉ số"
+  ,"startDate": "Ngày bắt đầu"
+  ,"endDate": "Ngày kết thúc"
 }

@@ -7,6 +7,7 @@ export const APP = {
 
 export const SETTING = {
     SETTING_DATA: "SETTING_DATA",
+    SET_COLOR: "SET_COLOR"
 }
 
 export const USER = {
@@ -16,4 +17,10 @@ export const USER = {
 
 export const PRODUCT = {
     PRODUCT_DATA: 'PRODUCT_DATA',
+}
+
+export const CLASS = {
+    SET_DATA_CLASS: 'SET_DATA_CLASS',
+    SET_DATA_CLASS_DETAIL: 'SET_DATA_CLASS_DETAIL',
+    USER_AVATAR: 'USER_AVATAR'
 }

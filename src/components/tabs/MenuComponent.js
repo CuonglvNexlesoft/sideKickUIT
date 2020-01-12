@@ -4,7 +4,9 @@ import {
     Text,
     TouchableOpacity,
     StyleSheet,
-    TextInput
+    TextInput,
+    ScrollView,
+    KeyboardAvoidingView
 } from 'react-native';
 import { Actions, ActionConst } from 'react-native-router-flux';
 import ScreenName from '../../constants/ScreenName';
@@ -30,9 +32,9 @@ export default class MenuComponent extends Component {
         console.log('userInfo', userInfo)
         this.state = {
             isEditInfo: false,
-            textEmail: userInfo.email.toString(),
-            textPhone: userInfo.phoneNumber.toString(),
-            textAddress: userInfo.address.toString(),
+            textEmail: userInfo.email ? userInfo.email.toString() : 'null',
+            textPhone: userInfo.phoneNumber ? userInfo.phoneNumber.toString() : 'null',
+            textAddress: userInfo.address ? userInfo.address.toString() : 'null',
         };
     }
 
@@ -48,17 +50,8 @@ export default class MenuComponent extends Component {
                 break;
         }
         return (
-            <View style={[styles.container, { backgroundColor: 'white' }]}>
-                <TextInput
-                                        style={{
-                                            height: 40,
-                                            backgroundColor: 'red'
-                                        }}
-                                        placeholder={this.state.textEmail}
-                                        onChangeText={text => this.onChangeTextEmail(text)}
-                                        value={this.state.textEmail}
-                                    />
-                {/* <View style={{ paddingVertical: 15, flexDirection: 'row' }}>
+            <ScrollView style={[styles.container, { backgroundColor: 'white', paddingBottom: 350 }]}>
+                <View style={{ paddingVertical: 15, flexDirection: 'row' }}>
                     <View>
                         <Avatar
                             ref="avatar"
@@ -77,7 +70,7 @@ export default class MenuComponent extends Component {
                         </View>
                     </View>
                 </View>
-                <View style={{ flexDirection: 'row', justifyContent: 'space-around', paddingBottom: 25 }}>
+                {!this.state.isEditInfo && <View style={{ flexDirection: 'row', justifyContent: 'space-around', paddingBottom: 25 }}>
                     <View style={{}}>
                         <IconButton
                             onClick={() => Actions.drawerOpen()}
@@ -100,9 +93,9 @@ export default class MenuComponent extends Component {
                         <IconButton nameIcon={Images.icEditSetting} disabled />
                         <TextComponent text={Strings.editInfo} />
                     </TouchableOpacity>
-                </View> */}
+                </View>}
 
-                {/* <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+                <View style={{ alignItems: 'center', justifyContent: 'center' }}>
                     <View style={{ width: '80%', paddingBottom: 30 }}>
                         <TextComponent text={"MSSV: "} style={{ color: '#73264b', position: 'absolute', backgroundColor: 'white', zIndex: 10, top: -8, left: 20, textAlign: 'center', paddingHorizontal: 10, fontStyle: 'italic', }} />
                         <LinearGradient
@@ -147,7 +140,8 @@ export default class MenuComponent extends Component {
                                     <TextInput
                                         style={{
                                             height: 40,
-                                            backgroundColor: 'red'
+                                            width: "100%",
+                                            textAlign: 'center'
                                         }}
                                         placeholder={this.state.textEmail}
                                         onChangeText={text => this.onChangeTextEmail(text)}
@@ -178,7 +172,9 @@ export default class MenuComponent extends Component {
                                     :
                                     <TextInput
                                         style={{
-                                            height: 40
+                                            height: 40,
+                                            width: "100%",
+                                            textAlign: 'center'
                                         }}
                                         placeholder={this.state.textAddress}
                                         onChangeText={text => this.onChangeTextAddress(text)}
@@ -209,7 +205,9 @@ export default class MenuComponent extends Component {
                                     :
                                     <TextInput
                                         style={{
-                                            height: 40
+                                            height: 40,
+                                            width: "100%",
+                                            textAlign: 'center'
                                         }}
                                         placeholder={this.state.textPhone}
                                         onChangeText={text => this.onChangeTextPhone(text)}
@@ -226,11 +224,11 @@ export default class MenuComponent extends Component {
                             </TouchableOpacity>
                         </View>
                     </View>
-                </View> */}
+                </View>
 
 
 
-            </View>
+            </ScrollView>
         )
     }
 

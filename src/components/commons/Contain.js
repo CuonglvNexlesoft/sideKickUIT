@@ -16,10 +16,7 @@ import * as Themes from './../../themes';
 import StatusBar from './StatusBar';
 import Header from './Header';
 const { width, height } = Dimensions.get('window');
-import { connect } from 'react-redux';
-import { bindActionCreators } from "redux";
-import settingActions from "../../actions/SettingActions"
-export default class Container extends React.Component {
+export default class  Contain extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -68,32 +65,8 @@ export default class Container extends React.Component {
         const { visibleHeight, keyboardHeight } = this.state;
         const { statusBarColor } = this.props;
         const title = this.props.title || "";
-        if(Platform.OS == 'android')
         return (
             <View {...this.props} style={[styles.container, (this.props.style || null), {marginBottom: Platform.OS == 'ios' ? keyboardHeight : null}]}>
-                {this.props.hadStatusBar &&
-                    <StatusBar backgroundColor={statusBarColor} barStyle="dark-content"
-                        style={[styles.statusBar, (this.props.statusBarStyle || null)]} {...this.props.statusBarProps} />
-                }
-                {this.props.hadHeader &&
-                    <Header {...this.props.headerProps} style={[styles.header, (this.props.headerStyle || null)]}
-                        color={this.props.headerColor || Themes.Colors.red}
-                        left={this.props.headerLeft || null}
-                        right={this.props.headerRight || null}
-                    >
-                        {this.props.headerContent ? this.props.headerContent :
-                            <Text ellipsizeMode={'tail'} numberOfLines={1} style={[styles.title, Themes.Styles.header, (this.props.titleTextStyle || null)]}>{title}</Text>
-                        }
-                    </Header>
-                }
-                <View style={[styles.content, this.props.contentStyle,]}>
-                    {this.props.children}
-                </View>
-            </View>
-        )
-        else
-        return (
-            <KeyboardAvoidingView behavior={'padding'} {...this.props} style={[styles.container, (this.props.style || null), {marginBottom: Platform.OS == 'ios' ? keyboardHeight : null}]}>
                 {this.props.hadStatusBar &&
                     <StatusBar backgroundColor={statusBarColor} barStyle="dark-content"
                         style={[styles.statusBar, (this.props.statusBarStyle || null)]} {...this.props.statusBarProps} />
@@ -112,16 +85,17 @@ export default class Container extends React.Component {
                 <View style={[styles.content, this.props.contentStyle,]}>
                     {this.props.children}
                 </View>
-            </KeyboardAvoidingView>
+            </View>
         )
 
     }
     componentDidMount() {
+
     }
 
 }
 
-Container.defaultProps = {
+ Contain.defaultProps = {
     statusBarColor: 'transparent',
     hadStatusBar: true,
     statusBarProps: {},
@@ -129,7 +103,7 @@ Container.defaultProps = {
     headerProps: {},
     contentStyle: {}
 };
-// Container.propTypes = {
+//  Contain.propTypes = {
 //     statusBarColor: React.PropTypes.string,
 //     hadStatusBar: React.PropTypes.bool,
 //     statusBarProps: React.PropTypes.object,

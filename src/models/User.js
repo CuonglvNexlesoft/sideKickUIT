@@ -12,9 +12,9 @@ export default class User {
       this.avatarUrl = data.avatarUrl || null;
       this.address = data.DiaChi || null;
       this.phoneNumber = data.SDT || 0;
-      this.email = data.email || '';
+      this.email = data.Email || '';
       this.age = data.age || '';
       this.gender = data.gender || 1;
-      this.userType =  data.gender || 0
+      this.userType =  data.CHUCDANH_FK;
   }
 }

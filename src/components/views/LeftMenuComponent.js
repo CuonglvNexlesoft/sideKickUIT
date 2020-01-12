@@ -102,21 +102,26 @@ export default class LeftMenuComponent extends Component {
         )
     }
 
+    onChangeTheme(_color){
+        console.log('aaaa', _color)
+        this.props.settingActions.setTheme(_color);
+    }
+
     renderChangeTheme(){
         return (
             <View style={{justifyContent: 'flex-start', paddingVertical: 15}}>
                 <TextComponent text={Strings.theme}/>
                 <View style={{paddingLeft: 60, flexDirection: 'row'}}>
-                    <View style={{width: 25, height: 25, backgroundColor: 'rgb(156,156,156)', marginRight: 5}}/>
-                    <View style={{width: 25, height: 25, backgroundColor: global.red, marginRight: 5}}/>
-                    <View style={{width: 25, height: 25, backgroundColor: global.green, marginRight: 5}}/>
-                    <View style={{width: 25, height: 25, backgroundColor: global.colorFF8, marginRight: 5}}/>
+                    <TouchableOpacity onPress={()=>this.onChangeTheme('rgb(156,156,156)')} style={{width: 25, height: 25, backgroundColor: 'rgb(156,156,156)', marginRight: 5}}/>
+                    <TouchableOpacity onPress={()=>this.onChangeTheme(global.red)} style={{width: 25, height: 25, backgroundColor: global.red, marginRight: 5}}/>
+                    <TouchableOpacity onPress={()=>this.onChangeTheme(global.yellow)} style={{width: 25, height: 25, backgroundColor: global.yellow, marginRight: 5}}/>
+                    <TouchableOpacity onPress={()=>this.onChangeTheme(global.colorFF8)} style={{width: 25, height: 25, backgroundColor: global.colorFF8, marginRight: 5}}/>
                 </View>
                 <View style={{paddingLeft: 60, flexDirection: 'row', paddingTop: 5}}>
-                    <View style={{width: 25, height: 25, backgroundColor: global.color33, marginRight: 5}}/>
-                    <View style={{width: 25, height: 25, backgroundColor: global.color35D, marginRight: 5}}/>
-                    <View style={{width: 25, height: 25, backgroundColor: global.lightBlue, marginRight: 5}}/>
-                    <View style={{width: 25, height: 25, backgroundColor: global.purple, marginRight: 5}}/>
+                    <TouchableOpacity onPress={()=>this.onChangeTheme(global.colorA4D)} style={{width: 25, height: 25, backgroundColor: global.colorA4D, marginRight: 5}}/>
+                    <TouchableOpacity onPress={()=>this.onChangeTheme(global.color35D)} style={{width: 25, height: 25, backgroundColor: global.color35D, marginRight: 5}}/>
+                    <TouchableOpacity onPress={()=>this.onChangeTheme(global.lightBlue)} style={{width: 25, height: 25, backgroundColor: global.lightBlue, marginRight: 5}}/>
+                    <TouchableOpacity onPress={()=>this.onChangeTheme(global.purple)} style={{width: 25, height: 25, backgroundColor: global.purple, marginRight: 5}}/>
                 </View>
             </View>
         )

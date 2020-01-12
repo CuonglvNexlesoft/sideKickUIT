@@ -29,13 +29,16 @@ export const USER = {
 }
 
 export const CLASS = {
-    classId: '01',
-    className: 'React Native',
-    teacher: 'Le Thanh Trong',
-    totalStudent: 0,
-    activeStudent: 0,
-    startDate: "01/01/2019",
-    endDate: "01/01/2019",
+    selectedClass: {
+        classId: '01',
+        className: 'React Native',
+        teacher: 'Le Thanh Trong',
+        totalStudent: 0,
+        activeStudent: 0,
+        startDate: "01/01/2019",
+        endDate: "01/01/2019",
+    },
+    dataClass: []
 
 }
 

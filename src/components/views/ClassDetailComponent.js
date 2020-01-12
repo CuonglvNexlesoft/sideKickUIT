@@ -201,7 +201,7 @@ export default class ClassDetailComponent extends Component {
       <FlatList
         ref={'flatList'}
         data={this.state.chatMessages}
-        style={{ maxHeight: 400, backgroundColor: 'white', paddingHorizontal: 15, borderWidth: 1, borderColor: global.lightBlue }}
+        style={{ minHeight: 200, maxHeight: 400, backgroundColor: 'white', paddingHorizontal: 15, borderWidth: 1, borderColor: global.lightBlue }}
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => this.renderItemMessage(item)
         }
@@ -369,21 +369,23 @@ export default class ClassDetailComponent extends Component {
     //   url: 'https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf',
     //   base64: 'JVBERi0xLjMKJcfs...',
     // };
-    // // console.log(this.state.localFile, absolutePath)
+    // console.log(this.props.classState.selectedClass && this.props.classState.selectedClass.listDocs)
+    let themeColor = this.props.settingState && this.props.settingState.colorTheme ? { backgroundColor: this.props.settingState.colorTheme} : null;
     return (
       <Container
         title={this.props.class.name.toUpperCase()}
         headerLeft={
           <IconButton nameIcon={Themes.Images.icBackArrowBlack} onClick={() => {
             this.state.hasChangePDF && this._viewer && this._viewer.saveDocument().then(() => {
-              console.log('saveDocument');
+              // console.log('saveDocument');
             });
             Actions.pop()
           }} btnStyle={{ paddingLeft: 15 }} />
         }
+        style={themeColor}
         headerRight={
           
-          // this.props.userInfo.userType === 0 && 
+          this.props.userInfo.userType === 0 && 
           <IconButton nameIcon={Themes.Images.icSettings} 
           iconSize={{height: 25, width: 25}}
           // onClick={() => this.refs.modalConversationMenu.showModal()} 
@@ -405,6 +407,10 @@ export default class ClassDetailComponent extends Component {
               {this.state.listNotifyForTeacher.length != 0 &&
               <View style={{justifyContent:'center', alignItems: 'center', backgroundColor: 'red', minWidth: 20, borderRadius: 20, padding: 2, position: 'absolute', top: 0, left: 18}}>
                 <TextComponent text={this.state.listNotifyForTeacher.length} textAlign={'center'} />
+              </View>}
+              {this.props.classState.selectedClass && this.props.userInfo.userType === 1 && this.props.classState.selectedClass.listDocs && this.props.classState.selectedClass.listDocs.length != 0 &&
+              <View style={{justifyContent:'center', alignItems: 'center', backgroundColor: 'red', minWidth: 20, borderRadius: 20, padding: 2, position: 'absolute', top: 0, left: 18}}>
+                <TextComponent text={this.props.classState.selectedClass.listDocs.length} textAlign={'center'} />
               </View>}
             </View>
 
@@ -521,7 +527,10 @@ export default class ClassDetailComponent extends Component {
           type={'full'}
           ref={'selectLinkModal'}
           forWho={this.props.userInfo.userType}
+          selectedClass={this.props.classState.selectedClass}
           listNotifyForTeacher={this.state.listNotifyForTeacher}
+          onClearList={()=>{this.setState({listNotifyForTeacher: []})}}
+          onDownLoadFile={this.onDownLoadFile}
           />
         <DownloadedFileModal
           styleRefineModal={{ height: 500, backgroundColor: 'transparent' }}
@@ -534,9 +543,20 @@ export default class ClassDetailComponent extends Component {
           onStartTest={this.onStartTest}
           onStartRollCall={this.onStartRollCall}
           type={'full'}
+          onCreateDoc={this.onCreateDoc}
           ref={'setupModal'} />
       </Container>
     );
+  }
+
+  onCreateDoc = (link) => {
+    let currentDate = new Date
+    let params = {
+      LOP_FK: this.props.classState.selectedClass.id,
+      URL: link,
+      NgayTao: currentDate.getMilliseconds()
+    }
+    this.props.DocsActions.creatDoc(params)
   }
 
   onIhaveAQuestion=()=>{
@@ -630,7 +650,7 @@ export default class ClassDetailComponent extends Component {
       this.socket.on("test", msg => {
         // console.log('test', this.socket)
         let objRollCall = JSON.parse(msg)
-        this.setState({isShowPopupTest: true}, ()=>setTimeout(()=>this.setState({isShowPopupTest: false}), 10000))
+        if(this.props.userInfo.userType === 1) this.setState({isShowPopupTest: true}, ()=>setTimeout(()=>this.setState({isShowPopupTest: false}), 10000))
       });
 
       this.socket.on("i have a question", msg => {

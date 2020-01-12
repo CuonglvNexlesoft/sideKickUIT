@@ -10,6 +10,7 @@ function mapStateToProps(rootState) {
     return {
         appState: rootState.appState,
         productState: rootState.productState,
+        settingState: rootState.settingState
     };
 }
 

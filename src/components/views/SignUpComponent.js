@@ -44,21 +44,24 @@ import LinearGradient from 'react-native-linear-gradient';
 import * as Themes from '../../themes';
 import Strings from '../../constants/Strings';
 import * as CommonUtils from '../../utils/CommonUtils';
+import CheckBoxLineItem from '../modules/CheckBoxLineItem';
 
 export default class SignUpComponent extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            fullname: null,
-            email: null,
-            password: null,
+            fullname: "",
+            userName: "",
+            email: "",
+            password: "",
             // keyboard: false,
             focusEmail: false,
             focusFullname: false,
             focusPass: false,
             borderTextinputColor: '#070707',
-            isSecureTextEntry: true
+            isSecureTextEntry: true,
+            userType: 0
         };
     }
 
@@ -121,11 +124,50 @@ export default class SignUpComponent extends Component {
     }
 
     renderUserInfosInput() {
+        const onSelectFilter = index => {
+            this.setState({
+                userType: index,
+            });
+          };
         return (
             <View style={styles.inputPanel}>
                 <View style={{ marginBottom: 5 }}>
+                    <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+                        <CheckBoxLineItem
+                            style={{ backgroundColor: '#ffe6e6', borderRadius: 10, padding: 10, paddingLeft: 25, marginBottom: 10 }}
+                            minHeight={0}
+                            styleRadioSelected={{ marginLeft: 10 }}
+                            divider={false}
+                            textLeft={"Teacher"}
+                            styleLeftTextShow={{}}
+                            isCheck={this.state.userType === 0 ? true : false}
+                            onClickAction={
+                                () => {
+                                    onSelectFilter(0);
+                                    // this.onStartTest();
+                                }
+                            }
+                            hideRight
+                        />
+                        <CheckBoxLineItem
+                            style={{ backgroundColor: '#ffe6e6', borderRadius: 10, padding: 10, paddingLeft: 25, marginBottom: 10 }}
+                            minHeight={0}
+                            styleRadioSelected={{ marginLeft: 10 }}
+                            divider={false}
+                            textLeft={"Student"}
+                            styleLeftTextShow={{}}
+                            isCheck={this.state.userType === 1 ? true : false}
+                            onClickAction={
+                                () => {
+                                    onSelectFilter(1);
+                                    // this.onStartTest();
+                                }
+                            }
+                            hideRight
+                        />
+                    </View>
                     <View style={{ flex: 1 }}>
-                        <View style={{ height: 80 }}>
+                    <View style={{ height: 80 }}>
                             <View style={{ height: Platform.OS === 'android' ? 20 : 30, justifyContent: 'center', paddingTop: 10 }}>
                                 <Text style={{ fontSize: 12.5, fontFamily: Themes.Fonts.type.light }}>{Strings.fullname_signup}</Text>
                             </View>
@@ -134,10 +176,26 @@ export default class SignUpComponent extends Component {
                                 underlineColorAndroid={'transparent'}
                                 value={this.state.fullname}
                                 // placeholder={Strings.username}
-                                placeholder={'Username'}
+                                placeholder={'Full name'}
                                 returnKeyType={'next'}
                                 onSubmitEditing={() => this.txtPassword.focus()}
                                 onChangeText={fullname => this.setState({ fullname })}
+                                onFocus={() => { this.setState({ focusEmail: false, focusPass: false, focusFullname: true }) }}
+                            />
+                        </View>
+                        <View style={{ height: 80 }}>
+                            <View style={{ height: Platform.OS === 'android' ? 20 : 30, justifyContent: 'center', paddingTop: 10 }}>
+                                <Text style={{ fontSize: 12.5, fontFamily: Themes.Fonts.type.light }}>{Strings.username_signup}</Text>
+                            </View>
+                            <TextInput ref={ref => { this.txtFullname = ref }} style={[styles.input, { borderBottomWidth: this.state.focusFullname ? 3 : 2, borderColor: this.state.focusFullname ? '#070707' : Themes.Colors.grey }]}
+                                autoCapitalize={'none'}
+                                underlineColorAndroid={'transparent'}
+                                value={this.state.userName}
+                                // placeholder={Strings.username}
+                                placeholder={'Username'}
+                                returnKeyType={'next'}
+                                onSubmitEditing={() => this.txtPassword.focus()}
+                                onChangeText={userName => this.setState({ userName })}
                                 onFocus={() => { this.setState({ focusEmail: false, focusPass: false, focusFullname: true }) }}
                             />
                         </View>
@@ -148,7 +206,7 @@ export default class SignUpComponent extends Component {
                             <TextInput ref={ref => { this.txtPassword = ref }} style={[styles.input, { borderBottomWidth: this.state.focusPass ? 3 : 2, borderColor: this.state.focusPass ? '#070707' : Themes.Colors.grey }]}
                                 autoCapitalize={'none'}
                                 underlineColorAndroid={'transparent'}
-                                value={this.state.password} 
+                                value={this.state.password}
                                 secureTextEntry={this.state.isSecureTextEntry}
                                 placeholder={Strings.password}
                                 returnKeyType={'next'}
@@ -156,9 +214,9 @@ export default class SignUpComponent extends Component {
                                 onChangeText={password => this.setState({ password })}
                                 onFocus={() => { this.setState({ focusEmail: false, focusPass: true, focusFullname: false }) }}
                             />
-                            <TouchableOpacity 
-                            onPress={()=>this.setState({ isSecureTextEntry: !this.state.isSecureTextEntry})}
-                            style={{ position: 'absolute', top: 20, width: 20, alignSelf: 'flex-end', backgroundColor: 'transparent' }}>
+                            <TouchableOpacity
+                                onPress={() => this.setState({ isSecureTextEntry: !this.state.isSecureTextEntry })}
+                                style={{ position: 'absolute', top: 20, width: 20, alignSelf: 'flex-end', backgroundColor: 'transparent' }}>
                                 <Image
                                     style={{ width: 20, backgroundColor: 'transparent' }}
                                     resizeMode={'contain'}
@@ -224,11 +282,11 @@ export default class SignUpComponent extends Component {
                             }}>{Strings.signup2}</Text>
                         </TouchableOpacity>
                     </View>
-                    <View style={{ flex: 2, alignItems: 'flex-end'}}>
-                        <View style={{ height: '60%', width: '100%',alignItems: 'flex-end',justifyContent:'center' }}>
-                            <TouchableOpacity 
-                            onPress={()=>Actions.pop()}
-                            style={{ flexDirection: 'row', height: 20, alignItems: 'center', }}>
+                    <View style={{ flex: 2, alignItems: 'flex-end' }}>
+                        <View style={{ height: '60%', width: '100%', alignItems: 'flex-end', justifyContent: 'center' }}>
+                            <TouchableOpacity
+                                onPress={() => Actions.pop()}
+                                style={{ flexDirection: 'row', height: 20, alignItems: 'center', }}>
                                 <Image
                                     style={{ maxHeight: 20, maxWidth: 20, marginHorizontal: 5 }}
                                     source={
@@ -257,7 +315,7 @@ export default class SignUpComponent extends Component {
             // console.log(this.props.userActions)
             this.props.userActions.signUp(user).then(result => {
                 // this.props.appActions.hideLoading();
-                Actions[ScreenName.DRAWER]({ type: ActionConst.RESET });
+                Actions[ScreenName.LOGIN]({ type: ActionConst.RESET })
             }, error => {
                 this.showError(error);
             });
@@ -266,7 +324,7 @@ export default class SignUpComponent extends Component {
 
 
     getUser() {
-        const { fullname, password, email } = this.state;
+        const { fullname, password, email, userType, userName } = this.state;
         if (CommonUtils.isEmpty(fullname)) {
             this.showError('Username Empty!');
             return false;
@@ -275,7 +333,7 @@ export default class SignUpComponent extends Component {
             this.showError('Password Empty!');
             return false;
         }
-        return { Username: fullname, Password: password, Email: email };
+        return { Ten: fullname, Username: userName, Password: password, Email: email, CHUCDANH_FK: userType };
     }
 
     showError(message, timeout = 4000) {

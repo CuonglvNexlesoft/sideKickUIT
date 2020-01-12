@@ -167,7 +167,7 @@ export default class SetupModal extends ModalRefine {
   }
 
   onNotifyLink = () => {
-
+    this.props.onCreateDoc(this.state.text)
   }
 
   renderHeader() {
@@ -222,6 +222,12 @@ export default class SetupModal extends ModalRefine {
         />
       </View>
     );
+  }
+
+  onChangeLink=(_text)=>{
+    this.setState({
+      text: _text
+    })
   }
 
   renderContent() {
@@ -320,7 +326,7 @@ export default class SetupModal extends ModalRefine {
                 <TextInput
                   placeholder={"Pasted link here"}
                   textAlignVertical={'center'}
-                  style={{ height: 40, paddingLeft: 15 }}
+                  style={{ height: 40, paddingLeft: 15, width: '100%' }}
                   onChangeText={this.onChangeLink}
                   value={this.state.text}
                 />

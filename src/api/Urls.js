@@ -38,5 +38,11 @@ export default {
     logoutUser: "User/Logout"
     ,signUp: "User/Signup"
     ,updateUserInfo: "User/UpdateUserProfile"
+
+
     ,getClassList: "LopHoc/GetDanhSachLopHoc"
+    ,createClass: "LopHoc/CreateLopHoc"
+    ,getClassDetail: "LopHoc/GetLopHoc/?lophocid={lophocid}"
+
+    ,createDoc: "TaiLieu/CreateTaiLieu"
 };

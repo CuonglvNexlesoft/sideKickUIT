@@ -178,8 +178,19 @@ export default class DownloadedFileModal extends ModalRefine {
         link: "https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf"
       }
     ]
-    console.log(this.props.listDownloadedFile)
-    if(this.props.listDownloadedFile.length === 0) return null;
+    // console.log(this.props.listDownloadedFile)
+    if(this.props.listDownloadedFile.length === 0) return (
+      <View style={{ flex: 1, backgroundColor: 'white' }}>
+            {/* <FlatList
+              ref={'flatList'}
+              data={this.props.listDownloadedFile}
+              style={{marginBottom: 10, borderRadius: 10, paddingHorizontal: 15 }}
+              showsVerticalScrollIndicator={false}
+              renderItem={({ item }) => this.renderItemMessage(item)
+              }
+            /> */}
+      </View>
+    );
     return (
           <View style={{ flex: 1, backgroundColor: 'white' }}>
             <FlatList

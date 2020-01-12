@@ -23,7 +23,7 @@ import FTIcon from 'react-native-vector-icons/Feather';
 
 import Button from './../commons/Button';
 import CustomTab from './../commons/CustomTab';
-import Container from './../commons/Container';
+import Container from './../commons/Contain';
 import { ToastTypes } from './../commons/Toast';
 
 import Home from '../../containers/tabs/HomeContainer';
@@ -47,6 +47,8 @@ export default class DashboardComponent extends Component {
     }
 
     render() {
+        console.log(this.props.settingState)
+        let themeColor = this.props.settingState && this.props.settingState.colorTheme ? { backgroundColor: this.props.settingState.colorTheme} : null;
         const tabLabels = [Strings.home, Strings.newfeed, Strings.account, 'SCORES', 'MENU']; // [Strings.checklist, Strings.notifications, Strings.favorite, Strings.admin]
         const initialTab = 0;
         const {activeTab} = this.state;
@@ -57,7 +59,7 @@ export default class DashboardComponent extends Component {
                     Actions.drawerOpen()
                 }} btnStyle={{ paddingLeft: 15 }} />
               }
-            title={tabLabels[activeTab]} style={styles.container}
+            title={tabLabels[activeTab]} style={[styles.container, themeColor]}
                 titleTextStyle={{ color: global.color33, fontWeight: 'bold', fontSize: 20, color: global.color33 }}
                 // statusBarColor={global.colorFb}
                 // headerColor={global.colorFb}
@@ -136,7 +138,7 @@ DashboardComponent.defaultProps = {
 const styles = EStyleSheet.create(shorthand({
     container: {
         flex: 1,
-        // backgroundColor: global.colorFb,
+        backgroundColor: global.yellow,
     },
     contents: {
     },

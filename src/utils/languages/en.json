@@ -16,6 +16,7 @@
   "forgotPassword":"Forgot Password ?",
   "enterYourEmail": "Your e-mail goes here",
   "fullname_signup":"FULL NAME",
+  "username_signup":"USER NAME",
   "logout":"Log out"
   ,"theme": "Theme:"
   ,"home": "Home"
@@ -26,4 +27,9 @@
   ,"editInfo": "Edit info"
   ,"setting": "Settings"
   ,"update": "Update"
+  ,"className": "Class name"
+  ,"total": "Total"
+  ,"startDate": "Start date"
+  ,"endDate": "End date"
+
 }

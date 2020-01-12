@@ -1,8 +1,10 @@
 import React, { Commponent } from "react";
-import { View, TouchableOpacity, Image, Platform, Text, TextInput } from "react-native";
+import { View, TouchableOpacity, Image, Platform, Text, TextInput, ScrollView } from "react-native";
 import ModalInfo from "./ModalInfo";
 import Proptypes from "prop-types";
-
+import IconButton from '../commons/IconButton';
+import Strings from '../../constants/Strings';
+import { Metrics, Colors, Images } from '../../themes';
 const IS_IOS = Platform.OS === 'ios';
 export default class ModalInput extends ModalInfo {
 
@@ -17,7 +19,9 @@ export default class ModalInput extends ModalInfo {
         "email": "Defaults",
       },
       className: "",
-      gvName: ""
+      total: "",
+      startDate: '',
+      endDate: ''
     };
     this.goSetting = this.goSetting.bind(this);
   }
@@ -47,15 +51,21 @@ export default class ModalInput extends ModalInfo {
   }
 
   onSubmmit = () => {
-    const { gvName, className } = this.state;
-    const newClass = {
-      name: className,
-      email: gvName,
-    };
-    this.closeModal();
-    if (this.props.onSubmmit) {
-        this.props.onSubmmit(newClass);
+    const { total, startDate, endDate, className } = this.state;
+    if(total !== "" && startDate !== "" &&  endDate!== "" &&  className!== "" ){
+      const newClass = {
+        "Ma": "TEST",
+        "Ten": className,
+        "SiSo": total,
+        "SiSoToiDa": total,
+        "NgayBatDau": startDate,
+        "NgayKetThuc": endDate
+      };
+      if (this.props.onSubmmit) {
+          this.props.onSubmmit(newClass);
+      }
     }
+    this.closeModal();
   };
 
   onChangeClassName(_className){
@@ -64,9 +74,21 @@ export default class ModalInput extends ModalInfo {
     })
   }
 
-  onChangeGvName(_gvName){
+  onChangeClassTotal(_className){
     this.setState({
-      gvName: _gvName
+      total: _className,
+    })
+  }
+
+  onChangeStartDate(_className){
+    this.setState({
+      startDate: _className,
+    })
+  }
+
+  onChangeEndDate(_className){
+    this.setState({
+      endDate: _className,
     })
   }
 
@@ -75,40 +97,53 @@ export default class ModalInput extends ModalInfo {
     const { text } = this.props;
     const { gvName, className } = this.state;
     return (
+      <ScrollView>
       <View style={{ justifyContent: 'center', alignItems: 'center', width: '100%' }}>
 
-
-        <View style={{ justifyContent: 'center', alignItems: 'center', width: '100%', paddingBottom: 15 }}>
-          <Text>Class</Text>
-        </View>
+        {/* <View style={{ justifyContent: 'center', alignItems: 'center', width: '100%', paddingBottom: 15 }}>
+          <Text>CLASS</Text>
+        </View> */}
 
         <View style={{ flexDirection: 'column', justifyContent: 'center', width: "80%" }}>
           <TextInput
             style={{ height: 40, borderColor: 'gray', borderWidth: 1, borderRadius: 10, marginBottom: 15, paddingLeft: 10}}
             onChangeText={text => this.onChangeClassName(text)}
-            value={className}
+            // value={className}
+            placeholder={Strings.className}
           />
           <TextInput
             style={{ height: 40, borderColor: 'gray', borderWidth: 1, borderRadius: 10, marginBottom: 15, paddingLeft: 10}}
-            onChangeText={text => this.onChangeGvName(text)}
-            value={gvName}
+            onChangeText={text => this.onChangeClassTotal(text)}
+            // value={className}
+            placeholder={Strings.total}
+          />
+          <TextInput
+            style={{ height: 40, borderColor: 'gray', borderWidth: 1, borderRadius: 10, marginBottom: 15, paddingLeft: 10}}
+            onChangeText={text => this.onChangeStartDate(text)}
+            // value={className}
+            placeholder={Strings.startDate}
+          />
+          <TextInput
+            style={{ height: 40, borderColor: 'gray', borderWidth: 1, borderRadius: 10, marginBottom: 15, paddingLeft: 10}}
+            onChangeText={text => this.onChangeEndDate(text)}
+            // value={gvName}
+            placeholder={Strings.endDate}
           />
         </View>
-        <View style={{ flexDirection: 'row', justifyContent: "space-between" }}>
+        <View style={{ flexDirection: 'row'}}>
           <TouchableOpacity activeOpacity={0.9} onPress={()=>this.onSubmmit()} hitSlop={{ top: 20, bottom: 20, left: 30, right: 30 }}>
             <View
               style={{
-                height: 30, width: 60,
+                height: 30, width: 200,
                 borderWidth: 1,
-                borderRadius: 10,
+                borderRadius: 20,
                 justifyContent: 'center', alignItems: 'center',
                 backgroundColor: 'green',
-                marginRight: "20%"
               }}>
               <Text>Create</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity activeOpacity={0.9} onPress={this.closeModal} hitSlop={{ top: 20, bottom: 20, left: 30, right: 30 }}>
+          {/* <TouchableOpacity activeOpacity={0.9} onPress={this.closeModal} hitSlop={{ top: 20, bottom: 20, left: 30, right: 30 }}>
             <View
               style={{
                 height: 30, width: 60,
@@ -120,15 +155,27 @@ export default class ModalInput extends ModalInfo {
               }}>
               <Text>Close</Text>
             </View>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
 
       </View>
+      </ScrollView>
     );
   }
 
   renderHeader() {
-    return null;
+    return (
+      <View style={{ justifyContent: 'center', alignItems: 'center', width: '100%', paddingBottom: 15 }}>
+      <Text>CLASS</Text>
+      <IconButton 
+          btnStyle={{position: 'absolute', right: 0, top: -10}}
+          activeOpacity={0.5}
+          onClick={()=>{
+            this.closeModal()
+          }}
+          nameIcon={Images.icClose} />
+    </View>
+    )
   }
 }
 
