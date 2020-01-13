@@ -47,7 +47,7 @@ export default class DashboardComponent extends Component {
     }
 
     render() {
-        console.log(this.props.settingState)
+        // console.log(this.props.settingState)
         let themeColor = this.props.settingState && this.props.settingState.colorTheme ? { backgroundColor: this.props.settingState.colorTheme} : null;
         const tabLabels = [Strings.home, Strings.newfeed, Strings.account, 'SCORES', 'MENU']; // [Strings.checklist, Strings.notifications, Strings.favorite, Strings.admin]
         const initialTab = 0;
