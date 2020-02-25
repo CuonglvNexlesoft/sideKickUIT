@@ -12,17 +12,17 @@ export const SETTING = {
 
 export const USER = {
     user: {
-        userId: 14521116,
-        displayName: 'Le Van Cuong',
-        userName: 'a',
-        passWord: '1',
-        avatarUrl: '',
-        address: 'Q.9, HCM',
-        phoneNumber: '0976432302',
-        email: '14521116@gm.uit.edu.vn',
-        age: 24,
-        gender: 1,// male 1 vs female 0,
-        userType: 1 // 0 admin, 1 student
+        // userId: 14521116,
+        // displayName: 'Le Van Cuong',
+        // userName: 'a',
+        // passWord: '1',
+        // avatarUrl: '',
+        // address: 'Q.9, HCM',
+        // phoneNumber: '0976432302',
+        // email: '14521116@gm.uit.edu.vn',
+        // age: 24,
+        // gender: 1,// male 1 vs female 0,
+        // userType: 1 // 0 admin, 1 student
     },
     rehydrate: false,
     data: []

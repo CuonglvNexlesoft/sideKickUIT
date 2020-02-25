@@ -41,7 +41,7 @@ class Avatar extends Component {
   }
 
   componentDidMount() {
-    console.log(this.props.usersState.data)
+    // console.log(this.props.usersState.data)
     if (this.props.isDynamicallyAvatar) {
       // console.log("get avatar photo");
       let user = this.props.usersState.data.find(e => e.userId == this.props.user.userId);

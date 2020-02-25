@@ -20,7 +20,7 @@ export function settingState ( state = INITIAL_STATE , action) {
         case Types.SETTING.SETTING_DATA:
             return {...state, settings: {...state.settings, ...action.settings}};
         case Types.SETTING.SET_COLOR:
-            console.log('SET_COLOR', action)
+            // console.log('SET_COLOR', action)
             return {...state, colorTheme: action.data};
             // return { ...state, settings: { ...state.settings, ...action.settings } };
         default:

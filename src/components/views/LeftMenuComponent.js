@@ -103,7 +103,7 @@ export default class LeftMenuComponent extends Component {
     }
 
     onChangeTheme(_color){
-        console.log('aaaa', _color)
+        // console.log('aaaa', _color)
         this.props.settingActions.setTheme(_color);
     }
 

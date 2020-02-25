@@ -36,7 +36,7 @@ export default class HomeComponent extends Component {
   }
 
   componentDidMount() {
-    console.log(this.props.classState)
+    // console.log(this.props.classState)
   }
 
   onOpendCreateForm() {
@@ -50,7 +50,7 @@ export default class HomeComponent extends Component {
       // this.setState({
       //   users: newArrClass
       // });
-      console.log(_class)
+      // console.log(_class)
       this.props.ClassActions.creatClass(_class)
     }
   }

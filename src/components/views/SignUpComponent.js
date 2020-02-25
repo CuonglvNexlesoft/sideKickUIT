@@ -309,7 +309,7 @@ export default class SignUpComponent extends Component {
     onSubmit() {
         // Actions[ScreenName.DRAWER]({ type: ActionConst.RESET });
         const user = this.getUser();
-        console.log(user)
+        // console.log(user)
         if (user) {
             // this.props.appActions.showLoading();
             // console.log(this.props.userActions)

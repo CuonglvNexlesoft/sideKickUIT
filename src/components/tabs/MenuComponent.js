@@ -29,7 +29,7 @@ export default class MenuComponent extends Component {
     constructor(props) {
         super(props);
         const { userInfo } = props;
-        console.log('userInfo', userInfo)
+        // console.log('userInfo', userInfo)
         this.state = {
             isEditInfo: false,
             textEmail: userInfo.email ? userInfo.email.toString() : 'null',

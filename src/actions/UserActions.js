@@ -33,7 +33,7 @@ export function getMainPhotosetUser(user) {
 export function login(params){
     return dispatch => {
         return UserService.login(params).then(res => {
-            console.log('11111',res)
+            // console.log('11111',res)
             if (res.status === 200) {
                 let mappingUser = new User(res.data.user);
                 console.log(mappingUser)
@@ -48,7 +48,7 @@ export function login(params){
 export function signUp(params){
     return dispatch => {
         return UserService.signUp(params).then(res => {
-            console.log('signUp',res)
+            // console.log('signUp',res)
             // if (res.status === 200) {
             //     let mappingUser = new User(res.data.user);
             //     console.log(mappingUser)
@@ -64,7 +64,7 @@ export function signUp(params){
 export function updateUserInfo(params){
     return dispatch => {
         return UserService.updateUserInfo(params).then(res => {
-            console.log('updateUserInfo',res)
+            // console.log('updateUserInfo',res)
             if (res.status === 200) {
                 // let mappingUser = new User(res.data.user);
                 // console.log(mappingUser)

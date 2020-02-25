@@ -516,7 +516,7 @@ export default class SetupModal extends ModalRefine {
             ref={'modalGetLink'}
             styleModalPopupCustom={{ width: '95%', paddingLeft: 10, paddingRight: 10 }}
             onSubmmit={(link) => {
-              console.log('modalGetLink', link)
+              // console.log('modalGetLink', link)
               this.setState({ arrLink: [...this.state.arrLink, link] })
             }
             }

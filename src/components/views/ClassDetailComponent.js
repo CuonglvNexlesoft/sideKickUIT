@@ -400,7 +400,7 @@ export default class ClassDetailComponent extends Component {
           //     <TextComponent text={45} style={{ position: 'absolute', backgroundColor: 'red', borderRadius: 10, minWidth: 20, padding: 2, left: 20, top: 0 }} />
           // </View>
         }
-        titleTextStyle={{ color: Themes.Colors.primary, fontSize: 25, fontWeight: 'bold' }}
+        titleTextStyle={{ color: Themes.Colors.primary, fontSize: 25, fontWeight: 'bold', width: 250 }}
         statusBarColor={Themes.Colors.transparent}
         statusBarProps={{ barStyle: "dark-content" }}>
         <View style={{ flex: 1, paddingHorizontal: 5, paddingBottom: 15, backgroundColor: global.colorFF }}>

@@ -345,7 +345,7 @@ export default class SetupClassComponent extends Component<Props> {
             ref={'modalGetLink'}
             styleModalPopupCustom={{ width: '95%', paddingLeft: 10, paddingRight: 10 }}
             onSubmmit={(link) => {
-              console.log('modalGetLink', link)
+              // console.log('modalGetLink', link)
               this.setState({ arrLink: [...this.state.arrLink, link] })
             }
             }
