@@ -379,9 +379,10 @@ export default class ClassDetailComponent extends Component {
         title={this.props.class.name.toUpperCase()}
         headerLeft={
           <IconButton nameIcon={Themes.Images.icBackArrowBlack} onClick={() => {
-            this.state.hasChangePDF && this._viewer && this._viewer.saveDocument().then(() => {
-              // console.log('saveDocument');
-            });
+            this.state.hasChangePDF ? this._viewer && this._viewer.saveDocument().then((filePath) => {
+              console.log('saveDocument', filePath);
+              Actions.pop()
+            }):
             Actions.pop()
           }} btnStyle={{ paddingLeft: 15 }} />
         }
@@ -538,7 +539,7 @@ export default class ClassDetailComponent extends Component {
           />
         <DownloadedFileModal
           styleRefineModal={{ height: 500, backgroundColor: 'transparent' }}
-          listDownloadedFile={this.state.listDownloadedFile}
+          listDownloadedFile={this.state.listDownloadedFile.reverse()}
           onSelectFile={this.onSelectFileFromModal}
           type={'full'}
           ref={'downloadedFileModal'} />

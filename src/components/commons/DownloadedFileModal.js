@@ -35,6 +35,7 @@ import IconTooltip from "./IconTooltip";
 
 //const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
 let selectedIndexs = [];
+import RNFS from 'react-native-fs';
 
 export default class DownloadedFileModal extends ModalRefine {
   constructor(props) {
@@ -55,7 +56,8 @@ export default class DownloadedFileModal extends ModalRefine {
       matching: false,
       search: false,
       pageNumber: 1,
-      timeOutselectOptionHasChange: 0
+      timeOutselectOptionHasChange: 0,
+      dataListDownloadedFile: []
     };
     this.backdropOpacity = 0.5;
     this.closeModal = this.closeModal.bind(this);
@@ -67,6 +69,14 @@ export default class DownloadedFileModal extends ModalRefine {
 
   componentWillUnmount() {
     // EventRegister.removeEventListener(this.onOpenListener);
+  }
+
+  componentWillReceiveProps(nextProps, nextState){
+    if(this.props.listDownloadedFile.length != nextProps.listDownloadedFile.length){
+      this.setState({
+        dataListDownloadedFile: nextProps.listDownloadedFile
+      })
+    }
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -108,6 +118,24 @@ export default class DownloadedFileModal extends ModalRefine {
     this.props.onSelectFile && this.props.onSelectFile(path)
   }
 
+  onRemoveFile = (item) => {
+    console.log(item)
+    this.setState({
+      dataListDownloadedFile: this.state.dataListDownloadedFile.filter(e=> e.name !== item.name)
+    })
+    // this.onNewClose();
+    let path = item.path;
+    console.log(path)
+    RNFS.unlink(path)
+      .then(() => {
+        console.log('FILE DELETED');
+      })
+      // `unlink` will throw an error, if the item to unlink does not exist
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }
+
   renderItemMessage(item) {
     let _name = item.name ? item.name.toString() : "Noname";
     let _time = item.ctime ? item.ctime.toString() : "None";
@@ -130,15 +158,14 @@ export default class DownloadedFileModal extends ModalRefine {
           numberOfLinesTextLeft={2}
           textLeftSub={_time}
           numberOfLinesTextSubLeft={2}
-          // itemRight={
-          //   <View style={{ justifyContent: 'space-between', alignItems: 'center',}}>
-          //     <IconTooltip
-          //       style={{ paddingRight: 15 }}
-          //       onPress={this.onSelectFile.bind(this, item)}
-          //       textView={<TextComponent text={"Select"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', }} />}
-          //     />
-          //   </View>
-          // }
+          itemRight={
+            <View style={{ alignItems: 'center',}}>
+              <IconTooltip
+                onPress={this.onRemoveFile.bind(this, item)}
+                textView={<TextComponent text={"X"} style={{ }} />}
+              />
+            </View>
+          }
           onClickAction={this.onSelectFile.bind(this, item)}
           hideRight
           // disable
@@ -195,7 +222,7 @@ export default class DownloadedFileModal extends ModalRefine {
           <View style={{ flex: 1, backgroundColor: 'white' }}>
             <FlatList
               ref={'flatList'}
-              data={this.props.listDownloadedFile}
+              data={this.state.dataListDownloadedFile}
               style={{marginBottom: 10, borderRadius: 10, paddingHorizontal: 15 }}
               showsVerticalScrollIndicator={false}
               renderItem={({ item }) => this.renderItemMessage(item)

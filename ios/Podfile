@@ -28,10 +28,12 @@ target 'sidekickUIT' do
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
   # use_frameworks!
-  pod 'PDFNet', podspec: 'https://www.pdftron.com/downloads/ios/cocoapods/pdfnet/latest.podspec'
+  pod 'PDFNet', podspec: 'https://www.pdftron.com/downloads/ios/cocoapods/pdfnet/7.0.4.73314.podspec'
   pod 'RNPdftron', :path => '../node_modules/react-native-pdftron'
 
   pod 'react-native-document-picker', :path => '../node_modules/react-native-document-picker'
+  pod 'RNFS', :path => '../node_modules/react-native-fs'
+
 
   target 'sidekickUITTests' do
     inherit! :search_paths

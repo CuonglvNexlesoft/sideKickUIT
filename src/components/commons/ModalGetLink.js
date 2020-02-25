@@ -22,7 +22,7 @@ export default class ModalGetLink extends ModalInfo {
       className: "",
       gvName: "",
       text: 'https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf',
-      fileName: ''
+      fileName: 'https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf'.substring('https://www.cs.colorado.edu/~kena/classes/5828/s10/presentations/softwaredesign.pdf'.lastIndexOf('/')+1)
     };
     this.goSetting = this.goSetting.bind(this);
   }
@@ -122,7 +122,7 @@ export default class ModalGetLink extends ModalInfo {
             style={{ height: 40, width: "60%", borderColor: 'gray', borderWidth: 1, borderRadius: 10, paddingLeft: 10 }}
             onChangeText={text => this.onFileName(text)}
 
-            value={this.state.text.substring(this.state.text.lastIndexOf('/')+1)}
+            value={this.state.fileName}
           />
 
           <TouchableOpacity activeOpacity={0.9} style={{ paddingLeft: 5 }} 
