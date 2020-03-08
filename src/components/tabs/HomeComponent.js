@@ -8,6 +8,7 @@ import ChatRoomCardItem from "../modules/ChatRoomCardItem";
 import IconButton from "../commons/IconButton";
 import { Metrics, Colors, Images } from '../../themes';
 import global from '../commons/_var';
+import ClassSkelaton from "../commons/loader/classSkelaton";
 export default class HomeComponent extends Component {
   constructor(props) {
     super(props);
@@ -193,6 +194,7 @@ export default class HomeComponent extends Component {
             <Text style={styles.name}>Add class</Text>
           </View>
         </TouchableOpacity> */}
+        {this.props.classState.length === 0 ?  <ClassSkelaton/> :
         <FlatList
           data={this.props.classState.dataClass.filter(e=>e.name.includes(this.state.text))}
           extraData={this.props.classState}
@@ -201,7 +203,7 @@ export default class HomeComponent extends Component {
             this.renderRow(item, index)
           }
           keyExtractor={item => item.email}
-        />
+        />}
         <View style={{height: 50, width: Metrics.screenWidth, position: 'absolute', bottom: 20, alignItems: 'flex-end'}}>
           <IconButton 
           activeOpacity={0.5}

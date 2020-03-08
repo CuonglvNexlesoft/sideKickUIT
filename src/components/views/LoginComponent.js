@@ -289,6 +289,7 @@ export default class LoginComponent extends Component {
         if (user) {
             // this.props.appActions.showLoading();
             this.props.userActions.login(user).then(res=>{
+                console.log(res)
                 if (res.data.msg === "Đăng nhập thành công!") {
                     Actions[ScreenName.DRAWER]({ type: ActionConst.RESET });
                     // this.props.userActions.setUser(res.user).then(result => {

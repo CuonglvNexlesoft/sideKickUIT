@@ -73,6 +73,16 @@ export default class LeftMenuComponent extends Component {
 
     renderSettings() {
         const { settings } = this.state;
+        const { user } = this.props.userState;
+        let _userType = "";
+        switch (user.userType) {
+            case 0:
+                _userType = "Teacher"
+                break;
+            case 1:
+                _userType = "Student"
+                break;
+        }
         return (
             <View style={{ flex: 1, paddingHorizontal: 15, paddingBottom: 50}}>
                 {/* {this.renderLanguages()} */}
@@ -89,9 +99,9 @@ export default class LeftMenuComponent extends Component {
                     </View>
 
                     <View style={{ justifyContent: 'center', paddingTop: 5, paddingBottom: 5 }}>
-                        <TextComponent text={"Le Van Cuong"} style={{ paddingTop: 5, paddingBottom: 5, fontSize: 15, fontWeight: 'bold' }} />
+                        <TextComponent text={user.displayName} style={{ paddingTop: 5, paddingBottom: 5, fontSize: 15, fontWeight: 'bold' }} />
                         <View style={{ height: 25, width: 100, borderRadius: 50, borderWidth: 1.5, justifyContent: 'center', alignItems: 'center' }}>
-                            <TextComponent text={"Student"} />
+                            <TextComponent text={_userType} />
                         </View>
                     </View>
                 </View>
