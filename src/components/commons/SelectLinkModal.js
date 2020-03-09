@@ -113,7 +113,7 @@ export default class SelectLinkModal extends ModalRefine {
         <FillterSortItem
           style={{ paddingBottom: 15, paddingTop: 15 }}
           divider={false}
-          textLeft={item.title}
+          textLeft={'Document'}
           styleLeftTextProperty={[{
             lineHeight: 17,
             // fontFamily: global.fontBold,
