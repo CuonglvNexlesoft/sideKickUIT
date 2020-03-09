@@ -112,6 +112,7 @@ export default class HomeComponent extends Component {
     //     borderTopRightRadius: 0
     //   };
     // }
+    const {userType} =this.props.userInfo
     return (
       <View style={styles.container}>
         <View style={[{
@@ -204,14 +205,14 @@ export default class HomeComponent extends Component {
           }
           keyExtractor={item => item.email}
         />}
-        <View style={{height: 50, width: Metrics.screenWidth, position: 'absolute', bottom: 20, alignItems: 'flex-end'}}>
+        {userType === 0 && <View style={{height: 50, width: Metrics.screenWidth, position: 'absolute', bottom: 20, alignItems: 'flex-end'}}>
           <IconButton 
           activeOpacity={0.5}
           onClick={()=>{
             this.onOpendCreateForm()
           }}
           nameIcon={Images.icAddPhotoEditProfile} iconSize={{width: 60, height: 60}}/>
-        </View>
+        </View>}
         <ModalInput
           ref={'modalInput'}
           styleModalPopupCustom={{ width: '95%', paddingLeft: 10, paddingRight: 10 }}

@@ -507,7 +507,7 @@ export default class SetupModal extends ModalRefine {
           </View>
           <View style={{ width: '100%', justifyContent: 'center', alignItems: 'center', paddingVertical: 10 }}>
             <TouchableOpacity
-              onPress={() => this.refs.modalGetLink.openModal()}
+              onPress={() => this.closeModal()}
               style={{ width: "30%", flexDirection: 'row', backgroundColor: global.primaryColor, justifyContent: 'center', alignItems: 'center', borderColor: global.grayColor, borderRadius: 30, borderWidth: 2, padding: 5 }}>
               <TextComponent text={"Done"} style={{ paddingRight: 5, color: global.colorFF, fontSize: 16 }} />
             </TouchableOpacity>

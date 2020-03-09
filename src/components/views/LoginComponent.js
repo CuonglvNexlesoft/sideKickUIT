@@ -184,7 +184,7 @@ export default class LoginComponent extends Component {
                             onChangeText={Password => this.setState({ Password })}
                             onFocus={() => { this.setState({ focusUser: false, focusPass: true }) }}
                         />
-                        <TouchableOpacity
+                        {/* <TouchableOpacity
                             style={{
                                 height: 40,
                                 position: 'absolute',
@@ -194,7 +194,7 @@ export default class LoginComponent extends Component {
                             }}
                         >
                             <Text style={{ fontSize: 12, color: Themes.Colors.grey }}>{Strings.forgotPassword}</Text>
-                        </TouchableOpacity>
+                        </TouchableOpacity> */}
                     </View>
                 </View>
             </View>

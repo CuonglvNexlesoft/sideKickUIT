@@ -107,6 +107,7 @@ export default class SelectLinkModal extends ModalRefine {
   }
 
   renderItemMessage(item) {
+    if(!item.link) return null
     return (
       <View style={{}}>
         <FillterSortItem
