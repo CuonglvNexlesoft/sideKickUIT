@@ -17,6 +17,7 @@ import styles from "./styles";
 // // import I18n from 'react-native-i18n';
 import ModalRefine from "./ModalRefine";
 import HeaderRefineModal from "../../components/modules/HeaderRefineModal";
+import Collapsable from './../commons/Collapsable';
 // import TooltipItem from '../tooltips/TooltipItem';
 // import ButtonGroup from "../buttons/ButtonGroup";
 import PropTypes from 'prop-types';
@@ -120,7 +121,8 @@ export default class SetupModal extends ModalRefine {
       arrLink: [],
       text: '',
       selectTimeTest: null,
-      note: ''
+      note: '',
+      isSetting: false
     };
     this.backdropOpacity = 0.5;
     this.closeModal = this.closeModal.bind(this);
@@ -176,7 +178,7 @@ export default class SetupModal extends ModalRefine {
         fontSize={global.sizeP18}
         onClick={this.onNewClose}
         style={{}}
-        heading={'Setup'}
+        heading={'Options'}
       />
 
     );
@@ -265,6 +267,7 @@ export default class SetupModal extends ModalRefine {
         selectTimeTest: index,
       });
     };
+    // console.log(this.props.userInRoom)
     return (
       <View style={{ flex: 1, backgroundColor: 'white' }}>
         {/* <FlatList
@@ -275,7 +278,20 @@ export default class SetupModal extends ModalRefine {
               renderItem={({ item }) => this.renderItemMessage(item)
               }
             /> */}
-        <ScrollView style={{ backgroundColor: global.colorF3 }}>
+        <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingHorizontal: 25 }}>
+          <TouchableOpacity
+            onPress={() => this.setState({isSetting: false})}
+            style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' ,padding: 10 }}>
+            <TextComponent text={"List students"} style={{ color: global.blueLightColor }} />
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => this.setState({isSetting: true})}
+            style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: 10 }}>
+            <TextComponent text={"Setting"} style={{ color: global.blueLightColor }} />
+          </TouchableOpacity>
+        </View>
+        {this.state.isSetting ?
+          <ScrollView style={{ backgroundColor: global.colorF3 }}>
           <View style={{ justifyContent: 'center', backgroundColor: global.color0B, paddingHorizontal: 15, minHeight: 100, paddingBottom: 15, }}>
 
             <View style={{ padding: 5 }}>
@@ -522,6 +538,62 @@ export default class SetupModal extends ModalRefine {
             }
           />
         </ScrollView>
+        :
+        <View style={{ backgroundColor: global.colorF3 }}>
+         <FlatList
+                data={this.props.userInRoom}
+              renderItem={({ item, index }) =>
+                // <View style={{ padding: 10, alignItems: 'center', flexDirection: 'row' }}>
+                //   <View style={{ backgroundColor: 'black', width: 10, height: 10, borderRadius: 20, marginRight: 15 }} />
+                //   <View style={{ paddingRight: 15 }}>
+                //     <TextComponent text={item.displayName} numberOfLines={3} />
+                //   </View>
+                // </View>
+                <Collapsable titleHeight={50} color={item.userType === 0 ? Themes.Colors.title : Themes.Colors.listTitle}
+                  textColor={Themes.Colors.listTitleText} titleTextStyle={{ fontWeight: 'normal', fontSize: 16 }}
+                  title={item.displayName} collapsed={true}
+                  rightWidth={60} renderRight={null}>
+                  {this.renderInfo(item)}
+                </Collapsable>
+              }
+                keyExtractor={(item, index) => (item + index).toString()}
+              />
+        </View>
+        }
+      </View>
+    );
+  }
+
+  renderInfo(item){
+    return(
+      <View>
+        <View style={{ padding: 10, alignItems: 'center', flexDirection: 'row' }}>
+          <View style={{ backgroundColor: 'black', width: 10, height: 10, borderRadius: 20, marginRight: 15 }} />
+          <View style={{ paddingRight: 15 }}>
+            <TextComponent text={item.address} numberOfLines={3} />
+          </View>
+        </View>
+
+        <View style={{ padding: 10, alignItems: 'center', flexDirection: 'row' }}>
+          <View style={{ backgroundColor: 'black', width: 10, height: 10, borderRadius: 20, marginRight: 15 }} />
+          <View style={{ paddingRight: 15 }}>
+            <TextComponent text={item.email} numberOfLines={3} />
+          </View>
+        </View>
+
+        <View style={{ padding: 10, alignItems: 'center', flexDirection: 'row' }}>
+          <View style={{ backgroundColor: 'black', width: 10, height: 10, borderRadius: 20, marginRight: 15 }} />
+          <View style={{ paddingRight: 15 }}>
+            <TextComponent text={item.phoneNumber} numberOfLines={3} />
+          </View>
+        </View>
+
+        {/* <View style={{ padding: 10, alignItems: 'center', flexDirection: 'row' }}>
+          <View style={{ backgroundColor: 'black', width: 10, height: 10, borderRadius: 20, marginRight: 15 }} />
+          <View style={{ paddingRight: 15 }}>
+            <TextComponent text={item.displayName} numberOfLines={3} />
+          </View>
+        </View> */}
       </View>
     );
   }

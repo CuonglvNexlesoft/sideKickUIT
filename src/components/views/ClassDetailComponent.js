@@ -84,6 +84,7 @@ export default class ClassDetailComponent extends Component {
       isShowPopupTest: false,
       listNotifyForTeacher:[],
       listNotifyForStudent:[],
+      userInRoom: [],
       hasChangePDF: false,
       limitIHaveQuetion: false
     };
@@ -544,6 +545,7 @@ export default class ClassDetailComponent extends Component {
           type={'full'}
           ref={'downloadedFileModal'} />
         <SetupModal
+          userInRoom={this.state.userInRoom}
           styleRefineModal={{ height: 800, backgroundColor: 'transparent' }}
           onStartTest={this.onStartTest}
           onStartRollCall={this.onStartRollCall}
@@ -634,8 +636,7 @@ export default class ClassDetailComponent extends Component {
     this.socket = io("https://stark-bayou-32028.herokuapp.com/");
     // this.socket = io("http://localhost:3000");
     this.socket.on("chat message", msg => {
-      this.setState({ chatMessages: [...this.state.chatMessages, JSON.parse(msg)] });
-      console.log(JSON.parse(msg).message.type)
+      this.setState({ chatMessages: [...this.state.chatMessages, JSON.parse(msg)], userInRoom: [...this.state.userInRoom.filter(user=>user.userId !== JSON.parse(msg).user.userId), JSON.parse(msg).user] });
       if (JSON.parse(msg).message && JSON.parse(msg).message.type === 2) {
         let objRollCall = {
           title: JSON.parse(msg).user.displayName,
