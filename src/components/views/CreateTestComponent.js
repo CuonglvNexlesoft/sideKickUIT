@@ -96,6 +96,8 @@ export default class CreateTestComponent extends Component {
     this._interval = null;
   }
 
+  
+
   checkCorrectAnswer=(item)=>{
     console.log(item)
   }

@@ -44,5 +44,8 @@ export default {
     ,createClass: "LopHoc/CreateLopHoc"
     ,getClassDetail: "LopHoc/GetLopHoc/?lophocid={lophocid}"
 
+    ,getQuestion: "CauHoi/GetCauHoi/?lophocid={lophocid}"
+    
+
     ,createDoc: "TaiLieu/CreateTaiLieu"
 };

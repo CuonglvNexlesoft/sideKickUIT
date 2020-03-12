@@ -76,7 +76,7 @@ export default class ClassDetailComponent extends Component {
       isShowUserStatus: false,
       isShowChat: true,
       setMessageType: 1,
-      memberInClass: 0,
+      memberInClass: [],
       fileUrl: null,
       localFile: "",
       permissionGranted: Platform.OS === 'ios' ? true : false,
@@ -572,7 +572,7 @@ export default class ClassDetailComponent extends Component {
     }, ()=>setTimeout(()=>this.setState({
       limitIHaveQuetion: false
     }), 3000))
-    let objMessage = {};
+    let objMessage = this.props.userInfo;
     this.socket.emit("i have a question", JSON.stringify(objMessage));
   }
 
@@ -655,7 +655,7 @@ export default class ClassDetailComponent extends Component {
     }
   
     this.socket.on("roll call success", msg => {
-      this.setState({ memberInClass: this.state.memberInClass + 1 });
+      this.setState({ userInRoom: [...this.state.userInRoom.filter(user=>user.userId !== JSON.parse(msg).userId), JSON.parse(msg)] });
     });
 
       this.socket.on("test", msg => {
@@ -666,7 +666,7 @@ export default class ClassDetailComponent extends Component {
 
       this.socket.on("i have a question", msg => {
         let objRollCall = {
-          title: "Le Van Cuong",
+          title: JSON.parse(msg).displayName,
           link: "I have a question!"
         }
         this.setState({ listNotifyForTeacher: [ objRollCall,...this.state.listNotifyForTeacher] });
@@ -685,13 +685,13 @@ export default class ClassDetailComponent extends Component {
   }
 
   onSubmitRollCall = () => {
-    let objMessage = {};
+    let objMessage = this.props.userInfo;
     this.socket.emit("roll call success", JSON.stringify(objMessage));
   }
 
-  onStartRollCall = () => {
-    let objMessage = { timeout: 1000, key: "123", };
-    // console.log('000', this.socket)
+  onStartRollCall = (key) => {
+    let objMessage = { timeout: 1000, key: key, };
+    // console.log('000', key)
     this.socket.emit("roll call", JSON.stringify(objMessage));
   }
 

@@ -122,7 +122,8 @@ export default class SetupModal extends ModalRefine {
       text: '',
       selectTimeTest: null,
       note: '',
-      isSetting: false
+      isSetting: false,
+      key: ''
     };
     this.backdropOpacity = 0.5;
     this.closeModal = this.closeModal.bind(this);
@@ -151,14 +152,45 @@ export default class SetupModal extends ModalRefine {
   }
 
   closeModal() {
+    this.setState({
+        ...this.state,
+        swipeToClose: false,
+        animationDuration: 100,
+        swipeThreshold: 30,
+        indexSelectAllmember: 0,
+        indexSelectMatching: 0,
+        indexDefaultFolder: 0,
+        text: "",
+        resultSearch: [],
+        beginSearch: false,
+        focus: false,
+        notResult: false,
+        matching: false,
+        search: false,
+        pageNumber: 1,
+        timeOutselectOptionHasChange: 0,
+        enableDiscuss: true,
+        enableRollCall: false,
+        enableTest: false,
+        enableRemind: true,
+        arrLink: [],
+        text: '',
+        selectTimeTest: null,
+        note: '',
+        isSetting: false,
+        key: ''
+    });
     return super.closeModal();
   }
 
   onStartRollCall = () => {
-    this.setState({
-      enableRollCall: true
-    });
-    this.props.onStartRollCall();
+    if (this.state.key == "") return
+    else {
+      this.setState({
+        enableRollCall: true
+      });
+      this.props.onStartRollCall(this.state.key);
+    }
   }
 
   onStartTest = () => {
@@ -456,11 +488,19 @@ export default class SetupModal extends ModalRefine {
 
           <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 15, minHeight: 50, backgroundColor: global.colorFF }}>
 
-            <View style={{ padding: 5 }}>
+            <View style={{ padding: 5, flexDirection: 'row' }}>
               <TextComponent text={"Roll Call"} style={{ fontSize: 20 }} />
+              <TextInput
+                  placeholder={"Type key here"}
+                  // textAlignVertical={'center'}
+                  style={{width: 150, paddingLeft: 20}}
+                  onChangeText={this.onChangeKey}
+                  value={this.state.key}
+                />
             </View>
 
             <SwitchBtn
+              disabled={this.state.key === ""}
               circleStyle={{ borderWidth: 0, borderRadius: 10, width: 19, height: 19, paddingLeft: 3 }}
               backgroundColorOn={global.lightGreen}
               backgroundColorOff={global.colorE3}
@@ -562,6 +602,10 @@ export default class SetupModal extends ModalRefine {
         }
       </View>
     );
+  }
+
+  onChangeKey=(text)=>{
+    this.setState({ key: text})
   }
 
   renderInfo(item){

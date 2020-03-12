@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 
 class SwitchBtn extends Component {
     static defaultProps = {
+        disabled: false,
         switchOn: false,
         isRunAnimation: true,
         onPress: () => {
@@ -100,6 +101,7 @@ class SwitchBtn extends Component {
             <TouchableOpacity
                 onPress={this.onPress}
                 activeOpacity={0.5}
+                disabled={this.props.disabled}
             >
                 <Animated.View
                     style={[

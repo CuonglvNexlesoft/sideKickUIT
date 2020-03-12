@@ -113,7 +113,7 @@ export default class SelectLinkModal extends ModalRefine {
         <FillterSortItem
           style={{ paddingBottom: 15, paddingTop: 15 }}
           divider={false}
-          textLeft={'Document'}
+          textLeft={this.props.forWho === 1 ? 'Document' : item.title}
           styleLeftTextProperty={[{
             lineHeight: 17,
             // fontFamily: global.fontBold,
@@ -161,14 +161,15 @@ export default class SelectLinkModal extends ModalRefine {
     this.props.selectedClass.listDocs
     :
     this.props.listNotifyForTeacher
+    // console.log(this.props.listNotifyForTeacher)
     return (
       <View style={{ flex: 1, backgroundColor: 'white' }}>
             <View style={{justifyContent: 'center', alignItems: 'flex-end'}}>
-        <IconTooltip
+        {this.props.forWho === 0 && <IconTooltip
                 style={{ paddingRight: 15 }}
                 onPress={()=>this.props.onClearList()}
                 textView={<TextComponent text={"Clear all"} style={{ textDecorationLine: 'underline', fontStyle: 'italic', color: 'blue' }} />}
-              />
+              />}
         </View>
             <FlatList
               ref={'flatList'}
