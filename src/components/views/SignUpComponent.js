@@ -68,15 +68,18 @@ export default class SignUpComponent extends Component {
     render() {
         return (
 
-            <TouchableWithoutFeedback onPress={() => { DismissKeyboard() }}>
+            <KeyboardAvoidingView style={styles.container} behavior={'height'}>
                 <View style={styles.container} >
+                <ScrollView style={{flex: 1,}}>
 
-                    <View style={{ flex: 1, alignItems: 'center' }}>
+                    <View style={{  flex: 1, alignItems: 'center' }}>
                         {this.renderLogo()}
                     </View>
+
                     <View style={[{ flex: 1, alignItems: 'center' }, { justifyContent: 'flex-start' }]}>
                         {this.renderUserInfosInput()}
                     </View>
+
                     <View style={{
                         width: Themes.Metrics.width,
                         flex: 0.5,
@@ -87,8 +90,10 @@ export default class SignUpComponent extends Component {
                         {this.renderButtonAction()}
                         <View style={{ height: 15 }} />
                     </View>
+                </ScrollView>
+
                 </View>
-            </TouchableWithoutFeedback>
+            </KeyboardAvoidingView>
 
         );
     }
