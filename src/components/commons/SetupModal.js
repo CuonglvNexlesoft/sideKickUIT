@@ -193,15 +193,17 @@ export default class SetupModal extends ModalRefine {
     }
   }
 
-  onStartTest = () => {
+  onStartTest = (_selectTimeTest) => {
     this.setState({
       enableTest: true
     });
-    this.props.onStartTest();
+    this.props.onStartTest(_selectTimeTest);
   }
 
   onNotifyLink = () => {
-    this.props.onCreateDoc(this.state.text)
+    this.state.arrLink.forEach(element => {
+      this.props.onCreateDoc(element)
+    });
   }
 
   renderHeader() {
@@ -448,7 +450,7 @@ export default class SetupModal extends ModalRefine {
                 onClickAction={
                   () => {
                     onSelectFilter(0);
-                    this.onStartTest();
+                    this.onStartTest(0);
                   }
                 }
               />
@@ -463,7 +465,7 @@ export default class SetupModal extends ModalRefine {
                 onClickAction={
                   () => {
                     onSelectFilter(1);
-                    this.onStartTest();
+                    this.onStartTest(1);
                   }
                 }
               />
@@ -478,7 +480,7 @@ export default class SetupModal extends ModalRefine {
                 onClickAction={
                   () => {
                     onSelectFilter(2);
-                    this.onStartTest();
+                    this.onStartTest(2);
                   }
                 }
               />

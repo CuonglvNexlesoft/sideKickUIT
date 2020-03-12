@@ -86,7 +86,8 @@ export default class ClassDetailComponent extends Component {
       listNotifyForStudent:[],
       userInRoom: [],
       hasChangePDF: false,
-      limitIHaveQuetion: false
+      limitIHaveQuetion: false,
+      timeOutTest: 0
     };
     this.openFile = this.openFile.bind(this);
     RNPdftron.initialize("Insert commercial license key here after purchase");
@@ -95,7 +96,7 @@ export default class ClassDetailComponent extends Component {
   }
 
   createTest = () => {
-    Actions[ScreenName.TEST]({})
+    Actions[ScreenName.TEST]({timeOutTest: this.state.timeOutTest})
     this.setState({isShowPopupTest: false})
   }
 
@@ -661,7 +662,7 @@ export default class ClassDetailComponent extends Component {
       this.socket.on("test", msg => {
         // console.log('test', this.socket)
         let objRollCall = JSON.parse(msg)
-        if(this.props.userInfo.userType === 1) this.setState({isShowPopupTest: true}, ()=>setTimeout(()=>this.setState({isShowPopupTest: false}), 10000))
+        if(this.props.userInfo.userType === 1) this.setState({isShowPopupTest: true, timeOutTest: JSON.parse(msg).timeout }, ()=>setTimeout(()=>this.setState({isShowPopupTest: false}), 10000))
       });
 
       this.socket.on("i have a question", msg => {
@@ -695,9 +696,9 @@ export default class ClassDetailComponent extends Component {
     this.socket.emit("roll call", JSON.stringify(objMessage));
   }
 
-  onStartTest = () => {
-    let objMessage = { timeout: 1000, key: "123", };
-    // console.log('000', this.socket)
+  onStartTest = (time) => {
+    let objMessage = { timeout: time, key: "123", };
+    // console.log('000', time)
     this.socket.emit("test", JSON.stringify(objMessage));
   }
 

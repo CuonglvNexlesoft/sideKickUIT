@@ -91,7 +91,7 @@ export default class CreateTestComponent extends Component {
       //   // { key: '9', title: '9' },
       // ],
       routes: props.testData,
-      timeToReset: 5*60,
+      timeToReset: (props.timeOutTest === 0 ? 30 : props.timeOutTest === 1 ? 15 : 10 )*60,
     };
     this._interval = null;
   }
